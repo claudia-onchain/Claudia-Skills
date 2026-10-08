@@ -1,0 +1,9 @@
+deliverable_id,platform,deliverable,median_views,cpm_usd,base_fee_usd,tier_band_usd,final_base_usd,organic_usage_30d_pct,paid_usage_30d_pct,exclusivity_30d_pct,rush_pct,includes,notes
+tiktok-video,tiktok,"In-feed video 30-90 s, #ad + branded content toggle",12400,18,223,500-2000,500,25,40,20,25,"2 revisions; AI label; caption + link in bio 7 days","CPM result below micro band floor (41.2k followers); clamped up to the band floor"
+ig-reel,instagram,"Reel as collab post with brand, Paid partnership label",9800,22,216,20-200 (nano) / 200-2000 (micro),350,25,40,20,25,"2 revisions; AI info label; 1 Story frame with link","Nano by followers but views behave like micro; priced inside micro band"
+yt-short,youtube,"Short up to 60 s, includes paid promotion flag",5200,15,78,n/a,150,25,40,20,25,"2 revisions; synthetic content disclosure","Short-form only; long-form integration quoted separately"
+x-post,x,"Single post with image or clip, #ad at start",3100,10,31,38 (about $2 per 1k followers),60,20,30,15,25,"Paid partnership label; pinned 24 h","X benchmark per follower used as floor"
+x-thread,x,"Thread 4-6 posts, pinned 48 h",3100,15,47,n/a,180,20,30,15,25,"Thread costs on API counted in our spend","Threads carry the brand story better than single posts"
+tg-post,telegram,"Channel post with link, kept 7 days",2400,14,34,n/a,90,0,0,15,25,"Link with UTM; silent-notify off","Only if the channel's audience fits"
+bundle-city-night,multi,"TikTok + Reel + Short (same edit) + X thread + Telegram post",n/a,n/a,1270,n/a,1090,25,40,20,25,"One concept, platform-native captions","About 14% below the sum of parts; steer brands here"
+custom-scene,all,"New location / wardrobe / product renders",n/a,n/a,250,n/a,250,0,0,0,0,"Up to 6 generated stills for approval","Flat fee covering generation spend and review time"

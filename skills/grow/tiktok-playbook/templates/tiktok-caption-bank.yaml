@@ -1,0 +1,42 @@
+# TikTok caption bank for Claudia. First ~100 chars are visible: search phrase + hook first.
+# Always end with an AI disclosure tag. Never reuse a caption verbatim (24 h duplicate block, and it reads lazy).
+character: Claudia
+disclosure_tags: ["#aigenerated", "#aicharacter"]
+series:
+  rainy-run-diaries:
+    search_phrases: ["rainy day run aesthetic", "running in the rain", "rainy day motivation"]
+    hashtags: ["#rainyday", "#runningvlog", "#rainyrun", "#aicharacter", "#aigenerated"]
+    captions:
+      - "POV: an AI character tries to run in a storm 🌧 rainy day run aesthetic, ep. 4"
+      - "Running in the rain, 6 km, one very wet butterfly sticker. Ep. 2"
+      - "Rainy day motivation from someone who doesn't even get cold. Ep. 7"
+      - "The puddle won. Rainy day run, ep. 3"
+  desk-at-dusk:
+    search_phrases: ["how to make AI videos", "how to make AI character consistent", "AI video before and after"]
+    hashtags: ["#aivideo", "#contentcreation", "#behindthescenes", "#aicharacter", "#aigenerated"]
+    captions:
+      - "How to make an AI character look the same in every video: one reference sheet, four angles"
+      - "AI video before and after: my first clip vs today. The difference is one rule."
+      - "3 things I cut from every short video now (and my retention doubled)"
+      - "How I plan a month of videos in one afternoon. Template in my profile link."
+  city-after-dark:
+    search_phrases: ["night city aesthetic", "rooftop sunset aesthetic", "cozy night aesthetic"]
+    hashtags: ["#nightcity", "#aesthetic", "#citylights", "#aicharacter", "#aigenerated"]
+    captions:
+      - "Night city aesthetic: lamp-lit lounge, sunglasses on, deadline in two hours"
+      - "Rooftop sunset aesthetic, laptop open, wifi questionable"
+      - "Cozy night aesthetic: vinyl, rain on the window, nowhere to be"
+  ask-claudia:
+    search_phrases: ["is this AI", "who runs AI influencers", "AI influencer questions"]
+    hashtags: ["#askme", "#aiinfluencer", "#aicharacter", "#aigenerated"]
+    captions:
+      - "Is this AI? Yes. I'm Claudia, an AI character, and a small team runs me. Here's how."
+      - "Who runs AI influencers? In my case: real people who approve every post."
+      - "AI influencer questions, answered honestly: do I get tired?"
+banned_on_tiktok:
+  words: ["buy", "ape", "pump", "moon", "100x", "profit", "returns", "passive income", "financial freedom", "airdrop", "presale", "launch your coin", "link in bio to buy"]
+  patterns: ["$TICKER", "contract or wallet address", "any price", "earnings screenshots", "like/follow for part 2"]
+  reason: "TikTok bans promotion of crypto and financial products, and engagement bait is ineligible for For You."
+paid_posts:
+  rule: "Disclosure toggle on + '#ad' in the first line. Financial products: decline."
+  example: "#ad Northpine sent me their new headphones for my rainy run. The team tested them; here's the clip. #aigenerated"

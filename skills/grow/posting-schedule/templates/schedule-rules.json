@@ -1,0 +1,64 @@
+{
+  "$comment": "Pacing config a host loads before drafting. Caps here must be <= the @useclaudia/social defaults; they are passed to createSocial({ rules }) and also used by the agent's own planner. Times are local to each tz. Checked 2026-10.",
+  "agent": "claudia",
+  "approver": "one named person per batch",
+  "approvalAheadDays": 7,
+  "coinOrLaunchAheadHours": 24,
+  "reactiveShare": 0.2,
+  "maxSameTopicPerNetworkPerDay": 1,
+  "socialRules": {
+    "caps": { "x": 6, "tiktok": 2, "instagram": 2, "youtube": 1, "threads": 3, "telegram": 3, "discord": 2 },
+    "linksPerDay": { "x": 1, "default": 2 },
+    "lateAfterMin": 10
+  },
+  "networks": {
+    "x": {
+      "tz": "America/New_York",
+      "perDay": 4,
+      "minGapMin": 90,
+      "quietHours": ["01:00", "07:00"],
+      "windows": ["09:00-11:00", "14:00-15:00", "17:00-19:00"],
+      "weeklyBudgetUsd": 3.0
+    },
+    "tiktok": {
+      "tz": "America/New_York",
+      "perDay": 1,
+      "minGapMin": 360,
+      "quietHours": ["00:00", "09:00"],
+      "windows": ["14:00-17:00", "19:00-21:00"],
+      "blockedTopics": ["coins", "tickers", "launches", "trading calls"]
+    },
+    "instagram": {
+      "tz": "Europe/London",
+      "perDay": 1,
+      "minGapMin": 360,
+      "quietHours": ["00:00", "08:00"],
+      "windows": ["11:00-13:00", "19:00-21:00"],
+      "maxHashtags": 5
+    },
+    "youtube": {
+      "tz": "America/New_York",
+      "perDay": 1,
+      "minGapMin": 720,
+      "quietHours": ["00:00", "09:00"],
+      "windows": ["12:00-15:00", "18:00-21:00"]
+    },
+    "telegram": {
+      "tz": "Europe/London",
+      "perDay": 2,
+      "minGapMin": 180,
+      "quietHours": ["22:00", "08:00"],
+      "windows": ["12:00-13:00", "18:00-19:00"]
+    },
+    "discord": {
+      "tz": "Europe/London",
+      "perWeek": 3,
+      "minGapMin": 720,
+      "quietHours": ["22:00", "09:00"],
+      "windows": ["19:00-21:00"],
+      "pings": "humans only"
+    }
+  },
+  "freezeOn": ["platform outage", "security incident", "major news in the niche", "crisis about the account"],
+  "freezeAction": "social.killSwitch(true), then review the queue before lifting"
+}

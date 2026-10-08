@@ -1,0 +1,81 @@
+# Telegram blueprint: broadcast channel + linked discussion group + optional alert channel.
+# Build by hand in the Telegram app; values marked "edit" are yours. Checked 2026-10.
+
+channel:
+  title: "Claudia"                                   # edit
+  handle: "claudia_onchain_news"                      # edit; 5–32 chars, letters, digits, underscore
+  type: public
+  description: >-
+    Daily notes from Claudia, an AI character run by a small team. Skills, drops, office hours.
+    1–3 posts a day. Admins never DM first. Not financial advice. useclaudia.xyz
+  sign_messages: true
+  reactions: ["❤️", "🔥", "👀", "🤔"]
+  restrict_saving_content: false
+  discussion_group: claudia_chat
+  admins:
+    - { who: owner, rights: all, two_step_verification: required }
+    - { who: moderator-1, rights: [post_messages, edit_messages_of_others, delete_messages, manage_live_streams] }
+    - { who: "@ClaudiaPostBot", rights: [post_messages] }   # the @useclaudia/social telegram account
+  posting:
+    cadence: "1–3 posts/day, >= 3 h apart"
+    approval: "every post previewed and approved by a person"
+    labels: "(AI-generated) added automatically; Not financial advice. when a coin is mentioned"
+  pinned:
+    - rules_short
+    - official_links
+    - scam_warning
+
+discussion_group:
+  title: "Claudia — chat"                             # edit
+  handle: "claudia_chat"
+  type: public
+  linked_to_channel: true
+  topics_enabled: true
+  topics: [General, Help, Creators, Feedback, Off-topic]
+  slow_mode: 30s                                      # 1–5 min during launches or raids
+  aggressive_anti_spam: true                          # available at 200+ members
+  hide_members: true                                  # available at 100+ members
+  join: { mode: open, captcha_bot: "a captcha bot you trust that never asks for wallets or signatures" }
+  member_permissions:
+    send_messages: true
+    send_media: true
+    send_links: true                                  # set false during raids
+    add_members: false
+    pin_messages: false
+    change_info: false
+    manage_topics: false
+  admins:
+    - { who: owner, rights: all }
+    - { who: moderator-1, rights: [delete_messages, ban_users, pin_messages, manage_topics, invite_via_link] }
+    - { who: moderator-2, rights: [delete_messages, ban_users, pin_messages, manage_topics] }
+    - { who: "@ClaudiaPostBot", rights: [send_messages], privacy_mode: on, topics: [Help] }
+  agent_answers:
+    sees: "commands, @mentions of the bot, replies to the bot (privacy mode on)"
+    approval: "each answer approved, except entries from the approved FAQ"
+    hands_to_human: [wallet, seed, refund, scam, hacked, press, "should I buy", "is it safe"]
+
+alert_channel:                                        # optional; machine feed kept apart from conversation
+  title: "Claudia — launch feed"
+  handle: "claudia_launch_feed"
+  type: public
+  description: "Machine-posted feed of new Claudia launches. Unvetted. Not financial advice. No buy calls."
+  source: "claudia watch launches --claudia-only --notify telegram"
+  max_per_minute: 10
+  muted_by_default_note: "Tell subscribers to keep it muted; it is a log, not a signal."
+
+pins:
+  rules_short: |
+    Rules: be kind · 18+ · no shilling or referral links · no DMs asking for money or wallets ·
+    no impersonation · nothing here is financial advice. Mods have the final say.
+  official_links: |
+    Official: useclaudia.xyz · X @claudia_onchain · this channel · chat @claudia_chat. Anything else is not us.
+  scam_warning: |
+    Admins and Claudia will never DM you first, never ask for a seed phrase, a private key or a wallet signature,
+    and never run airdrops through links in chat. Report and block anyone who does.
+
+raid_mode:
+  slow_mode: 5m
+  send_links: false
+  send_media: false
+  join: request_admin_approval
+  agent: "social.killSwitch(true) until a person lifts raid mode"

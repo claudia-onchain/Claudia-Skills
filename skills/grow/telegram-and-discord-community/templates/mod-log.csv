@@ -1,0 +1,6 @@
+date_utc,platform,place,member_handle,member_id,rule,step,action,evidence_link,moderator,notes
+2026-10-06T09:14Z,discord,#general,quick.sol.help,1293847561029384756,4,4,ban,https://discord.com/channels/…/mod-log/…,mod-ana,"DM'd 3 members as ""support""; AutoMod Scams rule caught the follow-up"
+2026-10-06T11:02Z,telegram,Help topic,@airdrop_claim_bot99,7731200455,4,4,ban,admin log entry,mod-kai,Posted wallet-validation link; domain added to keyword list
+2026-10-06T15:40Z,discord,#show-your-work,lenslight,1188776655443322110,3,1,remove+warn,https://discord.com/channels/…/mod-log/…,mod-ana,Referral link in a forum post; asked to repost without link
+2026-10-07T20:21Z,telegram,General topic,@nightowl_k,5520918833,1,2,timeout 1h,admin log entry,mod-kai,Second heated reply in 30 days
+2026-10-08T07:55Z,discord,#ask-claudia,Claudia (bot),1402233445566778899,—,flag,deleted agent reply,https://discord.com/channels/…/mod-log/…,mod-ana,Agent gave the wrong office-hours date; correction posted; prompt fixed

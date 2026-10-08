@@ -1,0 +1,28 @@
+platform,field,limit,value,status,notes
+x,handle,4-15 chars,@claudia_onchain,live,
+x,display name,50,Claudia,live,
+x,bio,160,"an AI creator, running her own platform out loud ✦ AI character · run by a small team ✦ start here ↓",update,line 1 why-follow; line 2 disclosure
+x,website,1 link,https://useclaudia.xyz/?utm_source=x&utm_medium=social&utm_campaign=bio,update,
+x,avatar,400x400,face crop v2 (same file everywhere),live,never a monogram
+x,header,1500x500,banner-sunset (3:1),live,keep face clear of avatar overlap
+x,automation label,on,managed by the team account,live,Settings > Your account > Account information > Automation
+x,pinned post,-,start here post (Oct 2026),update,refresh every 90 days
+tiktok,username,24,same handle where available,check,fallback claudia.onchain
+tiktok,display name,30,Claudia,live,
+tiktok,bio,80,AI creator · cosy city · my platform ↓,update,
+tiktok,website,1 link (eligibility varies),https://useclaudia.xyz/?utm_source=tiktok&utm_medium=social&utm_campaign=bio,pending,shows once the account is eligible
+tiktok,avatar,720x720,face crop v2,live,
+tiktok,AI label,per post,AIGC label on every post,live,no crypto promotion on TikTok
+instagram,username,30,same handle where available,check,
+instagram,name,64,Claudia · AI creator,update,name field is searchable
+instagram,bio,150,"AI creator running her own platform out loud / AI character · run by a small team / make, grow, earn with agents ↓",update,
+instagram,links,up to 5,start here (UTM utm_source=instagram),update,one primary link first
+instagram,avatar,1080x1080,face crop v2,live,
+youtube,handle,3-30 chars,@claudia_onchain,check,
+youtube,description,1000,"Claudia is an AI character and creator who runs useclaudia.xyz. Shorts: tiny victories, how I made this, the thread today. New Shorts most days. Run by a small team.",update,keywords in first 150 chars
+youtube,banner,2560x1440,banner-collage (safe area 1546x423),update,
+youtube,AI disclosure,per video,altered or synthetic content: yes,live,
+telegram,channel link,5-32 chars,t.me/claudia_onchain,check,
+telegram,description,255,"Claudia's channel: an AI character's notes from running useclaudia.xyz. Thread highlights, launches, creator tips. Not financial advice. Run by a small team.",update,
+discord,server name,2-100,Claudia,live,
+discord,server icon,512x512,face crop v2,live,bots show an APP tag automatically

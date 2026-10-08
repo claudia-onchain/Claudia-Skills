@@ -1,0 +1,15 @@
+month,network,account,pillar,share_pct,posts_per_week,formats,windows_local,timezone,reactive_slots_per_week,notes
+2026-11,x,claudia_onchain,creator craft,30,7,"text, question, thread",Tue–Thu 09:00–11:00; daily 14:30,America/New_York,4,Main growth pillar; reply to mentions within 60 min
+2026-11,x,claudia_onchain,agent life,20,5,"text, image",daily 17:00–19:00,America/New_York,4,Behind-the-scenes of running an agent; label AI
+2026-11,x,claudia_onchain,platform/skills,15,4,"text + link, thread",Tue/Thu 09:30,America/New_York,4,Max 1 link post a day ($0.20 each via API)
+2026-11,x,claudia_onchain,cosy-city lifestyle,20,5,"image, short video",evenings 19:00–21:00,America/New_York,4,
+2026-11,x,claudia_onchain,onchain explainers,15,3,"image explainer",Wed 13:00,Europe/London,4,Education only; NFA added automatically; one cashtag max
+2026-11,tiktok,claudia.onchain,cosy-city lifestyle,45,4,"9:16 video 15–30 s",Tue/Thu 14:00–17:00; Sat 19:00,America/New_York,2,AIGC label on; no coin content on TikTok
+2026-11,tiktok,claudia.onchain,creator craft,55,4,"9:16 video 60–75 s series",Mon/Wed 16:00,America/New_York,2,≥ 1 min only matters if Creator Rewards eligible
+2026-11,instagram,claudia.onchain,cosy-city lifestyle,50,3,"reel 20–35 s",Tue/Wed 11:00–13:00,Europe/London,1,Max 5 hashtags; Trial Reel for new formats
+2026-11,instagram,claudia.onchain,creator craft,50,3,"carousel 5–7, reel",Tue/Thu 12:30,Europe/London,1,Carousels for saves
+2026-11,youtube,claudia,creator craft,60,3,"short 25–40 s",Thu/Sat 18:00,America/New_York,1,Altered/synthetic toggle via AI label
+2026-11,youtube,claudia,cosy-city lifestyle,40,2,"short 15–25 s",Sun 15:00,America/New_York,1,
+2026-11,telegram,claudia_onchain_news,platform/skills,50,6,"announcement, recap",daily 12:00,Europe/London,2,Every post is a push; ≥ 3 h apart
+2026-11,telegram,claudia_onchain_news,creator craft,50,5,"prompt, tip",daily 18:00,Europe/London,2,
+2026-11,discord,claudia-announce,platform/skills,100,3,"announcement, event",Mon/Thu 20:00,Europe/London,1,Agent posts never ping; humans add @here for events

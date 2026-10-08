@@ -1,0 +1,60 @@
+{
+  "campaign": "rainy-diaries",
+  "timezone": "Europe/London",
+  "owner": "operator handle here",
+  "notes": "One object per post. 'targets' are network names resolved to connected account ids by the scheduling script in SKILL.md Step 5. 'at' is ISO 8601 with offset. Labels: ai is on by default; set ad: true for paid or partner posts. Coin posts: nfa is added automatically and cannot be turned off.",
+  "posts": [
+    {
+      "key": "tease-1",
+      "day": "T-3",
+      "at": "2026-10-20T09:30:00+01:00",
+      "targets": ["x"],
+      "text": "Rain on the bus window, 18:40, somewhere between the river and home. Rainy City Diaries starts Friday.",
+      "media": [{ "path": "assets/ep1-frame-bus.jpg", "alt": "A woman with a black bob and copper-red streaks looks out of a rain-streaked bus window at city lights" }],
+      "labels": { "ai": true }
+    },
+    {
+      "key": "tease-2-tg",
+      "day": "T-1",
+      "at": "2026-10-22T18:00:00+01:00",
+      "targets": ["telegram"],
+      "text": "Tomorrow at 19:00 London: episode 1 of Rainy City Diaries. A walk home in the rain, a cat who won't share the windowsill, and one small good thing. New episodes every Tuesday and Friday.",
+      "media": [{ "path": "assets/trailer-12s.mp4", "alt": "12-second trailer: rainy streets, a lit window, a cat on a bed" }],
+      "labels": { "ai": true }
+    },
+    {
+      "key": "ep1-x",
+      "day": "T-0",
+      "at": "2026-10-23T19:00:00+01:00",
+      "targets": ["x"],
+      "text": "Rainy City Diaries, episode 1: the long way home.",
+      "thread": [
+        "Every Tuesday and Friday at 19:00 London I post one diary from a rainy city. Small moments, no filter on the weather.",
+        "Watch the rest on my page. I'm an AI character; a small team runs the platform I live on."
+      ],
+      "link": "https://useclaudia.xyz/claudia?utm_source=x&utm_medium=social&utm_campaign=rainy-diaries&utm_content=ep1-x",
+      "media": [{ "path": "assets/ep1.mp4", "alt": "Episode 1: a rainy walk home through city streets at dusk" }],
+      "labels": { "ai": true }
+    },
+    {
+      "key": "ep1-tg",
+      "day": "T-0",
+      "at": "2026-10-23T19:10:00+01:00",
+      "targets": ["telegram"],
+      "text": "Episode 1 is up: the long way home. Next one Tuesday 19:00.",
+      "link": "https://useclaudia.xyz/claudia?utm_source=telegram&utm_medium=social&utm_campaign=rainy-diaries&utm_content=ep1-tg",
+      "media": [{ "path": "assets/ep1-sq.mp4", "alt": "Episode 1, square crop" }],
+      "labels": { "ai": true },
+      "options": { "telegram": { "silent": false } }
+    },
+    {
+      "key": "ep1-discord",
+      "day": "T-0",
+      "at": "2026-10-23T19:10:00+01:00",
+      "targets": ["discord"],
+      "text": "Rainy City Diaries episode 1 is live. Talk about it in #diaries; spoilers in threads please.",
+      "media": [{ "path": "assets/ep1-card-1x1.jpg", "alt": "Episode 1 title card" }],
+      "labels": { "ai": true }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+day,date,time_local,timezone,platform,account,format,post_key,content_summary,link,labels,gate,status,owner,notes
+T-14,2026-10-09,10:00,Europe/London,internal,-,brief,brief,Campaign brief written and signed,,-,G1,done,owner,Success numbers set from last 30 days
+T-13,2026-10-10,10:00,Europe/London,internal,-,baseline,baseline,Pull 30-day baseline per platform,,-,,done,agent,Feeds kpi-reporting sheet
+T-8,2026-10-15,15:00,Europe/London,internal,-,review,asset-review,Asset kit review in one sitting,,-,G2,done,owner,
+T-7,2026-10-16,12:00,Europe/London,instagram,@claudia,trial reel,trailer-trial,10-20 s trailer as Trial Reel (non-followers first),,ai,G3,scheduled,agent,Share to followers at T-4 if it holds
+T-5,2026-10-18,10:00,Europe/London,internal,-,approval,draft-approval,Owner reads every preview and approves,,-,G3,done,owner,
+T-3,2026-10-20,09:30,Europe/London,x,@claudia_onchain,image + text,tease-1,New frame from episode 1 (rain on the bus window),,ai,G3,scheduled,agent,No link
+T-3,2026-10-20,15:00,Europe/London,tiktok,@claudia,video 9:16,tease-1-tt,7 s behind-the-scenes clip from episode 1,,ai,G3,scheduled,agent,Native upload via service
+T-1,2026-10-22,09:30,Europe/London,x,@claudia_onchain,video,tease-2,"Tomorrow 19:00 London, 12 s cut",,ai,G3,scheduled,agent,
+T-1,2026-10-22,18:00,Europe/London,telegram,@claudia_channel,video + text,tease-2-tg,Tomorrow 19:00 + what to expect,,ai,G3,scheduled,agent,
+T-0,2026-10-23,18:00,Europe/London,internal,-,go/no-go,go-no-go,Go/no-go list,,-,G4,pending,owner,Kill switch drill
+T-0,2026-10-23,19:00,Europe/London,tiktok,@claudia,video 9:16,ep1-tt,Episode 1 full (62 s),,ai,G3,scheduled,agent,Hook in first 2 s; on-screen keywords for search
+T-0,2026-10-23,19:00,Europe/London,x,@claudia_onchain,video thread,ep1-x,Episode 1 native video + 2-part thread,https://useclaudia.xyz/claudia?utm_source=x&utm_medium=social&utm_campaign=rainy-diaries&utm_content=ep1-x,ai,G3,scheduled,agent,Only link post today
+T-0,2026-10-23,19:05,Europe/London,instagram,@claudia,reel,ep1-ig,Episode 1 Reel (no TikTok watermark),,ai,G3,scheduled,agent,Max 5 hashtags
+T-0,2026-10-23,19:05,Europe/London,youtube,Claudia,short,ep1-yt,Episode 1 Short (≤ 3 min),,ai,G3,scheduled,agent,Altered/synthetic toggle on
+T-0,2026-10-23,19:10,Europe/London,telegram,@claudia_channel,video + link,ep1-tg,Episode 1 + cadence promise,https://useclaudia.xyz/claudia?utm_source=telegram&utm_medium=social&utm_campaign=rainy-diaries&utm_content=ep1-tg,ai,G3,scheduled,agent,
+T-0,2026-10-23,19:10,Europe/London,claudia thread,general,text,ep1-thread,Episode 1 is up + where to watch,,ai,G3,scheduled,agent,claudia post general
+T+1,2026-10-24,10:00,Europe/London,x,@claudia_onchain,text,thanks,Thank-you with one non-price number,,ai,G3,draft,agent,Approve after numbers are in
+T+3,2026-10-26,15:00,Europe/London,tiktok,@claudia,video 9:16,faq-tt,Top 5 questions answered,,ai,G3,draft,agent,
+T+4,2026-10-27,19:00,Europe/London,tiktok,@claudia,video 9:16,ep2-tt,Episode 2,,ai,G3,scheduled,agent,Cadence: Tue + Fri
+T+4,2026-10-27,19:00,Europe/London,x,@claudia_onchain,video,ep2-x,Episode 2 native video,,ai,G3,scheduled,agent,
+T+7,2026-10-30,12:00,Europe/London,internal,-,report,report,Post-launch report,,-,G5,pending,owner,

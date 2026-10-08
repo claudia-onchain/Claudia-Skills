@@ -1,0 +1,199 @@
+# Discord server blueprint for an AI influencer / agent community.
+# Copy, rename, and build it by hand (Server Settings) or with your own setup bot.
+# Values marked "edit" are the ones you change. Checked against Discord settings 2026-10.
+
+server:
+  name: "Claudia Creators"            # edit
+  description: "Creators and their agents learning to create, grow and earn. Claudia is an AI character run by a small team."
+  verification_level: medium          # low | medium | high | highest  (high during raids)
+  explicit_media_filter: all_members
+  default_notifications: only_mentions
+  require_2fa_for_moderation: true
+  community: true
+  rules_channel: rules
+  updates_channel: mod-updates        # Discord's admin notices; mod-only
+  safety:
+    raid_protection_alerts: true
+    dm_spam_filter: true
+    alerts_channel: mod-log
+
+roles:                                # top to bottom = highest to lowest
+  - name: Owner
+    color: "#ff6fa5"
+    permissions: [administrator]
+    hoist: true
+  - name: Admin
+    color: "#ff9a6b"
+    permissions: [manage_server, manage_roles, manage_channels, manage_webhooks, ban_members, kick_members,
+                  moderate_members, manage_messages, manage_threads, mention_everyone, view_audit_log]
+    hoist: true
+  - name: Moderator
+    color: "#7fb8ff"
+    permissions: [kick_members, ban_members, moderate_members, manage_messages, manage_threads, view_audit_log]
+    hoist: true
+  - name: Helper
+    color: "#9ad1a0"
+    permissions: [manage_threads]     # can tidy forum posts, cannot punish
+    hoist: true
+  - name: Agent                       # bots; below Moderator so mods can time them out
+    color: "#b4b7bc"
+    permissions: []                   # all access granted per channel below
+    hoist: true
+  - name: Creator                     # onboarding answer
+    color: "#ece9e2"
+    permissions: []
+  - name: Builder                     # onboarding answer
+    color: "#ece9e2"
+    permissions: []
+  - name: Partner                     # collab partners, given by Admin
+    color: "#d63a76"
+    permissions: []
+  - name: Feeds                       # opt-in from onboarding; unlocks the FEEDS category
+    permissions: []
+  - name: Muted
+    permissions: []                   # deny overrides on every category
+  - name: "@everyone"
+    # Rules screening stops anyone posting until they accept the rules, so @everyone can hold the
+    # normal member permissions. Discord onboarding needs >= 5 default channels @everyone can view + send in.
+    permissions: [view_channels, read_message_history, send_messages, send_messages_in_threads, create_public_threads,
+                  embed_links, attach_files, add_reactions, connect, speak, request_to_speak]
+
+categories:
+  - name: START
+    overrides:
+      "@everyone": { allow: [view_channels, read_message_history], deny: [send_messages, create_public_threads] }
+    channels:
+      - { name: start-here, type: text, topic: "What this is, official links, how to get roles." }
+      - { name: rules, type: text, topic: "Read before posting. Admins never DM first." }
+      - { name: announcements, type: announcement, topic: "Drops and events. Agent posts here via webhook after approval.",
+          webhook: claudia-announce }
+
+  - name: COMMUNITY
+    overrides:
+      "@everyone": { allow: [view_channels, send_messages] }
+      Muted: { deny: [send_messages, send_messages_in_threads, add_reactions, speak] }
+    channels:
+      - { name: general, type: text, slowmode_seconds: 5 }
+      - { name: introductions, type: text, slowmode_seconds: 60, topic: "Who are you, what does your agent do?" }
+      - { name: show-your-work, type: forum, tags: [video, image, thread, skill, agent],
+          guidelines: "One post per piece. Include the network and what you want feedback on. Label AI content." }
+      - { name: ask-claudia, type: text, slowmode_seconds: 30,
+          topic: "Mention the bot. Answers are AI-generated and checked by the team. No financial advice.",
+          bot_access: { Agent: { allow: [view_channels, send_messages, read_message_history] } } }
+      - { name: off-topic, type: text, slowmode_seconds: 5 }
+
+  - name: LEARN
+    overrides:
+      "@everyone": { allow: [view_channels, send_messages_in_threads, create_public_threads], deny: [send_messages] }
+      Muted: { deny: [send_messages_in_threads, create_public_threads] }
+    channels:
+      - { name: skills-drops, type: announcement, webhook: claudia-skills }
+      - { name: help, type: forum, tags: [x, tiktok, instagram, youtube, telegram, discord, sdk, cli],
+          guidelines: "Search first. Never post keys, tokens or wallet secrets. Mods will never DM you." }
+      - { name: resources, type: text }
+
+  - name: FEEDS                       # machine feeds live apart from conversation
+    overrides:
+      "@everyone": { deny: [view_channels] }
+      Feeds: { allow: [view_channels, read_message_history], deny: [send_messages] }
+    default_notifications: none
+    channels:
+      - { name: thread-feed, type: text, webhook: claudia-thread-feed,
+          topic: "Mirror of the Claudia agent thread (claudia watch thread --notify discord). Not financial advice." }
+      - { name: launch-feed, type: text, webhook: claudia-launch-feed,
+          topic: "New launches on the board. Machine-posted, unvetted, not financial advice. No buy calls here." }
+
+  - name: LIVE
+    overrides:
+      "@everyone": { allow: [view_channels, connect, request_to_speak] }
+      Muted: { deny: [connect] }
+    channels:
+      - { name: stage, type: stage, topic: "Office hours, Thursdays 19:00 UTC." }
+      - { name: cowork, type: voice, user_limit: 10 }
+
+  - name: STAFF
+    overrides:
+      "@everyone": { deny: [view_channels] }
+      Moderator: { allow: [view_channels, send_messages] }
+      Admin: { allow: [view_channels, send_messages] }
+    channels:
+      - { name: mod-log, type: text, topic: "AutoMod alerts + manual actions, same columns as mod-log.csv" }
+      - { name: mod-chat, type: text }
+      - { name: mod-updates, type: text }
+      - { name: agent-drafts, type: text, topic: "Agent posts waiting for approval (host posts previews here)." }
+
+onboarding:
+  enabled: true
+  rules_screening: true
+  default_channels: [start-here, rules, announcements, general, introductions, show-your-work, ask-claudia, help, off-topic]
+  # >= 7 defaults and >= 5 where @everyone can view + send: general, introductions, show-your-work, ask-claudia,
+  # off-topic (checked 2026-10)
+  questions:
+    - title: "What brings you here?"
+      required: true
+      single_select: false
+      options:
+        - { label: "I'm a creator", roles: [Creator], channels: [show-your-work] }
+        - { label: "I build agents", roles: [Builder], channels: [help, resources] }
+        - { label: "Just watching", roles: [], channels: [] }
+    - title: "Want machine feeds?"
+      required: false
+      options:
+        - { label: "Agent thread mirror", roles: [Feeds], channels: [thread-feed] }
+        - { label: "Launch feed (unvetted, not financial advice)", roles: [Feeds], channels: [launch-feed] }
+  server_guide:
+    welcome: "Welcome! Claudia is an AI character; posts from her are AI-generated and approved by the team. Admins never DM first."
+    todos:
+      - { title: "Read the rules", channel: rules }
+      - { title: "Say hi", channel: introductions }
+      - { title: "Share something you made", channel: show-your-work }
+    resources:
+      - { title: "Skills library", url: "https://useclaudia.xyz/skills" }
+
+automod:
+  - name: Mention spam
+    type: mention_spam
+    threshold: 5
+    actions: [block, "alert:mod-log", "timeout:10m"]
+    exempt_roles: [Admin, Moderator]
+  - name: Suspected spam
+    type: spam
+    actions: [block, "alert:mod-log"]
+  - name: Flagged words
+    type: keyword_preset
+    presets: [profanity, slurs, sexual_content]
+    actions: [block, "alert:mod-log"]
+  - name: Scams
+    type: keyword
+    keywords: ["seed phrase", "recovery phrase", "private key", "validate wallet", "wallet validation", "sync wallet",
+               "claim airdrop", "dm me for support", "support team will dm", "guaranteed returns", "send sol and receive"]
+    regex: ['(?i)\b(claim|connect)[-_]?(wallet|airdrop)\b']
+    actions: [block, "alert:mod-log", "timeout:1h"]
+    exempt_roles: [Admin, Moderator, Agent]
+  - name: Shill links
+    type: keyword
+    keywords: ["pump.fun/coin/*", "dexscreener.com/*", "t.me/+*", "discord.gg/*"]
+    actions: [block, "alert:mod-log"]
+    exempt_channels: [launch-feed, resources]
+    exempt_roles: [Admin, Moderator, Agent]
+  - name: Impersonator names
+    type: member_profile
+    keywords: ["claudia support", "admin", "moderator", "official support", "helpdesk"]
+    actions: [block_interactions, "alert:mod-log"]
+
+integrations:
+  webhooks:
+    - { name: claudia-announce, channel: announcements, used_by: "@useclaudia/social discord account (approved posts only)" }
+    - { name: claudia-skills, channel: skills-drops, used_by: "@useclaudia/social" }
+    - { name: claudia-thread-feed, channel: thread-feed, used_by: "claudia watch thread --notify discord" }
+    - { name: claudia-launch-feed, channel: launch-feed, used_by: "claudia watch launches --claudia-only --notify discord" }
+  bots:
+    - name: Claudia (bot)
+      role: Agent
+      intents: [guilds, guild_messages, message_content]
+      channels: [ask-claudia]
+      never: [mention_everyone, dm_members, manage_anything]
+
+security_runbook:
+  raid: ["pause invites", "pause DMs", "verification high", "slowmode 30s on COMMUNITY", "social.killSwitch(true) if agent posts are queued"]
+  leaked_webhook: ["delete webhook", "create new", "claudia connect discord", "check audit.jsonl for unknown posts"]

@@ -1,0 +1,51 @@
+{
+  "$schema_note": "Media kit data. One source for the markdown kit, a website card and a PDF render. Replace every value; keep keys.",
+  "version": "1",
+  "character": {
+    "name": "Claudia",
+    "pronoun": "she",
+    "positioning": "Cosy-city AI creator: sunset bedrooms, rainy streets, travel and the agents she runs with.",
+    "isAI": true,
+    "aiDisclosure": "Claudia is an AI character: every image, video and voice of her is generated, and every post is labelled as AI-generated on-platform. The account is operated by Example Studio Ltd, United Kingdom. A person reviews and approves every sponsored post before it goes live. Claudia doesn't claim to have personally used a product; sponsored content shows your product in generated scenes, quotes your claims as yours, or shares what our team found when we tested it. Paid posts are marked #ad and use each platform's paid-partnership label.",
+    "website": "https://useclaudia.xyz"
+  },
+  "operator": {
+    "legalName": "Example Studio Ltd",
+    "contactName": "Operator name",
+    "role": "Partnerships",
+    "email": "partnerships@example.com",
+    "country": "GB"
+  },
+  "window": { "label": "Last 30 days", "from": "2026-09-01", "to": "2026-09-30", "pulledOn": "2026-10-01", "medianOverPosts": 20 },
+  "stats": [
+    { "platform": "tiktok", "handle": "@claudia_onchain", "followers": 41200, "medianViews": 12400, "engagementRate": 0.058, "erFormula": "(likes+comments+shares+saves)/views", "postsPer30d": 18 },
+    { "platform": "x", "handle": "@claudia_onchain", "followers": 18900, "medianViews": 3100, "engagementRate": 0.021, "erFormula": "engagements/impressions (X definition)", "postsPer30d": 240 },
+    { "platform": "instagram", "handle": "@claudia.onchain", "followers": 9400, "medianViews": 9800, "engagementRate": 0.046, "erFormula": "(likes+comments+saves+shares)/accounts reached", "postsPer30d": 12 }
+  ],
+  "topPost": { "platform": "tiktok", "url": "https://www.tiktok.com/@claudia_onchain/video/0000000000000000000", "views": 412000, "multipleOfMedian": 33.2, "includedInMedians": false },
+  "audience": {
+    "source": "platform analytics, last 30 days",
+    "countries": [ { "code": "US", "pct": 0.38 }, { "code": "GB", "pct": 0.17 }, { "code": "DE", "pct": 0.07 } ],
+    "age": { "18-24": 0.34, "25-34": 0.41, "35-44": 0.16, "45+": 0.09 },
+    "genderAsReported": { "female": 0.46, "male": 0.51, "other_or_unknown": 0.03 },
+    "note": "Audience is concentrated in English-speaking markets and 18-34."
+  },
+  "pillars": [
+    { "name": "Sunset room talks", "format": "9:16 talking-to-camera, 30-60 s", "exampleUrl": "https://www.tiktok.com/@claudia_onchain/video/0000000000000000001", "why": "Direct address plus a question hook; 71% watched past 3 s" },
+    { "name": "Rainy-city nights", "format": "9:16 selfie run, 8-15 s loops", "exampleUrl": "https://www.instagram.com/reel/EXAMPLE1/", "why": "High sends: people forward it to friends" },
+    { "name": "Agents at work", "format": "X thread + screen clip", "exampleUrl": "https://x.com/claudia_onchain/status/0000000000000000002", "why": "Explains a real agent workflow; most new follows per post" }
+  ],
+  "caseStudies": [
+    { "brand": "Organic test", "period": "2026-08", "platform": "tiktok", "goal": "Drive sign-ups to the creator skills library", "deliverable": "1 video + 1 X thread", "result": "38k views (3.1x median), 4.4% ER by views, 1,120 link clicks, 96 sign-ups via UTM", "learned": "A how-to with a visible result outperformed the vibe edit 3:1", "quote": null }
+  ],
+  "deliverables": [
+    { "id": "tiktok-video", "label": "TikTok video, 30-90 s", "fromUsd": 500 },
+    { "id": "ig-reel", "label": "Instagram Reel (collab post)", "fromUsd": 350 },
+    { "id": "x-thread", "label": "X thread, 4-6 posts, pinned 48 h", "fromUsd": 180 },
+    { "id": "bundle-city-night", "label": "Bundle: City Night (TikTok + Reel + Short + X thread + Telegram post)", "fromUsd": 1090 }
+  ],
+  "addOns": ["organic usage 30d +25%", "paid usage 30d +40%", "category exclusivity 30d +20%", "rush +25%", "custom scene set from $250"],
+  "turnaroundBusinessDays": 7,
+  "exclusions": ["Paid promotion of tokens, exchanges, trading or 'earn' products", "Gambling", "Adult content", "Medical or weight-loss claims", "Political ads", "Products aimed at under-18s", "Testimonials written as personal use"],
+  "footer": "AI-generated character. Operated by Example Studio Ltd. Nothing in this kit is a guarantee of views or sales."
+}

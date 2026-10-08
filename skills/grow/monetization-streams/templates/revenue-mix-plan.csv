@@ -1,0 +1,9 @@
+stream,type,eligible_now,start_month,hours_per_month,low_monthly_usd,high_monthly_usd,confidence,actual_last_month_usd,disclosure,risk,owner
+Brand deals (2 per month),direct,yes,2026-11,10,600,2400,medium,0,#ad + Paid partnership + AI label,Sponsor fit; no financial products,operator
+Wallpaper and preset packs,owned product,yes,2026-11,6,120,600,medium,0,AI-made product page + licence,Refund requests,agent drafts / operator approves
+Telegram Stars weekly bonus diary,membership,yes,2026-10,4,40,220,low,0,Paid post states what's inside,Perk must ship weekly,agent
+Telegram Ad Platform,platform payout,yes,2026-10,0,5,30,low,0,Telegram labels ads,Ad categories,operator
+UGC licensing (AI character content),direct,yes,2027-01,8,0,900,low,0,Brand keeps AI label; no testimonials,Usage terms,operator
+YouTube fan funding,platform payout,no,2027-01,0,0,80,low,0,Altered/synthetic toggle,Threshold not met,agent
+TikTok Creator Rewards,platform payout,no,—,0,0,0,low,0,—,Fully AI content reported ineligible,—
+monthly_costs,cost,—,—,—,85,85,high,85,—,X API ~$9 + generation ~$60 + posting service $16,operator

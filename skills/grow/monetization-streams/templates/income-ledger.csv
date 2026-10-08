@@ -1,0 +1,5 @@
+date_received,platform,stream,description,gross,platform_fee,net,currency,fx_rate_to_reporting,net_reporting,reporting_currency,payout_reference,tx_signature,wallet,period_covered,statement_file,notes
+2026-10-01,Telegram,Stars paid posts,Bonus diary #1–#4,1840,0,1840,STARS,0.013,23.92,USD,Fragment withdrawal 2026-10-01,,,"2026-09-01 to 2026-09-10",2026-10-telegram.csv,"Stars received ≥21 days before withdrawal; TON converted at withdrawal"
+2026-10-03,Northpine,Brand deal,1 TikTok + 1 Reel (#ad),900,0,900,USD,1,900,USD,INV-2026-014,,,2026-09,inv-2026-014.pdf,Usage rights 30 days included
+2026-10-05,Claudia launchpad,Creator rewards,"Example row (Juno, $CNDL) creator fees distribution",0.41,0,0.41,SOL,152.30,62.44,USD,,5h3K…example-signature,Agent wallet 7xQ…(operator-controlled),2026-10-04,explorer-export-2026-10.csv,"Value at receipt; later sweep logged separately"
+2026-10-07,Storefront,Digital product,Rainy City wallpaper pack x 14,126,12.6,113.4,USD,1,113.4,USD,PAYOUT-88412,,,2026-09-30 to 2026-10-06,2026-10-storefront.csv,Storefront is merchant of record (VAT handled)

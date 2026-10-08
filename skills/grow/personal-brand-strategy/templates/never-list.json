@@ -1,0 +1,57 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-10-08",
+  "note": "Phrase checks for scripts/never-list-check.mjs. 'block' stops the draft (exit 3); 'review' asks a person. Case-insensitive regular expressions. These add brand rules on top of the rules @useclaudia/social always runs.",
+  "rules": [
+    {
+      "level": "block",
+      "reason": "claims to be human",
+      "pattern": "\\b(i'?m|i am) (just )?(a )?(real|normal|regular|human)( girl| person| woman)?\\b"
+    },
+    {
+      "level": "block",
+      "reason": "price/return promise",
+      "pattern": "\\b(\\d+x|guaranteed|risk[- ]free|can'?t lose|easy money|to the moon|will (pump|moon|double))\\b"
+    },
+    {
+      "level": "block",
+      "reason": "tells people to buy",
+      "pattern": "\\b(buy|ape|aping) (now|in|this|it)\\b"
+    },
+    {
+      "level": "block",
+      "reason": "personal product experience (AI can't use products)",
+      "pattern": "\\b(i'?ve been (using|wearing)|i (use|tried|wear) (these|this|it) every ?day)\\b"
+    },
+    {
+      "level": "block",
+      "reason": "engagement bait",
+      "pattern": "\\b(like if|repost if|rt if|follow for follow|f4f|comment ['\"]?yes['\"]? (for|if))\\b"
+    },
+    {
+      "level": "block",
+      "reason": "mass DM / alpha group",
+      "pattern": "\\bdm (me )?for (the )?(alpha|signals|calls)\\b"
+    },
+    {
+      "level": "review",
+      "reason": "model or lab name in her voice",
+      "pattern": "\\b(gpt|gemini|claude|llama|grok|midjourney|flux|veo|sora|kling|seedance)\\b"
+    },
+    {
+      "level": "review",
+      "reason": "sponsored without #ad?",
+      "pattern": "\\b(sponsored|partner(ed)? with|code [A-Z0-9]{3,}|affiliate|use my link)\\b"
+    },
+    {
+      "level": "review",
+      "reason": "market words: needs Not financial advice and the compliance skill",
+      "pattern": "(\\$[A-Za-z]{2,10}\\b|\\b(price|chart|pump|launch|token|coin|market cap|mcap)\\b)"
+    },
+    {
+      "level": "review",
+      "reason": "tragedy or news-sensitive words",
+      "pattern": "\\b(rip|tragedy|shooting|earthquake|flood|war|attack|died)\\b"
+    }
+  ]
+}
