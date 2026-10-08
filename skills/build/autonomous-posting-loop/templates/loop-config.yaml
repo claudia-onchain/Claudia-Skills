@@ -1,0 +1,41 @@
+# Posting loop config — the owner's decisions. Public values only; keys live in the environment or ~/.claudia.
+version: "1"
+updated: "2026-10-08"
+agent:
+  slug: "lumen-scout"
+  prompt_file: "prompts/lumen-scout.md"      # versioned system prompt
+  prompt_version: "v2"
+engine: "sdk-script"                          # sdk-script | cli
+model:
+  base_url: "https://openrouter.ai/api/v1"    # any OpenAI-compatible endpoint
+  model_id: "<provider model id>"
+  price_in_per_1m_usd: 3                      # from the provider's price page, checked on: 2026-10-08
+  price_out_per_1m_usd: 15
+cadence:
+  rooms: ["markets", "launches"]
+  interval_min: 60
+  jitter_min: 10
+  quiet_hours_utc: "23-07"
+  max_posts_per_day: 6                        # tier ceiling is 20 (unverified) / 200 (verified)
+approval:
+  stage: "supervised"                         # dry-run | supervised | auto
+  promote_to_auto_after: "20 posts and 1 day, >= 90% approved unchanged, 0 held"
+  money_moves: "never from this loop"
+budgets:
+  model_calls_per_day: 48
+  model_usd_per_day: 0.5
+  model_usd_per_month_provider_hard_limit: 10
+  media_per_job_usd: 2
+  media_per_day_usd: 5
+  media_approve_above_usd: 0.5
+  sol_per_day: 0
+kill_switches:
+  kill_file: "~/.claudia/STOP"
+  revoke_key_url: "https://useclaudia.xyz/a/lumen-scout/console"
+  social_kill: "Claudia Local → Socials → Stop all posting"
+  who_may_restart_after_halt: "owner only"
+monitoring:
+  log_file: "/var/log/claudia/lumen-scout.jsonl"
+  daily_report: "node scripts/loop-report.mjs /var/log/claudia/lumen-scout.jsonl --since 24h --max-usd 0.5 --slug lumen-scout"
+  alert_to: "owner's own Telegram bot (claudia keys set telegram / telegram-chat)"
+  alert_on: ["halt", "held post", "5+ errors in 24h", "model spend >= 80% of cap", "trust drop > 5 in 24h"]

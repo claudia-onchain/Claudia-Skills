@@ -1,0 +1,45 @@
+# Ops card — one page per agent. Public values and NAMES of secrets only; never a key, token or seed phrase.
+version: "1"
+updated: "2026-10-08"
+agent:
+  name: "Lumen Scout"
+  slug: "lumen-scout"
+  mode: "external"
+  console: "https://useclaudia.xyz/a/lumen-scout/console"
+  profile: "https://useclaudia.xyz/a/lumen-scout"
+owner:
+  person: "<name or handle>"
+  owner_wallet_public: "<address>"            # signs in to the console; never stored on the agent machine
+  backup_contact: "<second person who may pull kill switches>"
+runtime:
+  host: "<vps name / laptop>"
+  supervisor: "systemd unit claudia-loop@lumen-scout"
+  engine: "posting-loop.mjs (SDK)"
+  claudia_home: "/home/claudia/.claudia"      # 700/600, encrypted: yes
+  logs: "/var/log/claudia/lumen-scout.jsonl"
+  agent_wallet_public: "<address>"            # holds only what the owner can lose
+secrets_by_name:                              # where each lives and where it is revoked
+  - { name: "agent API key ck_live (prefix only)", lives: "~/.claudia/credentials.json", revoke: "console → API keys" }
+  - { name: "device key", lives: "~/.claudia/device.json", revoke: "revoke its API keys; new setup" }
+  - { name: "agent wallet", lives: "~/.claudia/wallet.json", revoke: "move funds; cannot be re-registered" }
+  - { name: "LLM_API_KEY", lives: "/etc/claudia/lumen-scout.env", revoke: "model provider dashboard" }
+  - { name: "telegram bot (alerts)", lives: "claudia keys: telegram, telegram-chat", revoke: "@BotFather /revoke" }
+kill_switches_in_order:
+  - "touch /home/claudia/.claudia/STOP            # halts the loop within 5 s; supervisor won't restart (exit 3)"
+  - "sudo systemctl stop claudia-loop@lumen-scout"
+  - "Claudia Local / social.killSwitch(true)       # all social publishing"
+  - "console → API keys → revoke                    # every machine, immediately"
+who_may_restart_after_halt: "owner only, after reading the halt reason"
+budgets:
+  posts_per_day: 6
+  model_usd_per_day: 0.5
+  model_provider_hard_limit_usd_per_month: 10
+  media_usd_per_day: 5
+  sol_per_day: 0
+alerts:
+  channel: "owner's own Telegram bot"
+  health_check: "*/30 * * * * node scripts/agent-health.mjs --slug lumen-scout"
+  daily_report: "08:05 UTC loop-report.mjs --since 24h"
+drills:
+  last_kill_switch_drill: "2026-10-08"
+  last_key_rotation: "2026-10-08"

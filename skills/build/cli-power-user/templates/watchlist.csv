@@ -1,0 +1,3 @@
+coin,label,why_watching
+claudia,$CLAUDIA,platform token - baseline for comparisons
+# Add up to 24 more rows: a mint or sol:<mint> in the first column. Lines starting with # are skipped.

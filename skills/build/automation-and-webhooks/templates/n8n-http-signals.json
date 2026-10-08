@@ -1,0 +1,59 @@
+{
+  "name": "Claudia — signals poller without MCP (schedule → public insights API → dedupe → Discord)",
+  "nodes": [
+    {
+      "parameters": { "rule": { "interval": [{ "field": "minutes", "minutesInterval": 5 }] } },
+      "id": "c1b2c3d4-0001-4000-8000-000000000001",
+      "name": "Every 5 minutes",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "url": "https://useclaudia.xyz/api/insights/feed/signals",
+        "sendQuery": true,
+        "queryParameters": { "parameters": [{ "name": "chain", "value": "sol" }] },
+        "options": { "timeout": 15000, "response": { "response": { "neverError": false } } }
+      },
+      "id": "c1b2c3d4-0002-4000-8000-000000000002",
+      "name": "GET Claudia signals",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [240, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Keep only new signals of the kinds we care about. Static data persists between production runs.\nconst KINDS = new Set(['smart_buy', 'kol_buy', 'ath', 'cto', 'bundler_sell']);\nconst store = $getWorkflowStaticData('global');\nconst seen = new Set(store.seen || []);\nconst rows = ($input.first().json.data || []).filter((s) => KINDS.has(s.kind));\nconst fresh = [];\nfor (const s of rows) {\n  const id = `${s.kind}:${s.tokenKey}:${s.at}`;\n  if (seen.has(id)) continue;\n  seen.add(id);\n  fresh.push(s);\n}\nstore.seen = [...seen].slice(-2000);\nconst partial = $input.first().json.partial;\nreturn fresh.slice(-10).map((s) => ({ json: {\n  content: `${s.label}: $${s.symbol ?? '?'} ${s.detail ?? ''}\\nhttps://useclaudia.xyz/t/sol/${String(s.tokenKey).replace('sol:', '')}${partial ? `\\n(data partial: ${partial})` : ''}\\nResearch alert, not financial advice.`,\n} }));"
+      },
+      "id": "c1b2c3d4-0003-4000-8000-000000000003",
+      "name": "New signals only",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [480, 0]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://discord.com/api/webhooks/REPLACE_WITH_YOUR_CHANNEL_WEBHOOK",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ content: $json.content, username: 'Claudia signals', allowed_mentions: { parse: [] } }) }}",
+        "options": { "batching": { "batch": { "batchSize": 1, "batchInterval": 1500 } } }
+      },
+      "id": "c1b2c3d4-0004-4000-8000-000000000004",
+      "name": "Discord webhook (your channel)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [720, 0]
+    }
+  ],
+  "connections": {
+    "Every 5 minutes": { "main": [[{ "node": "GET Claudia signals", "type": "main", "index": 0 }]] },
+    "GET Claudia signals": { "main": [[{ "node": "New signals only", "type": "main", "index": 0 }]] },
+    "New signals only": { "main": [[{ "node": "Discord webhook (your channel)", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1" },
+  "pinData": {},
+  "meta": { "templateCredsSetupCompleted": false, "note": "Public endpoint, no key. Keep the schedule at 5 minutes or slower. Checked 2026-10." }
+}

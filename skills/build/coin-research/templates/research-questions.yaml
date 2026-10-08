@@ -1,0 +1,64 @@
+# Which call answers which question. Plan the fewest calls; run them one after another.
+# cost: rough weight on the shared GMGN budget (holders 5 is the heaviest). cache: typical lifetime.
+questions:
+  - ask: "What is this coin and how is it trading?"
+    mcp: get_coin_insights
+    cli: claudia insights <mint>
+    sdk: insights.token(key)
+    cost: 3
+    cache: 60s
+  - ask: "Is it safe? / what are the red flags?"
+    mcp: get_coin_scores
+    cli: claudia insights <mint>   # Scores block
+    sdk: insights.scores(key)
+    cost: 3
+    cache: 60s
+    then: "../rug-check/SKILL.md"
+  - ask: "Who holds it? Any bundlers / KOLs / whales?"
+    mcp: get_holders { by: holders, tag: <tag>, limit: 30 }
+    cli: claudia holders <mint> --limit 30 [--tag bundler]
+    sdk: insights.holders(key, { limit: 30 })
+    cost: 5
+    cache: 45s
+  - ask: "Who made money trading it?"
+    mcp: get_holders { by: traders }
+    cli: claudia holders <mint> --traders
+    sdk: insights.traders(key)
+    cost: 5
+    cache: 60s
+  - ask: "Does the dev have a history?"
+    mcp: get_dev_profile
+    cli: claudia insights <mint>   # Dev block
+    sdk: insights.dev(key)
+    cost: 2
+    cache: 30m
+  - ask: "What is this wallet / KOL doing?"
+    mcp: get_wallet { address }
+    cli: claudia watch wallet <address>
+    sdk: insights.wallet(address)
+    cost: 6
+    cache: 30s-10m
+  - ask: "What are KOLs / smart money buying?"
+    mcp: get_feed { kind: kol | smart, side: buy }
+    cli: claudia feed kol --side buy
+    sdk: feeds.kol({ side: "buy" })
+    cost: 1
+    cache: 30s
+  - ask: "What is trending / hot?"
+    mcp: get_trending { interval: 1h, order: volume }
+    cli: claudia feed trending --interval 1h --order volume
+    sdk: insights.trending({ interval: "1h", order: "volume" })
+    cost: 3
+    cache: 60s
+  - ask: "Show me the chart"
+    mcp: get_candles { resolution: 5m, limit: 120 }
+    cost: 2
+    cache: 60s
+  - ask: "What does Claudia think?"
+    cli: claudia ask <mint> "<question>"
+    sdk: ask(key, question)
+    limit: "3 per minute, 15 per day per IP"
+rules:
+  - "One coin at a time; never fan out over a whole list."
+  - "Report updatedAt and partial with every answer."
+  - "Research, not financial advice."

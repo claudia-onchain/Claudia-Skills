@@ -1,0 +1,23 @@
+# Claudia CLI aliases and functions — paste into ~/.zshrc or ~/.bashrc. Read-only unless noted.
+
+alias cl='claudia'
+alias cld='claudia doctor'
+alias clh='claudia home'
+alias clk='claudia feed kol --side buy --limit 20'
+alias cls='claudia feed smart --limit 20'
+alias clt='claudia feed trending --interval 1h --order volume --limit 15'
+
+# Research one coin: scores + bundler/sniper/insider counts in the top 50
+clr() {
+  claudia insights "${1:?coin}" --json | jq -r '.key, (.scores | to_entries[] | select(.value|type=="object" and has("grade")) | "  \(.key): \(.value.value) \(.value.grade) — \(.value.summary)")'
+  claudia holders "$1" --limit 50 --json | jq -c '[.holders[].tags[]] | group_by(.) | map({(.[0]): length}) | add | {bundler, sniper, insider, fresh}'
+}
+
+# Watch a coin's big trades and send them to your own Telegram bot (keys set once with claudia keys set telegram / telegram-chat)
+clw() { claudia watch "${1:?coin}" --min-usd "${2:-1000}" --notify telegram; }
+
+# Quote only — never sends anything (money commands stay manual: claudia buy … then type y)
+clq() { claudia quote "${1:?coin}" buy "${2:-0.01}"; }
+
+# Safer defaults for scripting
+export NO_COLOR=1

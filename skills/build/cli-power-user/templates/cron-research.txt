@@ -1,0 +1,14 @@
+# crontab -e   (read-only research; nothing here posts, signs or spends)
+# Use absolute paths: cron has a minimal PATH. Logs rotate weekly via the date in the filename.
+SHELL=/bin/bash
+PATH=/usr/local/bin:/usr/bin:/bin
+NO_COLOR=1
+
+# 08:05 UTC every day: watchlist research CSV (cli-batch.mjs spaces calls by 3 s, max 25 coins)
+5 8 * * * cd "$HOME/claudia-research" && node scripts/cli-batch.mjs --file watchlist.csv --gap 3 > "out/research-$(date +\%F).csv" 2>> "logs/batch-$(date +\%G-W\%V).log"; code=$?; [ $code -eq 5 ] && echo "$(date -u) rate limited, skipped" >> "logs/batch-$(date +\%G-W\%V).log"
+
+# Every hour at :17: KOL buys snapshot (JSON) for later analysis
+17 * * * * claudia feed kol --side buy --json >> "$HOME/claudia-research/out/kol-$(date +\%F).jsonl" 2>/dev/null
+
+# Monday 09:00 UTC: health check mailed to the owner by cron's MAILTO if it fails
+0 9 * * 1 claudia doctor --json > /dev/null || echo "claudia doctor failed with exit $?"

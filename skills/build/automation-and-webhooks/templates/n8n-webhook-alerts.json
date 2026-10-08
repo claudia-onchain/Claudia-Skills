@@ -1,0 +1,108 @@
+{
+  "name": "Claudia — trade alerts from claudia watch (webhook → token check → filter → Telegram)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "claudia-trades-7f3k2q",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "id": "a1b2c3d4-0001-4000-8000-000000000001",
+      "name": "Claudia webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0],
+      "webhookId": "claudia-trades-7f3k2q"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "strict" },
+          "conditions": [
+            {
+              "id": "tok-1",
+              "leftValue": "={{ $json.query.token }}",
+              "rightValue": "PASTE-THE-SAME-LONG-RANDOM-TOKEN-YOU-PUT-IN-THE-WEBHOOK-URL",
+              "operator": { "type": "string", "operation": "equals" }
+            },
+            {
+              "id": "src-1",
+              "leftValue": "={{ $json.body.source }}",
+              "rightValue": "claudia",
+              "operator": { "type": "string", "operation": "startsWith" }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "a1b2c3d4-0002-4000-8000-000000000002",
+      "name": "Token check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [240, 0]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "loose" },
+          "conditions": [
+            {
+              "id": "usd-1",
+              "leftValue": "={{ $json.body.data.amountUsd }}",
+              "rightValue": 1000,
+              "operator": { "type": "number", "operation": "gte" }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "a1b2c3d4-0003-4000-8000-000000000003",
+      "name": "Big trades only",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [480, -80]
+    },
+    {
+      "parameters": {
+        "chatId": "-1001234567890",
+        "text": "={{ $json.body.text }}\n{{ ($json.body.data.tags || []).length ? 'Tags: ' + $json.body.data.tags.join(', ') : '' }}\nhttps://useclaudia.xyz/t/sol/{{ ($json.body.data.key || '').replace('sol:', '') }}\nResearch alert, not financial advice.",
+        "additionalFields": { "appendAttribution": false, "disable_web_page_preview": true }
+      },
+      "id": "a1b2c3d4-0004-4000-8000-000000000004",
+      "name": "Telegram (private alerts chat)",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [720, -160],
+      "credentials": { "telegramApi": { "id": "", "name": "Your Telegram bot" } }
+    },
+    {
+      "parameters": {},
+      "id": "a1b2c3d4-0005-4000-8000-000000000005",
+      "name": "Drop (bad token or small trade)",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [720, 80]
+    }
+  ],
+  "connections": {
+    "Claudia webhook": { "main": [[{ "node": "Token check", "type": "main", "index": 0 }]] },
+    "Token check": {
+      "main": [
+        [{ "node": "Big trades only", "type": "main", "index": 0 }],
+        [{ "node": "Drop (bad token or small trade)", "type": "main", "index": 0 }]
+      ]
+    },
+    "Big trades only": {
+      "main": [
+        [{ "node": "Telegram (private alerts chat)", "type": "main", "index": 0 }],
+        [{ "node": "Drop (bad token or small trade)", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "settings": { "executionOrder": "v1" },
+  "pinData": {},
+  "meta": { "templateCredsSetupCompleted": false, "note": "Claudia skills library · automation-and-webhooks · checked 2026-10 against n8n 2.x node versions" }
+}
