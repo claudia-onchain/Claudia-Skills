@@ -1,0 +1,30 @@
+{
+  "_comment": "Input for social.draft() for one Short. Replace every value; keep labels.ai true for any realistic AI character. The first description line repeats the hook; the second is always the AI disclosure. Add '#ad' as the first line only when the Short is paid, gifted, affiliate or promotes the operator's own product, and tick 'paid promotion' in Studio.",
+  "text": "she said one drink (she lied)\n\nClaudia is an AI-generated character.\nNight Shift, part 4. More from her city: https://useclaudia.xyz/claudia?utm_source=youtube&utm_medium=shorts&utm_campaign=night-shift\n\n#nightout #djset",
+  "media": [
+    { "path": "./exports/night-shift-04-shorts.mp4" }
+  ],
+  "targets": [
+    { "account": "youtube:UCxxxxxxxxxxxxxxxxxxxxxx" }
+  ],
+  "labels": { "ai": true, "ad": false },
+  "options": {
+    "youtube": {
+      "title": "she said one drink (she lied)",
+      "privacyStatus": "private",
+      "categoryId": "24",
+      "tags": ["night out", "dj set", "ai character", "night shift"],
+      "language": "en",
+      "madeForKids": false,
+      "shorts": true
+    }
+  },
+  "review": {
+    "related_video": "Night Shift part 1 (set in Studio)",
+    "series": "Night Shift",
+    "part": 4,
+    "finance_content": "none",
+    "approved_by": "",
+    "approved_at": ""
+  }
+}
