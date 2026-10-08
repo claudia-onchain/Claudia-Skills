@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "claudia-local": { "command": "npx", "args": ["-y", "@useclaudia/mcp", "--server", "data"] },
+    "claudia": { "url": "https://useclaudia.xyz/mcp/data" },
+    "claudia-trade": {
+      "url": "https://useclaudia.xyz/mcp/trade",
+      "headers": { "Authorization": "Bearer REPLACE_WITH_YOUR_CMK_KEY_IN_LM_STUDIO_ONLY" }
+    }
+  }
+}

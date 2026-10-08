@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "claudia": { "url": "https://useclaudia.xyz/mcp/data" },
+    "claudia-trade": { "url": "https://useclaudia.xyz/mcp/trade" },
+    "claudia-local": { "command": "npx", "args": ["-y", "@useclaudia/mcp", "--server", "data"] }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "model": "gpt-5.6-terra",
+  "input": "Using Claudia, give me the safety, holder and chart scores for $CLAUDIA and say how old the data is. Research only.",
+  "tools": [
+    {
+      "type": "mcp",
+      "server_label": "claudia",
+      "server_url": "https://useclaudia.xyz/mcp/data",
+      "require_approval": "never"
+    },
+    {
+      "type": "mcp",
+      "server_label": "claudia-trade",
+      "server_url": "https://useclaudia.xyz/mcp/trade",
+      "authorization": "SET_FROM_ENV_CLAUDIA_MCP_KEY",
+      "allowed_tools": ["quote", "get_trade_status"],
+      "require_approval": "always"
+    }
+  ]
+}

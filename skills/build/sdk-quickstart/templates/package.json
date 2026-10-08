@@ -1,0 +1,19 @@
+{
+  "name": "my-claudia-agent",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "snapshot": "node scripts/coin-snapshot.mjs claudia",
+    "bot": "tsx src/bot.ts",
+    "bot:dry": "DRY_RUN=1 tsx src/bot.ts"
+  },
+  "dependencies": {
+    "@useclaudia/sdk": "^0.2.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}

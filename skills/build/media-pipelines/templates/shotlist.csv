@@ -1,0 +1,8 @@
+id,kind,model,prompt,text,aspect,duration_sec,n,resolution
+banner,image,google/nano-banana-2.1,"Wide 3:2 film still: Claudia (late twenties, glossy black jaw-length bob, heavy bangs with copper-red streaks, small orange hair clip, gold hoops, light freckles) on a bed by a sunset window with a city skyline, olive star-embroidered knit, warm golden light, shallow depth of field. Adult. No text.",,3:2,,1,2K
+portrait,image,openai/gpt-image-2.5-flare,"Studio portrait of Claudia on a cobalt blue backdrop, green blazer, knowing half-smile, soft key light, 85mm look. Adult. No text, no logos.",,2:3,,1,
+room-talk,video,google/omni-flash,"Vertical selfie video: Claudia talks to camera in her lamp-lit bedroom, laughs halfway, slight handheld sway, natural skin texture. Adult. Silent.",,9:16,8,,
+rain-run,video,fal/kling-2.6-pro,"Vertical running selfie in light rain across a warehouse lot at dusk, Claudia laughing, wet hair strands, neon reflections in puddles. Adult.",,9:16,5,,
+voiceover,speech,elevenlabs/flash-v2.5,,"gm. Three things on the board today, in plain numbers. None of it is advice.",,,,
+bed-loop,music,google/lyria-3.5,"lofi bedroom beat, warm keys, soft vinyl crackle, 80 bpm, no vocals",,,30,,
+# Lines starting with # are ignored. Leave model empty to use the default for that kind (first provider with a key).

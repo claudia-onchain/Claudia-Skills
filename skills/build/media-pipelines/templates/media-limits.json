@@ -1,0 +1,29 @@
+{
+  "_about": "Presets for createMedia({ limits }). US dollars; days and months are UTC. Pick one, copy its object as `limits`. Checked against @useclaudia/media 0.2.0 on 2026-10-08.",
+  "sketching": {
+    "perJobUsd": 0.25,
+    "perDayUsd": 2,
+    "perMonthUsd": 20,
+    "approveAboveUsd": 0.1
+  },
+  "weekly-batch": {
+    "perJobUsd": 2,
+    "perDayUsd": 10,
+    "perMonthUsd": 100,
+    "approveAboveUsd": 0.5,
+    "perProvider": { "fal": { "perJobUsd": 1 }, "heygen": { "perDayUsd": 5 } }
+  },
+  "video-week": {
+    "perJobUsd": 3,
+    "perDayUsd": 25,
+    "perMonthUsd": 200,
+    "approveAboveUsd": 1,
+    "perProvider": { "google": { "perDayUsd": 15 }, "fal": { "perDayUsd": 15 } }
+  },
+  "agent-facing": {
+    "perJobUsd": 1,
+    "perDayUsd": 5,
+    "perMonthUsd": 50,
+    "approveAboveUsd": 0
+  }
+}

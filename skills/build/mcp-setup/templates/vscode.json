@@ -1,0 +1,6 @@
+{
+  "servers": {
+    "claudia": { "type": "http", "url": "https://useclaudia.xyz/mcp/data" },
+    "claudia-local": { "type": "stdio", "command": "npx", "args": ["-y", "@useclaudia/mcp", "--server", "data"] }
+  }
+}

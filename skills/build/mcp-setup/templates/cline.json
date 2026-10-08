@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "claudia": {
+      "type": "streamableHttp",
+      "url": "https://useclaudia.xyz/mcp/data",
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "$comment": "Cap presets for Claudia trading and media spend. SOL caps are per trade and per UTC day. Apply CLI caps with `claudia config set max-sol-per-trade <n>` and `claudia config set max-sol-per-day <n>`; put the mcpEnv block in your MCP client's server env; pass mediaLimits to createMedia({ limits }). The stricter of the CLI and MCP caps always wins. Fund the agent wallet with no more than walletFundingSol.",
+  "updated": "2026-10-08",
+  "presets": {
+    "cautious": {
+      "for": "first week, any automated agent, demos",
+      "walletFundingSol": 0.05,
+      "cli": { "max-sol-per-trade": 0.01, "max-sol-per-day": 0.03 },
+      "mcpEnv": {
+        "CLAUDIA_MCP_ALLOW_TRADES": "false",
+        "CLAUDIA_MCP_MAX_SOL_PER_TRADE": "0.01",
+        "CLAUDIA_MCP_MAX_SOL_PER_DAY": "0.03",
+        "CLAUDIA_MCP_APPROVE_ABOVE_USD": "0",
+        "CLAUDIA_MCP_MEDIA_PER_DAY_USD": "2"
+      },
+      "slippageBps": 500,
+      "mediaLimits": { "perJobUsd": 0.5, "perDayUsd": 2, "perMonthUsd": 20, "approveAboveUsd": 0 },
+      "agentLoop": { "allowTrades": false, "auto": false }
+    },
+    "standard": {
+      "for": "the defaults; a person confirms each trade",
+      "walletFundingSol": 0.25,
+      "cli": { "max-sol-per-trade": 0.05, "max-sol-per-day": 0.2 },
+      "mcpEnv": {
+        "CLAUDIA_MCP_ALLOW_TRADES": "true",
+        "CLAUDIA_MCP_MAX_SOL_PER_TRADE": "0.05",
+        "CLAUDIA_MCP_MAX_SOL_PER_DAY": "0.2",
+        "CLAUDIA_MCP_APPROVE_ABOVE_USD": "0",
+        "CLAUDIA_MCP_MEDIA_PER_DAY_USD": "5"
+      },
+      "slippageBps": 1000,
+      "mediaLimits": { "perJobUsd": 2, "perDayUsd": 10, "perMonthUsd": 100, "approveAboveUsd": 0.5 },
+      "agentLoop": { "allowTrades": false, "auto": false }
+    },
+    "active": {
+      "for": "an experienced person who still confirms every trade; the wallet holds only what they accept losing",
+      "walletFundingSol": 0.6,
+      "cli": { "max-sol-per-trade": 0.1, "max-sol-per-day": 0.5 },
+      "mcpEnv": {
+        "CLAUDIA_MCP_ALLOW_TRADES": "true",
+        "CLAUDIA_MCP_MAX_SOL_PER_TRADE": "0.1",
+        "CLAUDIA_MCP_MAX_SOL_PER_DAY": "0.5",
+        "CLAUDIA_MCP_APPROVE_ABOVE_USD": "1",
+        "CLAUDIA_MCP_MEDIA_PER_DAY_USD": "10"
+      },
+      "slippageBps": 1500,
+      "mediaLimits": { "perJobUsd": 3, "perDayUsd": 20, "perMonthUsd": 200, "approveAboveUsd": 1 },
+      "agentLoop": { "allowTrades": true, "auto": false, "maxSol": 0.05 }
+    }
+  },
+  "never": [
+    "caps above the agent wallet's intended balance",
+    "agentLoop auto + allowTrades without the person choosing it explicitly",
+    "an agent raising its own caps"
+  ]
+}

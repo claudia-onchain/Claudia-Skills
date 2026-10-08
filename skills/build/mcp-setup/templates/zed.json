@@ -1,0 +1,6 @@
+{
+  "context_servers": {
+    "claudia": { "url": "https://useclaudia.xyz/mcp/data" },
+    "claudia-local": { "command": "npx", "args": ["-y", "@useclaudia/mcp", "--server", "data"] }
+  }
+}

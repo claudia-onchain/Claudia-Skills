@@ -1,0 +1,13 @@
+Rug check · $<TICKER> · sol:<full mint> · data <N> s old<, partial: <text>>
+<r> red · <a> amber · <g> green · <u> unknown
+
+Red:
+- <check>: <value>. <one plain sentence on why it matters>
+Amber:
+- <check>: <value>.
+Unknown: <checks that had no data>
+Also noticed: <linked funders / bundlers still holding / cto signal / none>
+
+Verdict: <verdict line from the table — never "safe", "legit", "buy" or "not a rug">
+I can re-check in <15–30> minutes; young coins change quickly.
+Research aid, not financial advice.

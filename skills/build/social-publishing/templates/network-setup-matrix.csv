@@ -1,0 +1,22 @@
+network,tier,auth,key_names,redirect,text_limit,media,threads,replies,inbox,daily_cap,cost_checked_2026_10,gotchas
+x,direct,OAuth 2.0 PKCE loopback,x,http://127.0.0.1:3939/oauth/callback (exact),280 weighted,4 images or 1 video,yes,only when mentioned/quoted,mentions (paid reads),10,"$0.015/post, $0.20 with link, $0.01/reply, $0.005/read",Turn on the Automated label; one $cashtag per post
+telegram,direct,bot token,telegram,—,4096 (caption 1024),10 any type,yes,yes,getUpdates,50,none,Bot must be a channel admin with Post Messages
+discord,direct,webhook URL or bot token,discord,—,2000,10 files (20 MiB),yes (forums too),bot only,bot only,50,none,Webhooks can't read or reply; never pings @everyone
+bluesky,direct,handle + app password,bluesky,—,300 graphemes,4 images or 1 video,yes,yes,notifications,30,none,Never the main password; video needs verified email
+mastodon,direct,OAuth PKCE on your instance or access token,mastodon,http://127.0.0.1:3939/oauth/callback,500,4,yes,yes,notifications,30,none,Tick 'automated account'
+farcaster,direct (Neynar),API key + signer UUID,"neynar, neynar-signer",—,320 bytes,2 embeds (links),yes,yes,notifications,20,150 Neynar credits/cast,Media must be permanent https URLs
+nostr,direct,nsec + relays,nostr,—,long text,links or Blossom uploads,yes,yes,relay subscription,30,none,Use a key made for the agent
+linkedin,direct,OAuth via relay,linkedin,https://useclaudia.xyz/relay/oauth/callback,3000,1-20 images or 1 video,no,no,no,5,none,Reconnect every 60 days (no refresh token)
+youtube,direct,Google OAuth PKCE loopback (Desktop client),youtube,any http://127.0.0.1 port,title 100 / description 5000 bytes,1 video,—,comment replies,comments,5,100 uploads/day/project,Private until Google audits the project; Testing tokens expire in 7 days
+buffer,service,API key,buffer,—,per channel,public media links (relay),X/Threads threads,—,—,10,Buffer plan,No uploads: local files go via the media relay
+zernio,service,API key,zernio,—,per account,presigned uploads,X threads,—,—,10,billed per connected account,TikTok SELF_ONLY unless privacyLevel set
+upload-post,service,API key,upload-post,—,per account,direct uploads,—,—,—,10,entry plan 10 uploads/month,Facebook pageId and Pinterest boardId needed
+instagram,v2,OAuth via relay (own Meta app),instagram,https://useclaudia.xyz/relay/oauth/callback,2200,1 image/reel or 10-item carousel,—,—,—,20,none,JPEG only; needs mediaRelay
+facebook,v2,OAuth via relay (own Meta app),facebook,https://useclaudia.xyz/relay/oauth/callback,long,photos / video,—,—,—,10,none,Each Page is its own account
+threads,v2,OAuth via relay (own Meta app),threads,https://useclaudia.xyz/relay/oauth/callback,500,up to 20,yes,yes,—,25,none,Needs mediaRelay
+tiktok,v2,OAuth PKCE loopback (Desktop app),tiktok,http://127.0.0.1:3939/oauth/callback,2200,1 video,—,—,—,5,none,Private until audited; no crypto promotion at all
+pinterest,v2,OAuth via relay,pinterest,https://useclaudia.xyz/relay/oauth/callback,title 100 / 800,1-5 images or 1 video,—,—,—,10,none,Trial access = only you see pins
+whatsapp,skip,—,—,—,—,—,—,—,—,—,—,Meta bans crypto promotion on WhatsApp Business
+reddit,later,—,—,—,—,—,—,—,—,—,—,Manual API approval; most crypto subreddits ban bots
+snapchat,later,—,—,—,—,—,—,—,—,—,—,Posting API is allowlist-only
+zora,skip,—,—,—,—,—,—,—,—,—,—,Every post mints a coin

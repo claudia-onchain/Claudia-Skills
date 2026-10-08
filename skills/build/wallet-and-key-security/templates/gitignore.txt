@@ -1,0 +1,18 @@
+# Keep Claudia secrets out of git. Append to .gitignore in any project that runs an agent.
+.claudia/
+.claudia-local/
+**/.claudia/
+.env
+.env.*
+!.env.example
+*.key
+*-keypair.json
+id.json
+wallet.json
+device.json
+credentials.json
+oauth.json
+keys.json
+vault.json
+# Claude Code project MCP config may hold headers; reference ${VARS} instead of literal keys, or keep it local:
+# .mcp.json

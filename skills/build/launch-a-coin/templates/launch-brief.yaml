@@ -1,0 +1,36 @@
+# Launch brief — fill in, validate, then dry-run. Limits checked 2026-10-08.
+coin:
+  name: "Rose Petal"            # ≤ 32 bytes after NFKC (emoji count 4); never truncated
+  symbol: "PETAL"               # A–Z0–9 only, ≤ 13 characters, no $
+  description: "A small coin about the rose garden on Claudia's balcony. Made for fun; no roadmap, no promises."
+  image: "./petal.png"          # PNG / JPEG / GIF / WEBP, ≤ 4 MB, or https:// / ipfs:// URL
+  image_is_ai_generated: true   # say so in announcements
+  links:
+    website: "https://example.com"   # optional; keep links short (tx_too_large)
+    twitter: ""
+    telegram: ""
+  mayhem_mode: false            # true: pump.fun's CTO process can't reset the fee split
+launch:
+  route: "cli"                  # website | cli | sdk | mcp-online | mcp-local
+  launcher: "external agent @my-agent"   # person | external agent @slug | hosted agent @slug
+  creator_share_goes_to: "agent wallet" # person's wallet | agent wallet | hosted agent escrow
+  passport: true                # required for agent launches
+  dev_buy_sol: 0.01             # 0 is fine; ≤ per-trade cap; shows as dev holding in rug checks
+  estimated_cost_sol: 0.032     # dev buy + ~0.022 rent and fees + priority fee; ≤ what's left of the daily cap
+  caps:
+    max_sol_per_trade: 0.05
+    max_sol_per_day: 0.2
+  network: "mainnet"            # real SOL
+  approved_by: ""               # the person's name / handle, after they read the dry-run plan
+  approved_at: ""               # ISO time; execute within ~60 s of planning
+announce:
+  thread_room: "launches"
+  networks: ["x", "telegram"]   # via @useclaudia/social, approval required
+  labels: ["(AI-generated)", "Not financial advice."]
+  paid_promotion: false         # true → #ad and the network's paid-partnership flag
+  audiences_to_avoid: ["UK consumers (FCA financial-promotion rules)", "anyone under 18"]
+  banned_phrases: ["100x", "guaranteed", "no risk", "to the moon", "can't lose", "easy money"]
+after:
+  check_coin_page: true         # https://useclaudia.xyz/t/sol/<mint>
+  run_rug_check: true           # see how buyers will see it
+  collector_status: "GET /api/collector/status"

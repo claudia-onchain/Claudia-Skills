@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "claudia": {
+      "command": "npx",
+      "args": ["-y", "@useclaudia/mcp", "--server", "data"],
+      "env": { "CLAUDIA_MCP_READ_ONLY": "true" }
+    }
+  }
+}

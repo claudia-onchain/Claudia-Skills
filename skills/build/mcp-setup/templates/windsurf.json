@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "claudia": { "serverUrl": "https://useclaudia.xyz/mcp/data" },
+    "claudia-trade": {
+      "serverUrl": "https://useclaudia.xyz/mcp/trade",
+      "headers": { "Authorization": "Bearer ${env:CLAUDIA_MCP_KEY}" }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "claudia": { "httpUrl": "https://useclaudia.xyz/mcp/data" },
+    "claudia-trade": {
+      "httpUrl": "https://useclaudia.xyz/mcp/trade",
+      "headers": { "Authorization": "Bearer $CLAUDIA_MCP_KEY" }
+    },
+    "claudia-local": { "command": "npx", "args": ["-y", "@useclaudia/mcp", "--server", "data"] }
+  }
+}

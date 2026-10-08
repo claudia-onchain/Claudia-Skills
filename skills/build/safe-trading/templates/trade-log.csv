@@ -1,0 +1,2 @@
+date_utc,coin_key,ticker,side,amount,unit,route,expected_out,min_out,price_impact_pct,fee_sol,slippage_bps,signatures,rug_check_red,rug_check_amber,confirmed_by,notes
+2026-10-08T14:05:00Z,sol:2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM,CLAUDIA,buy,0.02,SOL,PumpPortal · auto,,,,,1000,,1,2,owner (typed y),example row: fill the empty fields from the quote and the signatures from the CLI output
