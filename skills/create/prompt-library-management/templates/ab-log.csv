@@ -1,0 +1,3 @@
+date,prompt_id,base_version,model,variable,a,b,seed,runs_each,a_pass_rate,b_pass_rate,cost_usd,winner,new_version,notes
+2026-10-14,claudia.p3.lounge-sunglasses,1.0.0,openai/gpt-image-2.5-flare,lens,35mm,50mm,none,4,0.50,0.75,0.40,b,1.1.0,50mm keeps the face adult; 35mm widened the jaw
+2026-10-13,claudia.p4.rain-selfie,1.0.0,fal/kling-3-pro,arm constraint line,none,"arm and bracelet stay bottom-left",none,3,0.33,0.67,10.38,b,1.1.0,without the line the selfie arm drifted and fused with the bracelet

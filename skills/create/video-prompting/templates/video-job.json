@@ -1,0 +1,19 @@
+{
+  "_comment": "GenerateRequest for @useclaudia/media generate() or the MCP generate_media tool. Remove _comment fields before sending.",
+  "kind": "video",
+  "model": "fal/kling-3-pro",
+  "prompt": "Same woman as the first frame: Claudia, 28-year-old woman (adult), glossy black jaw-length bob, heavy straight bangs with copper-orange streak panels, small orange hair clip, thin gold hoops, light freckles, warm brown eyes, oversized black oval sunglasses. Her face, bob, copper bang streaks and orange clip stay identical throughout. 0-3s: she leans back against a dark wood dresser and sways gently, closed-lip smile. 3-6s: she raises one hand and slides the sunglasses down her nose with one finger, revealing warm brown eyes, and looks straight into the lens. 6-8s: a slow knowing half-smile and a small head tilt. A lamp-lit vintage lounge with butter-yellow walls, framed botanical cross-stitch prints and a brass table lamp with a pleated cream shade. Static medium shot at chest height, very slow push-in. Warm tungsten light, soft shadows, 35mm film grain. No music, no dialogue.",
+  "negativePrompt": "teenager, childlike face, extra fingers, warped hands, morphing face, flicker, extra hair streaks, text, logo",
+  "refs": ["frames/lounge-01-first.jpg"],
+  "aspect": "9:16",
+  "durationSec": 8,
+  "brand": "claudia",
+  "meta": {
+    "_comment_audio": "false = silent, cheaper on fal/BytePlus video ($0.112/s instead of $0.168/s on Kling 3 Pro, checked 2026-10)",
+    "audio": false,
+    "series": "lounge",
+    "episode": "01",
+    "shot": "s1",
+    "promptVersion": "lounge-reveal@v3"
+  }
+}

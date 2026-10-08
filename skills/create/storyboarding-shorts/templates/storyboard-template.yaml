@@ -1,0 +1,58 @@
+# Storyboard — copy per episode. Prices from `claudia generate ... --dry-run` estimates.
+episode:
+  series: ""            # e.g. "rain-check"
+  number: ""            # e.g. "01"
+  premise: ""           # one sentence
+  payoff: ""            # one line
+  pillar: ""
+  length_s: 0           # 15 | 22 | 30
+  platforms: [tiktok, instagram-reels, youtube-shorts]
+  label: "AI-generated" # plus native flags at publish time
+  hook_text: ""         # on-screen, <= 6 words
+  caption: ""           # see captions-and-hooks
+
+continuity:
+  character: "[CLAUDIA ID v1]"
+  look: ""              # wardrobe look name from the bible + string
+  hair_state: ""        # dry | damp | wet; bangs neat; clip in
+  accessories: ""       # sunglasses state, jewellery
+  light: ""             # time of day + source + colour
+  props: ""             # cat, laptop, mug…
+  direction: ""         # e.g. "she moves left to right of frame"
+  capture: ""           # selfie | camera (don't mix inside a scene)
+
+audio:
+  line_ids: []          # from the TTS line sheet
+  music: ""             # licensed track or none (see music-and-sound-for-shorts)
+  ambience: ""
+
+shots:
+  - id: s1
+    act: hook           # hook | build | payoff
+    start_s: 0.0
+    play_s: 0.0
+    gen_s: 0            # >= play_s + 0.5, valid for the model
+    framing: ""         # MS | MCU | CU | insert | WS
+    camera: ""          # ONE move
+    action: ""          # one verb + detail
+    line: ""            # or empty
+    audio: ""
+    first_frame: ""     # board/s1.jpg -> frames/s1-first.jpg after promotion
+    last_frame: ""      # optional
+    model: ""
+    est_usd: 0.0
+    transition_out: ""  # hard cut | match cut on <x> | crossfade 0.25 | whip pan | lens cover
+    notes: ""
+
+budget:
+  stills_usd: 0.0
+  video_usd: 0.0        # sum of est_usd
+  voice_usd: 0.0
+  lipsync_usd: 0.0
+  reroll_buffer_pct: 50
+  total_usd: 0.0
+
+approvals:
+  board_approved_by: ""
+  board_approved_at: ""
+  budget_cap_usd: 0.0

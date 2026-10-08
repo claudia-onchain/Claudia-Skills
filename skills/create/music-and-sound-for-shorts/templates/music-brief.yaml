@@ -1,0 +1,39 @@
+# Music brief — one per short. Fill, then turn "prompt" into the generate command.
+short_id: ""                 # e.g. club-0415
+platforms: []                # tiktok, reels, shorts, x
+account_type: brand          # brand | personal — Claudia is always brand
+licence_path: ""             # cml | meta-sound-collection | yt-audio-library | elevenlabs-music | lyria | suno-v6-pro | licensed-library
+length_s: 0
+sync_points:                 # moments the music must hit, in seconds
+  - { t: 0.0, what: "" }
+function: ""                 # bed under voice | carries the clip | hit on a reveal | loop
+genre_texture: ""
+bpm: 0
+key_mood: ""
+instrumentation: ""
+structure: ""                # e.g. "starts full energy, lift on bar 3, tail fades on a bar line"
+vocals: "instrumental, no vocals"
+mix_notes: ""                # e.g. "leave 1-3 kHz clear for voice"
+forbidden: "no artist, song, label or lyric references"
+prompt: ""                   # assembled: genre_texture, bpm, key_mood, instrumentation, structure, vocals
+model: ""                    # google/lyria-3-clip | elevenlabs/music-v2.5 | google/lyria-3.5
+max_usd: 0.10
+
+# Pre-filled beds for Claudia's four recurring clips
+presets:
+  bedroom:
+    bpm: 82
+    prompt: "warm lo-fi hip-hop bed, 82 BPM, dusty Rhodes chords, soft vinyl crackle, brushed drums, round sub bass, gentle and unobtrusive, steady loop with no build, leaves room for a voice, instrumental, no vocals"
+    model: google/lyria-3-clip
+  club:
+    bpm: 124
+    prompt: "deep house club groove, 124 BPM, four-on-the-floor kick, offbeat open hats, rolling bassline, short filtered chord stabs, big-room reverb as heard from the dancefloor, 8-bar build into a drop at 6 seconds, instrumental"
+    model: elevenlabs/music-v2.5
+  lounge:
+    bpm: 108
+    prompt: "late-70s disco-soul lounge groove, 108 BPM, wah guitar, warm bass, string pad swell, light tambourine, intimate and playful, a small lift on bar 3 for a reveal moment, instrumental, no vocals"
+    model: elevenlabs/music-v2.5
+  rain:
+    bpm: 140
+    prompt: "bright indie-pop run, 140 BPM, jangly clean electric guitars, driving floor-tom beat, airy synth pad, euphoric and a little chaotic, starts immediately at full energy, instrumental, no vocals"
+    model: google/lyria-3-clip

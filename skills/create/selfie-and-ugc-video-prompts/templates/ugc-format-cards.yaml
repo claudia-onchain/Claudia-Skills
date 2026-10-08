@@ -1,0 +1,87 @@
+# UGC format cards. Each card = first frame (image) + video prompt + settings. Prices: package table, checked 2026-10.
+# {ID} = full [CLAUDIA ID v1] block · {SHORT} = short video ID block:
+#   "Same woman as the first frame: Claudia, 28-year-old woman (adult), black jaw-length bob, heavy bangs with copper-orange
+#    streak panels, orange clip, gold hoops, freckles."
+# {UGC} = "24mm phone front camera look, slightly above eye level, slight sensor noise, vertical 9:16, natural skin texture
+#    with visible pores, no text, no UI overlay"
+
+cards:
+  - id: room-talk
+    name: Talking to camera, bedroom by day
+    first_frame: "{ID} signature look. A paused frame from a front-camera phone video: she holds the phone at arm's length, mid-laugh. Plain white walls, round ceiling smoke detector, open doorway behind her, soft overcast window light from the right. {UGC}"
+    video: "{SHORT} She talks to her phone's front camera held at arm's length. 0-4s: she laughs and playfully sticks her tongue out, then grins. 4-9s: she glances away as if remembering something, then back to the lens. 9-14s: she says the line and laughs. Claudia (amused, warm, English): \"<line, max 15 words>\". Same white room, overcast window light. Handheld, subtle natural shake, slight auto-exposure breathing. Room tone only, no music."
+    model: fal/kling-3-pro
+    duration_s: 14
+    audio: "native (≈ $2.35) or silent + lip-sync (≈ $1.57 + lip-sync)"
+
+  - id: rain-run
+    name: Running selfie in the rain
+    first_frame: "{ID} signature look, chunky silver chain bracelet on the outstretched wrist. Selfie at arm's length while running, arm and bracelet large in the foreground, laughing with her mouth open. Empty warehouse lot in light rain, wet asphalt with puddle reflections, roll-up loading-dock doors, yellow bollards, overcast blue-grey dusk sky. Slight motion blur, a raindrop on the lens edge. {UGC}"
+    video: "{SHORT} She runs across the wet warehouse lot holding the phone at arm's length, laughing; chain bracelet in the foreground. 0-4s: she jogs toward the lens in light rain. 4-8s: she half-spins to show the loading docks, then looks back and laughs. The camera moves with her arm, bouncing with each step. SFX: footsteps splashing, rain on concrete, breathless laughter. No music."
+    model: fal/kling-3-pro
+    duration_s: "8 + 5 stitched (or fal/wan-2.6 15 s at 720p, $1.50)"
+    audio: native ambience
+
+  - id: mirror-check
+    name: Mirror outfit check
+    first_frame: "{ID} signature look. She stands in front of a tall bedroom mirror filming her reflection with one phone in her right hand, hip popped, half-smile. Warm lamp light, trailing plants and a pinned photo wall behind her. Mirror selfie, vertical 9:16, natural skin texture."
+    video: "Claudia, 28-year-old woman with a black bob, copper-orange bang streaks and an orange clip, films herself in a tall bedroom mirror, turns left then right to show her olive star crop cami and red tartan mini skirt, then lowers the phone and grins at her reflection. One phone in her right hand. Handheld, warm lamp light."
+    model: fal/hailuo-2.3
+    duration_s: 10
+    audio: silent; add music in edit
+
+  - id: grwm-clip
+    name: Get ready with me — the clip goes on last
+    first_frame: "{ID} cosy black jumper. She sits at a small vanity with bulb lights, phone propped against the mirror, holding the small orange clip between two fingers near her bangs. Warm bulb light. {UGC}"
+    video: "{SHORT} Phone propped on the vanity, static. 0-5s: she clips the small orange clip into the side of her bangs and checks it. 5-10s: she puts in one thin gold hoop, then the other. 10-15s: she layers the star pendant chain over her collarbone, looks into the lens and gives a knowing half-smile. Claudia (soft, conspiratorial): \"the clip goes on last. that's the whole secret.\" Room tone, no music."
+    model: fal/kling-3-pro
+    duration_s: 15
+    audio: native (≈ $2.52)
+
+  - id: dusk-walk
+    name: Walk-and-talk at blue hour
+    first_frame: "{ID} cosy black knit jumper, sleeves over her hands. Walking along a New York sidewalk at blue hour, phone held in front of her, smiling mid-sentence, shop lights blurred behind. {UGC}"
+    video: "{SHORT} She walks along the sidewalk at blue hour holding the phone in front of her, talking and smiling; the camera moves at her walking pace with a gentle bounce. Passers-by are blurred and anonymous. Claudia (relaxed): \"the city did the lighting, I just showed up.\" Ambient: traffic hum, footsteps, a distant siren. No music."
+    model: google/omni-flash
+    duration_s: "~10 (say 'a 10-second clip' in the prompt)"
+    audio: native
+
+  - id: desk-pov
+    name: Desk POV with the cat
+    first_frame: "First-person POV of a desk at night: a laptop with a single pink butterfly sticker, a black butterfly mug, two monitors with abstract candlestick charts (no readable text), a grey tabby cat with white paws asleep by the keyboard, warm desk lamp and purple-rose monitor glow. Vertical 9:16, phone camera look."
+    video: "First-person POV at the desk. Claudia's hand (fine-line star tattoo on the wrist, chunky silver chain bracelet) reaches in and gently strokes the sleeping grey tabby; the cat stretches and yawns. Slight handheld drift. No readable text on the screens. Room tone, keyboard click, a soft purr."
+    model: fal/kling-3-pro
+    duration_s: 8
+    audio: native (≈ $1.34)
+
+  - id: bed-storytime
+    name: Storytime lying in bed
+    first_frame: "{ID} cosy black jumper. Lying on her side on a white duvet, phone held above her face, golden-hour window light across her cheek, pinned photos softly behind. {UGC}"
+    video: "{SHORT} Lying on her side, phone above her face. 0-4s: she starts the story, rolls her eyes. 4-8s: she laughs into the pillow. 8-12s: she looks back up at the lens with a half-smile. Claudia (quiet, amused): \"so the cat is technically my CTO now.\" Golden-hour light. Room tone, no music."
+    model: fal/kling-3-pro
+    duration_s: 12
+    audio: native or silent + lip-sync
+
+  - id: plane-window
+    name: Airplane-window vlog
+    first_frame: "{ID} travel look, cream over-ear headphones around her neck. Window seat, sunset clouds outside the oval window, sleepy smile at the front camera. {UGC}"
+    video: "Claudia, 28-year-old woman with a black bob, copper-orange bang streaks, orange clip and cream headphones around her neck, turns her phone from the sunset clouds outside the airplane window back to her sleepy smile. Handheld, cabin light. Cabin engine hum."
+    model: fal/hailuo-2.3
+    duration_s: 6
+    audio: silent (add cabin hum SFX in edit)
+
+  - id: rooftop-dusk
+    name: Rooftop at dusk, wind
+    first_frame: "{ID} night-out look with sunglasses pushed up. Rooftop at dusk, skyline behind, wind lifting the ends of her bob, phone at arm's length, laughing. {UGC}"
+    video: "{SHORT} On a rooftop at dusk, wind moves the ends of her bob slightly while her bangs and copper streaks stay in place. She pans the phone across the skyline, then back to her face, and laughs. Handheld. Ambient: wind on the mic, distant traffic. No music."
+    model: fal/kling-3-pro
+    duration_s: 10
+    audio: native
+
+  - id: coffee-window
+    name: Morning coffee at the window
+    first_frame: "{ID} home look, grey hoodie. She holds a black butterfly mug by the window, steam rising, soft morning light, phone propped on the sill. {UGC}"
+    video: "{SHORT} Phone propped on the windowsill, static. She blows on the coffee, takes a sip, looks out at the street, then at the lens and raises the mug slightly. Soft morning light. Room tone, distant street sounds, no music."
+    model: fal/hailuo-2.3
+    duration_s: 6
+    audio: silent

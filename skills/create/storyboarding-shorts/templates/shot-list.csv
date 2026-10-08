@@ -1,0 +1,5 @@
+shot,act,start_s,play_s,gen_s,framing,camera,action,line,audio,first_frame,last_frame,model,est_usd,transition_out,notes
+s1,hook,0.0,2.5,5,MCU selfie,handheld arm moves with her,already running toward lens laughing,,rain + footsteps,frames/s1-first.jpg,,fal/kling-3-pro,0.84,cut on step,light rain only
+s2,build,2.5,5.0,6,MCU selfie,handheld arm,half-turns head to show loading docks then back,,rain + breath,frames/s2-first.jpg,,fal/kling-3-pro,1.01,crossfade 0.25 on turn,copper stays orange
+s3,build,7.5,3.0,6,insert,static,puddle splash under pink slippers,,splash SFX,frames/s3-first.jpg,,fal/hailuo-2.3,0.28,hard cut,no face
+s4,payoff,10.5,4.5,5,CU selfie,handheld arm slowing,stops and catches breath then grins,"rain check? never heard of her.",line + rain,frames/s4-first.jpg,,fal/kling-3-pro,0.84,loop to s1,lip-sync line

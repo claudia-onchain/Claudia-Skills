@@ -1,0 +1,6 @@
+shot,source_file,source_in_s,source_out_s,speed,transition_in,transition_dur_s,punch_in,audio,caption_text,notes
+1,work/rain-a.mp4,0.5,2.0,1.0,cut,0,1.0,ambience: rain on asphalt + her laugh,rain check?,start mid-laugh; skip settling frames 0-0.5
+2,work/rain-a.mp4,2.0,6.7,1.0,cut,0,1.0,footsteps splash + rain,never heard of her,cut on arm swing at 6.7
+3,work/rain-b.mp4,0.0,5.6,1.0,xfade,0.3,1.0,rain + distant traffic; music in at -18 dB,,rain-b generated from rain-a last frame
+4,work/rain-b.mp4,5.6,6.4,0.5,cut,0,1.1,music swell; L-cut laugh from shot 3,,slow-mo payoff on the spin
+5,work/rain-b.mp4,6.4,7.4,1.0,cut,0,1.0,music + rain; fade out 0.4,,end frame matches shot 1 for loop

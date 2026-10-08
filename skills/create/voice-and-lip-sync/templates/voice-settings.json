@@ -1,0 +1,24 @@
+{
+  "_comment": "Locked series voice for Claudia. Copy into your prompt library; never change mid-series. Values for @useclaudia/media meta.voiceSettings (ElevenLabs).",
+  "character": "claudia",
+  "engine": "elevenlabs",
+  "model": "elevenlabs/v3",
+  "voiceId": "<your designed voice id>",
+  "design": {
+    "prompt": "A woman in her late twenties with a soft, low-mid pitched voice and a smile in it. Relaxed, unhurried pacing with a light New York lilt, never a caricature. Warm and a little dry, as if telling a close friend something funny late at night. Clear consonants, laughs easily and lightly, drops to a near-whisper for asides. Close-mic, intimate, studio-clean recording with no background noise, no music.",
+    "seed": "<design seed>",
+    "guidance_scale": "<0-100 as used>",
+    "loudness": "<-1..1 as used>",
+    "designedAt": "2026-10-08"
+  },
+  "voiceSettings": {
+    "stability": 0.5,
+    "similarity_boost": 0.8,
+    "style": 0.15,
+    "use_speaker_boost": true
+  },
+  "tagsThatWork": ["[laughs]", "[whispers]", "[mischievously]", "[sighs]", "[curious]"],
+  "tagsToAvoid": ["[shouts]", "[crying]"],
+  "mastering": { "integratedLufs": -14, "truePeakDbtp": -1, "sampleRate": 48000 },
+  "fallback": { "model": "elevenlabs/multilingual-v2", "note": "for long narration without tags" }
+}

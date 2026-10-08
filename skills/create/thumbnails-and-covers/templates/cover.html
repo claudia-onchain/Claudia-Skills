@@ -1,0 +1,42 @@
+<!doctype html>
+<!-- Claudia cover template. Render with scripts/render-cover.sh. Edit only the values in :root and the text slots; the canvas is the window size passed to the script.
+     Size presets: 1280x720 (YouTube thumbnail), 1080x1920 (Reels/TikTok/Shorts cover), 1500x500 (X header), 1080x1350 (4:5 post).
+     Fonts: Barlow Condensed, DM Sans, DM Mono — SIL Open Font License, loaded from Google Fonts. -->
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=DM+Mono:wght@500&family=DM+Sans:wght@500;700&display=block" rel="stylesheet">
+<style>
+  :root {
+    --img: url("cover-still.jpg");     /* the generated still, next to this file (face big, eyes to lens, negative space on one side) */
+    --img-pos: 70% 30%;                       /* where her face sits: x% y% */
+    --bg: #0a0b0d; --ink: #ece9e2; --ink3: #80858c; --rose: #ff6fa5;
+    --title-size: 132px;                      /* 110–150 px on 1280x720; 150–190 px on 1080x1920 */
+    --pad: 64px;
+    --text-max: 46%;                          /* keep text off her face */
+    --text-bottom: 64px;                      /* vertical covers: 420px (above app UI, inside the 3:4 grid crop) */
+    --fade: 90deg;                            /* gradient direction: 90deg = dark on the left; 0deg = dark at the bottom (vertical) */
+  }
+  html, body { margin: 0; background: var(--bg); }
+  .c { position: relative; width: 100vw; height: 100vh; overflow: hidden; background: var(--bg) var(--img) var(--img-pos) / cover no-repeat; }
+  .c::before { content: ""; position: absolute; inset: 0; background: linear-gradient(var(--fade), rgba(10,11,13,.86) 0%, rgba(10,11,13,.55) 38%, rgba(10,11,13,0) 62%); }
+  .t { position: absolute; left: var(--pad); bottom: var(--text-bottom); max-width: var(--text-max); }
+  .label { font: 500 20px/1 "DM Mono", monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--rose); margin: 0 0 18px; }
+  .title { font: 800 var(--title-size)/.9 "Barlow Condensed", "Arial Narrow", sans-serif; letter-spacing: -.01em; text-transform: uppercase; color: var(--ink); margin: 0; }
+  .title em { font-style: normal; color: var(--rose); }
+  .rule { width: 120px; height: 2px; background: var(--rose); margin: 22px 0 0; }
+  .ai { position: absolute; right: 24px; bottom: 20px; font: 500 14px/1 "DM Mono", monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--ink3); background: rgba(10,11,13,.6); padding: 6px 8px; }
+</style>
+</head>
+<body>
+  <div class="c">
+    <div class="t">
+      <p class="label">01 · rain diaries</p>
+      <h1 class="title">Rain check? <em>Never</em></h1>
+      <div class="rule"></div>
+    </div>
+    <div class="ai">AI-generated</div>
+  </div>
+</body>
+</html>
