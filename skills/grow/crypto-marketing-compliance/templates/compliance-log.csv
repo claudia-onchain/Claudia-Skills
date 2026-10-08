@@ -1,0 +1,5 @@
+date_utc,post_id,networks,coin,mint,classification,reason,interest_disclosed,paid,sponsor,consideration,uk_route,eu_route,labels,approver,decision,evidence,notes
+2026-10-08T14:10Z,pst_7f3a,"x,telegram",$CHART,7xKq…pUmP,AMBER,"Q4 launched by agent; factual holder milestone; no CTA",yes,no,,,"none needed (no inducement)","none needed","ai,nfa",Dana,approved,previews/pst_7f3a.json,"one cashtag; link to useclaudia.xyz"
+2026-10-08T15:02Z,pst_7f9c,tiktok,$CHART,7xKq…pUmP,RED,"Q5 ticker on TikTok",yes,no,,,,,"ai,nfa",Dana,refused,previews/pst_7f9c.json,"rewritten as a no-ticker holder-chart explainer: pst_7fa1"
+2026-10-08T15:20Z,pst_7fa1,tiktok,,,GREEN,"education, no coin named",n/a,no,,,,,"ai",auto,approved,previews/pst_7fa1.json,"self-approved by loop: phrase check exit 0"
+2026-10-08T16:45Z,deal_0112,"x,instagram",$GLOW,,RED,"Q2 paid token promo; no FCA approver; no white paper",no,yes,"unnamed issuer via DM","2,000 USDC + 1% supply",none,none,,Sam,declined,dms/deal_0112.png,"declined with template reply; no post drafted"

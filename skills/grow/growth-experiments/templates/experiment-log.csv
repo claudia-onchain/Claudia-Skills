@@ -1,0 +1,6 @@
+exp_id,post_id,platform,variant,published_at_utc,slot,weekday,format,length_s,views,reach_non_followers,hold_3s_pct,avg_watched_pct,completion_pct,shares,sends,saves,comments,follows,profile_visits,link_clicks,utm_content,ai_label_on,ad_label,nfa_label,void,void_reason,notes
+exp-011,ig_18034,instagram,A,2026-10-06T17:00:00Z,evening,Mon,trial-reel,13,4120,3980,38.2,61.0,29.4,22,57,31,14,19,140,0,,yes,no,no,no,,"setup first: walks into frame"
+exp-011,ig_18035,instagram,B,2026-10-06T17:05:00Z,evening,Mon,trial-reel,13,4480,4350,47.9,68.5,36.1,35,91,40,21,31,198,0,,yes,no,no,no,,"starts mid-stride"
+exp-014,x_19712,x,A,2026-10-07T08:30:00Z,morning,Tue,post+clip,8,2310,,,,,,,,9,4,61,0,,yes,no,no,no,,
+exp-014,x_19718,x,B,2026-10-07T17:30:00Z,evening,Tue,post+clip,8,3890,,,,,,,,17,9,102,0,,yes,no,no,no,,
+exp-014,x_19744,x,A,2026-10-08T17:30:00Z,evening,Wed,post+clip,8,15200,,,,,,,,96,61,610,0,,yes,no,no,yes,"quoted by a 400k account; outlier","extend test by one slot"

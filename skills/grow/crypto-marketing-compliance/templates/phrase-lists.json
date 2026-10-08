@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "checked": "2026-10",
+  "note": "Extra phrases on top of the rules @useclaudia/social already enforces. Case-insensitive substring or regex match. Not legal advice.",
+  "blocked": [
+    { "pattern": "\\b\\d{2,}\\s?x\\b", "why": "return multiple (10x, 100x)" },
+    { "pattern": "guarantee", "why": "certainty claim" },
+    { "pattern": "can'?t lose|cannot lose|no[- ]lose", "why": "no-risk claim" },
+    { "pattern": "risk[- ]free|zero risk|no risk", "why": "no-risk claim" },
+    { "pattern": "safe (bet|play|investment|coin)", "why": "safety claim" },
+    { "pattern": "(will|gonna|going to|about to) (pump|moon|run|rip|send|explode|double|triple|fly|flip)", "why": "price prediction" },
+    { "pattern": "(will|gonna|going to) (hit|reach|touch) \\$?\\d", "why": "price target" },
+    { "pattern": "price target", "why": "price target" },
+    { "pattern": "next (1000x|100x|gem|bitcoin|solana)", "why": "return implication" },
+    { "pattern": "can only go up|only goes up|floor is in", "why": "certainty claim" },
+    { "pattern": "get in (now|early|before)|ape in|aping in|send it", "why": "call to action with urgency" },
+    { "pattern": "last chance|don'?t miss (out|this)|before it('?s| is) too late|only \\d+ (hours|minutes) left", "why": "FOMO / urgency" },
+    { "pattern": "easy money|quick money|get rich|financial freedom|passive income|life[- ]changing (money|gains)", "why": "easy-wealth claim" },
+    { "pattern": "\\d+(\\.\\d+)?\\s?% (daily|weekly|monthly|a day|a week|a month|apy guaranteed)", "why": "percentage return promise" },
+    { "pattern": "(hold|buy) to (win|enter|qualify)|airdrop for (follows|reposts|retweets|likes)|repost to win|rt to win", "why": "incentive to invest / engagement manipulation" },
+    { "pattern": "send (sol|eth|btc|usdc|crypto) (to|and) (receive|get)", "why": "scam pattern" },
+    { "pattern": "audited (so|=) (it'?s )?safe|insured|protected investment", "why": "false safety assurance" },
+    { "pattern": "i'?ve (used|been using|tried) (this|it) for", "why": "an AI persona cannot claim personal experience" }
+  ],
+  "caution": [
+    { "pattern": "\\bbuy\\b|\\bsell\\b|\\bhold\\b", "why": "may read as a recommendation; keep only if educational" },
+    { "pattern": "early|alpha|gem|undervalued|cheap", "why": "implies expected return" },
+    { "pattern": "partnership|listing|listed on", "why": "verify it is public and true before posting (inside information, false signals)" },
+    { "pattern": "giveaway|airdrop|whitelist|presale", "why": "check incentive rules and scam look-alikes" },
+    { "pattern": "launch(ing)? (today|tonight|now)", "why": "launch hype; disclose interest; no buy link on TikTok" },
+    { "pattern": "contract address|\\bca:", "why": "CA plus hype is a call to action; CA alone in a factual post is fine" },
+    { "pattern": "dyor|not financial advice|nfa", "why": "disclaimers don't fix a promotion; check the rest of the post" }
+  ],
+  "approved": [
+    "Not financial advice.",
+    "Memecoins can go to zero.",
+    "I launched $TICKER on Solana via Claudia and earn creator fees when it trades.",
+    "I hold $TICKER and may buy or sell at any time.",
+    "#ad Paid by [sponsor]: [amount and form].",
+    "Here is what the contract shows right now ([time] UTC): mint authority renounced, freeze authority renounced.",
+    "Numbers from the board at [time] UTC; they change fast.",
+    "I'm an AI character, so I can't use products myself. Here's what their public docs say.",
+    "I don't do price predictions.",
+    "Never send anyone your seed phrase. Not me, not 'support', not anyone."
+  ],
+  "interest_markers": [
+    "i launched", "i hold", "i own", "i earn creator fees", "creator rewards", "#ad", "paid by", "sponsored", "paid partnership", "marketing communication"
+  ]
+}

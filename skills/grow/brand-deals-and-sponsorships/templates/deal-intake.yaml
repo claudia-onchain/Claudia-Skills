@@ -1,0 +1,87 @@
+# One file per inbound offer: deals/2026-10-northpine-arc.yaml
+# The agent fills sections 1–3 and drafts replies; a person makes the decision and sends anything binding.
+deal_id: "2026-10-northpine-arc"
+received:
+  at: "2026-10-06T09:14:00Z"
+  via: "email"                               # email | x_dm | instagram_dm | tiktok | telegram | agency_portal
+  from_name: "Priya Okafor"
+  from_address: "priya.okafor@northpine.example"
+  claimed_brand: "Northpine"
+  claimed_role: "Creator partnerships lead"
+
+offer:
+  product: "Arc wireless headphones"
+  category: "consumer electronics"           # check platform-branded-content-rules.md
+  platforms: ["tiktok", "instagram", "x"]
+  deliverables_requested:
+    - "1 TikTok video, 20–30 s"
+    - "1 Instagram Reel (collab post with @northpine)"
+    - "1 X post"
+  dates: "live between 2026-11-03 and 2026-11-07"
+  budget_stated: "not stated"
+  usage_requested: "Spark Ads on TikTok for 30 days; brand reposts"
+  exclusivity_requested: "no other audio brands for 60 days"
+  payment_method: "bank transfer, net 30"
+  gifted_product: true
+
+vetting:                                     # see references/vetting-and-red-flags.md
+  domain_matches_official_site: true
+  domain_age_over_12_months: true
+  sender_verified_on_company_site: true
+  replied_via_address_from_official_site: true
+  attachments_opened: false
+  fee_requested_from_us: false
+  account_access_requested: false
+  category_allowed:
+    tiktok: true
+    instagram: true
+    x: true
+  crypto_or_financial_promotion: false        # true → decline or crypto-marketing-compliance first; never TikTok
+  wants_hidden_ad_or_hidden_ai: false
+  wants_first_person_experience_claims: "brief says 'share how you use them daily' → rewrite"
+  audience_fit: "good: cosy-city, commute, night-bus content already performs"
+  red_flags: []
+
+decision:
+  outcome: "quote"                            # decline | clarify | quote
+  decided_by: "operator (person)"
+  decided_at: "2026-10-06T15:00:00Z"
+  notes: "Counter exclusivity to 30 days with named competitors; price Spark Ads separately."
+
+quote:
+  line_items:
+    - { item: "TikTok video 25 s", usd: 900 }
+    - { item: "Instagram collab Reel", usd: 600 }
+    - { item: "X post + 3-part thread", usd: 150 }
+    - { item: "Production (generation + 5 h editing)", usd: 245 }
+    - { item: "Spark Ads authorization, 30 days", usd: 360 }
+    - { item: "Exclusivity: 4 named audio brands, 30 days", usd: 330 }
+    - { item: "Bundle discount (3 deliverables)", usd: -259 }
+  total_usd: 2326
+  floor_usd_private: 1900                     # never sent to the brand
+  valid_until: "2026-10-20"
+
+replies:
+  holding: |
+    Thanks for reaching out about Claudia! A person on her team reviews every partnership request and will reply
+    within 3 working days.
+  clarify: |
+    Thanks, Priya — this sounds like a good fit. Before we quote, could you share the budget range you've set aside,
+    the exact usage you need (organic reposts, Spark Ads, duration), and which brands the exclusivity would cover?
+    One note up front: Claudia is an AI character, so every post is labelled both as an ad and as AI-generated, and she
+    won't make first-person "I use these daily" claims. We can show the product honestly in her world and relay what a
+    real team member found when testing.
+  quote: |
+    Here's our proposal for Arc: [line items]. Total $2,326, valid until 20 Oct. Includes two rounds of revisions on
+    concept and on the final cut, proof of posting within 24 h, and a day-7 and day-30 report with native screenshots.
+    Payment: 50% on signing, 50% net 15 after posting.
+  decline: |
+    Thank you for thinking of Claudia. This one isn't a fit for us (<one honest reason>), so we'll pass this time.
+    Wishing you a great campaign.
+  decline_crypto: |
+    Thanks for the offer. Claudia doesn't do paid promotions of tokens, presales or trading products, and never on
+    TikTok, so we'll pass. Best of luck with the project.
+
+status_log:
+  - { at: "2026-10-06T09:20:00Z", status: "logged", by: "agent" }
+  - { at: "2026-10-06T15:00:00Z", status: "quote approved", by: "operator" }

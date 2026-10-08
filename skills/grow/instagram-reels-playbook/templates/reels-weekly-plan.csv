@@ -1,0 +1,14 @@
+date,local_time,surface,format,series,hook_on_screen,length_s,audio,media_file,caption_first_line,hashtags_max5,ai_label,ad_label,nfa_needed,trial_variant,approved_by,status,notes
+2026-10-13,11:30,instagram,reel,Rooftop Hours,"rooftop, 7:42 pm, the city turning gold",9,original sound (ambient + soft beat),rooftop-0301.mp4,"the 9 minutes the whole city looks expensive",#rooftop #goldenhour #citynights,yes,no,no,,,draft,loop clip; cover = face frame at 0:03
+2026-10-13,18:00,threads,text,,—,0,—,—,"the city is doing that thing where every window is gold and nobody is looking up",#citylife,yes (text),no,no,,,draft,native line not the IG caption
+2026-10-14,11:00,instagram,trial-reel,Small Confessions,"i'm an AI and i still can't pick a coffee order",12,trending audio (in-app library),cafe-0122-a.mp4,"every single morning",#coffee #mornings,yes,no,no,A,,draft,variant A: confession hook
+2026-10-14,12:30,instagram,trial-reel,Small Confessions,"POV: the barista asks 'the usual?' and you don't have one",12,trending audio (in-app library),cafe-0122-b.mp4,"every single morning",#coffee #mornings,yes,no,no,B,,draft,variant B: POV hook; same caption
+2026-10-14,20:00,instagram,story,,poll: rain walk or sunset bedroom?,15,—,story-poll-1014.jpg,—,—,yes,no,no,,,draft,poll decides Thursday's Reel
+2026-10-15,11:30,instagram,reel,Night Shift,"POV: you said one drink",8,licensed track (in-app library),club-0412.mp4,"POV: you said one drink",#nightout #djset #citynights,yes,no,no,,,draft,send CTA: 'send this to the friend who always says that'
+2026-10-15,19:00,broadcast,poll,,—,0,—,—,"tomorrow's clip: rain walk or lounge?",—,yes,no,no,,,draft,sent in app; no API
+2026-10-16,11:30,instagram,carousel,Behind the Prompt,"how the rain clip was made (6 frames)",0,—,rain-carousel-01..06.jpg,"40 minutes to make 13 seconds of rain",#aiart #behindthescenes,yes,no,no,,,draft,saves target; JPEG only via API
+2026-10-16,18:30,threads,thread,,—,0,—,—,"got caught in the rain on the way to the rooftop",—,yes (text),no,no,,,draft,3-part micro-story
+2026-10-17,12:00,instagram,reel,Rain Runs,"running late, running anyway",13,original sound,rain-0207.mp4,"the rain did not get the memo",#rainyday #citywalk,yes,no,no,,,draft,poll winner
+2026-10-17,17:00,instagram,reel,Collab,"two AIs, one lounge, zero plans",10,licensed track,lounge-collab-juno.mp4,"we were supposed to film separately",#collab #lounge,yes,no,no,,,draft,collab with @juno_charts; invite accepted in app
+2026-10-18,20:00,broadcast,voice-note,,—,25,—,voice-1018.m4a,"what i'm making next week",—,yes,no,no,,,draft,voice is synthetic: say so in the first line
+2026-10-19,—,review,weekly-review,,—,0,—,—,—,—,—,—,—,—,,planned,"sends/1k, follows/1k non-follower views, watch%"

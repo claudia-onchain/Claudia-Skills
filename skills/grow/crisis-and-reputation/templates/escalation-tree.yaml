@@ -1,0 +1,72 @@
+# Escalation tree. Fill in names and contacts once; review monthly. Keep phone numbers out of public repos:
+# store this filled copy in the team's private notes, not in git.
+
+version: "1.0.0"
+incident_id_format: "INC-YYYY-MM-DD-NN"
+
+roles:
+  incident_lead:
+    does: "owns the incident, sets severity, decides delete vs correct, decides when posting resumes"
+    primary: "[name] · [contact]"
+    backup: "[name] · [contact]"
+  account_owner:
+    does: "passwords, 2FA, sessions, developer apps (X, TikTok, Meta, YouTube), social-vault key, agent API keys"
+    primary: "[name] · [contact]"
+    backup: "[name] · [contact]"
+  comms_approver:
+    does: "approves every public statement and reply during the incident"
+    primary: "[name] · [contact]"
+    backup: "[name] · [contact]"
+  legal_compliance:
+    does: "financial-info incidents, fraud allegations, regulator or police contact, takedown letters"
+    primary: "[firm or person] · [contact]"
+  platform_team:
+    does: "useclaudia.xyz side: hosted agents, launch pages, thread moderation, official-links page"
+    primary: "[contact]"
+  community_mods:
+    does: "Telegram/Discord: pin statements, slow mode, remove scam links, collect reports"
+    primary: "[names]"
+
+agent_may:
+  - "switch the kill switch ON (social.killSwitch(true) / Claudia Local 'Stop all posting')"
+  - "reject scheduled posts with the incident id as the reason"
+  - "capture evidence and write incident-log rows"
+  - "draft statements and replies into pending_approval"
+  - "page people using the message format in SKILL.md"
+agent_may_not:
+  - "switch the kill switch OFF"
+  - "approve or publish anything during an incident"
+  - "DM users, impostors, journalists or regulators"
+  - "promise refunds, compensation or legal outcomes"
+  - "trade any coin involved in the incident"
+
+severity:
+  SEV1:
+    examples: ["account compromised", "key/seed exposed", "scam or drainer link from our account", "sexual/hateful/doxxing content", "regulator or police contact"]
+    page: ["incident_lead", "account_owner", "comms_approver", "legal_compliance"]
+    when: "immediately, any hour"
+    kill_switch: "on within 5 min; stop every other poster"
+    statement_within_min: 60
+  SEV2:
+    examples: ["wrong CA/price/link live", "impersonator collecting money", "deepfake spreading", "platform strike"]
+    page: ["incident_lead", "comms_approver"]
+    when: "within 15 min, 08:00–24:00 local; otherwise first thing unless money is at risk (then treat as SEV1 timing)"
+    kill_switch: "on until fixed"
+    statement_within_min: 120
+  SEV3:
+    examples: ["low-harm factual error", "tone-deaf joke", "sponsor complaint", "negative spike without harm"]
+    page: ["incident_lead"]
+    when: "same working day"
+    kill_switch: "pause autonomous posting only"
+  SEV4:
+    examples: ["ordinary criticism", "typo", "single troll"]
+    page: []
+    when: "next review"
+    kill_switch: "no"
+
+no_answer_rule: "If the primary doesn't answer in 10 min (SEV1) or 30 min (SEV2), page the backup. If nobody answers, the kill switch stays on and nothing is published."
+
+after:
+  post_mortem_due_hours: 72
+  public_summary_for: ["SEV1", "SEV2"]
+  resume_rules: "lead + comms approver agree; queue reviewed; half cadence for 72 h; all posts human-approved for 7 days"

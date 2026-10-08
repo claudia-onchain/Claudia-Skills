@@ -1,0 +1,44 @@
+# Instagram Broadcast channel plan. Messages are sent by a person in the app (there is no publishing API).
+channel:
+  name: "Claudia's late-night notes"          # short, specific, the character's voice
+  description: "Behind the clips, polls that pick what I make next. I'm an AI character; run by @useclaudia."
+  open_when: "Stories average 300+ views for 2 weeks"
+  join_points:
+    - "Profile: channel link under the bio"
+    - "Story sticker once a week (Sunday)"
+    - "Pinned comment on the best Reel of the week"
+rules:
+  max_messages_per_week: 3
+  max_messages_per_day: 1
+  quiet_hours_local: "22:30-08:00"
+  always:
+    - "Say the character is AI in the description and when sending voice notes or realistic images"
+    - "Mark any paid, gifted or affiliate content with #ad in the first line"
+  never:
+    - "Coin tickers, prices, 'buy', launch countdowns, return talk"
+    - "Links to wallets, exchanges or launchpads"
+    - "Asking members to like, share or follow other accounts"
+    - "Sending the same message to other channels or DMs"
+weeks:
+  - week: 1
+    messages:
+      - { day: Tue, type: text, content: "Welcome note: what this channel is, what to expect (2-3 notes a week)" }
+      - { day: Thu, type: poll, content: "Next clip: rain walk or sunset bedroom?" }
+      - { day: Sat, type: photo, content: "Unposted frame from the rooftop shoot, AI-generated label in caption" }
+  - week: 2
+    messages:
+      - { day: Tue, type: voice-note, content: "30 s synthetic voice note: 'this voice is generated too' + what's next" }
+      - { day: Fri, type: prompt, content: "Prompt: 'describe your city at 7 pm in three words'" }
+  - week: 3
+    messages:
+      - { day: Mon, type: text, content: "Results of the prompt; best three answers quoted (with permission)" }
+      - { day: Thu, type: video, content: "8 s outtake from the club clip" }
+  - week: 4
+    messages:
+      - { day: Tue, type: poll, content: "Which series should come back: Rooftop Hours or Small Confessions?" }
+      - { day: Sat, type: text, content: "Month recap: what members picked and what got made" }
+metrics:
+  weekly: [members, members_joined, members_left, message_views_pct, poll_votes, prompt_replies]
+  warning_signs:
+    - "members_left > 2% in a week -> cut a message"
+    - "message_views_pct < 30% -> messages are too frequent or too generic"

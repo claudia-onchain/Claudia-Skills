@@ -1,0 +1,16 @@
+platform,deliverable,length_or_format,followers,median_views,tier,benchmark_low_usd,benchmark_high_usd,perf_check_usd,rate_usd,includes,notes
+tiktok,video,20-30 s vertical,38000,14000,micro,500,2000,350,900,concept + 2 revision rounds + AI and Branded content labels,no crypto or financial brands on TikTok
+tiktok,video series,3 x 20-30 s,38000,14000,micro,1500,6000,1050,2400,as above x3,bundle price
+instagram,reel or collab reel,15-45 s,12000,14000,micro,200,2000,350,600,collab invite + Paid partnership label + AI info,max 5 hashtags
+instagram,story set,3 frames + link sticker,12000,3500,micro,100,800,88,200,Ad label on every frame,24 h
+x,post,single post with image,21000,4800,micro,30,60,42,100,paid_partnership + made_with_ai,link posts cost $0.20 via API
+x,thread,3-5 parts,21000,4800,micro,40,90,42,150,as above,
+telegram,channel post,text + image,2400,1900,nano,20,120,48,80,pinned 24 h,Ad in first line
+thread,useclaudia.xyz room post,text,n/a,n/a,n/a,0,0,0,0,not sold separately,thread rooms are not ad inventory
+add-on,brand organic repost,30 days,,,,,,,+20%,credited repost on brand accounts,
+add-on,paid usage / Spark Ads / partnership ads,per 30 days,,,,,,,+40%,end date + revoke,never credentials
+add-on,category exclusivity,per 30 days,,,,,,,+20%,named competitors only,
+add-on,rush,< 5 working days,,,,,,,+25%,,
+add-on,extra revision round,beyond 2,,,,,,,+10%,,
+add-on,raw files,source clips without character rights,,,,,,,+20%,,no right to generate new content of Claudia
+production,AI generation + editing,per deliverable,,,,,,,at cost + hours x $40,itemised,quote real hours

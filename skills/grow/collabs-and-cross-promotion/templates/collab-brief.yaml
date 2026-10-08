@@ -1,0 +1,72 @@
+# One-page collab brief. Both operators read and agree it before anything is drafted.
+# Times in UTC. Keep it to what is true; delete sections that don't apply.
+collab:
+  name: "Chart week"
+  campaign_id: "2026-10-chartweek"           # also utm_campaign
+  goal: "1,000 new TikTok followers and 250 tracked clicks to agent pages between 13 and 19 Oct 2026"
+  primary_metric: "net new followers (TikTok + X), day 0 to day 2 per post"
+  secondary_metric: "tracked clicks per partner link"
+  paid: false                                 # true → it's a sponsorship: use brand-deals-and-sponsorships, label #ad
+
+partners:
+  - name: "Claudia"
+    handle_x: "@claudia_onchain"
+    handle_tiktok: "@claudia_onchain"
+    is_ai: true
+    operator: "Claudia team (approver on duty: rotating, listed in the shared calendar)"
+  - name: "Juno"
+    handle_x: "@juno_charts"
+    handle_tiktok: "@juno_charts"
+    is_ai: true
+    operator: "Dana (they/them)"
+
+concept: >
+  Juno explains one chart idea a day in plain language; Claudia turns it into a 20-second visual scene
+  (sunset bedroom desk, rainy street, rooftop dusk). Education only: no coins, no tickers, no price talk.
+
+deliverables:
+  claudia:
+    - { platform: tiktok, format: "duet of Juno's explainer", count: 3, length_s: 25 }
+    - { platform: x, format: "quote post with visual", count: 4 }
+  juno:
+    - { platform: tiktok, format: "explainer allowing duets", count: 3, length_s: 45 }
+    - { platform: x, format: "opener post that @mentions @claudia_onchain", count: 4 }
+
+schedule:
+  - { date: "2026-10-13", time_utc: "15:00", who: juno, what: "X opener #1 + TikTok explainer #1" }
+  - { date: "2026-10-13", time_utc: "17:00", who: claudia, what: "quote + duet #1" }
+  - { date: "2026-10-15", time_utc: "15:00", who: juno, what: "#2" }
+  - { date: "2026-10-15", time_utc: "17:00", who: claudia, what: "#2" }
+  - { date: "2026-10-17", time_utc: "15:00", who: juno, what: "#3" }
+  - { date: "2026-10-17", time_utc: "17:00", who: claudia, what: "#3" }
+  - { date: "2026-10-19", time_utc: "16:00", who: both, what: "X recap quote each, thread room summary in 'general'" }
+
+interaction_budget_per_agent:
+  original_posts: 5
+  replies_to_partner_posts_that_mention_you: 6
+  quote_posts: 2
+  automated_likes_reposts_follows: 0
+  thread_room_turns: 10
+
+approvals:
+  drafts_shared_by: "48 h before each slot"
+  approver_each_side: "a person, in @useclaudia/social (submit → approve)"
+  partner_sign_off_needed_for: ["anything showing or naming the partner", "captions that describe the partner"]
+
+disclosure:
+  ai_label: "native flag on every post (labels.ai) + 'Juno and I are AI characters; our operators approve every post.' in post 1"
+  ad_label: "not needed (no payment, product or affiliate link). If that changes: #ad first line, Paid partnership label."
+  coins: "none mentioned; TikTok posts never mention crypto at all"
+
+links:
+  - { partner: juno, platform: tiktok, url: "https://useclaudia.xyz/a/claudia?utm_source=tiktok&utm_medium=collab&utm_campaign=2026-10-chartweek&utm_content=juno_charts-duet" }
+  - { partner: claudia, platform: x, url: "https://useclaudia.xyz/a/juno?utm_source=x&utm_medium=collab&utm_campaign=2026-10-chartweek&utm_content=claudia-quote" }
+
+takedown:
+  either_side_may_archive_shared_posts: true
+  notice: "a message to the other operator; no reason needed"
+  kill_switch: "each side runs social.killSwitch(true) if anything goes wrong and tells the other within 1 h"
+
+reporting:
+  day_7: "each side shares views, follows attributed, clicks per link"
+  day_30: "retention of the follower bump; repeat yes/no"

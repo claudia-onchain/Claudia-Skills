@@ -1,0 +1,11 @@
+id,idea,platform,variable,primary_metric,impact_1to10,confidence_1to10,ease_1to10,ice,evidence,status,owner,notes
+exp-011,"Start the rain-run clip mid-stride instead of with setup",instagram,first 2 seconds,3-second hold,7,6,8,7.0,"Last 30 Reels: hold 41% when motion starts in frame 1 vs 33% otherwise (n=12 vs 18)",running,agent,"Trial Reels A/B, same edit"
+exp-012,"Keyword-first TikTok captions (""how to read holders"")",tiktok,caption first line,search traffic share,6,6,9,7.0,"TikTok Studio shows 9% search share; competitors' explainers rank on literal phrases",backlog,agent,"ABAB 3 weeks"
+exp-013,"Rooftop Q&A as a named weekly series",tiktok,format,follows per 1000 views,7,5,5,5.7,"Comments ask the same 5 questions weekly",backlog,operator,"format test; 6 weeks"
+exp-014,"Morning vs evening X slot",x,post time,log impressions,5,4,9,6.0,"Sprout Social 2026 says Tue/Wed 9-11; our top posts cluster at 18:00",running,agent,"ABAB 4 weeks; needs 2x effect to detect"
+exp-015,"YouTube long-form title: question vs statement",youtube,title,watch-time share,7,7,9,7.7,"Native Test & Compare available",backlog,operator,"set up in Studio"
+exp-016,"Pinned post: intro clip vs best-performing clip",x,pinned post,profile visit to follow rate,5,4,10,6.3,"Profile visits 2.1k/week; follow rate 6.5%",backlog,operator,"before/after with Telegram as holdout"
+exp-017,"Telegram digest: one long post vs three short",telegram,post structure,views per subscriber,5,5,8,6.0,"Channel log SD 0.4 so small samples suffice",backlog,agent,"ABAB by day"
+exp-018,"Sunglasses on vs off in the first frame",instagram,first frame,3-second hold,4,5,8,5.7,"Lounge clip did 2x median; unclear why",backlog,agent,"character look unchanged"
+exp-019,"Buy 2k followers to look bigger before pitching brands",any,—,—,0,0,0,0.0,"Breaks platform rules and FTC 16 CFR 465",rejected,operator,"never; see allowed-vs-manipulation.md"
+exp-020,"Remove AI label on one variant to compare reach",tiktok,—,—,0,0,0,0.0,"Disclosure is a constant",rejected,operator,"never"

@@ -1,0 +1,84 @@
+# Coin-post decision tree (checked 2026-10). Not legal advice.
+# Walk the questions in order. Any RED ends the walk: fix the draft and start again, or stop.
+# Outcomes: GREEN = publish through normal approval; AMBER = named human approval + log row; RED = do not publish.
+
+version: "1.0.0"
+detect:
+  crypto_if_any:
+    - "a $TICKER or token name"
+    - "a Solana base58 mint or an 0x address"
+    - "a price, market cap, FDV, volume or holder count"
+    - "buy / sell / ape / entry / exit / launch / presale / airdrop / stake / yield / APY"
+    - "a link to a launchpad, DEX, exchange, wallet or bridge"
+    - "a chart image or on-screen ticker in a video"
+  tool: "mentionsFinance(text) from @useclaudia/social, plus a look at media and on-screen text"
+
+questions:
+  - id: Q1
+    ask: "Does it promise or predict price, returns, safety or certainty?"
+    examples: ["will hit $1", "10x from here", "can't lose", "safe play", "floor is in", "guaranteed"]
+    if_yes:
+      outcome: RED
+      fix: "Replace the claim with a time-stamped observation or remove it. Re-run from Q1."
+  - id: Q2
+    ask: "Is anyone giving value for this post (cash, tokens, allocation, fee share, affiliate code, gifts, gifted mint)?"
+    if_yes:
+      outcome: RED
+      next: "Stop drafting. Run the paid path in SKILL.md step 5 with a person. Resume only with written sign-off."
+      paid_path_requirements:
+        - "#ad + sponsor name + amount and form in the post (US Section 17(b) if security-like)"
+        - "labels.ad: true; Instagram Paid partnership; YouTube paid promotion box; X Paid Partnership label"
+        - "TikTok: never (crypto cannot be branded content)"
+        - "X sponsored crypto: not available for UK, EU or Australian audiences"
+        - "UK reach: only with an FCA-authorised approver; otherwise decline"
+        - "EU reach: issuer-supplied MiCA Article 7 copy, white paper live, 'Marketing communication' + statement"
+  - id: Q3
+    ask: "Does it invite action on a specific coin (buy, hold, sell, get in, link to buy, contract address + hype)?"
+    if_yes:
+      outcome: RED
+      unless: "an approved promotion route exists (see Q2 paid path) and a person signed off"
+      fix: "Turn the call to action into education: how to check holders, mint authority, liquidity; no 'go buy'."
+  - id: Q4
+    ask: "Does the agent or operator hold the coin, have launched it, or earn creator rewards from it?"
+    if_yes:
+      outcome: AMBER
+      required_in_post: "I launched $TICKER on Solana via Claudia and earn creator fees when it trades. / I hold $TICKER."
+      also: "Never time buys or sells around posts (MiCA Art. 91, US scalping cases)."
+  - id: Q5
+    ask: "Is the target TikTok?"
+    if_yes:
+      allowed_only: ["crypto news without tickers", "general safety education", "character/lifestyle content"]
+      otherwise: RED
+  - id: Q6
+    ask: "Does it offer an incentive tied to buying, holding or engagement (holder giveaway, airdrop for follows/reposts, referral bonus)?"
+    if_yes:
+      outcome: RED
+      why: "FCA incentive ban; X engagement-manipulation rules and Original Content Rewards terms; platform scam policies"
+  - id: Q7
+    ask: "Is it otherwise factual: news, how-to, risk education, on-chain facts with a time stamp?"
+    if_yes:
+      outcome: GREEN
+
+labels_always:
+  - "AI label on (package sets the native flag or '(AI-generated)')"
+  - "'Not financial advice.' (package adds it when a coin is mentioned; never remove)"
+  - "At most one $cashtag per X post"
+
+platform_overrides:
+  tiktok: "Strictest. No tickers, CAs, buy links or launch promos. Branded content: never for crypto."
+  instagram: "Paid partnership tool for any paid post; no return claims; crypto ads need Meta written permission."
+  threads: "Same as Instagram."
+  x: "Automated label on the account; replies only when summoned; Paid Partnership label for sponsored crypto (not UK/EU/AU)."
+  youtube: "Paid promotion checkbox + spoken disclosure; synthetic-content toggle; no QR codes or deposit addresses."
+  telegram: "Treat channel posts as public promotions; pin an official-links and 'we never DM first' post."
+  discord: "No @everyone from automation; no paid 'signals' roles; announcements staff-only."
+
+autonomy:
+  green: "An autonomous loop may self-approve if the phrase check exits 0 and caps allow."
+  amber: "Human approval required, with the classification shown next to the preview."
+  red: "Never published. Log the decision."
+
+log:
+  file: "templates/compliance-log.csv"
+  required_for: ["AMBER", "RED", "any paid item"]
+  retention: "at least 5 years, with ~/.claudia/social/audit.jsonl"

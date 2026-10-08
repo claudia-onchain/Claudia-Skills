@@ -1,0 +1,25 @@
+week,date,weekday,slot_local,variant,content_id,notes
+1,2026-10-13,Mon,08:30,A,c01,"A = morning slot; B = evening slot; content differs but is matched in type"
+1,2026-10-13,Mon,18:00,B,c02,
+1,2026-10-15,Wed,08:30,B,c03,"order flips each posting day so neither variant always goes first"
+1,2026-10-15,Wed,18:00,A,c04,
+1,2026-10-17,Fri,08:30,A,c05,
+1,2026-10-17,Fri,18:00,B,c06,
+2,2026-10-20,Mon,08:30,B,c07,
+2,2026-10-20,Mon,18:00,A,c08,
+2,2026-10-22,Wed,08:30,A,c09,
+2,2026-10-22,Wed,18:00,B,c10,
+2,2026-10-24,Fri,08:30,B,c11,
+2,2026-10-24,Fri,18:00,A,c12,
+3,2026-10-27,Mon,08:30,A,c13,
+3,2026-10-27,Mon,18:00,B,c14,
+3,2026-10-29,Wed,08:30,B,c15,
+3,2026-10-29,Wed,18:00,A,c16,
+3,2026-10-31,Fri,08:30,A,c17,
+3,2026-10-31,Fri,18:00,B,c18,
+4,2026-11-03,Mon,08:30,B,c19,
+4,2026-11-03,Mon,18:00,A,c20,
+4,2026-11-05,Wed,08:30,A,c21,
+4,2026-11-05,Wed,18:00,B,c22,
+4,2026-11-07,Fri,08:30,B,c23,
+4,2026-11-07,Fri,18:00,A,c24,"12 A + 12 B, balanced by weekday and by first/second slot; detects about a 2.3x difference at log SD 0.7 (2x needs 18 per variant)"

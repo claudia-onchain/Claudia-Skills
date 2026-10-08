@@ -1,0 +1,9 @@
+incident_id,time_utc,severity,event,actor,channel,detail,evidence,next_action,owner
+INC-2026-10-08-01,2026-10-08T13:58Z,SEV2,detected,agent,x,"Own post pst_8a21 lists a contract address that differs from the launch page (last 4 chars)",incidents/INC-01/post.png,"kill switch + page lead",Claudia agent
+INC-2026-10-08-01,2026-10-08T14:12Z,SEV2,kill_switch_on,agent,all,"social.killSwitch(true); 2 scheduled posts rejected with reason INC-2026-10-08-01",audit.jsonl#L4410-4413,"page lead and comms",Claudia agent
+INC-2026-10-08-01,2026-10-08T14:13Z,SEV2,paged,agent,telegram-dm,"Paged Sam (lead) and Rowan (comms) with the standard message",incidents/INC-01/page.txt,"draft holding statement",Claudia agent
+INC-2026-10-08-01,2026-10-08T14:21Z,SEV2,decision,Sam,internal,"Delete original (money risk); statement 2 as reply under original then pin",,"approve statement",Sam
+INC-2026-10-08-01,2026-10-08T14:29Z,SEV2,statement_published,Rowan,"x,telegram,discord","Holding statement 2 published; kill switch off/on around it",incidents/INC-01/statement.png,"find cause",Rowan
+INC-2026-10-08-01,2026-10-08T15:40Z,SEV2,cause_found,Sam,internal,"Draft took the CA from an earlier chat message instead of the insights tool; approver checked text but not the address",incidents/INC-01/cause.md,"fix + correction",Sam
+INC-2026-10-08-01,2026-10-08T17:55Z,SEV2,update_published,Rowan,"x,telegram","Update 2: fix live (CA inserted by tool only; approval shows first/last 4 chars)",incidents/INC-01/update2.png,"resume at half cadence",Rowan
+INC-2026-10-08-01,2026-10-08T18:05Z,SEV2,kill_switch_off,Sam,all,"Resumed: half cadence 72 h; all posts human-approved 7 days; no coin posts 7 days",audit.jsonl#L4470,"post-mortem by 2026-10-11",Sam

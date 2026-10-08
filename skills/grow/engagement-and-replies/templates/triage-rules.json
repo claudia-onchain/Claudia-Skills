@@ -1,0 +1,91 @@
+{
+  "agent": {
+    "name": "Claudia",
+    "handles": { "x": "claudia_onchain", "tiktok": "claudia_onchain", "telegram": "claudia_onchain_bot" },
+    "voice": [
+      "warm, quick, a little dry; never gushing",
+      "short sentences; one emoji at most, often none",
+      "honest that she is an AI character; no claims of physical experiences as fact"
+    ],
+    "timezone": "Europe/London"
+  },
+  "approval": {
+    "default": "every reply is a draft until a named person approves it",
+    "approvers": ["operator@example.com"],
+    "standingApprovals": {
+      "enabled": false,
+      "note": "Only for template ids listed here, only on owned Telegram/Discord communities, no links, no coin talk, no free-text slots. Never on X, TikTok, Instagram, YouTube or in DMs.",
+      "templates": [],
+      "networks": ["telegram", "discord"]
+    }
+  },
+  "neverAutoReply": [
+    "buy/sell/hold/price/safety questions about a specific coin",
+    "money, wallets, seed phrases, private keys, refunds, account recovery",
+    "press, brand, collab, legal enquiries",
+    "self-harm, threats, harassment, minors, medical or legal questions",
+    "romantic or sexual approaches",
+    "strangers on X who did not mention or quote the account",
+    "outbound DMs of any kind"
+  ],
+  "classes": {
+    "praise": { "risk": "low", "targetHours": 24, "maxReplyShare": 0.33 },
+    "question-product": { "risk": "low", "targetHours": 4 },
+    "question-persona": { "risk": "low", "targetHours": 4 },
+    "content-request": { "risk": "low", "targetHours": 24 },
+    "feedback-bug": { "risk": "medium", "targetHours": 2 },
+    "criticism-fair": { "risk": "medium", "targetHours": 2 },
+    "coin-talk": { "risk": "high", "targetHours": 4, "fixedTemplate": "coin-route" },
+    "collab-business": { "risk": "medium", "targetHours": 24, "fixedTemplate": "business-forward", "escalate": true },
+    "press": { "risk": "high", "escalate": true },
+    "troll-bait": { "risk": "low", "reply": false },
+    "scam-impersonation": { "risk": "high", "reply": false, "escalate": true },
+    "spam": { "risk": "low", "reply": false },
+    "safety": { "risk": "critical", "reply": false, "escalate": true, "escalateWithinMinutes": 60 }
+  },
+  "preFilters": [
+    { "name": "solana-address", "pattern": "\\b[1-9A-HJ-NP-Za-km-z]{32,44}\\b", "class": "coin-talk", "flags": "" },
+    { "name": "evm-address", "pattern": "\\b0x[a-fA-F0-9]{40}\\b", "class": "coin-talk", "flags": "" },
+    { "name": "seed-ask", "pattern": "seed phrase|private key|recovery phrase|\\b(12|24) words\\b", "class": "scam-impersonation", "flags": "i" },
+    { "name": "scam-words", "pattern": "airdrop|claim (now|here)|giveaway winner|support (team|ticket)|verify your wallet|dm (me|us) to", "class": "scam-impersonation", "flags": "i" },
+    { "name": "safety", "pattern": "kill myself|suicide|hurt myself|end it all", "class": "safety", "flags": "i" },
+    { "name": "cashtag-or-trade", "pattern": "\\$[A-Za-z]{2,10}\\b|\\b(buy|sell|pump|moon|100x|entry|price target|ape)\\b", "class": "coin-talk", "flags": "i" },
+    { "name": "press", "pattern": "journalist|reporter|for a story|press (inquiry|enquiry)|on the record", "class": "press", "flags": "i" },
+    { "name": "business", "pattern": "rate card|media kit|sponsor|paid (collab|partnership)|campaign brief|ugc deal", "class": "collab-business", "flags": "i" }
+  ],
+  "lookalikeHandles": { "maxEditDistance": 2, "class": "scam-impersonation" },
+  "links": {
+    "allow": ["useclaudia.xyz", "docs.useclaudia.xyz"],
+    "maxPerReply": 1,
+    "onlyWhenAsked": true
+  },
+  "pacing": {
+    "minGapMinutes": 4,
+    "windowMinutes": 15,
+    "maxPerWindow": 3,
+    "jitterSeconds": 90,
+    "quietHours": { "start": "23:00", "end": "08:00" },
+    "staleAfterHours": 48,
+    "perDay": { "x": 5, "bluesky": 20, "mastodon": 20, "telegram": 40, "discord": 40, "youtube": 5 },
+    "neverMoreRepliesThanPostsOn": ["x"]
+  },
+  "budgets": {
+    "xReadsPerDay": 40,
+    "xMonthlyCapUsd": 10,
+    "pricesCheckedOn": "2026-10-08",
+    "xPricesUsd": { "read": 0.005, "reply": 0.01, "post": 0.015, "linkPost": 0.2, "dm": 0.015 }
+  },
+  "spike": {
+    "volumeMultiplier": 5,
+    "consecutiveHours": 2,
+    "negativeShare": 0.4,
+    "minItemsPerHour": 20,
+    "action": ["killSwitch(true)", "page operator", "open crisis-and-reputation"]
+  },
+  "escalation": {
+    "channel": "telegram",
+    "chat": "@claudia_ops_private",
+    "hours": "08:00-23:00 Europe/London; safety items any time",
+    "backup": "second approver by phone"
+  }
+}
