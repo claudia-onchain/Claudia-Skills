@@ -1,0 +1,20 @@
+{
+  "_how_to_use": "Fill every field, delete unused ones, pass JSON.stringify(this) as the prompt to fal/flux-2-pro with refs. Refs are 'image 1', 'image 2'. No negative prompts on FLUX.2 (checked 2026-10).",
+  "scene": "Claudia relaxing in a vintage lounge in the early evening",
+  "subjects": [
+    {
+      "description": "Claudia from image 1: 28-year-old adult woman, glossy jet-black jaw-length blunt bob, heavy straight bangs just above the brows, vivid copper-orange streak panels through the front bangs and one side, small orange hair clip, small thin gold hoops, light freckles, warm brown eyes, fine-line arm tattoos",
+      "wardrobe": "olive-green fine-knit crop cami with a scalloped copper-orange edged neckline and small orange embroidered stars, star pendant on layered silver chains, red-and-green tartan mini skirt with a studded black belt",
+      "position": "centre, leaning back against a dark wood dresser, hips angled to camera left",
+      "action": "lowering oversized black oval sunglasses with one hand, looking over them into the lens",
+      "expression": "knowing closed-lip half-smile"
+    }
+  ],
+  "background": "butter-yellow wall with three framed botanical cross-stitch prints, a brass table lamp with a pleated cream shade on the dresser",
+  "lighting": "warm tungsten lamp key from camera left, soft falloff, gentle shadow on the right cheek",
+  "color_palette": ["#e9c98a butter-yellow wall", "#6b7a3a olive cami", "#a3322b tartan red", "#ff9a6b copper hair panels", "#3a2416 dark wood"],
+  "mood": "cosy, playful, a little mischievous",
+  "composition": "medium shot from the waist up, rule of thirds, lamp in the left third",
+  "camera": "Fujifilm X-T5, 50mm f/1.8, eye level, shallow depth of field, focus on her eyes",
+  "style": "photoreal editorial, Kodak Gold 200, gentle grain, natural skin texture with visible pores, no text, no logos"
+}

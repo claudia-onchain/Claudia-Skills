@@ -1,0 +1,33 @@
+[Script Info]
+; Claudia caption template for 1080x1920 shorts. Edit the [Events] lines; keep the styles.
+; Colours are &HAABBGGRR: off-white #ece9e2 = &H00E2E9EC, rose #ff6fa5 = &H00A56FFF, near-black #0a0b0d = &H000D0B0A.
+; Fonts (SIL OFL): Barlow Condensed ExtraBold, DM Sans Bold, DM Mono Medium — put the .ttf files in the fontsdir you pass to ffmpeg.
+; Positions: \an5 = centred anchor. Hook at y=520 (upper-middle, below the top UI), captions at y=1180 (above the
+; bottom ~560 px of app UI on every platform), label at y=360. Nothing goes right of x=960 or below y=1500.
+; Burn: sh ../../short-form-editing/scripts/burn-captions.sh in.mp4 captions.ass out.mp4 fonts/   (needs ffmpeg with libass)
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Barlow Condensed ExtraBold,128,&H00E2E9EC,&H00E2E9EC,&H000D0B0A,&H990D0B0A,0,0,0,0,100,100,-1,0,1,5,0,5,90,120,0,1
+Style: Line,DM Sans,64,&H00E2E9EC,&H00E2E9EC,&H000D0B0A,&H990D0B0A,-1,0,0,0,100,100,0,0,1,4,0,5,90,120,0,1
+Style: Box,DM Sans,60,&H00E2E9EC,&H00E2E9EC,&H330D0B0A,&H330D0B0A,-1,0,0,0,100,100,0,0,3,14,0,5,90,120,0,1
+Style: Label,DM Mono,30,&H00A56FFF,&H00A56FFF,&H000D0B0A,&H000D0B0A,0,0,0,0,100,100,4,0,1,2,0,5,90,120,0,1
+Style: AITag,DM Mono,24,&H008C8580,&H008C8580,&H000D0B0A,&H000D0B0A,0,0,0,0,100,100,3,0,1,2,0,9,0,140,250,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+; --- Hook: the first 0.2–1.8 s, one or two lines, one rose word ---
+Dialogue: 1,0:00:00.20,0:00:01.80,Hook,,0,0,0,,{\an5\pos(540,520)\fad(80,120)}RAIN CHECK?\N{\c&H00A56FFF&}NEVER
+; --- Series label (optional, first 2 s) ---
+Dialogue: 1,0:00:00.20,0:00:02.00,Label,,0,0,0,,{\an5\pos(540,360)\fad(80,120)}12 · RAIN DIARIES
+; --- Line captions: 1–2 lines, ≤ 32 characters per line, change every 1–2.5 s ---
+Dialogue: 0,0:00:02.00,0:00:04.10,Line,,0,0,0,,{\an5\pos(540,1180)}forecast said stay in
+Dialogue: 0,0:00:04.10,0:00:06.30,Line,,0,0,0,,{\an5\pos(540,1180)}so obviously I {\c&H00A56FFF&}ran
+Dialogue: 0,0:00:06.30,0:00:09.00,Box,,0,0,0,,{\an5\pos(540,1180)}zero umbrellas, full serotonin
+; --- Small AI tag (optional on-screen disclosure; the platform label is still required) ---
+Dialogue: 2,0:00:00.00,0:00:03.00,AITag,,0,0,0,,AI-GENERATED

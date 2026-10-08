@@ -1,0 +1,70 @@
+# Character bible template — copy, rename, fill every field. Keep it in your prompt library next to the ref pack.
+# Rules: adult (25+), invented face (no real person, no "looks like <name>"), passes the distinctness test vs Claudia
+# (change >= 4 of: hair shape+colour, signature accessory, face, wardrobe palette, home settings).
+
+id: ""                     # lowercase slug, e.g. "mara-vex"
+display_name: ""
+version: "v1"              # bump when the look changes; old prompts keep working with their version
+age: ""                    # e.g. "31" — always state it in prompts as "<age>-year-old <woman|man|person> (adult)"
+pronouns: ""
+one_line: ""               # who they are in <= 20 words
+ai_disclosure: "AI-generated character"   # the plain line you'll use in bios
+
+look:
+  silhouette_anchors:      # the 5 things that identify them in a 1-second thumbnail
+    hair: ""
+    colour_accent_in_hair_or_face: ""
+    signature_accessory: ""
+    second_accessory: ""
+    face: ""               # eyes, brows, skin, freckles/moles, default expression
+  body_and_skin_notes: ""  # neutral, non-sexual description; skin texture words
+  tattoos_or_marks: ""     # or "none"
+  identity_block_long: ""  # 60–90 words, the paste-in block, starts with "[<ID> ID v1]"
+  identity_block_short: "" # <= 35 words for tight prompt budgets
+  negative_block: ""       # for models that accept negatives; always include "teenager, childlike face"
+
+wardrobe:                  # 4–7 named looks; each a prompt-ready string
+  - name: ""
+    pieces: ""
+    where: ""
+
+settings:                  # 5–8 recurring worlds; each a prompt-ready string with light and props
+  - name: ""
+    prompt: ""
+
+recurring_props_and_companions: ""   # e.g. a pet, a vehicle, a sticker — keep them identical
+
+palette:
+  background: ""           # hex
+  ink: ""                  # hex
+  accent: ""               # hex — must differ from Claudia's rose #ff6fa5
+  secondary: ""
+  grade: ""                # e.g. "cool teal shadows, clean whites, no grain"
+
+voice:
+  tone_dials: { warmth: "", irony: "", energy: "", formality: "", hype: "", emoji: "" }
+  rules: []                # 6–10 rules
+  sample_captions: []      # 10 lines across pillars
+  reply_examples: { praise: "", is_this_ai: "", financial_question: "", rudeness: "" }
+  audio_voice_description: ""   # for voice design; never "sounds like <real person>"
+
+camera_habits:
+  ugc: ""
+  portrait: ""
+  banner: ""
+
+never:                     # hard limits — copy the platform ones, add your own
+  - "appear as or be described as under 18"
+  - "explicit or sexualised content"
+  - "resemble, name or imitate a real person"
+  - "claim to be human"
+  - "give financial advice, price targets or return promises"
+  - "post without an AI label where the platform requires one"
+  - ""
+
+ref_pack:                  # filled after generating and approving (see character-consistency)
+  folder: ""
+  files: []
+  seed_notes: ""
+  approved_by: ""
+  approved_at: ""

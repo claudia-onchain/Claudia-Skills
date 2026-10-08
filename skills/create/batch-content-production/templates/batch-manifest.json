@@ -1,0 +1,131 @@
+{
+  "batch": "claudia-2026-w42",
+  "character": "claudia",
+  "approver": "@owner",
+  "budget": {
+    "perBatchUsd": 16,
+    "rerollPct": 30
+  },
+  "limits": {
+    "perJobUsd": 3.5,
+    "perDayUsd": 8,
+    "perMonthUsd": 60,
+    "approveAboveUsd": 0.5
+  },
+  "blocks": {
+    "ID": "[CLAUDIA ID v1] Claudia, a 28-year-old woman (adult, late twenties) with a glossy jet-black jaw-length blunt bob and heavy straight bangs just above the brows; vivid copper-orange streak panels through the front bangs and one side; a small orange hair clip at the side of the bangs; small thin gold hoop earrings; light freckles across the nose and cheeks; warm brown eyes; straight dark brows; a knowing closed-lip half-smile; natural skin texture with visible pores; fine-line tattoos on her arms (small stars, a rose, a sun).",
+    "SIGNATURE": "wearing an olive-green fine-knit crop cami with a scalloped copper-orange edged neckline and small orange embroidered stars, a star pendant on layered silver chains, a red-and-green tartan pleated mini skirt with a studded black belt and hanging silver chains, a chunky silver chain bracelet",
+    "COSY": "wearing an oversized fuzzy black knit jumper with sleeves pulled over her hands"
+  },
+  "items": [
+    {
+      "id": "w42-talk-ep1-still",
+      "stage": 1,
+      "calendar": "2026-10-12 talk-to-me ep1",
+      "kind": "image",
+      "model": "google/nano-banana-2.1",
+      "prompt": "{{ID}} {{SIGNATURE}}. Vertical front-camera phone selfie video still in her bedroom by day: plain white walls, a ceiling smoke detector, an open doorway behind her, soft overcast window light from camera left. She leans toward the lens mid-laugh, eye level, 24mm phone lens look, natural mixed light, slight grain. Image 1 is her face reference.",
+      "aspect": "9:16",
+      "resolution": "2K",
+      "refs": [
+        "refs/claudia/01-front-neutral.jpg",
+        "refs/claudia/05-laugh.jpg"
+      ],
+      "brand": "claudia"
+    },
+    {
+      "id": "w42-talk-ep1-video",
+      "stage": 2,
+      "kind": "video",
+      "model": "google/omni-flash",
+      "prompt": "Handheld front-camera selfie vlog, 9:16. The woman from the first frame talks to the camera in her bedroom, laughs, glances at the doorway and back. [0-3s] leans in, starts a story; [3-7s] small shrug, looks away and back; [7-10s] open laugh. Natural room tone, no music.",
+      "aspect": "9:16",
+      "durationSec": 10,
+      "refs": [
+        "out/w42-talk-ep1-still.png"
+      ]
+    },
+    {
+      "id": "w42-talk-ep1-vo",
+      "stage": 1,
+      "kind": "speech",
+      "model": "elevenlabs/v3",
+      "text": "ok so. I tried to film this four times. [laughs] and the cat walked in. all four times. at this point he's a co-host.",
+      "voice": "<your designed Claudia voice id>"
+    },
+    {
+      "id": "w42-talk-ep1-lipsync",
+      "stage": 3,
+      "kind": "avatar",
+      "model": "fal/lipsync-2",
+      "durationSec": 18,
+      "refs": [
+        "out/w42-talk-ep1-video.mp4",
+        "out/w42-talk-ep1-vo.mp3"
+      ]
+    },
+    {
+      "id": "w42-rain-ep1-still",
+      "stage": 1,
+      "calendar": "2026-10-13 forecast-dared-me ep1",
+      "kind": "image",
+      "model": "google/nano-banana-2.1",
+      "prompt": "{{ID}} {{SIGNATURE}}. Selfie at arm's length while running across an empty warehouse lot in light rain at dusk: wet asphalt with puddle reflections, roll-up loading-dock doors, yellow bollards, overcast blue-grey sky. Her outstretched forearm with the chain bracelet enters frame bottom-left; she laughs with her mouth open, hair damp at the ends. 24mm phone lens look, motion energy, no people, no logos.",
+      "aspect": "9:16",
+      "resolution": "2K",
+      "refs": [
+        "refs/claudia/01-front-neutral.jpg",
+        "refs/claudia/09-phone-arm.jpg"
+      ]
+    },
+    {
+      "id": "w42-rain-ep1-video",
+      "stage": 2,
+      "kind": "video",
+      "model": "fal/kling-3-pro",
+      "prompt": "Front-camera selfie, she runs forward holding the phone at arm's length, laughing, rain streaks and splashes, slight handheld bounce; at 6 seconds she does a small spin and grins at the lens. Ambient rain and splashing footsteps, her laughter, no music.",
+      "aspect": "9:16",
+      "durationSec": 10,
+      "refs": [
+        "out/w42-rain-ep1-still.png"
+      ]
+    },
+    {
+      "id": "w42-cto-ep1-still",
+      "stage": 1,
+      "kind": "image",
+      "model": "google/nano-banana-2.1",
+      "prompt": "A grey tabby cat with white paws asleep across a laptop keyboard at night; the laptop has a single pink butterfly sticker; a black mug with a butterfly print; monitors with soft candlestick charts out of focus; purple-rose glow. 35mm, f/2, cosy, no readable text.",
+      "aspect": "9:16",
+      "resolution": "2K",
+      "refs": [
+        "refs/claudia/cat-01.jpg"
+      ]
+    },
+    {
+      "id": "w42-cto-ep1-video",
+      "stage": 2,
+      "kind": "video",
+      "model": "fal/hailuo-2.3",
+      "prompt": "The cat breathes slowly, one ear twitches, tail flicks once; the monitor glow shifts gently. Locked-off camera, seamless loop.",
+      "durationSec": 6,
+      "refs": [
+        "out/w42-cto-ep1-still.png"
+      ]
+    },
+    {
+      "id": "w42-window-seat-ep1",
+      "stage": 1,
+      "kind": "image",
+      "model": "google/nano-banana-2.1",
+      "prompt": "{{ID}} wearing a white linen shirt open over a black top. Travel carousel tile: airplane window seat at sunset, her face lit warm by the window, sea of clouds outside, 35mm, Kodak Portra 400 look.",
+      "aspect": "4:5",
+      "resolution": "2K",
+      "repeat": 6,
+      "refs": [
+        "refs/claudia/01-front-neutral.jpg",
+        "refs/claudia/11-golden-hour.jpg"
+      ]
+    }
+  ]
+}

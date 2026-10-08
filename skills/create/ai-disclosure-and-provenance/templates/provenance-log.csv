@@ -1,0 +1,3 @@
+final_file,final_sha256,source_job_ids,source_models,watermarks,edit_tool,c2pa_after_export,post_network,post_url,posted_at,approved_by
+final/w42-rain-ep1.mp4,<sha256 of the export>,mj_7Q…a3;mj_8B…b2,google/nano-banana-2.1;fal/kling-3-pro,SynthID (still);none (video),CapCut,no (stripped),tiktok,<url after publish>,2026-10-13T17:30:00-04:00,@owner
+final/banner-network-1500x500.jpg,<sha256>,mj_5C…c1,google/nano-banana-pro,SynthID;C2PA,ffmpeg crop,no (re-encoded),x,<url>,2026-10-14T10:00:00-04:00,@owner

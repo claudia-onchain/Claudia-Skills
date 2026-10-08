@@ -1,0 +1,17 @@
+network,content_type,label_required_house_rule,platform_requirement,native_field_set_by_social,account_level,manual_ui_path,extra_labels,checked
+tiktok,ai_video_or_image,yes,required for realistic people/places/events,is_aigc=true,none,More options > AI-generated content,#ad via branded content toggle (never for tokens); no crypto promotion at all,2026-10
+tiktok,ai_caption_only,yes (visuals usually AI too),not required for AI-written text alone,is_aigc=true,none,More options > AI-generated content,,2026-10
+instagram,ai_reel_or_image,yes,required for photorealistic video or realistic audio,is_ai_generated=true,none,Advanced settings > AI label,#ad + paid partnership label; business accounts: Meta Sound Collection only,2026-10
+facebook,ai_video_or_image,yes,required for photorealistic video or realistic audio,service AI flag where available else text,none,AI info toggle,#ad + paid partnership,2026-10
+threads,ai_image_or_video,yes,same Meta policy,service AI flag where available else text,none,AI label,#ad,2026-10
+youtube,ai_short_or_video,yes,required for realistic altered/synthetic content,status.containsSyntheticMedia=true,About: AI-generated character,Studio > Details > Altered or synthetic content > Yes,paid promotion checkbox for sponsored,2026-10
+youtube,ai_thumbnail_only,yes (video disclosed anyway),thumbnails exempt,status.containsSyntheticMedia=true,,,,2026-10
+x,ai_post_with_media,yes,manipulated media policy (deceptive = label/remove),made_with_ai,Automated account label required for API posting,Settings > Account information > Automation,#ad + paid_partnership; one $cashtag per API post; NFA for coins,2026-10
+pinterest,ai_pin,yes,AI modified labels from metadata/classifier,ai_disclosures=[AI_MODIFIED],none,,#ad,2026-10
+mastodon,any,yes,instance rules vary,account bot flag (else text),This is an automated account,Profile > automated account,,2026-10
+bluesky,any,yes,no native AI field,text (AI-generated),bio says AI-generated,,#ad as text,2026-10
+telegram,any,yes,no native AI field,text (AI-generated),channel description,,NFA for coins,2026-10
+discord,any,yes,no native AI field,text (AI-generated),server/channel description,,NFA for coins,2026-10
+farcaster,any,yes,no native AI field,text (AI-generated),bio,,NFA for coins,2026-10
+nostr,any,yes,no native AI field,text (AI-generated),profile about,,,2026-10
+linkedin,any,yes,no native AI field (shows C2PA CR on images that carry it),text (AI-generated),headline/about,,#ad,2026-10

@@ -1,0 +1,27 @@
+# Scene builder — fill, then render to a prompt in this order:
+# id_block → ref_roles → moment → wardrobe → place → camera → light → finish → aspect → constraints
+scene_id: ""              # e.g. desk-night-cat@v1
+pillar: ""                # home | desk | night-out | outside | travel | style
+destination: ""           # ig-feed-4x5 | story-9x16 | x-16x9 | collage-tile-1x1
+model: "google/nano-banana-2.1"
+aspect: "4:5"
+resolution: "2K"
+max_usd: "0.10"
+
+id_block: "[CLAUDIA ID v1] (paste verbatim from claudia-character-bible)"
+ref_roles:                # each ref gets ONE job
+  - { file: "refs/claudia/01-front-neutral.jpg", role: "her face reference" }
+  - { file: "", role: "" }
+
+moment: ""                # mid-action + attention: "laughing because the cat just stretched across the keyboard"
+wardrobe: ""              # ONE string from the bible
+place: ""                 # setting string + 2–3 lived-in details
+camera: ""                # who took it + lens + angle: "friend's phone from across the room, 26mm, eye level"
+light: ""                 # ONE light story
+finish: "candid, unposed, natural skin texture"   # + film stock or phone look
+constraints: "Background people anonymous and out of focus; no readable logos or text."
+
+caption_draft: ""         # in her voice, see captions-and-hooks
+ai_label: "required"      # platform label + 'AI-generated' where text disclosure is used
+score: ""                 # drift check x/7 after generation
+notes: ""

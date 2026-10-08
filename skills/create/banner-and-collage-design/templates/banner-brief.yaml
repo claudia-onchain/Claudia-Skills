@@ -1,0 +1,46 @@
+# Banner brief — one per banner. Fill before generating; keep with the master, wordmark PNG and font licence.
+banner_id: ""                 # e.g. sunset-wordmark@v2
+concept: ""                   # one sentence: "Claudia on her bed at sunset, NYC skyline, serif wordmark left"
+season_or_campaign: ""        # evergreen | launch | holiday ...
+approver: ""                  # the person who approves before it goes live
+
+master:
+  route: ""                   # "gpt-image-2.5 3840x1280" | "nano-banana-2.1 16:9 4K → crop" | "collage 8 tiles"
+  model: ""
+  resolution: ""
+  refs: []                    # refs/claudia/01-front-neutral.jpg, ...
+  max_usd: "0.30"
+  prompt_file: ""             # banners/<id>.txt in the prompt library
+
+composition:
+  face_position: "slightly right of centre, eyes at ~45 % height"
+  wordmark_zone: "left third"     # or right-centre for collages
+  avatar_zone_clear: true         # lower-left quarter empty of important detail
+  top_bottom_margin_px: 60
+
+text:
+  wordmark: "CLAUDIA"
+  font: ""                    # e.g. Playfair Display 400 (SIL OFL)
+  licence_file: ""            # path to OFL.txt kept with the design
+  colour: "#ece9e2"
+  extras: ""                  # rose #ff6fa5 arc, sparkle, underline stroke
+  other_text: []              # every other word in the image, checked letter by letter
+
+logos:                        # official files only, unmodified; Solana first among chains
+  - { mark: "", source_url: "", variant: "white|black|colour", min_size_px: "" }
+
+exports:                      # sh scripts/banner-export.sh master-3x1.jpg out <banner_id>
+  site: ["2000x667", "1200x400", "800x267"]
+  x: "1500x500"
+  linkedin: "1584x396"
+  twitch: "1200x480"
+  discord_profile: "680x240"
+  youtube: "own 16:9 2560x1440 composition, safe 1546x423"
+  discord_server: "own 16:9 960x540 composition"
+
+checks:
+  drift_score: ""             # x/7
+  adult_late_twenties: ""     # yes/no
+  no_generated_logos_or_stray_text: ""
+  alt_text: "AI-generated banner: ..."
+  provenance_sidecars_kept: ""
