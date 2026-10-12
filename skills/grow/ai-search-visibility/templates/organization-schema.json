@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "<Name>",
+  "alternateName": "<common variant, or remove this line>",
+  "url": "https://<site>/",
+  "logo": "https://<site>/<logo>.png",
+  "description": "<the same one-sentence description as the facts page>",
+  "foundingDate": "<YYYY-MM>",
+  "email": "<press or business email>",
+  "sameAs": [
+    "https://x.com/<handle>",
+    "https://www.tiktok.com/@<handle>",
+    "https://www.instagram.com/<handle>/",
+    "https://www.youtube.com/@<handle>",
+    "https://t.me/<channel>",
+    "https://github.com/<org>"
+  ]
+}

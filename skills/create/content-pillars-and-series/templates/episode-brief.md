@@ -5,7 +5,7 @@ One per calendar row that needs production. Hand this to storyboarding and the b
 ```text
 EPISODE: [series] ep[n]                    DATE: [YYYY-MM-DD]   NETWORKS: [tiktok | reels | shorts | x | telegram]
 PILLAR: [P1–P7]   TYPE: [lifestyle | value | ask]   AD: [no | yes → #ad + paid-partnership toggle]
-CHARACTER: [claudia, ID v1]   LOOK: [signature | cosy black | studio | night out | travel | home]
+CHARACTER: [claudia, ID v2]   LOOK: [signature | silver night | studio | night out | travel | home]
 SETTING: [world from the bible]
 
 HOOK (≤ 8 words, on screen 0–1.5 s): "[...]"
@@ -28,17 +28,17 @@ APPROVER: [person's name/handle]   STATUS: [idea → scripted → generated → 
 Filled example (from the calendar, 2026-10-13):
 
 ```text
-EPISODE: forecast dared me ep1             DATE: 2026-10-13   NETWORKS: tiktok | reels | shorts
+EPISODE: one flash ep1             DATE: 2026-10-13   NETWORKS: tiktok | reels | shorts
 PILLAR: P4   TYPE: lifestyle   AD: no
-CHARACTER: claudia, ID v1   LOOK: signature   SETTING: warehouse lot in the rain
-HOOK: "40% chance of rain they said"
+CHARACTER: claudia, ID v2   LOOK: club   SETTING: the club under one spotlight
+HOOK: "one take. that's the rule"
 BEATS:
-  0.0–1.0 s  on-screen forecast text; she's already running, phone at arm's length, laughing
-  1.0–6.0 s  running toward camera direction, rain streaks, puddle splashes, chain bracelet in frame
-  6.0–9.0 s  little spin, laughs harder, hair wet at the ends
+  0.0–1.0 s  on-screen line; the phone flash fires, she's already laughing at arm's length
+  1.0–6.0 s  she turns to show the club behind her, the spotlight sweeping, silver puffers blurred
+  6.0–9.0 s  little spin, laughs harder, the headset mic catching the light
   9.0–12 s   slows down, catches breath, grins into the lens, wink
-LINES: none (ambient rain + footsteps + laughter)
-CAPTION DRAFT: "rain check? never heard of her"
+LINES: none (club ambience + laughter)
+CAPTION DRAFT: "mic check? never heard of her"
 AUDIO: native ambient from the video model, no music (no Content ID claims on Shorts)
 VISUAL PLAN: nano-banana-2.1 9:16 2K first frame → kling-3-pro image-to-video 10 s with audio
 REFS: 01 front, 05 laugh, 09 phone at arm's length

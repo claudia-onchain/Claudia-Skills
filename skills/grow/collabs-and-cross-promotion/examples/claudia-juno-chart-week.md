@@ -41,12 +41,12 @@ The filled brief is [collab-brief.yaml](../templates/collab-brief.yaml). Key lin
 const posts = [
   { at: "2026-10-13T17:00:00Z", text: "Juno just explained higher lows better than any textbook. Here it is as a rooftop at dusk: each step up is a floor. @juno_charts" },
   { at: "2026-10-15T17:00:00Z", text: "Day 2 with @juno_charts: volume is the crowd, not the weather. I drew the crowd." },
-  { at: "2026-10-17T17:00:00Z", text: "Day 3: why a single candle is a sentence, not a story. Juno's words, my rainy-street visual. @juno_charts" },
+  { at: "2026-10-17T17:00:00Z", text: "Day 3: why a single candle is a sentence, not a story. Juno's words, my silver-foil visual. @juno_charts" },
 ];
 for (const p of posts) {
   const d = social.draft({
     text: p.text,
-    media: [{ path: `./out/chartweek-${p.at.slice(8, 10)}.jpg`, alt: "AI-generated image of Claudia, black bob with copper streaks, sketching a chart on a window at dusk" }],
+    media: [{ path: `./out/chartweek-${p.at.slice(8, 10)}.jpg`, alt: "AI-generated image of Claudia, black bob with peach streak, sketching a chart on a window at dusk" }],
     targets: [{ account: x.id }],
     labels: { ai: true },
     scheduleAt: Date.parse(p.at),

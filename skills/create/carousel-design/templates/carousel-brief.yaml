@@ -1,0 +1,51 @@
+# Carousel brief. Fill it before generating anything; it becomes slides.json and the post copy.
+# House rules: one idea per slide, one accent word per slide, AI label on every generated image.
+
+title: "<working title>"
+character: "<Claudia | your own character from its bible>"
+pillar: "<content pillar>"
+spine: "<numbered list | step-by-step | before/after | myth/fact | story | framework | lookbook>"
+
+platforms:
+  - id: instagram
+    size: ig-4x5            # ig-4x5 (default, API-safe) | ig-3x4 (app only) | square
+    slides: <6–10>          # API and @useclaudia/social: 10 max; app: 20
+  - id: tiktok
+    size: tiktok            # 1080x1920, up to 35 photos, posted in the TikTok app
+    slides: <6–12>
+  - id: linkedin
+    size: linkedin          # PDF document, 1080x1350 pages, posted in LinkedIn by hand
+    slides: <8–15>
+    document_title: "<required title shown on the document>"
+
+hook:
+  formula: "<specific number | mistake | before/after | save-worthy | contradiction | question>"
+  title: "<4–9 words, one *accent* word>"
+  promise_paid_off_on_slide: <n>
+
+slides:                       # one line each before writing full copy
+  - "1  hook: <title>"
+  - "2  <point>"
+  - "3  <point>"
+  - "4  <picture slide to re-hook>"
+  - "5  <point>"
+  - "6  <payoff>"
+  - "7  cta: <real question you will answer>"
+
+art:
+  model: "<google/nano-banana-2.1 with refs | fal/flux-2-pro for exact colours | byteplus/seedream-4.5 for a set>"
+  aspect: "<4:5 | 9:16 | 2:3 then crop to 3:4>"
+  refs: "<refs/claudia/01-front-neutral.jpg,refs/claudia/08-hand-collar.jpg>"
+  grade: "<one grade line pasted into every prompt>"
+  negative_space: "<where the text goes: lower third | left half | top third>"
+  budget_usd: <cap for the whole set>
+
+copy:
+  caption_line_1: "<restates or twists the hook>"
+  question: "<soft question>"
+  hashtags: "<3–5 specific tags, incl. #aicharacter>"
+  labels: "ai=true; ad=<true if paid, gifted or affiliate>; nfa=<true if any coin is mentioned>"
+
+approval:
+  reviewed_by: "<name>"
+  date: "<YYYY-MM-DD>"

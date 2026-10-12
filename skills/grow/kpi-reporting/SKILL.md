@@ -94,7 +94,7 @@ Read [references/utm-and-attribution.md](references/utm-and-attribution.md). Con
   `bluesky`, `farcaster`, `claudia-thread`, `partner`, `newsletter`.
 - `utm_medium` = how: `social`, `social-paid`, `bio`, `story`, `community`, `dm`, `email`, `referral`, `affiliate`, `qr`.
 - `utm_campaign` = `YYYY-MM-name`, lowercase, hyphens: `2026-10-skills-launch`.
-- `utm_content` = the post or variant: `claudia-rain-run-v2`, `thread-part-6`.
+- `utm_content` = the post or variant: `claudia-club-run-v2`, `thread-part-6`.
 - No personal data in any parameter. No UTMs on links to other people's sites unless agreed.
 
 ```sh

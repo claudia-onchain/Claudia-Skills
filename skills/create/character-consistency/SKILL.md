@@ -45,11 +45,7 @@ Consistency starts in words. Paste the versioned identity block **first** in eve
 more — FLUX.2's guide says so explicitly, checked 2026-10), then the scene. Never paraphrase it; never "summarise" her.
 
 ```text
-[CLAUDIA ID v1] Claudia, a 28-year-old woman (adult, late twenties) with a glossy jet-black jaw-length blunt bob and heavy
-straight bangs just above the brows; vivid copper-orange streak panels through the front bangs and one side; a small orange
-hair clip at the side of the bangs; small thin gold hoop earrings; light freckles across the nose and cheeks; warm brown
-eyes; straight dark brows; a knowing closed-lip half-smile; natural skin texture with visible pores; fine-line tattoos on
-her arms (small stars, a rose, a sun).
+[CLAUDIA ID v2] Claudia, a 28-year-old woman (adult, late twenties) with a glossy jet-black jaw-length blunt bob and heavy straight bangs; one peach-orange streak panel through the front bangs on one side, the rest jet-black; a small peach star-shaped hair clip at the side; a thin headset microphone along her cheek; light freckles across the nose and cheeks; grey-green eyes; straight dark brows; glossy coral lips; a cool, direct gaze; natural skin texture with visible pores.
 ```
 
 Then add **one** wardrobe string and **one** setting string from the bible. Three blocks, always in that order:
@@ -57,28 +53,28 @@ Then add **one** wardrobe string and **one** setting string from the bible. Thre
 
 ### 2. Build the 12-shot reference pack
 
-Start from one anchor image the owner approves (for Claudia: `portrait-blue-1024.jpg` from the site media folder). Then
+Start from one anchor image the owner approves (for Claudia: `portrait-official-836.jpg` from the site media folder). Then
 generate the other 11 **with the anchor as a reference**, keep only 7/7 scores, and save them numbered. Shot list (also in
 [templates/ref-pack-shotlist.csv](templates/ref-pack-shotlist.csv)):
 
 | # | Shot | Why it's in the pack |
 |---|---|---|
-| 01 | front, neutral, plain backdrop, 85 mm | the face anchor — every model gets this one |
-| 02 | ¾ left, half-smile | cheekbones, streak panel side |
-| 03 | ¾ right, half-smile | the other side (no second panel!) |
-| 04 | clean profile | nose, bangs depth, bob length at the jaw |
-| 05 | open laugh, teeth visible | UGC clips laugh a lot; teaches the model her laugh |
-| 06 | sunglasses on | lounge/club identity without eyes |
-| 07 | full body, signature look, standing | wardrobe proportions |
-| 08 | seated, cosy black jumper | banner pose family |
+| 01 | front, neutral, silver foil, hard flash, 85 mm | the face anchor — every model gets this one |
+| 02 | ¾ left, cool gaze | cheekbones, streak side |
+| 03 | ¾ right, cool gaze | the other side (no second streak!) |
+| 04 | clean profile | nose, bangs depth, bob length at the jaw, the headset mic line |
+| 05 | open laugh, teeth visible | talking clips laugh a lot; teaches the model her laugh |
+| 06 | orange visor down | identity without eyes (visor and sunglasses looks) |
+| 07 | full body, Studio look, standing | wardrobe proportions |
+| 08 | over the shoulder, hand at the collar | the official-portrait and banner pose |
 | 09 | holding a phone at arm's length | selfie arm + hands |
-| 10 | blue-violet club light | identity under coloured light |
-| 11 | golden-hour backlight | sunset banner light |
-| 12 | back/side of head, hair detail | the exact copper panel shape and the clip |
+| 10 | club spotlight | identity under hard backlight |
+| 11 | hard flash on silver foil | the foil-set light |
+| 12 | back/side of head, hair detail | the exact peach streak shape, the star clip and the mic |
 
 ```sh
 # anchor → 3/4 left, estimate first (Nano Banana 2.1, ~$0.05 per 2K image, checked 2026-10)
-claudia generate image "[CLAUDIA ID v1] … Same woman as image 1. Three-quarter view turned to her left, knowing half-smile, \
+claudia generate image "[CLAUDIA ID v2] … Same woman as image 1. Three-quarter view turned to her left, cool direct gaze, \
 plain warm-grey backdrop, 85mm portrait lens, f/2.8, soft window key light from camera left, natural skin texture" \
   --model google/nano-banana-2.1 --ref refs/claudia/01-front-neutral.jpg --aspect 2:3 --resolution 2K --dry-run
 # looks right → run it with a cap
@@ -106,7 +102,7 @@ Use `--seed` to A/B **one** variable (lens, light, wardrobe) while everything el
 
 ```sh
 for lens in "35mm" "50mm" "85mm"; do
-  claudia generate image "[CLAUDIA ID v1] … bedroom, golden hour, $lens lens, f/2" --model fal/flux-2-pro \
+  claudia generate image "[CLAUDIA ID v2] … silver foil, hard flash, $lens lens, f/2" --model fal/flux-2-pro \
     --ref refs/claudia/01-front-neutral.jpg --seed 41120 --aspect 4:5 --max-usd 0.05 --yes
 done
 ```
@@ -125,10 +121,10 @@ sh scripts/contact-sheet.sh refs/claudia/01-front-neutral.jpg out/candidates/*.j
 | Point | Pass when |
 |---|---|
 | 1 Hair | jaw-length blunt bob, heavy straight bangs, jet-black base |
-| 2 Copper | chunky panels in the bangs + one side, nowhere else |
-| 3 Clip | one small orange clip (may be hidden in wide shots) |
-| 4 Hoops | small thin gold hoops |
-| 5 Face/age | freckles, brown eyes, her smile; reads 26–30 |
+| 2 Peach streak | one chunky panel in the front bangs, nowhere else |
+| 3 Clip | one small peach star clip (may be hidden in wide shots) |
+| 4 Headset mic | a thin headset mic |
+| 5 Face/age | freckles, grey-green eyes, her smile; reads 26–30 |
 | 6 Wardrobe | matches the requested look and colours |
 | 7 Clean | hands, eyes, teeth, text, background all artifact-free |
 
@@ -151,8 +147,8 @@ list. Fix prompts for every common failure are in [templates/edit-fix-prompts.md
 most important one:
 
 ```text
-Edit image 1. Preserve exactly: her face, freckles, eye colour, expression, hair shape, bangs, the copper panel in the
-front bangs, the orange clip, earrings, outfit, pose, background and lighting. Change only: make her look like a woman in
+Edit image 1. Preserve exactly: her face, freckles, eye colour, expression, hair shape, bangs, the peach streak in the
+front bangs, the star clip, earrings, outfit, pose, background and lighting. Change only: make her look like a woman in
 her late twenties — slightly more defined cheekbones and jawline, adult facial proportions, a calm knowing expression.
 Do not change anything else.
 ```
@@ -174,7 +170,7 @@ you'll see it in the scores before the audience does.
 ## Check before you finish
 
 - [ ] Identity block pasted verbatim and first; version tag present.
-- [ ] Refs chosen for the shot (face anchor 01 always; laugh 05 for UGC; sunglasses 06 for lounge/club).
+- [ ] Refs chosen for the shot (face anchor 01 always; laugh 05 for UGC; visor 06 for visor and sunglasses looks).
 - [ ] Every output scored; nothing under 6/7 published; no age doubt.
 - [ ] Video: first frame was an approved still; middle and last frames checked.
 - [ ] Log written (model, refs, seed, score, fixes).

@@ -44,7 +44,7 @@ Satisfaction surveys and "Not interested" taps count against a Short.
 
 | Length | Use | Target average % viewed |
 |---|---|---|
-| 6–12 s | mood loops (Claudia's rooftop, lounge) | 100%+ (rewatches) |
+| 6–12 s | mood loops (Claudia's club, visor reveal) | 100%+ (rewatches) |
 | 15–30 s | a mini scene with a twist | 85% |
 | 30–60 s | a how-it-was-made or a 3-beat story | 65–75% |
 | 60–180 s | only when every beat holds (a tutorial with on-screen steps) | 50%+ |

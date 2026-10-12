@@ -11,9 +11,9 @@ to the image, so you can pick on purpose.
 | close-up | face to chin, a little hair | banners, reaction stills |
 | medium close-up | head and shoulders | talking-to-camera, portraits |
 | medium shot | waist up | outfit + expression, UGC stills |
-| cowboy / three-quarter shot | mid-thigh up | tartan skirt + top together |
+| cowboy / three-quarter shot | mid-thigh up | patent skirt + top together |
 | full shot | head to toe | wardrobe, mirror selfies |
-| wide / establishing | subject small in the place | travel, rooftops, rain lot |
+| wide / establishing | subject small in the place | travel, rooftops, club floor |
 
 ## Angle and position
 
@@ -32,7 +32,7 @@ length, slightly above eye level (UGC) · mirror selfie, phone covering part of 
 | 50 mm | "human eye", flattering | medium shots |
 | 85 mm | compression, creamy background | portraits, headshots |
 | 100–135 mm | strong compression, isolates face | studio beauty, telephoto candid |
-| macro 100 mm | texture detail | jewellery, pendant, freckles |
+| macro 100 mm | texture detail | the star clip, the foil, freckles |
 
 Aperture: f/1.4–2 (very shallow, dreamy) · f/2.8 (portrait default) · f/5.6–8 (group, scene sharpness) · f/11+ (landscape).
 Focus words: "focus on her eyes", "background softly out of focus", "rack focus" (video), "deep focus".
@@ -47,10 +47,10 @@ shoot flash snapshots) · disposable camera with flash (party nights, red-eye, h
 
 | Stock | Look | Claudia scenes |
 |---|---|---|
-| Kodak Portra 400 | warm skin, soft pastel highlights | sunset bedroom, travel |
-| Kodak Gold 200 | warm, saturated yellows, nostalgic | lounge, summer |
+| Kodak Portra 400 | warm skin, soft pastel highlights | silver-foil set, travel |
+| Kodak Gold 200 | warm, saturated yellows, nostalgic | warm editorial looks |
 | Fujifilm Pro 400H | cool greens, airy | daylight room, plants |
-| CineStill 800T | tungsten-balanced, red halation around lights | club, city night, rain neon |
+| CineStill 800T | tungsten-balanced, red halation around lights | club, city night, neon |
 | Kodak Tri-X 400 | black-and-white, punchy grain | editorial, quote posts |
 | Ilford HP5 | softer B&W | moody portraits |
 | Polaroid / instant film | soft, faded, white frame | collage tiles, photo wall |
@@ -65,7 +65,7 @@ Finishes: gentle 35mm grain · lifted blacks · halation · subtle vignette · m
 | blue hour | cool ambient, city lights start to pop |
 | soft window light from camera left | gentle, directional, natural |
 | overcast daylight | even, low contrast, honest (her day room) |
-| tungsten lamp key | warm, cosy pools of light (lounge) |
+| tungsten lamp key | warm pools of light (dressing room, desk) |
 | practical lights | lamps, screens, neon in frame that light the subject |
 | moving-head beams, haze | club volume light |
 | neon rim light (rose #ff6fa5 / blue-violet) | tech and club edges |
@@ -76,13 +76,13 @@ Finishes: gentle 35mm grain · lifted blacks · halation · subtle vignette · m
 
 ## Colour and grade words
 
-warm teal-and-amber (avoid for her; reads generic) · warm skin, lifted blacks · rose and copper accents ·
+warm teal-and-amber (avoid for her; reads generic) · warm skin, lifted blacks · rose and peach accents ·
 blue-violet neon with rose highlights · desaturated greens · split-toned · HEX codes tied to objects (FLUX.2:
 "the jumper is #111111", "rim light #ff6fa5").
 
 ## Composition
 
-rule of thirds · centre-framed symmetry · negative space on the left for a wordmark · leading lines (rain lot bollards,
+rule of thirds · centre-framed symmetry · negative space on the left for a wordmark · leading lines (club floor bollards,
 loading-dock doors) · foreground framing (plants, a laptop lid, a wine glass) · layered depth (foreground prop, subject,
 skyline) · face in the upper third for 9:16 (leave room for captions and UI).
 

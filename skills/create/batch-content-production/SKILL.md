@@ -53,14 +53,14 @@ typo can't fork her identity across 30 prompts. Every item names an explicit `mo
   "approver": "@owner",
   "budget": { "perBatchUsd": 16, "rerollPct": 30 },
   "limits": { "perJobUsd": 3.5, "perDayUsd": 8, "perMonthUsd": 60, "approveAboveUsd": 0.5 },
-  "blocks": { "ID": "[CLAUDIA ID v1] Claudia, a 28-year-old woman (adult, late twenties) …" },
+  "blocks": { "ID": "[CLAUDIA ID v2] Claudia, a 28-year-old woman (adult, late twenties) …" },
   "items": [
-    { "id": "w42-rain-ep1-still", "stage": 1, "kind": "image", "model": "google/nano-banana-2.1",
-      "prompt": "{{ID}} … running selfie in the rain at a warehouse lot …", "aspect": "9:16", "resolution": "2K",
-      "refs": ["refs/claudia/01-front-neutral.jpg", "refs/claudia/09-phone-arm.jpg"] },
-    { "id": "w42-rain-ep1-video", "stage": 2, "kind": "video", "model": "fal/kling-3-pro",
-      "prompt": "Front-camera selfie, she runs forward … ambient rain, no music.", "aspect": "9:16", "durationSec": 10,
-      "refs": ["out/w42-rain-ep1-still.png"] }
+    { "id": "w42-club-ep1-still", "stage": 1, "kind": "image", "model": "google/nano-banana-2.1",
+      "prompt": "{{ID}} … dancing at the club at a the club …", "aspect": "9:16", "resolution": "2K",
+      "refs": ["refs/claudia/01-front-neutral.jpg", "refs/claudia/09-phone-selfie.jpg"] },
+    { "id": "w42-club-ep1-video", "stage": 2, "kind": "video", "model": "fal/kling-3-pro",
+      "prompt": "Front-camera selfie, she dances forward at the club … ambient club sound, no music.", "aspect": "9:16", "durationSec": 10,
+      "refs": ["out/w42-club-ep1-still.png"] }
   ]
 }
 ```
@@ -79,7 +79,7 @@ node scripts/batch.mjs estimate batch.json --json     # for an agent to read
 Batch claudia-2026-w42 · 9 items
 w42-talk-ep1-still   image   google/nano-banana-2.1   9:16 2K     $0.0504  list
 w42-talk-ep1-video   video   google/omni-flash        9:16 10s      $1.00  estimate
-w42-rain-ep1-video   video   fal/kling-3-pro          9:16 10s      $1.68  list
+w42-club-ep1-video   video   fal/kling-3-pro          9:16 10s      $1.68  list
 …
 Total $4.32 · reroll budget 30% $1.30 · plan for $5.62 · cap $16.00
 ```
@@ -102,7 +102,7 @@ For any item using a model or option for the first time, look at the exact provi
 
 ```sh
 claudia generate video "Front-camera selfie, she runs forward…" --model fal/kling-3-pro --aspect 9:16 --duration 10 \
-  --ref out/w42-rain-ep1-still.png --dry-run
+  --ref out/w42-club-ep1-still.png --dry-run
 ```
 
 ```ts
@@ -159,10 +159,10 @@ BytePlus links expire in 24–48 h, so don't leave jobs un-downloaded over a wee
 
 For each stage-1 item: contact sheet against the anchor, 7-point drift score
 ([../character-consistency/SKILL.md](../character-consistency/SKILL.md)). Copy the winner to the path the next stage
-expects (`out/w42-rain-ep1-still.png`). Reroll only items under 5/7, from the reroll budget.
+expects (`out/w42-club-ep1-still.png`). Reroll only items under 5/7, from the reroll budget.
 
 ```sh
-cp ~/.claudia/media/library/2026-10/mj_…-2.png out/w42-rain-ep1-still.png
+cp ~/.claudia/media/library/2026-10/mj_…-2.png out/w42-club-ep1-still.png
 node scripts/batch.mjs run batch.json --yes --stage 2   # refuses if a stage-2 ref file is missing
 ```
 
@@ -185,16 +185,16 @@ node scripts/batch.mjs run batch.json --yes --stage 2   # refuses if a stage-2 r
 import { createSocial, envKeys } from "@useclaudia/social";
 const social = createSocial({ keys: envKeys() });
 const post = social.draft({
-  text: "rain check? never heard of her",
-  media: ["final/w42-rain-ep1.mp4"],
-  targets: [{ account: "tiktok-main" }, { account: "ig-main" }, { account: "yt-main", text: "rain check? never heard of her #shorts" }],
+  text: "mic check? never heard of her",
+  media: ["final/w42-club-ep1.mp4"],
+  targets: [{ account: "tiktok-main" }, { account: "ig-main" }, { account: "yt-main", text: "mic check? never heard of her #shorts" }],
   scheduleAt: "2026-10-13T17:30:00-04:00",
 });
 console.log(social.preview(post.id)); // labels added per network (X made_with_ai, TikTok is_aigc, IG is_ai_generated, YouTube containsSyntheticMedia)
 social.submit(post.id);               // → pending_approval; the person approves in their UI, then it schedules/publishes once
 ```
 
-CLI: `claudia post x "…" --media final/w42-rain-ep1.mp4 --dry-run` previews labels, length, cost and warnings first.
+CLI: `claudia post x "…" --media final/w42-club-ep1.mp4 --dry-run` previews labels, length, cost and warnings first.
 Scheduling details: [../../build/social-publishing/SKILL.md](../../build/social-publishing/SKILL.md),
 [../../grow/posting-schedule/SKILL.md](../../grow/posting-schedule/SKILL.md).
 

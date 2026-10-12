@@ -1,0 +1,8 @@
+date_utc,chain,wallet,kind,coin_key,symbol,qty_tokens,native_amount,native_symbol,native_usd,network_fee_native,route,tx_link,source,note
+<YYYY-MM-DD HH:MM>,<sol|hood>,<agent|evm|other short address>,buy,<sol:<mint>|hood:0x…>,<TICKER>,<tokens received>,<SOL or ETH spent on the swap>,<SOL|ETH>,<USD per SOL or ETH at that time>,<network fee + priority fee or gas>,<route from the quote>,<explorer link>,<claudia buy --json | evm.buy | website>,<quote minOut / price impact if useful>
+<YYYY-MM-DD HH:MM>,<sol|hood>,<wallet>,sell,<coin key>,<TICKER>,<tokens sold>,<SOL or ETH received>,<SOL|ETH>,<USD per SOL or ETH>,<network fee or gas>,<route>,<explorer link>,<source>,<pct sold>
+<YYYY-MM-DD HH:MM>,<sol|hood>,<wallet>,launch_cost,<coin key>,<TICKER>,0,<launch fee paid, excluding the dev buy>,<SOL|ETH>,<USD per SOL or ETH>,<network fee or gas>,<launchpad>,<explorer link>,<claudia launch output>,record the dev buy as its own buy row
+<YYYY-MM-DD HH:MM>,<sol|hood>,<wallet>,fee_income,<coin key>,<TICKER>,0,<creator fees received>,<SOL|ETH>,<USD per SOL or ETH>,0,<collector|keeper|harvest>,<explorer link>,<creator-fees ledger>,payout actually received
+<YYYY-MM-DD HH:MM>,<sol|hood>,<wallet>,harvest_gas,<coin key>,<TICKER>,0,0,<SOL|ETH>,<USD per SOL or ETH>,<gas or network fee paid>,harvest,<explorer link>,claudia harvest output,
+<YYYY-MM-DD HH:MM>,<sol|hood>,<wallet>,transfer_in,<coin key>,<TICKER>,<tokens>,<cost you assign, often 0>,<SOL|ETH>,<USD per SOL or ETH>,0,,<explorer link>,<where they came from>,airdrop or own wallet: say which
+<YYYY-MM-DD HH:MM>,<sol|hood>,<wallet>,transfer_out,<coin key>,<TICKER>,<tokens>,0,<SOL|ETH>,<USD per SOL or ETH>,<network fee>,,<explorer link>,<destination>,to own wallet or someone else: say which

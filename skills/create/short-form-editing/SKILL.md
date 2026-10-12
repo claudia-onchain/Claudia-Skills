@@ -64,17 +64,17 @@ Write the keep-ranges into the edit decision list ([templates/edit-decision-list
 Different models output 720×1280, 1080×1920, 24 or 30 fps, with or without audio. Conform first, edit second:
 
 ```sh
-sh scripts/conform.sh raw/rain-a.mp4 work/rain-a.mp4 30      # cover-fill crop to 1080x1920, 30 fps, H.264 High, CRF 18
-sh scripts/conform.sh raw/lounge.mp4 work/lounge.mp4 24      # keep 24 fps for the filmic lounge clip
+sh scripts/conform.sh raw/club-a.mp4 work/club-a.mp4 30      # cover-fill crop to 1080x1920, 30 fps, H.264 High, CRF 18
+sh scripts/conform.sh raw/visor.mp4 work/visor.mp4 24      # keep 24 fps for the filmic visor clip
 ```
 
-Pick **one** frame rate per short: 30 for UGC/selfie energy, 24 for cinematic (lounge, sunset). Don't mix. If a model
+Pick **one** frame rate per short: 30 for UGC/selfie energy, 24 for cinematic (the visor reveal, editorial looks). Don't mix. If a model
 gives 16:9, put it in 9:16 over a blurred copy of itself (recipe R4) rather than letterboxing in black.
 
 ### 3. Cut to the rhythm of short-form
 
 - **Hook (0–1.5 s):** one or two shots of 0.5–1.5 s each. Start mid-action: the laugh, the sunglasses lift, the first
-  stride in the rain. Never start on the settling frames.
+  stride at the club. Never start on the settling frames.
 - **Body:** shots of 1.5–3 s. Cut **on motion** (a hand moving, a head turn, a camera whip) — the eye forgives a cut
   during movement and it hides morph frames.
 - **Payoff:** let the best moment run 2–4 s; if the clip loops, end on a frame that matches the first (recipe R7).
@@ -84,21 +84,21 @@ gives 16:9, put it in 9:16 over a blurred copy of itself (recipe R4) rather than
 
 ### 4. Stitch two generations into one continuous take
 
-Most models top out at 8–15 s per generation (checked 2026-10). For a 13 s running-in-the-rain take:
+Most models top out at 8–15 s per generation (checked 2026-10). For a 13 s club flash-selfie take:
 
 1. Generate clip A (8 s). Extract its **last clean frame** (before the tail morph):
    `ffmpeg -sseof -0.6 -i a.mp4 -frames:v 1 -q:v 2 a-last.jpg`.
 2. Generate clip B image-to-video **from `a-last.jpg`** with the same prompt and "continuous motion, same pace".
 3. Join with a 0.3 s crossfade on motion (recipe R2) or a hard cut during an arm swing.
 
-Full walk-through with commands and costs: [examples/rain-13s-stitch.md](examples/rain-13s-stitch.md).
+Full walk-through with commands and costs: [examples/club-13s-stitch.md](examples/club-13s-stitch.md).
 
 ### 5. Speed ramps, J-cuts and L-cuts
 
 - **Speed ramp:** slow the peak moment (0.5×) and speed the approach (1.5×) — e.g. normal → slow sunglasses lift →
   quick return. Recipe R3. Ramp only segments without lip-sync, or the mouth will drift.
 - **L-cut:** the picture cuts, the previous clip's sound carries 0.4–0.8 s under the next shot (her laugh trails into
-  the club shot). **J-cut:** the next clip's sound starts before its picture (club bass leaks in under the bedroom shot).
+  the club shot). **J-cut:** the next clip's sound starts before its picture (club bass leaks in under the studio shot).
   Recipe R6. These make stitched AI clips feel like one continuous moment.
 
 ### 6. Match colour across models, then grade once
@@ -134,7 +134,7 @@ Burn word-by-word or line captions inside the safe zone (≈900×1400 centred; k
 clear, checked 2026-10). Styling, ASS template and hook text: [../captions-and-hooks/SKILL.md](../captions-and-hooks/SKILL.md).
 
 ```sh
-sh scripts/burn-captions.sh work/graded.mp4 captions/rain.ass work/captioned.mp4 fonts/   # needs libass; exits 4 with options if missing
+sh scripts/burn-captions.sh work/graded.mp4 captions/club.ass work/captioned.mp4 fonts/   # needs libass; exits 4 with options if missing
 ```
 
 ### 9. Export the deliverables
@@ -161,7 +161,7 @@ A person approves the final file before anything is published ([../../build/soci
 - [templates/export-checklist.md](templates/export-checklist.md) — the pre-publish technical and safety checklist.
 - [scripts/conform.sh](scripts/conform.sh) · [scripts/loudnorm.sh](scripts/loudnorm.sh) · [scripts/burn-captions.sh](scripts/burn-captions.sh) — POSIX sh, no network, tested with ffmpeg 8.1.
 - [references/ffmpeg-recipes.md](references/ffmpeg-recipes.md) — R1–R12, every recipe tested on the owner's clips.
-- [examples/rain-13s-stitch.md](examples/rain-13s-stitch.md) — two generations → one 13 s rain selfie, start to export.
+- [examples/club-13s-stitch.md](examples/club-13s-stitch.md) — two generations → one 13 s club selfie, start to export.
 
 ## Check before you finish
 

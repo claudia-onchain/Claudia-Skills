@@ -1,0 +1,14 @@
+# Ollama Modelfile: the same model with a larger fixed context window.
+# Use when you can't set OLLAMA_CONTEXT_LENGTH on the server (for example a shared service).
+#
+#   ollama create <base-model>-32k -f Modelfile
+#   ollama run <base-model>-32k "Reply with one word: ready"
+#   ollama ps            # the CONTEXT column should read 32768
+#
+# Then pick "<base-model>-32k" in Claudia Local → Settings → Chat model.
+# Replace <base-model> below with a model you pulled, for example qwen3:8b.
+
+FROM <base-model>
+
+# Context window in tokens. 16384 to 32768 suits 16 GB machines with an 8B model; 65536 needs much more memory.
+PARAMETER num_ctx 32768

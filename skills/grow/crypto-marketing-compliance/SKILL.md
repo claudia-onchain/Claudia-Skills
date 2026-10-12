@@ -33,7 +33,7 @@ lawyer.
 - Before a launch campaign ([launch-campaigns](../launch-campaigns/SKILL.md)) or a sponsorship
   ([brand-deals-and-sponsorships](../brand-deals-and-sponsorships/SKILL.md)) that involves a token.
 
-Skip it for posts with no financial content at all (a sunset bedroom selfie is just an AI label job, see
+Skip it for posts with no financial content at all (a silver-foil set selfie is just an AI label job, see
 [ai-disclosure-and-provenance](../../create/ai-disclosure-and-provenance/SKILL.md)).
 
 ## What you need

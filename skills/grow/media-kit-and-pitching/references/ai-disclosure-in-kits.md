@@ -35,7 +35,7 @@ operator is responsible for their own compliance. Checked 2026-10.
 
 | Situation | Write | Don't write |
 |---|---|---|
-| Showing a product | "Northpine's new travel headphones, in tonight's rainy-street scene. #ad · AI-generated" | "Obsessed with my new Northpine headphones" |
+| Showing a product | "Northpine's new travel headphones, in tonight's after-club scene. #ad · AI-generated" | "Obsessed with my new Northpine headphones" |
 | Brand claim | "Northpine says 40 hours of battery." | "40 hours of battery, I tested it." |
 | Operator's real test | "Our team used these on a 9-hour flight: noise cancelling held up." | "I wore these on my flight." |
 | Discount code | "#ad Code CLAUDIA10 gives 10 % off (Northpine pays us per sale)." | "Use my code!" |

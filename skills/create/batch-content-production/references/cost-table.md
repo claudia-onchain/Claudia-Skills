@@ -62,9 +62,9 @@ for planning. Read it when you pick models for a budget.
 | 4:5 feed still | nano-banana-2.1 2K | $0.05 |
 | 6-tile carousel | 6 × nano-banana-2.1 2K | $0.30 |
 | 3:1 banner | nano-banana-pro 4K 16:9 + crop | $0.24 |
-| 8 s lounge reveal | still + kling-2.6-pro 5 s no audio, looped in edit | $0.40 |
-| 10 s rain selfie | still + kling-3-pro 10 s with audio | $1.73 |
-| 6 s cat loop | still + hailuo-2.3 6 s | $0.33 |
+| 8 s visor reveal | still + kling-2.6-pro 5 s no audio, looped in edit | $0.40 |
+| 10 s club selfie | still + kling-3-pro 10 s with audio | $1.73 |
+| 6 s disco ball loop | still + hailuo-2.3 6 s | $0.33 |
 | 18 s talking vlog | still + omni-flash ~10 s + v3 VO + lipsync-2 18 s | ~$1.97 |
 | 30 s talking head (photo-driven) | still + v3 VO + omnihuman-1.5 30 s | ~$4.88 |
 

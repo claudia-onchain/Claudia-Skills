@@ -50,11 +50,11 @@ Models weight early words more (FLUX.2's own guide says so; checked 2026-10), so
 
 | Block | What it says | Example (Claudia) |
 |---|---|---|
-| 1 Subject / identity | who, with the locked ID block | `[CLAUDIA ID v1] Claudia, a 28-year-old woman (adult, late twenties) …` |
-| 2 Wardrobe + action | one look, one action, one expression | `wearing an oversized fuzzy black knit jumper; lying on her front, chin resting on folded arms, looking into the lens with a knowing half-smile` |
-| 3 Setting | place, props, time, weather | `on an unmade white duvet in a New York bedroom, floor-to-ceiling window behind her with the Manhattan skyline and a low orange sun` |
-| 4 Camera | shot size, angle, lens, aperture, focus | `close-up at mattress height, 35mm lens at f/2, shallow depth of field, focus on her eyes` |
-| 5 Light + finish | key light, colour, medium, grade | `warm golden backlight with soft lens flare, window bounce fill on her face, shot on Kodak Portra 400, gentle grain, natural skin texture` |
+| 1 Subject / identity | who, with the locked ID block | `[CLAUDIA ID v2] Claudia, a 28-year-old woman (adult, late twenties) …` |
+| 2 Wardrobe + action | one look, one action, one expression | `wearing a white glossy vinyl top with huge puffed sleeves; looking back over her shoulder, one hand at her collar, eyes to the lens with a cool, direct gaze` |
+| 3 Setting | place, props, time, weather | `in front of a crinkled silver-foil backdrop with chrome stars, two taped polaroids at the edge` |
+| 4 Camera | shot size, angle, lens, aperture, focus | `close-up at eye level, 85mm lens at f/2.8, shallow depth of field, focus on her eyes` |
+| 5 Light + finish | key light, colour, medium, grade | `hard on-camera flash, sparkle highlights on the foil, deep dark edges, fine grain, natural skin texture` |
 
 Write blocks 2–5 as sentences for Nano Banana and GPT Image, as JSON fields for FLUX.2, and as comma phrases plus
 parameters for Midjourney (step 5).
@@ -97,11 +97,10 @@ The same shot, four ways (full side-by-side in [examples/one-scene-five-models.m
 ("an empty street", not "no cars"; checked 2026-10).
 
 ```text
-[CLAUDIA ID v1] … She wears an oversized fuzzy black knit jumper and lies on her front on an unmade white duvet, chin on
-her folded arms, looking straight into the lens with a knowing half-smile. Behind her a floor-to-ceiling window frames the
-Manhattan skyline at sunset, the sun a low orange disc, pothos plants trailing down the window frame. Close-up from
-mattress height on a 35mm lens at f/2, focus on her eyes, warm golden backlight with a soft flare, natural skin texture,
-the look of Kodak Portra 400. Vertical 4:5 frame.
+[CLAUDIA ID v2] … She wears a white glossy vinyl top with huge puffed sleeves and looks back over her shoulder, one hand
+at her collar, straight into the lens with a cool, direct gaze. Behind her a crinkled silver-foil backdrop scattered with
+chrome stars, two taped polaroids at the edge. Close-up at eye level on an 85mm lens at f/2.8, focus on her eyes, hard
+on-camera flash with sparkle on the foil, deep dark edges, natural skin texture, fine grain. Vertical 4:5 frame.
 ```
 
 **GPT Image 2.5 — sentences + explicit constraints; literal text in quotes.** No negative parameter; write exclusions as
@@ -111,23 +110,22 @@ plain constraints ("Do not add any text or logos").
 
 ```json
 {
-  "subject": "Claudia from image 1: 28-year-old adult woman, glossy jet-black jaw-length blunt bob, heavy straight bangs, copper-orange streak panels, small orange hair clip, thin gold hoops, light freckles",
-  "action": "lying on her front on a bed, chin on folded arms, knowing half-smile to camera",
-  "wardrobe": "oversized fuzzy black knit jumper",
-  "background": "floor-to-ceiling window, Manhattan skyline at sunset, low orange sun, trailing pothos",
-  "lighting": "warm golden backlight with soft flare, window bounce fill",
-  "color_palette": ["#f2a65a sunset sky", "#ff9a6b copper rim light", "#0a0b0d deep shadows"],
-  "camera": "35mm lens, f/2, mattress height, shallow depth of field",
-  "style": "photoreal, Kodak Portra 400, gentle grain, natural skin texture"
+  "subject": "Claudia from image 1: 28-year-old adult woman, glossy jet-black jaw-length blunt bob, heavy straight bangs, one peach-orange streak panel, small peach star hair clip, a thin headset mic, light freckles",
+  "action": "looking back over her shoulder, one hand at her collar, cool direct gaze to camera",
+  "wardrobe": "a white glossy vinyl top with huge puffed sleeves and a high ruched neck",
+  "background": "crinkled silver-foil backdrop, chrome stars, two taped polaroids",
+  "lighting": "hard on-camera flash, sparkle highlights, deep dark edges",
+  "color_palette": ["#c9ccd3 silver foil", "#ff9a6b peach hair streak", "#0a0b0d deep shadows"],
+  "camera": "85mm lens, f/2.8, eye level, shallow depth of field",
+  "style": "photoreal editorial flash, fine grain, natural skin texture"
 }
 ```
 
 **Midjourney V7 — comma phrases first, parameters last.** Negatives with `--no`; identity with `--oref` on V7 only.
 
 ```text
-close-up photo of a 28-year-old woman lying on a bed, glossy jet-black jaw-length bob, heavy straight bangs, copper-orange
-streak panels, small orange hair clip, thin gold hoops, freckles, black fuzzy knit jumper, Manhattan skyline window at
-sunset, golden backlight, 35mm, Kodak Portra 400 --ar 4:5 --style raw --oref <approved-ref-url> --ow 200 --no text, teen --v 7
+close-up photo of a 28-year-old woman looking over her shoulder, glossy jet-black jaw-length bob, heavy straight bangs, one peach-orange streak panel, small peach star hair clip, a thin headset mic, freckles, white glossy vinyl puffed sleeves, crinkled
+silver foil, hard flash, 85mm --ar 4:5 --style raw --oref <approved-ref-url> --ow 200 --no text, teen --v 7
 ```
 
 ### 6. Use negatives only where they exist
@@ -147,10 +145,10 @@ Check the dry run: `--dry-run` prints the exact request body, so you can see whe
 
 ```sh
 # 1. see model, estimate and today's spend; nothing is sent
-claudia generate image "[CLAUDIA ID v1] …" --model google/nano-banana-2.1 --aspect 4:5 --resolution 2K \
+claudia generate image "[CLAUDIA ID v2] …" --model google/nano-banana-2.1 --aspect 4:5 --resolution 2K \
   --ref refs/claudia/01-front-neutral.jpg --dry-run
 # 2. run with a hard cap; it asks before spending
-claudia generate image "[CLAUDIA ID v1] …" --model google/nano-banana-2.1 --aspect 4:5 --resolution 2K \
+claudia generate image "[CLAUDIA ID v2] …" --model google/nano-banana-2.1 --aspect 4:5 --resolution 2K \
   --ref refs/claudia/01-front-neutral.jpg --max-usd 0.10
 # 3. explore cheaply: 1K, 4 variations, then upscale the winner by re-running at 2K/4K with it as a ref
 claudia generate image "…" --model google/nano-banana-2.1 --resolution 1K --n 4 --max-usd 0.20
@@ -183,10 +181,10 @@ honours it. Log each round (prompt version, model, seed, verdict) — see [../pr
 |---|---|
 | She looks like a teenager | Keep "28-year-old woman (adult, late twenties)"; use 50–85 mm instead of wide; add "adult facial proportions, defined cheekbones"; remove "cute", "girl", "petite", "school" |
 | Plastic skin | "natural skin texture with visible pores, subtle film grain"; drop "flawless", "perfect skin", "8k" |
-| Extra copper streaks / red hair all over | "copper-orange streak panels through the front bangs and one side; the rest jet-black" |
+| Extra peach streak / red hair all over | "one peach-orange streak panel through the front bangs on one side; the rest jet-black" |
 | Garbled text in signs/screens | Don't ask for text you don't need ("blank screen glow"); add real text in the edit step |
 | Hands warped | Give hands a job ("holding a mug with both hands"); avoid interlaced fingers; fix with an edit (see [../character-consistency/templates/edit-fix-prompts.md](../character-consistency/templates/edit-fix-prompts.md)) |
-| Readable brand logos appear | "unbranded", "plain black laptop lid with one butterfly sticker" |
+| Readable brand logos appear | "unbranded", "plain black laptop lid with one chrome star sticker" |
 | Composition ignores your framing | Put shot size and angle earlier; state the aspect in words |
 | Too glossy / "AI look" | Name a film stock, add "available light", lower stylisation (`--stylize 50` on Midjourney) |
 

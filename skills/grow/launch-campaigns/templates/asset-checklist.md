@@ -15,8 +15,7 @@
 - [ ] 3:1 banner for profile headers
 - [ ] 1:1 card with the one-liner (no more than 12 words on the image)
 - [ ] Alt text written for each image (what is shown, not the marketing line)
-- [ ] Claudia visuals match the character bible (black jaw-length bob, heavy bangs, copper-red streaks, orange clip, gold
-      hoops, star pendant); always an adult; labelled AI-generated
+- [ ] Claudia visuals match the character bible (black jaw-length bob, heavy bangs, a peach-orange streak in the bangs, star clip, headset mic, star pin); always an adult; labelled AI-generated
 
 ### Words
 - [ ] Captions per platform written separately (X ≤ 280 weighted; Threads ≤ 500; Instagram ≤ 2,200 and ≤ 5 hashtags;

@@ -29,7 +29,7 @@ Pick the length, fill each beat in one line, then turn each beat into one shot.
 | 3–8 s | **Promise:** what the viewer gets ("here's how my agents run the night shift") | |
 | 8–15 s | **Show 1** (insert or B-roll with voice-over) | |
 | 15–22 s | **Show 2** | |
-| 22–27 s | **Turn:** the human/cat/funny beat | |
+| 22–27 s | **Turn:** the human/disco ball/funny beat | |
 | 27–30 s | **Payoff + soft CTA as a question + loop** | |
 
 ## Beat → shot conversion

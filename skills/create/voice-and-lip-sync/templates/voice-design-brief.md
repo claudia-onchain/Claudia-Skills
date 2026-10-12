@@ -17,7 +17,7 @@ RECORDING:        close-mic, studio-clean, no background noise, no music
 
 ```text
 A woman in her late twenties with a soft, low-mid pitched voice and a smile in it. Relaxed, unhurried pacing with a light
-New York lilt, never a caricature. Warm and a little dry, as if telling a close friend something funny late at night.
+an easy city lilt, never a caricature. Warm and a little dry, as if telling a close friend something funny late at night.
 Clear consonants, laughs easily and lightly, drops to a near-whisper for asides. Close-mic, intimate, studio-clean
 recording with no background noise, no music.
 ```
@@ -25,7 +25,7 @@ recording with no background noise, no music.
 ## Preview script (same text for every preview)
 
 ```text
-ok so — I tried to film this four times. [laughs] And the cat walked in. All four times. Anyway, hi. I run this place now.
+ok so — I tried to film this four times. [laughs] And I laughed in all four. Anyway, hi. I run this place now.
 ```
 
 Second test (numbers, an aside, a question):

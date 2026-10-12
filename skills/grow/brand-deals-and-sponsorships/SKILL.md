@@ -164,7 +164,7 @@ handled the night bus. Link in bio.
 ```ts
 const post = social.draft({
   text: "Ad · Paid partnership with @northpine. Claudia is an AI character; this scene is AI-generated. …",
-  media: [{ path: "./deliverables/northpine-arc-reel-v3.mp4", alt: "AI-generated video: Claudia on a rainy street at dusk wearing real Northpine Arc headphones" }],
+  media: [{ path: "./deliverables/northpine-arc-reel-v3.mp4", alt: "AI-generated video: Claudia leaving the club at night wearing real Northpine Arc headphones" }],
   targets: [{ account: tiktok.id }, { account: x.id }],
   labels: { ai: true, ad: true },          // AI: native flags (is_aigc, made_with_ai). Ad: #ad + X paid_partnership + TikTok branded-content flag
   scheduleAt: Date.parse("2026-11-04T17:00:00Z"),

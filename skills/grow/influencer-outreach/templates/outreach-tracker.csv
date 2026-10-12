@@ -1,0 +1,2 @@
+handle,platform,source,fit_score_100,median_views,quoted_fee,cost_per_1k_views,authenticity_decision,offer,first_contact,follow_up,reply,brief_confirmed,draft_ok,posted_url,disclosure_ok,tracked_link,views_d7,clicks_d7,actions_d7,views_d30,actions_d30,cost_per_action,paid_on,rehire,notes
+<@handle>,<platform>,<how you found them>,<0-100>,<n>,<amount>,<fee / median_views * 1000>,<paid|gifted only|drop>,<gifted|paid|fee+bonus>,<YYYY-MM-DD>,<YYYY-MM-DD>,<yes|no|declined>,<YYYY-MM-DD>,<yes|no>,<url>,<yes|no|fixed>,<url>,<n>,<n>,<n>,<n>,<n>,<amount>,<YYYY-MM-DD>,<yes|no>,<…>

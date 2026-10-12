@@ -41,9 +41,9 @@ you can watch with the voice line, and a budget.
 ### 1. Write the premise and the payoff first
 
 ```text
-PREMISE:  Claudia runs through a rainy warehouse lot because the forecast "dared" her.
-PAYOFF:   she stops, soaked, grins: "rain check? never heard of her."
-PILLAR:   unfiltered / city
+PREMISE:  Claudia films one flash selfie at the club because the crew "dared" her to do it in one take.
+PAYOFF:   she stops, out of breath, grins: "mic check? never heard of her."
+PILLAR:   silver foil & flash
 LENGTH:   22 s     PLATFORMS: TikTok, Reels, Shorts     LABEL: AI-generated
 ```
 
@@ -72,7 +72,7 @@ Each shot = one action + one camera move + one generation. Size shots to real mo
 | `fal/wan-2.6` | 5, 10 or 15 s | long talking takes on a budget |
 | `google/omni-flash` | 3–10 s (model decides; ask in the prompt) | sound-designed beats |
 | `runway/gen4.5` | 2–10 s | precise camera choreography |
-| Stills + motion in edit | any | inserts: a prop, a screen, the cat, a skyline (Ken Burns pan in edit, no video cost) |
+| Stills + motion in edit | any | inserts: a prop, a screen, the disco ball, the foil (Ken Burns pan in edit, no video cost) |
 
 Generate shots **0.5–1 s longer** than they'll play — trims at both ends hide the model's warm-up and wind-down.
 
@@ -82,7 +82,7 @@ One row per shot ([templates/shot-list.csv](templates/shot-list.csv)):
 
 ```csv
 shot,start_s,play_s,gen_s,framing,camera,action,line,audio,first_frame,model,est_usd,transition_out
-s1,0.0,2.5,5,MCU selfie,handheld arm,already running + laughing at lens,,rain+footsteps,new still,fal/kling-3-pro,0.84,cut on step
+s1,0.0,2.5,5,MCU selfie,handheld arm,already laughing into the flash at lens,,bass+crowd,new still,fal/kling-3-pro,0.84,cut on the beat
 ```
 
 Fill the `est_usd` from the package (`claudia generate video "…" --model <id> --duration <s> --dry-run` prints the
@@ -93,7 +93,7 @@ estimate) and sum it. Add 50 % for rerolls — that's the budget a person approv
 Board frames are for composition and continuity, not identity — use the cheapest image model at 1K:
 
 ```sh
-claudia generate image "[CLAUDIA ID v1] … <shot action as a frozen moment>, <framing>, <setting>, <light>, vertical 9:16, \
+claudia generate image "[CLAUDIA ID v2] … <shot action as a frozen moment>, <framing>, <setting>, <light>, vertical 9:16, \
 storyboard frame" --model google/nano-banana-lite --aspect 9:16 --ref refs/claudia/01-front-neutral.jpg --max-usd 0.05
 ```
 
@@ -128,12 +128,12 @@ stretch? Does the payoff have room to breathe? Fix the board, not the video.
 ### 7. Check continuity across shots
 
 - **Wardrobe:** one look per scene, listed in the board header; the same wardrobe string in every shot's prompt.
-- **Hair state:** dry in the bedroom, damp in the rain and still damp in the next rain shot; sunglasses on/off state
-  carries across cuts.
-- **Light and time:** golden hour doesn't become noon between shots; club blue-violet stays blue-violet.
-- **Props and companions:** the same grey tabby, the same butterfly-sticker laptop, the same star pendant.
+- **Hair state:** bangs neat in the studio, a little tousled after the club spin and still tousled in the next club shot;
+  visor up/down state carries across cuts.
+- **Light and time:** soft studio daylight doesn't become hard flash between shots; the club spotlight stays behind her.
+- **Props and companions:** the same the disco ball, the same chrome-star laptop, the same star pin.
 - **Screen direction:** if she runs left-to-right in s1, she runs left-to-right in s2 (the 180° rule; see the reference).
-- **Copper panel side:** mirror and selfie shots flip it — keep all shots in a scene the same type (all selfie or all
+- **Streak side:** mirror and selfie shots flip it — keep all shots in a scene the same type (all selfie or all
   "camera") so the panel doesn't jump sides between cuts.
 
 ### 8. Design the transitions in the board
@@ -149,7 +149,7 @@ stretch? Does the payoff have room to breathe? Fix the board, not the video.
 ### 9. End on a loop
 
 Make the last frame visually rhyme with the first (same framing, same expression, or the line cut so it flows into the
-opening action). Short-form apps loop by default; a seamless loop counts as rewatches. For the rain short: end on her
+opening action). Short-form apps loop by default; a seamless loop counts as rewatches. For the mic-check short: end on her
 laughing at the lens in the same MCU as s1.
 
 ### 10. Get the board approved, then hand it off
@@ -163,8 +163,8 @@ and the shot list goes to [../batch-content-production/SKILL.md](../batch-conten
 - [templates/storyboard-template.yaml](templates/storyboard-template.yaml) — the full board: header, continuity, shots, budget, approvals.
 - [templates/shot-list.csv](templates/shot-list.csv) — the shot list with column meanings.
 - [templates/beat-sheet.md](templates/beat-sheet.md) — 15 / 22 / 30 s beat sheets to fill.
-- [examples/rain-check-ep01.md](examples/rain-check-ep01.md) — a 22 s UGC episode, full board and budget.
-- [examples/desk-diaries-ep03.md](examples/desk-diaries-ep03.md) — a 30 s platform episode with voice, cat and a match cut.
+- [examples/mic-check-ep01.md](examples/mic-check-ep01.md) — a 22 s UGC episode, full board and budget.
+- [examples/desk-diaries-ep03.md](examples/desk-diaries-ep03.md) — a 30 s platform episode with voice, the disco ball and a match cut.
 
 ## Check before you finish
 

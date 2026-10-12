@@ -19,12 +19,12 @@ the physical set-up (so you can describe it like a photographer), the prompt sen
 | Recipe | Prompt sentence | Scenes |
 |---|---|---|
 | Window daylight | "soft overcast daylight from a large window at camera left, gentle falloff to the right, no fill" | her day room, desk mornings |
-| Golden-hour backlight | "the low sun behind her rims her hair in copper, a soft flare, window bounce lights her face" | sunset bedroom, rooftop |
-| Blue hour | "cool ambient sky light, city windows glowing behind, a warm practical lamp on her face" | balcony, rooftop |
-| Tungsten lamp key | "a brass table lamp with a pleated shade lights her from the left, warm 2700K glow, deep soft shadows" | vintage lounge |
+| Golden-hour backlight | "the low sun behind her rims her hair in silver, a soft flare, window bounce lights her face" | silver-foil set, rooftop |
+| Blue hour | "cool ambient sky light, city windows glowing behind, a warm practical lamp on her face" | night exteriors, leaving the club |
+| Tungsten lamp key | "a brass table lamp with a pleated shade lights her from the left, warm 2700K glow, deep soft shadows" | white studio |
 | Screen glow | "the laptop screen lights her face from below in cool white, a rose-pink desk lamp rim behind her" | desk at night, network banner |
 | Candle / dinner | "candlelight from below frame, warm flicker, background in deep shadow" | wine-glass wink tile |
-| Overcast exterior | "flat overcast light, wet surfaces bouncing a soft fill up into her face" | rain lot |
+| Overcast exterior | "flat overcast light, wet surfaces bouncing a soft fill up into her face" | club floor |
 | On-camera flash | "direct on-camera flash, hard shadow behind her on the wall, slightly blown highlights, snapshot feel" | party, mirror, photo-wall tiles |
 
 ## Coloured / club light
@@ -47,9 +47,9 @@ silver/white/gold reflector · negative fill (black flag) · gel (CTO for warm, 
 
 | Backdrop | Prompt | Why |
 |---|---|---|
-| Cobalt seamless | "seamless saturated cobalt-blue paper backdrop" | the owner's portrait; contrasts the copper hair |
+| Cobalt seamless | "seamless saturated cobalt-blue paper backdrop" | the owner's portrait; contrasts the peach streak |
 | Warm grey | "warm mid-grey seamless backdrop" | neutral ref-pack shots |
-| Olive | "muted olive-green painted canvas backdrop" | matches the cami |
+| Silver foil | "crinkled silver-foil backdrop under hard flash" | matches the Signature look |
 | Near-black | "near-black backdrop with a faint gradient" | press dark mode, matches site #0a0b0d |
 
 ## Colour temperature cheat sheet

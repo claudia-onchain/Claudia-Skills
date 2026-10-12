@@ -5,9 +5,9 @@ template sets hook titles in uppercase automatically. Reuse a hook only with a n
 doesn't feel templated. Formula tag in brackets: [rule] deadpan rule · [num] specific number · [dare] · [story] cliff ·
 [wait] wait-for-it · [conf] confession · [pov] · [ask] question · [contra] contradiction · [rate].
 
-## Bedroom / talking to camera (room clip)
+## Studio / talking to camera (room clip)
 
-1. `ok so the cat walked in. again` — she laughs, glances off-frame [conf]
+1. `ok so I laughed in all four takes. again` — she laughs, glances off-frame [conf]
 2. `storytime: my agent posted at 3am` — leans into lens [story]
 3. `day 12 of pretending I have a routine` — stretching, mid-yawn [num]
 4. `if you're watching this you're my favourite` — tongue-out grin [rule]
@@ -32,63 +32,63 @@ doesn't feel templated. Formula tag in brackets: [rule] deadpan rule · [num] sp
 20. `one song. that's all it took` — she starts dancing [story]
 21. `what's the one track that gets you?` — points at lens [ask]
 
-## Vintage lounge / style (lounge clip)
+## Studio / style (visor clip)
 
-22. `sunglasses on = do not perceive me` — sunglasses on, half-smile [rule]
-23. `sunglasses off = ok fine, hi` — the reveal [rule]
-24. `grandma's lamp, my sunglasses, our secret` — lamp glow, lean on dresser [contra]
-25. `the outfit is thrifted. the confidence is generated` — hand on hip [contra]
-26. `wait for the look over the rims` — slow pull-down [wait]
-27. `one outfit, three lamps, zero regrets` — pose changes [num]
-28. `rate the dresser lean 1–10` — the lean [rate]
-29. `on or off? choose wisely` — fingers on the frames [ask]
+22. `visor on = do not perceive me` — visor down, cool gaze [rule]
+23. `visor off = ok fine, hi` — the reveal [rule]
+24. `a dress with windows. you're welcome` — the Sculpture dress, slow turn [contra]
+25. `the outfit is vinyl. the confidence is generated` — hand on hip [contra]
+26. `wait for the look under the visor` — slow lift [wait]
+27. `one look, three flashes, zero regrets` — pose changes [num]
+28. `rate the hand-on-hip 1–10` — the pose [rate]
+29. `on or off? choose wisely` — fingers on the visor [ask]
 
-## Rain / city (rain clip)
+## Silver foil / flash (club clip)
 
-30. `rain check? never heard of her` — running, laughing [rule]
-31. `forecast said stay in` — cut to her already soaked, grinning [dare]
-32. `warehouse lot, 6pm, zero umbrellas` — wide arm selfie [num]
-33. `running in the rain because the forecast dared me` — splash [dare]
-34. `full serotonin, zero umbrellas` — spin [contra]
-35. `POV: you text "omw" and mean it` — sprinting [pov]
-36. `the city did the lighting, I just showed up` — rooftop dusk alt [rule]
-37. `rain or sunset tomorrow? you pick` — out of breath [ask]
+30. `mic check? never heard of her` — flash selfie, laughing [rule]
+31. `one take. that's the rule` — cut to her already mid-laugh [dare]
+32. `the club, one spotlight, zero retakes` — wide arm selfie [num]
+33. `silver foil and a deadline. pick one` — the foil set [dare]
+34. `full serotonin, zero retakes` — spin [contra]
+35. `POV: the flash goes off mid-blink and it's the cover now` — the flash [pov]
+36. `the flash did the lighting, I just showed up` — foil close-up [rule]
+37. `silver or cobalt tomorrow? you pick` — out of breath [ask]
 
-## Desk / platform (laptop, butterfly sticker, cat)
+## Desk / platform (laptop, chrome star sticker, the disco ball)
 
 38. `my agents posted 14 times. I took one nap` — head on folded arms [num]
-39. `delegation is self-care` — cat on keyboard [rule]
+39. `delegation is self-care` — the disco ball turning [rule]
 40. `shipped: a smarter queue` — taps laptop shut [story]
-41. `the cat approved the PR (by sleeping on it)` — cat close-up [conf]
+41. `approved the PR in one take` — close-up on the screen glow [conf]
 42. `if your agent can't explain it, it doesn't post it` — serious-ish face [rule]
 43. `new skill on the shelf. go make your own character` — points at screen [story]
 44. `how my agents decide what to post (60 seconds)` — screen glow [num]
-45. `gm from the desk. Solana first, coffee second` — mug [rule]
+45. `gm from the studio. Solana first, coffee second` — mug [rule]
 46. `what should my agents make next?` — leans back [ask]
-47. `I run this place. the cat runs me` — cat steps into frame [contra]
+47. `I run this place. the disco ball runs me` — the ball catches the light [contra]
 
-## Travel (Santorini, airplane window, balcony)
+## Lookbook (cobalt studio, white studio)
 
-48. `airplane window, no thoughts, just clouds` — window light [rule]
-49. `Santorini is a bright screensaver you can stand in` — headphones, terrace [contra]
-50. `balcony, city lights, the algorithm can wait` — wine glass [rule]
-51. `out of office (the agents are not)` — suitcase [contra]
-52. `3 places in 30 seconds` — montage [num]
-53. `where should I "go" next?` — wink at the quotes [ask]
+48. `cloud gown, orange visor, no thoughts, just sky` — the Sky gown [rule]
+49. `cobalt backdrop is a very blue screensaver you can stand in` — Holo on cobalt [contra]
+50. `one look, one flash, the algorithm can wait` — Silver night [rule]
+51. `out of office (the agents are not)` — the coat on, leaving set [contra]
+52. `3 looks in 30 seconds` — montage [num]
+53. `which look next?` — wink [ask]
 
-## Cat / home
+## The disco ball / collage drops
 
-54. `the CTO is asleep on the keyboard again` — cat [conf]
-55. `meeting with the CTO (he didn't show up)` — empty chair, then cat [story]
-56. `rate the cat's work ethic` — cat stretching [rate]
-57. `pink slippers, serious meeting` — feet shot to face [contra]
+54. `the CTO is the disco ball. it's doing great` — the ball turning [conf]
+55. `meeting with the CTO (it just sparkled)` — empty chair, then the ball [story]
+56. `rate the CTO's sparkle` — light points across the foil [rate]
+57. `new wallpaper, serious meeting` — the collage, then her face [contra]
 
 ## Platform-honest / about her
 
 58. `yes, I'm AI. the label's right there` — wave [rule]
 59. `things I'll never do: give you financial advice` — finger wag [rule]
 60. `how I stay the same person every post` — ref pack on screen [story]
-61. `my look has a version number. this is v1` — turns to show the copper panel [contra]
+61. `my look has a version number. this is v1` — turns to show the peach streak [contra]
 62. `how many agents does it take to post this? (four)` — counts on fingers [num]
 
 ## Never use as hooks

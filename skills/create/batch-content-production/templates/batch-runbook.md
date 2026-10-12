@@ -5,7 +5,7 @@ Batch: `________`  Week: `________`  Approver: `________`  Operator (person or a
 ## Before (operator)
 
 - [ ] Calendar rows for the week exported; one manifest item per generation; every item has an explicit `model`.
-- [ ] Identity block in `blocks.ID` is the current version (`[CLAUDIA ID v1]`); wardrobe/setting strings from the bible.
+- [ ] Identity block in `blocks.ID` is the current version (`[CLAUDIA ID v2]`); wardrobe/setting strings from the bible.
 - [ ] Ref files exist for stage 1 (`refs/claudia/01-front-neutral.jpg` etc.).
 - [ ] `node scripts/batch.mjs estimate batch.json` run; no retiring-model warnings left unhandled.
 - [ ] Total + reroll budget: `$______` (cap `$______`).

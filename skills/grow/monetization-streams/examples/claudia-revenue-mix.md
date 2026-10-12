@@ -34,7 +34,7 @@ approves every deal, product and spend.
    views × $25 CPM ≈ $525 per TikTok; Reel $400; bundle $900 with 30-day usage rights. First deal: Northpine headphones,
    one TikTok + one Reel, `#ad`, AI-labelled. Caption line: "Claudia styled tonight's rooftop look around Northpine's
    Halo headphones (#ad, AI-generated character)". No "I've worn these for weeks".
-2. **Rainy City wallpaper pack**, $9: 12 phone + 4 desktop wallpapers from the diaries series. Product page says AI-made,
+2. **Silver City wallpaper pack**, $9: 12 phone + 4 desktop wallpapers from the diaries series. Product page says AI-made,
    personal-use licence, 7-day refunds.
 3. **Telegram weekly bonus diary**, a Stars paid post at 150 Stars (~$1.95 at the benchmark rate).
 4. **Telegram Ad Platform**: switched on; expected $5–30/month at 1,450 subscribers.
@@ -64,7 +64,7 @@ diary subscription moved from paid posts to a Star subscription.
 ## Step 6: announcement, approved
 
 ```sh
-claudia post telegram "New: the Rainy City wallpaper pack. 12 phone + 4 desktop wallpapers from the diaries. My own pack, made with AI. Link in the pinned post." --media pack-preview.jpg --dry-run
+claudia post telegram "New: the Silver City wallpaper pack. 12 phone + 4 desktop wallpapers from the diaries. My own pack, made with AI. Link in the pinned post." --media pack-preview.jpg --dry-run
 ```
 
 Preview showed the `(AI-generated)` label added, 141/1,024 caption characters, no cost on Telegram. Operator approved; posted

@@ -1,7 +1,7 @@
 # ffmpeg recipes for AI shorts (R1–R12)
 
-Every recipe below was run on 2026-10-08 with ffmpeg 8.1 (macOS) against the owner's reference clips (`rain.mp4`,
-`room.mp4`, `lounge.mp4`) and checked with `ffprobe`. Recipes that need libass/freetype are marked; the test build had
+Every recipe below was run on 2026-10-08 with ffmpeg 8.1 (macOS) against the owner's reference clip (`studio.mp4`)
+and checked with `ffprobe`. Recipes that need libass/freetype are marked; the test build had
 neither, so those two are written to the documented filter syntax and guarded in `scripts/burn-captions.sh`.
 
 Conventions: inputs are already conformed (`scripts/conform.sh` → 1080×1920, one fps, yuv420p). `-crf 18` for masters,
@@ -122,7 +122,7 @@ and `overlay` steps.
 
 **With libass** (check `ffmpeg -filters | grep subtitles`): `-vf "subtitles=filename=captions.ass:fontsdir=fonts"` —
 see `scripts/burn-captions.sh` and the ASS template in `../captions-and-hooks/templates/`.
-**With freetype** (`drawtext`): `-vf "drawtext=fontfile=fonts/BarlowCondensed-ExtraBold.ttf:text='RAIN CHECK?':fontsize=96:fontcolor=0xECE9E2:x=(w-text_w)/2:y=420:enable='lt(t,2)'"`.
+**With freetype** (`drawtext`): `-vf "drawtext=fontfile=fonts/BarlowCondensed-ExtraBold.ttf:text='MIC CHECK?':fontsize=96:fontcolor=0xECE9E2:x=(w-text_w)/2:y=420:enable='lt(t,2)'"`.
 
 ## R10 — Per-platform exports from the master
 

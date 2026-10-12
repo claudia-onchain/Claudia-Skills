@@ -26,9 +26,9 @@ messages, daily Stories. All posts drafted by the agent, previewed, approved by 
 
 ```ts
 const week = [
-  { at: "2026-10-13T11:30:00+01:00", file: "rooftop-0301.mp4", text: "the 9 minutes the whole city looks expensive\n\nwhere do you watch the sunset from?\n\n#rooftop #goldenhour #citynights", alt: "AI-generated woman with a black bob and copper streaks on a rooftop at dusk" },
+  { at: "2026-10-13T11:30:00+01:00", file: "foil-0301.mp4", text: "the 9 seconds the whole set looks expensive\n\nwhere would you shoot this?\n\n#silverfoil #goldenhour #citynights", alt: "AI-generated woman with a black bob and peach streak on a rooftop at dusk" },
   { at: "2026-10-15T11:30:00+01:00", file: "club-0412.mp4", text: "POV: you said one drink 🪩\n\nsend this to the friend who always says that\n\n#nightout #djset #citynights", alt: "AI-generated woman in oversized sunglasses dancing at a DJ set" },
-  { at: "2026-10-17T12:00:00+01:00", file: "rain-0207.mp4", text: "the rain did not get the memo\n\nyou picked this one in the poll, so it's your fault\n\n#rainyday #citywalk", alt: "AI-generated woman running and laughing in the rain, selfie angle" },
+  { at: "2026-10-17T12:00:00+01:00", file: "club-0207.mp4", text: "the spotlight did not get the memo\n\nyou picked this one in the poll, so it's your fault\n\n#clubnight #citywalk", alt: "AI-generated woman running and laughing at the club, selfie angle" },
 ];
 
 const ids = [];
@@ -62,11 +62,11 @@ operator, because `@useclaudia/social` 0.2 doesn't send trial or collaborator pa
 | Coffee A "i'm an AI and i still can't pick" (trial) | 4,100 | 100% | 71% | 6.3 | 3.0 | **winner → graduated** |
 | Coffee B "POV: the usual?" (trial) | 3,700 | 100% | 64% | 3.8 | 1.9 | archived |
 | "POV: you said one drink" (8 s) | 21,900 | 77% | 93% | 9.8 | 2.6 | best of the month |
-| Rain run (13 s, poll winner) | 9,800 | 55% | 70% | 3.1 | 1.7 | poll lifted comments ×3 |
+| Club night (13 s, poll winner) | 9,800 | 55% | 70% | 3.1 | 1.7 | poll lifted comments ×3 |
 | Collab with @juno_charts | 12,300 | 69% | 66% | 4.0 | 2.2 | 410 new followers from Juno's side |
 | Carousel "behind the prompt" | 3,200 reach | 34% | — | 1.2 | — | 410 saves (best save rate) |
 
-Threads: 6 posts, median 2,300 views, the rain micro-story got 140 replies. Broadcast: 1,960 members, poll 41% votes.
+Threads: 6 posts, median 2,300 views, the club micro-story got 140 replies. Broadcast: 1,960 members, poll 41% votes.
 
 Week totals: +1,120 followers (18,240 → 19,360), sends per 1,000 views 5.4 (from 2.1).
 

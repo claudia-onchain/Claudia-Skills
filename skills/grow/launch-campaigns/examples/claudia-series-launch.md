@@ -1,17 +1,17 @@
-# Worked example: launching "Rainy City Diaries" (a Claudia content series)
+# Worked example: launching "Silver City Diaries" (a Claudia content series)
 
 Illustrative numbers. Claudia is an AI character; her operator approves everything she schedules.
 
 ## The ask
 
-The operator: "Claudia's rain videos do well. Turn them into a series and launch it in two weeks."
+The operator: "Claudia's club videos do well. Turn them into a series and launch it in two weeks."
 
 ## T-14: brief (G1)
 
-- Slug: `rainy-diaries`. Type: content series. T-0: **Friday 23 October 2026, 19:00 Europe/London**. A Friday breaks the
+- Slug: `club-diaries`. Type: content series. T-0: **Friday 23 October 2026, 19:00 Europe/London**. A Friday breaks the
   Tue–Thu default on purpose: the series cadence is Tuesday + Friday evenings, and Claudia's own TikTok analytics show her
   best 30-day window is 18:00–21:00 Friday.
-- One-liner: "A new Claudia series: one rainy-city diary every Tuesday and Friday."
+- One-liner: "A new Claudia series: one silver-city diary every Tuesday and Friday."
 - Primary action: follow on TikTok (where 70% of her video views come from).
 - Platforms: TikTok hero; X, Instagram Reels, YouTube Shorts support; Telegram channel and the Claudia thread for the
   community. No coin mention anywhere: this is not a coin launch, and the series stays clean for TikTok.
@@ -24,9 +24,7 @@ The operator: "Claudia's rain videos do well. Turn them into a series and launch
 
 ## T-12 → T-8: assets (G2)
 
-- Episodes 1–3, each 55–70 s, 9:16, from the character bible: black jaw-length bob, copper-red streaks, orange clip, gold
-  hoops, olive star-embroidered crop top under a raincoat; scenes: bus window at dusk, a running selfie through a warehouse
-  lot in the rain, back home in the sunset bedroom with the cat. Burned-in captions. "AI-generated" in each caption.
+- Episodes 1–3, each 55–70 s, 9:16, from the character bible: black jaw-length bob, a peach-orange streak in the bangs, star clip, headset mic, white puffed-sleeve vinyl top under a raincoat; scenes: bus window at dusk, a running selfie through a the club under one spotlight, back home in the silver-foil set with the disco ball. Burned-in captions. "AI-generated" in each caption.
 - Trailer 14 s. Square crops. A 3:1 banner. Alt text for each image.
 - G2 review: the operator rejected one frame where the hair streaks read as orange-blonde (off-model) and one caption that
   said "I got soaked today" without context. Kept the line but added the series framing so it reads as a character diary.
@@ -59,17 +57,17 @@ Note on time zones: UK clocks go back on Sunday 25 October 2026, so posts up to 
 - 19:00 episode 1 published on TikTok and X; 19:05 Reels and Shorts; 19:10 Telegram and the thread:
 
 ```sh
-claudia post general "Rainy City Diaries ep 1 is up: the long way home. New ones Tue + Fri 19:00 London."
+claudia post general "Silver City Diaries ep 1 is up: the long way home. New ones Tue + Fri 19:00 London."
 ```
 
 - The operator stayed on for 60 minutes and replied by hand to the first 30 comments. On X the agent replied only to posts
   that @mentioned @claudia_onchain (11 replies, $0.11).
-- Watching the thread for mentions: `claudia watch thread general --match "diar|rain" --notify telegram`.
+- Watching the thread for mentions: `claudia watch thread general --match "diar|club" --notify telegram`.
 
 ## T+1 → T+7
 
 - T+1 thank-you post: "1,900 of you watched episode 1 to the very end. Episode 2 is Tuesday." (non-price, true number).
-- T+3 "your questions" video: is she real (no, AI character, said plainly), what city (a mix), the cat's name.
+- T+3 "your questions" video: is she real (no, AI character, said plainly), which studio (a mix), the disco ball's name.
 - T+4 episode 2 on schedule. One "Posting late?" on Telegram (the Mac mini rebooted for an update); the operator re-approved
   it 14 minutes late with no wording change.
 

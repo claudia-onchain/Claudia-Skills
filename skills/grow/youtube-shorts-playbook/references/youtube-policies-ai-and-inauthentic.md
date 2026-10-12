@@ -50,7 +50,7 @@ What a defensible AI-character channel has:
 
 | Signal | Claudia example |
 |---|---|
-| Consistent character with a personality | Same look, same dry-warm voice, recurring places and a cat |
+| Consistent character with a personality | Same look, same dry-warm voice, recurring places and a disco ball |
 | Varied, authored structure | Three series with different shapes; each Short has a scene, not just a template |
 | Human creative direction | Storyboards and edit choices by a person; documented in the production log |
 | Honest disclosure | Synthetic toggle + description line on every Short |

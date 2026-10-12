@@ -10,9 +10,9 @@ follow reliably; "risky" moves cause face drift or warping on a recurring charac
 | Extreme close-up (ECU) | eyes/lips only | sunglasses lowering over the eyes, a wink |
 | Close-up (CU) | face, top of shoulders | reactions, lip-sync (best mouth detail) |
 | Medium close-up (MCU) | chest up | talking to camera, the default vlog frame |
-| Medium shot (MS) | waist up | lounge lean, desk scenes |
-| Medium-wide / cowboy | mid-thigh up | dancing in front of the DJ booth (shows the tartan skirt) |
-| Wide (WS) | full body + setting | rain lot establishing shot — face will be small, identity weaker |
+| Medium shot (MS) | waist up | the visor reveal, desk scenes |
+| Medium-wide / cowboy | mid-thigh up | dancing in front of the DJ booth (shows the patent skirt) |
+| Wide (WS) | full body + setting | club floor establishing shot — face will be small, identity weaker |
 
 ## Moves
 
@@ -28,15 +28,15 @@ follow reliably; "risky" moves cause face drift or warping on a recurring charac
 | Orbit / arc | "slow 90-degree arc around her" | **high** | faces drift as the angle changes; ≤ 90°, ≤ 5 s |
 | Crane / jib | "crane up and over the crowd" | high | club establishing shots without her face |
 | Whip pan | "fast whip pan to the right" | n/a | use only as a transition (stitch point) |
-| Rack focus | "rack focus from the sunglasses on the dresser to her face" | low | great for lounge/desk props |
-| Selfie arm | "she holds the phone at arm's length, front camera, the camera moves with her" | low–medium | the rain clip; arm and bracelet in the foreground |
+| Rack focus | "rack focus from the visor on the apple box to her face" | low | great for studio/desk props |
+| Selfie arm | "she holds the phone at arm's length, front camera, the camera moves with her" | low–medium | the club clip; arm and bracelet in the foreground |
 | POV | "first-person POV of her hands" | medium | hands are the weak spot — keep them simple |
 
 ## Motion for the subject (what she does)
 
 Use one strong verb per beat and a speed word:
 
-- Small: "glances away and back", "tilts her head", "a slow knowing half-smile", "bites her lip, then laughs" (keep tasteful),
+- Small: "glances away and back", "tilts her head", "a slow cool direct gaze", "bites her lip, then laughs" (keep tasteful),
   "pushes her bangs aside with one finger" (risky for the streak shape).
 - Medium: "slides her sunglasses down her nose with one finger", "leans back against the dresser", "raises one arm
   high", "spins once slowly".

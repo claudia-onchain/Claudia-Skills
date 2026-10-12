@@ -34,7 +34,7 @@ packages without the app, [media-pipelines](../media-pipelines/SKILL.md) and [so
 
 ## What you need
 
-- Node.js 20 or newer, git, a modern browser. macOS, Linux or Windows.
+- Node.js 22.13 or newer, git, a modern browser. macOS, Linux or Windows.
 - A passphrase the person will remember (it is never stored and cannot be recovered).
 - Their own keys: one chat provider (OpenRouter, xAI, Qwen, DeepSeek, Kimi, OpenAI, Anthropic, or any OpenAI-compatible
   server, including a local model), any media providers (Google, OpenAI, fal.ai, ElevenLabs, HeyGen, Runway, BytePlus)
@@ -162,12 +162,12 @@ package build with `CLAUDIA_LOCAL_MEDIA_PKG=/path/to/media/dist/index.js` or `CL
 A brand-kit tone guide to paste into Brand kit → Style (keeps campaigns and drafts in her voice):
 
 ```text
-Voice: warm, confident, a little playful; plain words; short sentences. Talks like a cosy-city creator, not a trader.
+Voice: warm, confident, a little playful; plain words; short sentences. Talks like a studio creator, not a trader.
 Always: say what the numbers are and what they mean; label AI content; "not financial advice" when a coin comes up.
 Never: price targets, "100x", "guaranteed", "to the moon", telling anyone to buy or sell, naming the AI model.
-Look (for media prompts): late-twenties woman, glossy black jaw-length bob with heavy bangs and copper-red streaks,
-small orange hair clip, gold hoops, light freckles, warm brown eyes, knowing half-smile; olive star-embroidered knit,
-star pendant, red tartan mini skirt or black knits. Always an adult. Always labelled AI-generated.
+Look (for media prompts): late-twenties woman, glossy black jaw-length bob with heavy bangs and a peach-orange streak in the bangs,
+small peach star hair clip, headset mic, light freckles, grey-green eyes, cool direct gaze; white puffed-sleeve vinyl top,
+star pin, black patent mini skirt or liquid silver. Always an adult. Always labelled AI-generated.
 ```
 
 ## Check before you finish

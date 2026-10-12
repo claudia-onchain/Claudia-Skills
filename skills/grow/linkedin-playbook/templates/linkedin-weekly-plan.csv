@@ -1,0 +1,10 @@
+day,slot_local,timezone,surface,format,pillar,first_line_or_working_title,media,link,posted_via,labels,status,approved_by
+Mon,08:30,<tz e.g. America/New_York>,profile,text,<pillar: build-notes>,"<one decision or number from last week>",none,none,claudia post linkedin,ai,draft,
+Tue,12:00,<tz>,page,document,<pillar: how-to>,"<How we … in 8 steps> (PDF, 10 pages)",<file.pdf>,last page,LinkedIn app (Page admin),ai,draft,
+Wed,08:30,<tz>,profile,image,<pillar: behind-the-scenes>,"<what the character made this week, and the number behind it>",<image.jpg alt 'AI-generated image: …'>,none,claudia post linkedin,ai,draft,
+Thu,09:00,<tz>,profile,poll,<pillar: community>,"<question ≤ 140 chars>",none,none,LinkedIn app (operator),none,draft,
+Fri,12:00,<tz>,page,video,<pillar: product>,"<12–40 s clip with captions burned in>",<clip.mp4>,none,LinkedIn app (Page admin),ai,draft,
+Mon-review,—,—,review,—,—,"Top post by comments per 1,000 impressions: <post> (<n>)",—,—,—,—,—,
+Mon-review,—,—,review,—,—,"Followers: profile <+n> · Page <+n> · comments answered within 4 h: <n>%",—,—,—,—,—,
+Mon-review,—,—,review,—,—,"Token expires: <YYYY-MM-DD> · reconnect booked: <yes/no>",—,—,—,—,—,
+Mon-review,—,—,review,—,—,"Next experiment (one variable): <hypothesis · metric · baseline · success threshold>",—,—,—,—,—,

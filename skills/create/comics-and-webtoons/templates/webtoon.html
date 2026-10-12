@@ -1,0 +1,85 @@
+<!doctype html>
+<!-- webtoon.html — letter a vertical-scroll episode on an 800 px wide column, then render it as 800 x 1280 slices.
+     Render all slices:  sh scripts/render-webtoon.sh work/ep01.html out/ep01      → out/ep01/001.png, 002.png, …
+     Panels: text-free images next to this file, any width (scaled to 800). Order = reading order.
+     Spacing is pacing: .gap.s (beat), .gap.m (scene change), .gap.l (time skip). Big gaps slow the scroll on purpose.
+     Balloons: .b positioned in % of the panel (left/top/width); tails .t-bl .t-br .t-tl .t-tr; kinds .cap (narration),
+     .mono (an agent or a screen), .whisper (dashed), .sfx (sound). Balloons can sit in a gap: put them in a .gap with
+     position:relative and they float between panels.
+     Fonts: Comic Neue, Bangers, DM Mono — SIL Open Font License, from Google Fonts. -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>ep01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@700&family=DM+Mono:wght@500&display=block" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfaf7;          /* the scroll background between panels */
+    --ink: #0a0b0d;
+    --paper: #ffffff;
+    --accent: #ff6fa5;
+    --text: 25px;           /* dialogue on an 800 px column; test on a phone, don't go below 22px */
+  }
+  html, body { margin: 0; width: 800px; background: var(--bg); overflow: hidden; }
+  #col { width: 800px; will-change: transform; }
+  .panel { position: relative; margin: 0; }
+  .panel img { display: block; width: 800px; height: auto; }
+  .panel.inset img { width: 640px; margin: 0 auto; border: 4px solid var(--ink); box-sizing: border-box; }
+  .gap { position: relative; }
+  .gap.s { height: 120px; } .gap.m { height: 360px; } .gap.l { height: 900px; }
+  .b { position: absolute; box-sizing: border-box; background: var(--paper); color: var(--ink); border: 3px solid var(--ink);
+       border-radius: 26px; padding: 12px 16px; font: 700 var(--text)/1.15 "Comic Neue", "Comic Sans MS", sans-serif; text-align: center; }
+  .b::after { content: ""; position: absolute; width: 22px; height: 22px; background: inherit;
+              border: 3px solid var(--ink); border-top: 0; border-left: 0; display: none; }
+  .t-bl::after { display: block; bottom: -14px; left: 22%; transform: rotate(45deg) skew(12deg, 12deg); }
+  .t-br::after { display: block; bottom: -14px; right: 22%; transform: rotate(45deg) skew(-12deg, -12deg); }
+  .t-tl::after { display: block; top: -14px; left: 22%; transform: rotate(225deg) skew(-12deg, -12deg); }
+  .t-tr::after { display: block; top: -14px; right: 22%; transform: rotate(225deg) skew(12deg, 12deg); }
+  .b.cap { border-radius: 2px; text-align: left; font: 500 20px/1.3 "DM Mono", monospace; background: #ece9e2; }
+  .b.mono { border-radius: 4px; font: 500 21px/1.25 "DM Mono", monospace; background: #17181c; color: var(--accent); border-color: var(--accent); }
+  .b.mono::after { border-color: var(--accent); }
+  .b.whisper { border-style: dashed; font-size: calc(var(--text) - 3px); }
+  .b.whisper::after { border-style: dashed; }
+  .sfx { position: absolute; font: 400 72px/1 "Bangers", sans-serif; color: var(--accent); -webkit-text-stroke: 3px var(--ink); transform: rotate(-7deg); }
+  .end { padding: 80px 40px 120px; text-align: center; font: 500 20px/1.6 "DM Mono", monospace; color: #55575d; }
+</style>
+</head>
+<body>
+<div id="col">
+  <div class="gap s"></div>
+  <figure class="panel">
+    <img src="ep01-01.png" alt="">
+    <div class="b cap" style="left:4%;top:5%;width:46%">the studio. 7:58 pm.</div>
+  </figure>
+  <div class="gap s"></div>
+  <figure class="panel">
+    <img src="ep01-02.png" alt="">
+    <div class="b t-br" style="left:44%;top:8%;width:48%">one post left. easy.</div>
+  </figure>
+  <div class="gap m">
+    <div class="b mono t-bl" style="left:10%;top:28%;width:62%">AGENT: 41 slots analysed. best time: 3:12 am.</div>
+  </div>
+  <figure class="panel inset">
+    <img src="ep01-03.png" alt="">
+    <div class="sfx" style="left:62%;top:58%">BLINK</div>
+  </figure>
+  <div class="gap s"></div>
+  <figure class="panel">
+    <img src="ep01-04.png" alt="">
+    <div class="b t-bl" style="left:6%;top:6%;width:56%">who is awake at 3 am??</div>
+    <div class="b whisper t-tr" style="left:52%;top:70%;width:42%">...me. I'm awake.</div>
+  </figure>
+  <div class="end">end of episode 1 · AI-generated art · made with a human editor<br>new episodes fridays</div>
+</div>
+<script>
+  // ?y=<px> shifts the column up so a 1280 px viewport shows one slice; the title reports the total height.
+  const y = Number(new URLSearchParams(location.search).get("y") || 0);
+  const done = () => {
+    document.getElementById("col").style.transform = `translateY(${-y}px)`;
+    document.title = String(document.getElementById("col").scrollHeight);
+  };
+  Promise.all([document.fonts.ready, ...[...document.images].map((i) => i.complete ? 0 : new Promise((r) => { i.onload = i.onerror = r; }))]).then(done);
+</script>
+</body>
+</html>

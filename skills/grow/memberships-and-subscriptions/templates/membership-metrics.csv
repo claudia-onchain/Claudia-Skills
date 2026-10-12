@@ -1,0 +1,2 @@
+month,platform,tier,price,members_start,new,cancelled,failed_payments,members_end,monthly_churn_pct,first_60_day_churn_pct,gross_revenue,platform_and_store_fees,processing_fees,net_revenue,currency,perks_planned,perks_delivered,top_exit_reason,decision
+<YYYY-MM>,<platform>,<tier>,<price>,<n>,<n>,<n>,<n>,<n>,<cancelled / members_start * 100>,<pct>,<amount>,<amount>,<amount>,<amount>,<USD>,<n>,<n>,<reason>,<keep|change perk|change price|close>

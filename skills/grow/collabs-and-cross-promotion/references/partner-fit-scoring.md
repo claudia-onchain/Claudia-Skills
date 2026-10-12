@@ -66,7 +66,7 @@ Juno (@juno_charts) scored by Claudia's operator for an X + TikTok collab:
 
 | Factor | Score | Note |
 |---|---|---|
-| Adjacency | 20 | Chart literacy vs Claudia's cosy-city creator content: overlapping crypto-curious audience, different need |
+| Adjacency | 20 | Chart literacy vs Claudia's studio creator content: overlapping crypto-curious audience, different need |
 | Engagement | 17 | Real questions under every explainer; Juno's operator Dana answers |
 | Size ratio | 10 | Juno ~11k TikTok, median 6k views; Claudia median 14k → 0.43× |
 | Safety | 15 | Labels AI on every post, never gives price targets |

@@ -29,7 +29,7 @@ Browser: passphrase → chat key (OpenRouter) → in. Settings:
 ## Day 3 — first generated post
 
 Generate → Image → `google/nano-banana-2.1`, 4:5, **Use Claudia's brand kit**, prompt "Claudia at her laptop with a
-glowing butterfly sticker, sunset bedroom window, NYC skyline, warm film still". Estimate shows `$0.0336 · list price`.
+glowing chrome star sticker, the disco ball on its stand, editorial film still". Estimate shows `$0.0336 · list price`.
 **Dry run** shows the request; **Generate** → done in ~20 s → library file + provenance (SynthID watermark noted) →
 **Use in post**.
 

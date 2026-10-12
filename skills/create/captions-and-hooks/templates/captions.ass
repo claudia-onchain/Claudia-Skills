@@ -22,9 +22,9 @@ Style: AITag,DM Mono,24,&H008C8580,&H008C8580,&H000D0B0A,&H000D0B0A,0,0,0,0,100,
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 ; --- Hook: the first 0.2–1.8 s, one or two lines, one rose word ---
-Dialogue: 1,0:00:00.20,0:00:01.80,Hook,,0,0,0,,{\an5\pos(540,520)\fad(80,120)}RAIN CHECK?\N{\c&H00A56FFF&}NEVER
+Dialogue: 1,0:00:00.20,0:00:01.80,Hook,,0,0,0,,{\an5\pos(540,520)\fad(80,120)}MIC CHECK?\N{\c&H00A56FFF&}NEVER
 ; --- Series label (optional, first 2 s) ---
-Dialogue: 1,0:00:00.20,0:00:02.00,Label,,0,0,0,,{\an5\pos(540,360)\fad(80,120)}12 · RAIN DIARIES
+Dialogue: 1,0:00:00.20,0:00:02.00,Label,,0,0,0,,{\an5\pos(540,360)\fad(80,120)}12 · CLUB DIARIES
 ; --- Line captions: 1–2 lines, ≤ 32 characters per line, change every 1–2.5 s ---
 Dialogue: 0,0:00:02.00,0:00:04.10,Line,,0,0,0,,{\an5\pos(540,1180)}forecast said stay in
 Dialogue: 0,0:00:04.10,0:00:06.30,Line,,0,0,0,,{\an5\pos(540,1180)}so obviously I {\c&H00A56FFF&}ran

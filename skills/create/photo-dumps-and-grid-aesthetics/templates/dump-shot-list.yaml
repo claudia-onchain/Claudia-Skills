@@ -1,0 +1,55 @@
+# Photo dump shot list. Fill before generating. One dump = one colour story = one grade line.
+
+dump: "<working title, e.g. cobalt week, dump 03>"
+character: "<Claudia | your character>"
+story: "<cobalt week | foil night | white paper | club | desk at dusk | your own>"
+dominant: ["<hex>", "<hex>"]
+accent: "<hex>"
+grade: "cool clean grade, lifted blacks, gentle film grain, chrome highlights"
+camera_feel: "<phone with on-camera flash, slightly off-centre | 35mm film snapshot | clean studio>"
+frames: <6–10>                       # 20 max in the app; 10 max through the API
+posting_path: "<@useclaudia/social (≤ 10, JPEG) | Instagram app>"
+budget_usd: <cap for the whole set>
+refs: "<refs/claudia/01-front-neutral.jpg,refs/claudia/05-laugh.jpg>"
+
+shots:                                # order here = planned order in the dump
+  - n: 1
+    kind: portrait                    # portrait | detail | place | object | clip
+    idea: "<the hook frame: face, centred for the 3:4 crop>"
+    look: "<one look from the bible>"
+    setting: "<one world from the bible>"
+    aspect: "4:5"
+    model: "google/nano-banana-2.1"
+  - n: 2
+    kind: detail
+    idea: "<the surprise: a detail, a laugh, a change of scale>"
+    aspect: "4:5"
+    model: "fal/flux-2-pro"
+  - n: 3
+    kind: place
+    idea: "<the room, the light>"
+  - n: 4
+    kind: portrait
+    idea: "<a different angle or expression, not a near-duplicate of 1>"
+  - n: 5
+    kind: clip
+    idea: "<optional 3–5 s: a laugh, a spin, the flash firing>"
+  - n: 6
+    kind: object
+    idea: "<an object that carries the accent colour>"
+  - n: 7
+    kind: portrait
+    idea: "<an outtake or candid>"
+  - n: 8
+    kind: detail
+    idea: "<the quiet or funny last frame>"
+
+honesty:
+  real_places_or_events: "none"       # no real venues, landmarks, events or dates presented as visited
+  real_people: "none"
+  readable_logos: "none"
+
+caption: "<one line, lowercase, in voice; no 'living my best life in <real city>' claims>"
+alt_text_style: "AI-generated photo set, <n> images: 1) … 2) …"
+labels: "ai=true; ad=<true if anything is paid, gifted or affiliate>"
+approved_by: "<name>"

@@ -65,13 +65,21 @@ Rules the validator enforces:
   the folder), `summary` (≤ 140 characters), `level` (`beginner` | `intermediate` | `advanced`), `tags`, `time`,
   `version` (semver), `updated` (`YYYY-MM-DD`). Optional: `uses`.
 - The body has a `# Title` and the seven `##` sections above, in that order.
+- Steps are a numbered list that starts each step with a short bold title (`1. **Pull the transcript.** Then …`), or
+  `### 1. Title` headings. The skill's card on GitHub animates the first four titles, so keep them under ~40 characters.
 - At least one file in `templates/` or `examples/`.
 - Every relative link resolves. Link other skills by path: `../../grow/posting-schedule/SKILL.md`.
 - The body stays under about 450 lines (warning). Push depth into `references/` and say when to read each file.
 
+## Cards and pages
+
+`node scripts/build.mjs` also draws the skill's animated card (`assets/cards/<slug>.svg`) and writes its GitHub page
+(`README.md` next to `SKILL.md`) and the category page. These are generated and left out of the skill's zip: never edit
+them by hand, and commit them with your skill.
+
 ## Checklist before you open a pull request
 
-- [ ] `node scripts/validate.mjs` passes with no errors (and you read the warnings).
+- [ ] `node scripts/validate.mjs` passes with no errors (and you read the warnings), and `node scripts/build.mjs` ran.
 - [ ] Steps are numbered, concrete and current: real commands, real prompts, real numbers with a date
       ("checked 2026-10") next to anything that changes (limits, prices, model names, platform rules).
 - [ ] Platform facts are verified against the platform's own docs, not memory.

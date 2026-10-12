@@ -59,7 +59,7 @@ ElevenLabs app or API, then use the saved id everywhere.
 
 ```text
 A woman in her late twenties with a soft, low-mid pitched voice and a smile in it. Relaxed, unhurried pacing with a light
-New York lilt, never a caricature. Warm and a little dry, as if telling a close friend something funny late at night.
+an easy city lilt, never a caricature. Warm and a little dry, as if telling a close friend something funny late at night.
 Clear consonants, laughs easily and lightly, drops to a near-whisper for asides. Close-mic, intimate, studio-clean
 recording with no background noise, no music.
 ```
@@ -67,7 +67,7 @@ recording with no background noise, no music.
 Preview text (use the same for all three previews so you compare voices, not lines):
 
 ```text
-ok so — I tried to film this four times. [laughs] And the cat walked in. All four times. Anyway, hi. I run this place now.
+ok so — I tried to film this four times. [laughs] And I laughed in all four. Anyway, hi. I run this place now.
 ```
 
 Pick with [templates/voice-design-brief.md](templates/voice-design-brief.md) (age read, warmth, clarity on a phone
@@ -153,7 +153,7 @@ there and the music 12–18 dB lower ([../music-and-sound-for-shorts/SKILL.md](.
 | **A. Silent clip + line** | `fal/lipsync-2`, refs `[video, audio]` | $3.00 / min | talking-to-camera UGC with real motion | needs a visible mouth with some motion in the source; many cuts fail |
 | A (cheaper) | `fal/veed-lipsync`, `[video, audio]` | $0.40 / min | drafts, short replies | less detail on teeth |
 | **B. Still + line** | `fal/omnihuman-1.5`, refs `[face image, audio]` | $0.16 / s | a talking portrait from one approved still, ~30 s max per job | busy backgrounds, hands |
-| **C. Avatar** | `heygen/avatar-iv`, photo ref or `meta.avatarId`, voice required | ~$0.05–0.10 / s (estimate) | explainers up to 180 s | UGC energy; custom motion prompts double the cost |
+| **C. Avatar** | `heygen/avatar-iv`, photo ref or `meta.avatarId`, voice required | ~$0.05–0.10 / s (estimate) | explainers (keep them under ~180 s) | UGC energy; custom motion prompts double the cost |
 | **D. Native** | Kling 3 / Wan 2.6 / Omni with a quoted line | in the video price | one-off laughs and reactions | voice changes per generation |
 
 **Route A recipe (best for Claudia's vlogs):** generate the clip **silent but talking** — the prompt says "she talks to
@@ -167,7 +167,7 @@ claudia generate avatar "lip-sync her line" --model fal/lipsync-2 --ref out/room
 
 ```sh
 claudia generate avatar "medium close-up, she smiles knowingly, small head tilts, one slow blink, relaxed shoulders, \
-static camera, warm lamp light" --model fal/omnihuman-1.5 --ref frames/lounge-closeup.jpg,out/line.wav --max-usd 2.50
+static camera, soft studio light" --model fal/omnihuman-1.5 --ref frames/studio-closeup.jpg,out/line.wav --max-usd 2.50
 ```
 
 ### 8. QA the sync

@@ -20,8 +20,8 @@ a trend that doesn't brings views and unfollows.
 ### Fit (0–5, ×2)
 | Score | Meaning | Claudia example |
 |---|---|---|
-| 5 | Only she would make this version; native to a pillar and her world | "Things in my room that tell you I'm an AI" (butterfly-sticker laptop, a render of a cat that's slightly too symmetrical) |
-| 4 | Clearly on-pillar, her setting works without forcing | A "sunset routine" format in the sunset bedroom |
+| 5 | Only she would make this version; native to a pillar and her world | "Things in my room that tell you I'm an AI" (chrome-star laptop, a disco ball that's slightly too symmetrical) |
+| 4 | Clearly on-pillar, her setting works without forcing | A "night routine" format in the silver-foil set |
 | 3 | Works with a twist; an adjacent audience | A gym-motivation sound turned into "agent shipping motivation" at the laptop |
 | 2 | She can do it, but it says nothing about her | A generic dance trend with no setting swap |
 | 1 | Out of character; needs her to be someone else | A "my hometown" trend (she has no real hometown) without a reframe |
@@ -55,7 +55,7 @@ Rules of thumb (log real lifespans in the trend log and replace these after a mo
 ### Effort (0–5, subtracted)
 | Score | What it takes |
 |---|---|
-| 0 | Text post or a re-cut of an existing loop (room, club, lounge, rain clips) |
+| 0 | Text post or a re-cut of an existing loop (the studio clip) |
 | 1 | New caption/overlay on existing footage |
 | 2 | One new image generation + edit |
 | 3 | New short video generation + edit + audio |
@@ -68,7 +68,7 @@ Rules of thumb (log real lifespans in the trend log and replace these after a mo
 |---|---|---|---|---|---|---|
 | "Tiny victories" sound (rising 4 days) — her version: bangs rendered right first try | 5 | 4 | 4 | 2 | 16 | Go |
 | X meme "explain your job badly" | 4 | 4 | 2 | 0 | 14 | Go, text-only, same day |
-| Running-in-the-rain slow-mo sound | 4 | 3 | 4 | 0 | 15 | Go, re-cut existing rain loop |
+| Club spin slow-mo sound | 4 | 3 | 4 | 0 | 15 | Go, new club clip |
 | Generic dance challenge | 2 | 5 | 4 | 3 | 10 | Hold; only if a setting swap appears |
 | "My hometown in 3 photos" | 1 | 3 | 3 | 2 | 6 | Skip (would need a reframe as an imagined city) |
 | Memecoin naming meme tied to one token | — | — | — | — | — | Gate fail (coin) |

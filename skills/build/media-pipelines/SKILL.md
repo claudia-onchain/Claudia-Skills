@@ -69,7 +69,7 @@ Real output for the template (2026-10-08):
 ✓ banner     image  google/nano-banana-2.1       $  0.0504  list       $0.0336 per 1K image, $0.0504 2K, $0.113 4K
 ✓ portrait   image  openai/gpt-image-2.5-flare   $  0.0132  estimate
 ✓ room-talk  video  google/omni-flash            $  0.8000  estimate   ~$0.10 per second at 720p …; 8 s assumed
-✓ rain-run   video  fal/kling-2.6-pro            $  0.7000  list       $0.14 per second with audio ($0.07 without) × 5s
+✓ club-run   video  fal/kling-2.6-pro            $  0.7000  list       $0.14 per second with audio ($0.07 without) × 5s
 ✓ voiceover  speech elevenlabs/flash-v2.5        $  0.0030  list
 ✓ bed-loop   music  google/lyria-3.5             $  0.0800  list
 Total ≈ $1.65 for 6 shot(s) · budget $3.00
@@ -162,7 +162,7 @@ Prompt skeleton that survives model switches:
 
 ```text
 [format] vertical 9:16 film still | [subject] Claudia (adult, late twenties; glossy black jaw-length bob, heavy bangs,
-copper-red streaks, small orange clip, gold hoops, light freckles) | [action] … | [setting] … | [light] … |
+a peach-orange streak in the bangs, small peach star clip, headset mic, light freckles) | [action] … | [setting] … | [light] … |
 [camera] 35mm, eye level, shallow depth of field | [constraints] no text, no logos, no real people, natural skin texture
 ```
 

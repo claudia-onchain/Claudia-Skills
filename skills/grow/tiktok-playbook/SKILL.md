@@ -56,7 +56,7 @@ account after a ban. TikTok removes those and this skill does not teach them.
 
 1. Username close to the character's other handles (Claudia: X is @claudia_onchain; on TikTok use the same if available to
    register, otherwise a close variant). No real person's name or likeness.
-2. Bio (80 chars): `AI character · cosy-city creator · made with AI, run by a small team`. Link: the character page.
+2. Bio (80 chars): `AI character · studio creator · made with AI, run by a small team`. Link: the character page.
 3. Profile photo: her face. Turn on two-factor authentication.
 4. Settings → Privacy: keep the account public (required for For You and Creator Rewards). Comments: filter keywords
    ("dm me", "whatsapp", "telegram me", "giveaway", "seed phrase", "airdrop") to catch scam replies.
@@ -104,7 +104,7 @@ Details and numbers in `references/tiktok-algorithm-and-search.md`. The short ve
   video watched to the end beats a 60 s video abandoned at 5 s; a 60 s video held at 80% beats both.
 - **The first hour** of engagement velocity decides the next round of distribution.
 - **Search** is a second discovery engine: TikTok reads the caption, on-screen text and spoken words. Put the phrase people
-  search ("aesthetic rainy day routine", "how to make AI videos consistent") in all three.
+  search ("club night aesthetic", "how to make AI videos consistent") in all three.
 - **For You ineligibility**: unoriginal reposts, undisclosed ads, engagement tricks ("like if…", "follow for part 2" as bait),
   and unlabelled AI.
 
@@ -126,9 +126,9 @@ opening shot and a search phrase. Claudia's:
 
 | Series | Format | Length | Search phrase | Cadence |
 |---|---|---|---|---|
-| Rainy Run Diaries | selfie run in the rain, voice line + captions | 10–15 s | "rainy day run aesthetic" | 2/week |
+| Club Diaries | selfie run at the club, voice line + captions | 10–15 s | "club night aesthetic" | 2/week |
 | Desk at Dusk | making-of: prompts, edits, before/after | 30–75 s | "how to make AI videos" | 2/week |
-| City After Dark | club, lounge, rooftop moods with a trending sound | 7–12 s | "night city aesthetic" | 2/week |
+| City After Dark | club, studio, silver-foil moods with a trending sound | 7–12 s | "night city aesthetic" | 2/week |
 | Ask Claudia | answers a comment with a reply video | 20–45 s | the question itself | 1–2/week |
 
 Series planning: [content-pillars-and-series](../../create/content-pillars-and-series/SKILL.md). Storyboards: [storyboarding-shorts](../../create/storyboarding-shorts/SKILL.md).
@@ -153,8 +153,8 @@ CLI preview first:
 ```sh
 claudia connect zernio            # or: claudia connect tiktok (own app, private until audited)
 claudia accounts                  # find the TikTok channel
-claudia post tiktok "POV: an AI character tries to run in a storm 🌧 rainy day run aesthetic #aicharacter #rainyday #aigenerated" \
-  --media ./rain-ep4.mp4 --dry-run
+claudia post tiktok "POV: an AI character tries to run in a storm 🌧 club night aesthetic #aicharacter #rainyday #aigenerated" \
+  --media ./club-ep4.mp4 --dry-run
 ```
 
 The dry run shows the caption with labels, the length against 2,200, the AI flag, the request it would send, and the cost
@@ -170,8 +170,8 @@ await social.ready();
 const tt = social.accounts().find((a) => a.network === "tiktok"); // direct app, or a TikTok channel via a service
 
 const post = social.draft({
-  text: "POV: an AI character tries to run in a storm. Rainy Run Diaries ep. 4 · rainy day run aesthetic #aicharacter #rainyday #aigenerated",
-  media: [{ path: "./rain-ep4.mp4" }],
+  text: "POV: an AI character tries to run in a storm. Club Diaries ep. 4 · club night aesthetic #aicharacter #rainyday #aigenerated",
+  media: [{ path: "./club-ep4.mp4" }],
   targets: [{ account: tt.id }],
   labels: { ai: true },                                       // is_aigc on TikTok
   options: {

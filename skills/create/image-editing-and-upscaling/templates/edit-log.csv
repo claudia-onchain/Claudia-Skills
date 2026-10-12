@@ -1,0 +1,5 @@
+step,parent_file,output_file,job_id,model,edit_type,one_change,refs,cost_usd,local_tools,c2pa_after,output_sha256,approved_by,at
+0,<source file>,<source file>,<source job id or outside-library>,<model>,source,<none>,<none>,<cost>,<none>,<yes|no>,<sha256>,<name>,<YYYY-MM-DDTHH:MM>
+1,<source file>,<edit-1 file>,<job id>,<model>,<inpaint|outpaint|background|relight|text-removal|face|hands|rerender>,<the one change>,<image 1; image 2>,<cost>,<ffmpeg crop/overlay or none>,<yes|no>,<sha256>,<name>,<YYYY-MM-DDTHH:MM>
+2,<edit-1 file>,<edit-2 file>,<job id or local>,<model or local tool>,<type>,<the one change>,<refs>,<cost>,<tools>,<yes|no>,<sha256>,<name>,<YYYY-MM-DDTHH:MM>
+final,<last edit file>,<final export>,<none>,<none>,export,<resize to WxH, format>,<none>,0,<ffmpeg scale lanczos>,<yes|no>,<sha256>,<name>,<YYYY-MM-DDTHH:MM>

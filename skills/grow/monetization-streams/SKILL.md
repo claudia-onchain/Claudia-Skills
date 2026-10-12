@@ -85,7 +85,7 @@ plan, and never market a coin as income for holders. Details: `references/creato
 Score each candidate stream in `templates/revenue-mix-plan.csv`:
 
 - **Eligible now or within 90 days?** (from the tracker)
-- **Fit**: does the stream match what the audience already values? (A cosy-city lifestyle audience buys wallpapers and
+- **Fit**: does the stream match what the audience already values? (A studio lifestyle audience buys wallpapers and
   presets; a chart-literacy audience buys guides and memberships.)
 - **Effort** in hours/month, **confidence** (low/medium/high), **low / high monthly estimate** (use the low number for
   planning).
@@ -154,7 +154,7 @@ page (what's included, that it's AI-made, licence terms, refund policy), sell it
 post, Discord Server Shop, or a storefront), and announce it once per platform with an approved post:
 
 ```sh
-claudia post telegram "New: the Rainy City wallpaper pack. 12 phone + 4 desktop wallpapers from the diaries. AI-generated. Link in the pinned post." --dry-run
+claudia post telegram "New: the Silver City wallpaper pack. 12 phone + 4 desktop wallpapers from the diaries. AI-generated. Link in the pinned post." --dry-run
 ```
 
 ### 6. Disclose every stream

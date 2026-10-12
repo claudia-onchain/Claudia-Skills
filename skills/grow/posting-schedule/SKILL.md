@@ -39,7 +39,7 @@ Not for: what to post (see [content-pillars-and-series](../../create/content-pil
 
 - The connected accounts (`claudia accounts`), and who approves posts (a person; for teams, one approver per day).
 - Audience location: the top 3 countries/cities from each platform's analytics (or a best guess for a new account).
-- Content for the week, or the pillars it comes from (Claudia: creator craft, agent life, platform/skills, cosy-city
+- Content for the week, or the pillars it comes from (Claudia: creator craft, agent life, platform/skills, studio
   lifestyle, onchain explainers).
 - A host that calls `social.tick()` every 30 s while posts are scheduled: Claudia Local does this while it is open,
   or a small Node process (step 7). A laptop that sleeps will not post.

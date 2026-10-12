@@ -1,0 +1,50 @@
+# Lookbook brief. One file per lookbook. Locks are pasted word for word into every prompt.
+
+lookbook: "<title, e.g. silver night, 4 looks>"
+character:
+  name: "<Claudia | your character>"
+  id_block: "<path to the identity block, e.g. prompts/claudia-id-v2.txt>"
+  refs: ["<refs/claudia/01-front-neutral.jpg>", "<refs/claudia/07-full-body.jpg>"]
+  age_line: "<28-year-old woman (adult, late twenties)>"     # always an adult, always stated
+
+set:
+  world: "<cobalt studio | white studio | silver foil | the club | your own>"
+  light: "<direct on-camera flash, crisp shadow to the right>"
+  grade: "cool clean grade, lifted blacks, gentle film grain, chrome highlights"
+  aspect: "<2:3 for full length | 4:5 for feed>"
+
+looks:
+  - id: "<look-1>"
+    name: "<Silver night>"
+    kind: "<fictional | real product with permission>"
+    lock: >-
+      [LOOK <look-1> v1] <garment 1: silhouette, length, neckline, sleeves, fabric, finish, colour>; <garment 2>;
+      <accessories with counts and metal>; <shoes>. <rule, e.g. metal is silver, never gold>.
+    hex: ["<#c9ccd3 gown>", "<#ece9e2 stole>"]
+    garment_ref: "<looks/look-1/flat.jpg (generated flat lay or the brand's product photo)>"
+    brand_permission: "<n/a | path to the written OK>"
+    credit: "<wardrobe: Claudia's own, AI-designed, not for sale | wearing: Brand item · gifted · AI-generated image; the real item may differ>"
+  - id: "<look-2>"
+    name: "<…>"
+    kind: "<…>"
+    lock: >-
+      [LOOK <look-2> v1] <…>
+    garment_ref: "<…>"
+    credit: "<…>"
+
+poses: ["front-full", "three-quarter", "back-over-shoulder", "walk", "seated", "detail-hands", "portrait", "movement"]   # from templates/pose-list.md
+
+matrix:                       # which pose for which look; aim for 4–6 frames per look
+  look-1: ["front-full", "three-quarter", "walk", "detail-hands", "portrait"]
+  look-2: ["front-full", "back-over-shoulder", "seated", "movement"]
+
+models:
+  first_pass: "google/nano-banana-2.1"        # refs: identity + garment
+  pose_edits: "openai/gpt-image-2.5-sunburst" # keep-list edits of an approved frame
+  item_swaps: "fal/flux-kontext-pro"
+  exact_colour: "fal/flux-2-pro"
+
+budget_usd: <cap for the whole lookbook>
+outputs: ["instagram carousel 4:5", "tiktok photo 9:16", "pdf lookbook for brands"]
+labels: "ai=true; ad=<true if any look is paid, gifted or affiliate>"
+approved_by: "<name>"

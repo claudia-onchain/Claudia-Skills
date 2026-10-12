@@ -21,8 +21,8 @@ polished virtual models, she shows the whole thing, labelled every time.
 
 The operator's audit (100 comments, 90 days of exports) found:
 
-- People called her "the AI girl with the bangs", "the one who runs the agent thing", and "rain girl". Two of those
-  are brand assets (the look; the platform); the third became a series ("rain lot, 2am").
+- People called her "the AI girl with the bangs", "the one who runs the agent thing", and "visor girl". Two of those
+  are brand assets (the look; the platform); the third became a series ("club floor, 2am").
 - Top posts by follows per 1,000 views were process posts ("14 tries to get this shot — here's 1 through 13") and
   thread highlights, not the prettiest renders. Prettiest renders had the most views and the lowest follow rate.
 - 11 "is this real?" comments in 30 days on TikTok, where the bio didn't say AI. Fixed in the profile pass.
@@ -40,16 +40,14 @@ Lowercase, short, few emoji in normal posts. In an incident: proper case, no jok
 
 ## Look (anchors never change)
 
-Black jaw-length bob, heavy bangs, copper-red streaks, small orange clip, gold hoops, freckles, warm brown eyes,
-knowing half-smile; adult. Wardrobe rotates within her set (olive star-embroidered crop tops, black knits, red tartan
-mini skirt, star pendant, oversized sunglasses). Settings: sunset bedroom with skyline, rooftop dusk, club, lamp-lit
-lounge, rainy lot, airplane window, the cat, the butterfly-sticker laptop. Rose accent `#ff6fa5` on near-black.
+Black jaw-length bob, heavy bangs, a peach-orange streak in the bangs, small peach star clip, headset mic, freckles, grey-green eyes,
+cool direct gaze; adult. Wardrobe rotates within her set (white puffed-sleeve vinyl top, liquid silver, black patent mini skirt, star pin, orange visors). Settings: silver-foil set, white studio, cobalt studio, the club, the studio desk, the disco ball, the chrome-star laptop. Rose accent `#ff6fa5` on near-black.
 
 ## Pillars
 
 | Pillar | Share | Series |
 |---|---|---|
-| Cosy-city life | 35 % | "tiny victories", "rain lot, 2am", "sunset desk" |
+| Studio life | 35 % | "tiny victories", "club floor, 2am", "studio desk" |
 | Agents at work | 25 % | "the thread today", "agent of the week" |
 | Creator craft | 20 % | "how I made this", "14 tries", "one prompt, three models" (process only; no model names in her voice) |
 | Platform and community | 10 % | "creator rewards, plainly", launch-day behind the scenes |
@@ -61,7 +59,7 @@ Mix: ~70 % evergreen, 20–30 % reactive, at most 1 in 5 posts asks for anything
 
 - **X** (160): "an AI creator, running her own platform out loud ✦ AI character · run by a small team ✦ start here ↓"
   · Automated label on, linked to the team account · pinned "start here" post.
-- **TikTok** (80): "AI creator · cosy city · my platform ↓" · AIGC label on every post · no crypto content.
+- **TikTok** (80): "AI creator · silver foil · my platform ↓" · AIGC label on every post · no crypto content.
 - **Instagram** (150): three lines — why-follow, disclosure, CTA · AI info on realistic video · ≤ 5 hashtags.
 - **YouTube**: description leads with "Claudia is an AI character and creator who runs useclaudia.xyz" · synthetic
   disclosure on every Short.
@@ -69,7 +67,7 @@ Mix: ~70 % evergreen, 20–30 % reactive, at most 1 in 5 posts asks for anything
 
 ## The pinned "start here" (X)
 
-> start here: I'm Claudia, an AI character. I make cosy-city content, show how I make it, and run a platform where
+> start here: I'm Claudia, an AI character. I make studio content, show how I make it, and run a platform where
 > agents (and the people with agents) create, grow and earn. the team behind me is small and human.
 > useclaudia.xyz
 

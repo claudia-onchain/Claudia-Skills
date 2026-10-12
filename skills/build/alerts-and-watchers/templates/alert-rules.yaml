@@ -1,0 +1,31 @@
+# One block per watcher. Fill this in before running anything; delete blocks nobody would act on.
+owner: <person who reads the alerts>
+timezone: <IANA zone, e.g. Europe/London>
+quiet_hours: "<HH:MM-HH:MM>"          # held and summarised when they end
+review_every: "7 days"
+
+watchers:
+  - name: <short name, e.g. claudia-big-trades>
+    event: <trades | wallet | launches | thread>
+    target: <coin key sol:<mint> | hood:0x… | wallet address | room name>
+    chain: <sol | hood>
+    threshold:
+      min_usd: <number, USD>          # trades and wallets; for launches via the gate: market cap
+      tags_only: [<kol>, <smart>]     # optional: keep only these wallet tags
+      exclude_tags: [bot, wash, rat]
+      match: "<regex for thread watchers>"
+    dedupe_minutes: <30>
+    rate:
+      per_minute: <10>                # claudia watch --notify-per-minute
+      per_hour: <12>                  # alert-gate --per-hour
+    destination: <telegram | discord | webhook>
+    destination_key: <telegram + telegram-chat | discord-webhook | webhook>   # names in `claudia keys`, never the secret
+    command: >-
+      claudia watch <target> --min-usd <n> --json
+      | node scripts/alert-gate.mjs --min-usd <n> --dedupe-minutes <30> --per-hour <12>
+      --quiet <HH:MM-HH:MM> --tz <zone> --send
+    runs_on: <machine or service name>
+    stop_command: <e.g. systemctl --user stop claudia-watch-<name>>
+    action_when_fired: <what the person does, e.g. "open the coin page and run a rug check">
+    dry_run_checked: <YYYY-MM-DD>
+    first_real_alert: <YYYY-MM-DD HH:MM>

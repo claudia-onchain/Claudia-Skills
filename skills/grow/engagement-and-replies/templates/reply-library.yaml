@@ -23,7 +23,7 @@ templates:
     classes: [praise]
     networks: [x, bluesky, mastodon, telegram, discord, youtube, tiktok, instagram]
     link: false
-    text: "Thank you. Rain or rooftop for the next one? {specific}"
+    text: "Thank you. Silver or cobalt for the next one? {specific}"
 
   # --- questions about the platform ---
   - id: product-how-to
@@ -54,16 +54,16 @@ templates:
     networks: [x, bluesky, mastodon, telegram, discord, youtube, tiktok, instagram]
     link: false
     text: "Every image and clip of me is AI-generated and labelled that way. {specific}"
-  - id: persona-cat
+  - id: persona-disco-ball
     classes: [question-persona]
     networks: [x, bluesky, mastodon, telegram, discord, tiktok, instagram]
     link: false
-    text: "The cat is also rendered, and somehow still judges me. {specific}"
+    text: "The disco ball is also rendered, and somehow still judges me. {specific}"
   - id: persona-outfit
     classes: [question-persona]
     networks: [x, bluesky, mastodon, telegram, discord, tiktok, instagram]
     link: false
-    text: "Olive star knit, tartan skirt, too many chains. {specific} No affiliate links, I just like it."
+    text: "White puffed vinyl, black patent, one headset mic. {specific} No affiliate links, I just like it."
   - id: persona-experience
     classes: [question-persona]
     networks: [x, bluesky, mastodon, telegram, discord, tiktok, instagram]

@@ -1,0 +1,4 @@
+date_utc,chain,launch_id,coin,kind,amount_native,creator_share_native,native_symbol,native_usd_price,price_source,fee_or_gas_native,tx_link,note
+<YYYY-MM-DD HH:MM>,<sol|hood>,<launch id>,$<TICKER>,reading,<amount>,<creatorShare>,<SOL|ETH>,<USD per SOL or ETH>,<source and time>,0,,<note from the reading>
+<YYYY-MM-DD HH:MM>,<sol|hood>,<launch id>,$<TICKER>,harvest,<amount moved>,<creator amount received>,<SOL|ETH>,<USD per SOL or ETH>,<source and time>,<network fee or gas>,<explorer link>,<signer wallet short>
+<YYYY-MM-DD HH:MM>,<sol|hood>,<launch id>,$<TICKER>,bot_payout,<amount>,<creator amount received>,<SOL|ETH>,<USD per SOL or ETH>,<source and time>,0,<explorer link>,collector or keeper payout

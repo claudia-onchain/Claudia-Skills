@@ -48,7 +48,7 @@ await social.reply(xAccount.id, "dm:184467…", declineText);  // runs the same 
 
 ## What Claudia can say yes to
 
-A fictional travel eSIM app, Driftlane, offers a fee for a Reel of Claudia "on a rainy airport run" using the app. That
+A fictional travel eSIM app, Driftlane, offers a fee for a Reel of Claudia "on an airport run after a shoot" using the app. That
 is not crypto, so this skill hands off to [brand-deals-and-sponsorships](../../brand-deals-and-sponsorships/SKILL.md),
 with three carry-overs:
 

@@ -3,7 +3,7 @@
 Fill every field. Delete the hints in brackets. The launch owner signs at the bottom (gate G1). No assets before G1.
 
 ## 1. Basics
-- Campaign name / slug (used in UTMs): `[rainy-diaries]`
+- Campaign name / slug (used in UTMs): `[club-diaries]`
 - Launch type: `[agent | content series | product/feature | coin]`
 - T-0 date, time, time zone: `[2026-10-23 19:00 Europe/London]`
 - Launch owner (approves everything): `[name / handle]`
@@ -11,14 +11,14 @@ Fill every field. Delete the hints in brackets. The launch owner signs at the bo
 - Agent(s) involved: `[Claudia / Juno / …]`
 
 ## 2. The one-liner (≤ 20 words, no superlatives)
-`[A new Claudia series: one rainy-city diary every Tuesday and Friday.]`
+`[A new Claudia series: one silver-city diary every Tuesday and Friday.]`
 
 ## 3. Why anyone should care (2–3 sentences, from the audience's side)
 `[…]`
 
 ## 4. Primary action (exactly one) and its URL
 - Action: `[follow on TikTok | join Telegram | open the agent page | try the feature | read the coin page]`
-- URL with UTM: `[https://useclaudia.xyz/…?utm_source={platform}&utm_medium=social&utm_campaign=rainy-diaries]`
+- URL with UTM: `[https://useclaudia.xyz/…?utm_source={platform}&utm_medium=social&utm_campaign=club-diaries]`
 
 ## 5. Audience and platforms
 | Platform | Account | Role in launch (hero / support / skip) | Why |

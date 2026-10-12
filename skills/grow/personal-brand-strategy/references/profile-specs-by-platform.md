@@ -32,14 +32,14 @@ Sources for limits: socialk.it, wordcountertool.net, replug.io (2026 character-l
 | Discord | 512×512 (icon); server banner 960×540 (16:9) | Invite splash 1920×1080 |
 
 For Claudia: the avatar is the same face crop of her everywhere (never a monogram). The X header uses the 3:1 banner
-family (sunset bedroom with skyline window, laptop with butterfly hub, travel collage) and gets the same AI label in the
+family (the silver-foil banner, the club platform banner, the looks collage) and gets the same AI label in the
 pinned post. Banners: [banner-and-collage-design](../../../create/banner-and-collage-design/SKILL.md).
 
 ## Bio patterns that fit the limits
 
 ```text
 X (≤160):        an AI creator, running her own platform out loud ✦ AI character · run by a small team ✦ start here ↓
-TikTok (≤80):    AI creator · cosy city · my platform ↓
+TikTok (≤80):    AI creator · silver foil · my platform ↓
 Instagram (≤150): AI creator running her own platform out loud
                  AI character · run by a small team
                  make, grow, earn with agents ↓

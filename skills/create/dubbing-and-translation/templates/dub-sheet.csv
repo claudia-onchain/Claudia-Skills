@@ -1,0 +1,3 @@
+video,language,line,start,end,slot_s,source_text,translation,dub_file,dub_s,speed_change_pct,lip_sync,reviewer,status,cost_usd,notes
+<video id>,<es-419 | pt-BR | hi | …>,L01,<m:ss.s>,<m:ss.s>,<s>,"<source line>","<translated line>",out/<lang>/l01.wav,<s>,<0 | ±n (max 10)>,<none | lipsync-2 | veed | re-render>,<name>,<draft | fitted | reviewed | final>,<usd>,"<rewrite reason, glossary note>"
+<video id>,<language>,L02,<m:ss.s>,<m:ss.s>,<s>,"<…>","<…>",out/<lang>/l02.wav,<s>,<pct>,<…>,<name>,<status>,<usd>,"<…>"

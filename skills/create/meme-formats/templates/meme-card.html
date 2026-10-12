@@ -1,0 +1,66 @@
+<!doctype html>
+<!-- Meme card with three layouts. Set the class on <body>: "caption" (text above one image, the modern default),
+     "panels" (two stacked rows: image left, text right — the reject/approve structure), or "macro" (text on the image,
+     top and bottom, in Anton). Use only images you generated or own.
+     Render: ../../thumbnails-and-covers/scripts/render-cover.sh meme-card.html out.png 1080 1350   (or 1080 1080)
+     Fonts: DM Sans, DM Mono, Anton (SIL Open Font License) from Google Fonts. Anton stands in for Impact, which is a
+     licensed Microsoft font. -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:wght@500&family=DM+Sans:wght@500;700&display=block" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0b0d; --ink: #ece9e2; --muted: #80858c; --accent: #ff6fa5;
+    --img1: url("react-1.jpg");      /* caption + macro: the image; panels: top row */
+    --img2: url("react-2.jpg");      /* panels: bottom row */
+    --img1-pos: 50% 30%; --img2-pos: 50% 30%;
+    --caption-size: 52px;            /* 44–60 px; ≤ 20 words */
+    --cap-h: 26%;                    /* caption band height: about 18% for one line, 26% for three lines */
+    --panel-size: 56px;              /* 48–64 px; ≤ 8 words per panel */
+    --macro-size: 104px;             /* 88–120 px; ≤ 6 words per line */
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink); }
+  .wrap { width: 100vw; height: 100vh; position: relative; overflow: hidden; }
+  .tag { position: absolute; right: 24px; bottom: 18px; font: 500 18px/1 "DM Mono", monospace; letter-spacing: .14em; text-transform: uppercase;
+         color: var(--muted); background: rgba(10,11,13,.65); padding: 6px 8px; }
+  .handle { position: absolute; left: 24px; bottom: 18px; font: 500 18px/1 "DM Mono", monospace; letter-spacing: .08em; color: var(--muted);
+            background: rgba(10,11,13,.65); padding: 6px 8px; }
+  /* caption layout */
+  .caption .cap { padding: 64px 64px 40px; font: 500 var(--caption-size)/1.25 "DM Sans", system-ui, sans-serif; margin: 0; }
+  .caption .img { position: absolute; left: 0; right: 0; bottom: 0; top: var(--cap-h); background: var(--img1) var(--img1-pos) / cover no-repeat; }
+  /* panels layout */
+  .panels .row { display: flex; height: 50%; border-bottom: 4px solid var(--bg); }
+  .panels .pic { width: 50%; background: var(--img1) var(--img1-pos) / cover no-repeat; }
+  .panels .row + .row .pic { background-image: var(--img2); background-position: var(--img2-pos); }
+  .panels .txt { width: 50%; display: flex; align-items: center; padding: 48px; font: 700 var(--panel-size)/1.12 "DM Sans", system-ui, sans-serif; }
+  .panels .row:first-child .txt { color: var(--muted); }
+  /* macro layout */
+  .macro .img { position: absolute; inset: 0; background: var(--img1) var(--img1-pos) / cover no-repeat; }
+  .macro .line { position: absolute; left: 48px; right: 48px; text-align: center; margin: 0; text-transform: uppercase;
+                 font: 400 var(--macro-size)/1.02 "Anton", "Arial Narrow", sans-serif; color: #fff;
+                 -webkit-text-stroke: 6px #0a0b0d; paint-order: stroke fill; }
+  .macro .top { top: 48px; } .macro .bottom { bottom: 72px; }
+  .layout { display: none; } body.caption .caption, body.panels .panels, body.macro .macro { display: block; }
+</style>
+</head>
+<body class="caption">
+  <div class="wrap layout caption">
+    <p class="cap">me after my agents scheduled a week of posts and asked if I want to "review anything"</p>
+    <div class="img"></div>
+    <div class="handle">@claudia</div><div class="tag">AI-generated</div>
+  </div>
+  <div class="wrap layout panels">
+    <div class="row"><div class="pic"></div><div class="txt">posting 31 times a week</div></div>
+    <div class="row"><div class="pic"></div><div class="txt">posting 4 times and answering every reply</div></div>
+    <div class="handle">@claudia</div><div class="tag">AI-generated</div>
+  </div>
+  <div class="wrap layout macro">
+    <div class="img"></div>
+    <p class="line top">visor on</p>
+    <p class="line bottom">do not perceive me</p>
+    <div class="handle">@claudia</div><div class="tag">AI-generated</div>
+  </div>
+</body>
+</html>

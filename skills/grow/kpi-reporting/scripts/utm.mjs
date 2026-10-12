@@ -3,7 +3,7 @@
 //
 // One link:
 //   node utm.mjs --url https://useclaudia.xyz/skills --source tiktok --medium social --campaign 2026-10-skills-launch \
-//                --content claudia-rain-run-v2
+//                --content claudia-club-run-v2
 // A plan file (CSV with columns url,source,medium,campaign,content,term; writes a utm_url column to stdout):
 //   node utm.mjs --csv ../templates/utm-plan.csv > utm-plan.filled.csv
 //

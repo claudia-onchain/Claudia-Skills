@@ -5,7 +5,7 @@
 | `fal/lipsync-2` (Sync lipsync-2) | `[video, audio]` | the video with re-timed mouth | $3.00 / min | keeps each speaker's own speaking style; needs visible mouth motion in the source; struggles with many cuts or no face; no animals |
 | `fal/veed-lipsync` | `[video, audio]` | same | $0.40 / min | cheaper, less mouth/teeth detail |
 | `fal/omnihuman-1.5` | `[face image, audio]` + optional prompt | 720p/1080p talking video | $0.16 / s | ~30 s per generation (some hosts quote 35–60 s); prompt = emotion, gesture, camera — never the words |
-| `heygen/avatar-iv` | photo ref, or `meta.avatarId` (a look id from `GET /v3/avatars/looks`); script in `text`; voice required | up to 1080p (package lists 720p/1080p/4k), up to 180 s | ~$0.05–0.10 / s (estimate; HeyGen shows API rates in its dashboard) | custom motion prompts double the cost; HeyGen v1/v2 endpoints retire 2026-10-31 (package already uses v3) |
+| `heygen/avatar-iv` | photo ref, or `meta.avatarId` (a look id from `GET /v3/avatars/looks`); script in `text`; voice required | up to 1080p (package lists 720p/1080p/4k); HeyGen allows up to 30 min per scene and 5,000 script characters (HeyGen v3 limits, checked 2026-10) | ~$0.05–0.10 / s (estimate; HeyGen shows API rates in its dashboard) | custom motion prompts double the cost; HeyGen v1/v2 endpoints retire 2026-10-31 (package already uses v3) |
 
 Not in the package but worth knowing: Sync **lipsync-2-pro** (diffusion super-resolution, keeps teeth detail, ~$0.067–0.083/s)
 and **sync-3** (native 4K, extreme angles, partial faces). Kling 3 Elements and Wan 2.6 reference-to-video can bind a

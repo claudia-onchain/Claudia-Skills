@@ -3,15 +3,15 @@
 Fill the slots, then wrap them in the model's syntax below. Keep the brackets out of the final prompt.
 
 ```text
-SHOT ID:        <series>-<ep>-<shot>            e.g. lounge-01-s1
+SHOT ID:        <series>-<ep>-<shot>            e.g. visor-01-s1
 MODEL:          <package id>                     e.g. fal/kling-3-pro
 FIRST FRAME:    <path to approved 9:16 still>    LAST FRAME (optional): <path>
 DURATION:       <s, valid for the model>         ASPECT: 9:16   RESOLUTION: 720p|1080p
 AUDIO:          native | silent (meta.audio=false) | added in edit
 
 1 IDENTITY  Same woman as the first frame: Claudia, 28-year-old woman (adult), glossy black jaw-length bob, heavy straight
-            bangs with copper-orange streak panels, small orange hair clip, thin gold hoops, light freckles, warm brown eyes.
-            Her face, bob, copper bang streaks and orange clip stay identical throughout.
+            bangs with one peach-orange streak panel, small peach star hair clip, a thin headset mic, light freckles, grey-green eyes.
+            Her face, bob, peach bang streak and star clip stay identical throughout.
 2 ACTION    0–<a>s: <verb + detail>. <a>–<b>s: <verb + detail>. <b>–<end>s: <verb + detail>.
 3 SCENE     <setting string from the bible>
 4 CAMERA    <framing>, <camera height>, <ONE move>

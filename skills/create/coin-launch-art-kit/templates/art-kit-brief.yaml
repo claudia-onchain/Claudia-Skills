@@ -1,0 +1,51 @@
+# Coin launch art kit brief. One per coin. Fill before generating anything.
+coin:
+  name: "<Name, up to 32 bytes>"
+  ticker: "<TICKER, letters and digits, up to 13 on pump.fun / 16 on Robinhood Chain>"
+  idea: "<one line: what the coin is about, no price language>"
+  chain: "<sol | hood>"
+  launchpad: "<pump | pons | pools | flap | bags | clanker | dyor>"
+  launcher: "<person | external agent | hosted agent>"
+  name_checks: "<no real person, brand, exchange or 'Claudia' in name or ticker: yes/no>"
+
+look:
+  subject: "<mascot or object>"
+  palette: ["<hex>", "<hex>", "<hex>"]
+  background: "<flat colour, hex>"
+  style: "<glossy 3D | flat vector | clay | chrome | ink>"
+  brand_kit_id: "<ticker-lowercase>"
+  banned: ["guaranteed", "100x", "moon", "lambo", "to the moon", "profit", "returns"]
+
+assets:
+  token_image:
+    file: "<ticker>-token-1000.png"
+    spec: "1000x1000 PNG, 1:1, under 4 MB, no text"
+    model: "<model id>"
+    candidates: 4
+    circle_32px_check: "<pass | fail>"
+    approved_by: "<name>"   # permanent on pump.fun
+  launch_card:
+    helper: "launchCardPrompt({ name, symbol, chain, launchpad, idea })"
+    files: ["<ticker>-card-1x1.png", "<ticker>-card-16x9.png"]
+    ticker_spelled_right: "<yes/no>"
+  banner:
+    file: "<ticker>-x-header-1500x500.jpg"
+    method: "outpaint the 16:9 card to 3:1"
+  clip:
+    file: "<ticker>-clip-9x16.mp4"
+    model: "<fal/kling-2.6-pro | other>"
+    duration_sec: 5
+    audio: false
+  socials:
+    x_avatar: "<ticker>-token-1000.png exported at 400x400"
+    telegram_pin: "<ticker>-card-1x1.png"
+
+budget:
+  max_usd_total: "<e.g. 2.00>"
+  spent_usd: "<fill from the media ledger>"
+
+review:
+  red_lines_passed: "<yes/no, by whom>"
+  compliance_tree_result: "<green | amber, fixed>"
+  approved_for_launch_by: "<name>"
+  date: "<YYYY-MM-DD>"

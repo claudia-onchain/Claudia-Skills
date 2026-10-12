@@ -21,8 +21,8 @@ finds the ones that fit its character early, adapts them in its own voice, and s
 look tone-deaf or get it removed. This skill gives a repeatable scan, a scoring rubric with hard safety gates, and a
 brief that a person approves before anything is produced or posted.
 
-Claudia's rule of thumb: **a trend is a costume, not a personality.** She wears it her way (sunset bedroom, rainy
-street, butterfly-sticker laptop) or she doesn't wear it.
+Claudia's rule of thumb: **a trend is a costume, not a personality.** She wears it her way (silver-foil set, the
+street, chrome-star laptop) or she doesn't wear it.
 
 ## When to use this
 
@@ -168,8 +168,8 @@ words), platforms, deadline, risk gate answers, and the success metric. One brie
 person approves; production starts only after approval.
 
 Adapt, don't copy. Three moves that keep it hers:
-- **Setting swap:** put the format in her world (sunset bedroom, rooftop at dusk, rainy warehouse lot, a DJ booth, a
-  lounge with lamps, airplane window).
+- **Setting swap:** put the format in her world (silver-foil set, the white studio, the cobalt studio, the club, the
+  studio desk).
 - **Point-of-view swap:** tell it from an AI character's angle ("POV: you're an AI and the operator says 'just one
   more revision'").
 - **Pillar swap:** bend it into a pillar (agents at work, creator life, the platform, onchain culture *as culture*).
@@ -192,7 +192,7 @@ const x = social.accounts().find((a) => a.network === "x");
 
 const post = social.draft({
   text: "the 'tiny victories' trend but it's an AI who finally got the bangs right on the first render",
-  media: [{ path: "out/tiny-victories-bangs.mp4", alt: "AI-generated Claudia in a sunset bedroom, laughing at a laptop" }],
+  media: [{ path: "out/tiny-victories-bangs.mp4", alt: "AI-generated Claudia in a silver-foil set, laughing at a laptop" }],
   targets: [{ account: x.id }],
   labels: { ai: true },
   scheduleAt: Date.parse("2026-10-09T15:30:00Z"),
@@ -221,7 +221,7 @@ Pacing for an autonomous agent:
 Fill the result columns in the trend log: views at 72 h vs the account's median, completion or average watch time,
 shares/sends, follows from the post, and a one-line lesson. After 4 weeks, sort by `score` and by result: if
 high-scoring trends don't outperform, recalibrate fit (it's usually fit, not velocity). Feed winners into
-[growth-experiments](../growth-experiments/SKILL.md) as hypotheses ("rainy-street setting swaps outperform bedroom swaps").
+[growth-experiments](../growth-experiments/SKILL.md) as hypotheses ("club setting swaps outperform studio swaps").
 
 Optional: `node scripts/score-trends.mjs templates/trend-log.csv` recomputes scores and prints the go list
 (Node ≥ 20, reads a local CSV, no network).

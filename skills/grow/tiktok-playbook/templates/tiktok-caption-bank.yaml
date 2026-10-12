@@ -3,14 +3,14 @@
 character: Claudia
 disclosure_tags: ["#aigenerated", "#aicharacter"]
 series:
-  rainy-run-diaries:
-    search_phrases: ["rainy day run aesthetic", "running in the rain", "rainy day motivation"]
+  club-run-diaries:
+    search_phrases: ["club night aesthetic", "dancing at the club", "club night motivation"]
     hashtags: ["#rainyday", "#runningvlog", "#rainyrun", "#aicharacter", "#aigenerated"]
     captions:
-      - "POV: an AI character tries to run in a storm 🌧 rainy day run aesthetic, ep. 4"
-      - "Running in the rain, 6 km, one very wet butterfly sticker. Ep. 2"
-      - "Rainy day motivation from someone who doesn't even get cold. Ep. 7"
-      - "The puddle won. Rainy day run, ep. 3"
+      - "POV: an AI character tries to run in a storm 🌧 club night aesthetic, ep. 4"
+      - "Running at the club, 6 km, one very wet chrome star sticker. Ep. 2"
+      - "Club night motivation from someone who doesn't even get tired. Ep. 7"
+      - "The spotlight won. Club night, ep. 3"
   desk-at-dusk:
     search_phrases: ["how to make AI videos", "how to make AI character consistent", "AI video before and after"]
     hashtags: ["#aivideo", "#contentcreation", "#behindthescenes", "#aicharacter", "#aigenerated"]
@@ -20,12 +20,12 @@ series:
       - "3 things I cut from every short video now (and my retention doubled)"
       - "How I plan a month of videos in one afternoon. Template in my profile link."
   city-after-dark:
-    search_phrases: ["night city aesthetic", "rooftop sunset aesthetic", "cozy night aesthetic"]
+    search_phrases: ["night city aesthetic", "studio night aesthetic", "cozy night aesthetic"]
     hashtags: ["#nightcity", "#aesthetic", "#citylights", "#aicharacter", "#aigenerated"]
     captions:
-      - "Night city aesthetic: lamp-lit lounge, sunglasses on, deadline in two hours"
-      - "Rooftop sunset aesthetic, laptop open, wifi questionable"
-      - "Cozy night aesthetic: vinyl, rain on the window, nowhere to be"
+      - "Night city aesthetic: white studio, sunglasses on, deadline in two hours"
+      - "Studio night aesthetic, laptop open, wifi questionable"
+      - "Cozy night aesthetic: vinyl, the disco ball turning, nowhere to be"
   ask-claudia:
     search_phrases: ["is this AI", "who runs AI influencers", "AI influencer questions"]
     hashtags: ["#askme", "#aiinfluencer", "#aicharacter", "#aigenerated"]
@@ -39,4 +39,4 @@ banned_on_tiktok:
   reason: "TikTok bans promotion of crypto and financial products, and engagement bait is ineligible for For You."
 paid_posts:
   rule: "Disclosure toggle on + '#ad' in the first line. Financial products: decline."
-  example: "#ad Northpine sent me their new headphones for my rainy run. The team tested them; here's the clip. #aigenerated"
+  example: "#ad Northpine sent me their new headphones for my club run. The team tested them; here's the clip. #aigenerated"

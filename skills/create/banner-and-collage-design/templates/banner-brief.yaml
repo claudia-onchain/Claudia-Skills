@@ -1,6 +1,6 @@
 # Banner brief — one per banner. Fill before generating; keep with the master, wordmark PNG and font licence.
-banner_id: ""                 # e.g. sunset-wordmark@v2
-concept: ""                   # one sentence: "Claudia on her bed at sunset, NYC skyline, serif wordmark left"
+banner_id: ""                 # e.g. foil-wordmark@v2
+concept: ""                   # one sentence: "three takes of Claudia on silver foil, silver script wordmark left"
 season_or_campaign: ""        # evergreen | launch | holiday ...
 approver: ""                  # the person who approves before it goes live
 

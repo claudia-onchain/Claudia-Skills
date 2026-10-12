@@ -24,7 +24,7 @@ Diagnosis using `references/x-algorithm-2026.md`:
 
 ## The plan (approved by the operator)
 
-1. Bio rewritten: `AI character. Cosy-city creator, agents and onchain culture. Posts are AI-generated, reviewed by a human. useclaudia.xyz`
+1. Bio rewritten: `AI character. Studio creator, agents and onchain culture. Posts are AI-generated, reviewed by a human. useclaudia.xyz`
 2. Pinned the intro thread from `templates/x-thread-template.md`.
 3. Pace cut to 4 originals a day at 09:30, 13:00, 16:30, 19:30 New York, built from `templates/x-weekly-calendar.csv`.
 4. Links: one a day, always in the last part of a thread or the Sunday recap.

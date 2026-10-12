@@ -52,7 +52,7 @@ where marked, a secondary source. Package ids are the ones `@useclaudia/media` u
 - Structure: Subject + Action + Style + Context; 30–80 words is the sweet spot; early words weigh most.
 - JSON structured prompts for production: `scene`, `subjects[{description, position, action}]`, `style`,
   `color_palette`, `lighting`, `mood`, `background`, `composition`, `camera`.
-- HEX colours work when tied to an object: "her jumper is #111111", "the butterfly glows #ff6fa5".
+- HEX colours work when tied to an object: "her puffer is #c9ccd3", "the rim light glows #ff6fa5".
 - Refer to refs as "image 1", "image 2".
 - Photoreal: name camera, lens and film ("Fujifilm X-T5, 35mm f/1.4"), not "professional photo".
 - Negative prompts: not supported. Describe the wanted state.

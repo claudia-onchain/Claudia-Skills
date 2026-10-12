@@ -1,74 +1,54 @@
 # The owner's reference set, decoded
 
-These eight pieces define "on-brand Claudia content". Every prompting skill in this library aims to recreate their
-look. Files live in the site repo at `client/public/claudia/media/` (each video also has a `-sq` 1:1 face crop and
-posters). Read this when you need to match one of them shot for shot.
+These pieces define "on-brand Claudia content". Every prompting skill in this library aims to recreate their look.
+Files live in the site repo at `client/public/claudia/media/`. Read this when you need to match one of them shot for shot.
 
-## Videos (vertical 9:16, 540×960 masters at 24 fps, silent on the site)
+## Video (vertical 9:16, 540×960 master at 24 fps, silent on the site)
 
-### `room.mp4` — talking to camera in her room (14 s)
-- **Frame:** front-camera phone at arm's length, eye level, head and torso to mid-waist, slight upward tilt.
-- **Set:** plain white walls, a ceiling smoke detector and recessed light, an open white door frame at left, a grey
-  chair edge at bottom right. Flat, soft overcast daylight; no hard shadows.
-- **Look:** signature cami (olive, copper-edged scallop neckline, orange stars), layered silver chains with star pendant,
-  small star tattoo on the shoulder, fine-line tattoos on the forearm.
-- **Beats:** 0–3 s playful tongue-out laugh to lens → 3–6 s glance off to the side, talking → 6–10 s big smile, small
-  side-to-side sway → 10–14 s head tilt back, laughing, eyes up. Continuous handheld micro-shake.
-
-### `club.mp4` — dancing at a DJ set (8 s)
-- **Frame:** static-ish medium-wide from crowd height, her full figure from knees up, centred; a DJ (generic man in a
-  dark T-shirt) behind her at the decks.
-- **Set:** DJ booth with mixers/CDJs, dense crowd with raised arms, blue-violet haze, cool white beams from above.
-- **Look:** signature cami + red/green tartan mini, studded belt with chains, black oval sunglasses, stacked bracelets.
-- **Beats:** sway and smile → one arm raised high on the beat (2–5 s) → arm down, turns her head to the DJ, laughs →
-  hand to chest. Light flickers on the beat.
-
-### `lounge.mp4` — sunglasses in a lamp-lit vintage lounge (8 s)
-- **Frame:** medium shot, slow push-in from waist-up to chest-up over the clip.
-- **Set:** butter-yellow walls, framed red-flower cross-stitch botanicals, a brass lamp with pleated cream shade at left,
-  dark wood dresser she leans back on. Warm tungsten key from the lamp.
-- **Look:** signature cami, tartan mini with studded belt and chains, black oval sunglasses, both arms tattooed.
-- **Beats:** leaning, half-smile in sunglasses (0–3 s) → raises one hand to the frame (3–5 s) → slides the sunglasses
-  down her nose and looks over them, knowing smile (5–8 s).
-
-### `rain.mp4` — running selfie in the rain, warehouse lot (13 s)
-- **Frame:** arm's-length phone, wide 24 mm look from slightly above, her extended arm and chunky
-  silver chain bracelet dominating the foreground, rain streaks visible against the dark ground.
-- **Set:** empty warehouse/loading-dock lot, wet asphalt, roll-up doors, yellow bollards, heavy overcast dusk sky.
-- **Look:** signature cami and tartan, hair damp, pink fuzzy slippers flashing at the bottom of frame (a playful detail).
-- **Beats:** running toward camera direction laughing, mouth wide open → spins a little, camera swings → free hand to
-  chest, laughing harder. Strong motion blur, auto-exposure pumping.
+### `studio.mp4` — talking to camera in the white studio (14 s)
+- **Frame:** locked-off camera at eye level, a little below the face, her full figure from mid-thigh up, centred. The
+  site also ships a 1:1 crop (`studio-sq.mp4`) and posters.
+- **Set:** seamless pale grey-white paper, soft even daylight, no props, no hard shadows.
+- **Look:** the Studio look — cropped white puffed-sleeve shirt with a small star pin, black patent pleated mini skirt with
+  a dangling white tag, long black patent gloves, a thin skin-tone headset mic, the peach streak and star clip.
+- **Beats:** 0–4 s talking to lens, laughing → 4–8 s big open smile, small sway → 8–11 s calm, closed mouth, steady gaze →
+  11–14 s laughing again, head tilting. Camera does not move.
 
 ## Stills
 
-### `banner-sunset-*.jpg` (3:1)
-Her lying on her front on a white duvet, chin on folded arms in the black knit, eyes to lens, half-smile; a
-floor-to-ceiling window at right with a Manhattan skyline (spire tower) and a low orange sun; a pinned photo wall and
-pothos plants at left; a film camera on the sill; golden backlight and flare. A thin-serif uppercase "CLAUDIA" wordmark
-with a sparkle and a fine arc line sits on the left third.
+### `portrait-official-*.jpg` (2:3, from the square original `look-02.jpg`)
+Over-the-shoulder half profile on a crinkled silver-foil backdrop, hard flash; the Signature look (white glossy vinyl,
+huge puffed sleeves, high ruched neck), one hand at her collar, the headset mic along her cheek, the peach streak and the
+star clip clearly visible, grey-green eyes to lens. This is the **face anchor** for the ref pack.
 
-### `banner-network-*.jpg` (3:1)
-Same pose at a desk at night with a laptop (single butterfly sticker) in the foreground, a black butterfly mug, a sleeping
-tabby cat at right. Left third: floating translucent social post cards (X, Instagram, TikTok, YouTube) each showing a
-photo of her. Right third: a glowing rose-violet butterfly hub tile wired with neon lines to "MCP" and "API" chips,
-social-network icons, a dark globe with city lights, and chain/network icons (Solana listed first). Purple-rose glow,
-deep navy shadows.
+### `hero-banner.jpg` (3:1)
+Silver-foil banner: three takes of the Signature look (over-the-shoulder at left, a big centre close-up, two taped
+polaroids at right), a sparkling silver script "Claudia" wordmark with chrome stars across the left third.
 
-### `banner-collage-*.jpg` (3:1)
-A tiled photo collage, warm dusk grade throughout: headphones at Santorini at golden hour; a wine-glass wink by
-candlelight; an airplane window over clouds; a big centre close-up of her face resting on her arms (black knit); a desk
-with trading screens and her in round glasses; a mirror selfie in gym wear; a balcony over a night city with a wine
-glass; her cuddling a grey tabby on a bed. A handwritten script "CLAUDIA" wordmark with a sparkle and a brush underline on
-the right.
+### `look-01.jpg` and `look-04.jpg` (9:16 collages)
+Phone-wallpaper collages on silver foil with the script wordmark, film strips, a chrome heart, white lilies, chrome stars
+and a disco ball: one in the Signature look, one in the Silver night look (liquid-silver gown, white fur, crystal choker).
 
-### `portrait-blue-*.jpg` (2:3)
-Studio headshot on a saturated cobalt seamless, soft green blazer over an olive top, eye-level, 85 mm look, even soft
-key, closed-lip half-smile, copper panel and orange clip clearly visible. This is the **face anchor** for the ref pack.
+### `look-13.jpg` (collage, "human machine dreams beauty errors")
+Grey studio collage under crinkled clear plastic: the Sculpture dress, a close-up of her eyes, contact-sheet frames,
+technical sketches and a glass script wordmark.
+
+### Full-length editorials (2:3)
+- `wall-1.jpg` Silver night on the cobalt studio · `wall-2.jpg` Sky gown in the white studio ·
+  `wall-3.jpg` Holo dress on the cobalt studio · `wall-4.jpg` Sculpture dress in the white studio ·
+  `look-09.jpg` Patent (green blazer, orange goggles) · `look-12.jpg` Patent (cobalt trench, orange visor).
+
+### Wide frames (16:9)
+- `look-06.jpg` the Studio look, front on (a frame from the reference clip's world).
+- `look-03.jpg` the Club: silver puffer, a spotlight behind her, dancers in silver.
+- `look-05.jpg` the Blue render: glossy blue light, liquid chrome, scan lines.
+- `look-08.jpg` the Signature look close-up on silver foil.
 
 ## What they have in common
 
-- Real-camera feel: phone UGC or 35–85 mm photo language, never "digital art".
-- Warm, slightly lifted grade; cool blue-violet only in club/tech scenes, always with rose highlights.
-- One clear action per clip, 8–14 s, no cuts inside a clip.
+- Real-camera feel: 35–85 mm editorial photo language with on-camera flash or soft studio daylight, never "digital art"
+  (the blue render is the one deliberate exception).
+- Clean, cool grade; chrome and silver highlights; orange only in the streak, clip, visors and goggles.
+- One clear pose or action per frame; one action per clip, no cuts inside a clip.
 - She is the only sharp subject; background people are anonymous and generic.
 - Wordmarks on banners are designed type — add them in edit with a licensed font rather than relying on model text.

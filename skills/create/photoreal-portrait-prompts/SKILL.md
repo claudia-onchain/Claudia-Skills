@@ -1,11 +1,11 @@
 ---
 name: photoreal-portrait-prompts
-description: Ready-to-run photoreal portrait prompts for Claudia (and a method for any character) — studio headshots like the cobalt-blue green-blazer portrait, lamp-lit lounge sunglasses stills, club-light portraits, rain-selfie stills, bedroom close-ups and avatar crops — with lighting recipes (Rembrandt, loop, butterfly, window, tungsten, neon rim), lens and film choices, per-model variants for Nano Banana, GPT Image 2.5, FLUX.2 and Midjourney V7, and fixes for skin, eyes, hands, age drift and extra hair streaks. Use when making profile pictures, avatars, press/about-page portraits, close-up feed photos, or first frames for talking-head videos.
+description: Ready-to-run photoreal portrait prompts for Claudia (and a method for any character) — the official silver-foil portrait, white-studio visor stills, club-light portraits, club flash selfies, cobalt-studio editorials and avatar crops — with lighting recipes (Rembrandt, loop, butterfly, window, tungsten, neon rim), lens and film choices, per-model variants for Nano Banana, GPT Image 2.5, FLUX.2 and Midjourney V7, and fixes for skin, eyes, hands, age drift and extra hair streaks. Use when making profile pictures, avatars, press/about-page portraits, close-up feed photos, or first frames for talking-head videos.
 license: MIT
 metadata:
   title: "Photoreal portrait prompts"
   category: create
-  summary: "Studio, lounge, club, rain and bedroom portraits of Claudia that look photographed, not generated — with lighting recipes and fixes."
+  summary: "Silver-foil, studio, club and cobalt portraits of Claudia that look photographed, not generated — with lighting recipes and fixes."
   level: intermediate
   tags: "portrait, headshot, avatar, photoreal, lighting, studio, skin texture, nano banana, gpt image, flux"
   uses: "@useclaudia/media, @useclaudia/cli"
@@ -30,7 +30,7 @@ makes a portrait read "AI" or makes her read too young.
 ## What you need
 
 - The identity block, wardrobe strings and settings from [../claudia-character-bible/SKILL.md](../claudia-character-bible/SKILL.md).
-- The ref pack (at least `01-front-neutral.jpg`, `05-laugh.jpg`, `06-sunglasses.jpg`) from
+- The ref pack (at least `01-front-neutral.jpg`, `05-laugh.jpg`, `06-visor.jpg`) from
   [../character-consistency/SKILL.md](../character-consistency/SKILL.md).
 - An image key you bring: `claudia keys set google` or `openai` or `fal`.
 - [references/portrait-lighting-recipes.md](references/portrait-lighting-recipes.md) — read it when you build a new
@@ -42,95 +42,85 @@ makes a portrait read "AI" or makes her read too young.
 
 | Type | Aspect | Lens | Light recipe | Wardrobe |
 |---|---|---|---|---|
-| Studio headshot (cobalt) | 2:3 | 85 mm f/2.8 | soft key + clean seamless | Studio (green blazer) |
-| Lounge sunglasses | 4:5 or 9:16 | 50 mm f/1.8 | tungsten lamp key | Signature |
-| Club portrait | 4:5 | 35 mm f/1.8 | blue-violet haze + rose rim | Signature or Night out |
-| Rain selfie still | 9:16 | 24 mm phone | overcast soft + wet bounce | Signature |
-| Bedroom close-up | 4:5 | 35–50 mm f/2 | window daylight | Signature / Cosy black |
-| Golden-hour bed close-up | 4:5 | 35 mm f/2 | sunset backlight + bounce | Cosy black |
-| Avatar | 1:1 | 85 mm f/2.8 | soft key, plain backdrop | Studio or Cosy black |
+| Official portrait (silver foil) | 2:3 | 85 mm f/2.8 | hard on-camera flash | Signature |
+| Visor still (white studio) | 4:5 or 9:16 | 50 mm f/2.8 | soft daylight from one side | Sky or Patent |
+| Club portrait | 4:5 | 35 mm f/1.8 | spotlight backlight + rose rim | Club |
+| Club flash selfie still | 9:16 | 24 mm phone | phone flash + spotlight | Club |
+| Studio talking still | 4:5 | 50 mm f/4 | soft even daylight | Studio |
+| Cobalt full-length editorial | 2:3 | 50 mm f/5.6 | direct flash | Silver night or Holo |
+| Avatar | 1:1 | 85 mm f/2.8 | soft key, plain backdrop | Studio or Silver night |
 
 ### 2. Start every prompt with the ID block and an age anchor
 
 ```text
-[CLAUDIA ID v1] Claudia, a 28-year-old woman (adult, late twenties) with a glossy jet-black jaw-length blunt bob and heavy
-straight bangs just above the brows; vivid copper-orange streak panels through the front bangs and one side; a small orange
-hair clip at the side of the bangs; small thin gold hoop earrings; light freckles across the nose and cheeks; warm brown
-eyes; straight dark brows; a knowing closed-lip half-smile; natural skin texture with visible pores; fine-line tattoos on
-her arms (small stars, a rose, a sun).
+[CLAUDIA ID v2] Claudia, a 28-year-old woman (adult, late twenties) with a glossy jet-black jaw-length blunt bob and heavy straight bangs; one peach-orange streak panel through the front bangs on one side, the rest jet-black; a small peach star-shaped hair clip at the side; a thin headset microphone along her cheek; light freckles across the nose and cheeks; grey-green eyes; straight dark brows; glossy coral lips; a cool, direct gaze; natural skin texture with visible pores.
 ```
 
 Portraits magnify age cues, so add one more adult cue after it: "adult facial proportions, defined cheekbones".
 
 ### 3. Use the prompt for the type
 
-**A. Studio headshot on cobalt (recreates `portrait-blue`)** — Nano Banana 2.1, 2:3, 2K.
+**A. Official portrait on silver foil (recreates `portrait-official`)** — Nano Banana 2.1, 2:3, 2K.
 
 ```text
-[CLAUDIA ID v1] … adult facial proportions, defined cheekbones. Image 1 is her face reference. She wears a soft green
-unstructured blazer over an olive ribbed top. Head-and-shoulders studio portrait, square to camera, chin slightly down,
-eyes into the lens, knowing closed-lip half-smile. Seamless saturated cobalt-blue paper backdrop, evenly lit. Large soft
-key light just above eye level and slightly left, white bounce fill from below, a faint hair light from behind to separate
-the black hair from the blue. 85mm lens at f/4, everything from nose to ears sharp. Natural skin texture with visible
-pores and freckles, soft rose lip tint, minimal makeup. Clean editorial colour, no grain. Vertical 2:3 frame.
+[CLAUDIA ID v2] … adult facial proportions, defined cheekbones. Image 1 is her face reference. She wears a white glossy
+vinyl top with huge crinkled puffed sleeves and a high ruched neck. She looks back over her shoulder in half profile, one
+hand at her collar, eyes into the lens, cool, direct gaze; the headset mic along her cheek, the peach streak and the star
+clip clearly visible. Crinkled silver-foil backdrop. Hard on-camera flash, deep dark edges, sparkle highlights on the
+foil. 85mm lens at f/2.8, eyes sharp. Natural skin texture with visible pores and freckles, glossy coral lips, minimal
+makeup. Clean editorial colour, fine grain. Vertical 2:3 frame.
 ```
 
 ```sh
-claudia generate image "$(cat prompts/portrait-cobalt.txt)" --model google/nano-banana-2.1 \
+claudia generate image "$(cat prompts/portrait-official.txt)" --model google/nano-banana-2.1 \
   --ref refs/claudia/01-front-neutral.jpg --aspect 2:3 --resolution 2K --max-usd 0.10
 ```
 
-**B. Lounge sunglasses still (recreates `lounge`)** — 9:16 or 4:5.
+**B. Visor still, white studio (recreates the `visor on / off` series)** — 9:16 or 4:5.
 
 ```text
-[CLAUDIA ID v1] … Image 1 is her face; image 2 shows her in sunglasses. She wears an olive-green fine-knit crop cami
-with a scalloped copper-orange edged neckline and small orange embroidered stars, a star pendant on layered silver chains,
-a red-and-green tartan pleated mini skirt with a studded black belt. She leans back against a dark wood dresser, one hand
-lifting oversized black oval sunglasses down her nose, looking over the top of them into the lens with a knowing smile.
-Warm butter-yellow wall behind her with framed botanical cross-stitch prints; a brass table lamp with a pleated cream
-shade glowing at frame left. Medium shot from the waist up, eye level, 50mm at f/1.8, focus on her eyes above the frames.
-Tungsten lamp key from the left, soft falloff to the right, Kodak Gold 200, gentle grain. Vertical 9:16 frame.
+[CLAUDIA ID v2] … Image 1 is her face. She wears a floor-length cloud-print halter gown with a mint satin halter band and
+an orange shield visor. She stands three-quarter to camera, one hand behind her back, the other lifting the visor up into
+her bangs, looking straight into the lens. Seamless pale grey-white paper, soft daylight from the left, a long soft
+shadow on the floor. Medium shot from the waist up, eye level, 50mm at f/2.8, focus on her eyes under the visor edge.
+Clean editorial colour, gentle grain. Vertical 9:16 frame.
 ```
 
-**C. Club portrait (recreates `club`)** — 4:5.
+**C. Club portrait (recreates `look-03`)** — 4:5.
 
 ```text
-[CLAUDIA ID v1] … She wears the olive crop cami with orange stars, layered chains with a star pendant, tartan mini skirt
-and oversized black oval sunglasses. She stands in front of a DJ booth, chin up, mid-laugh, one hand at her collarbone.
-Behind her, softly out of focus, a DJ at the decks and a crowd with raised hands, blue-violet haze cut by moving-head beams.
-Medium shot, slightly low angle, 35mm at f/1.8. Cool blue-violet ambient light, a rose-pink rim light #ff6fa5 on her hair
-and shoulder, CineStill 800T halation around the beams. Background people anonymous and unrecognisable, no readable
-logos on the equipment. Vertical 4:5 frame.
+[CLAUDIA ID v2] … She wears a silver quilted puffer. She leans toward the lens, head tilted, eyes to camera. Behind her
+one bright spotlight blooms into the frame; dancers in silver puffers stand soft and out of focus on both sides, light
+haze. Medium close-up, eye level, 35mm at f/1.8. Hard backlight, warm-silver colour, a rose-pink rim light #ff6fa5 on
+her cheek, CineStill 800T halation around the spotlight. Background people anonymous and unrecognisable, no readable
+logos. Vertical 4:5 frame.
 ```
 
-**D. Rain selfie still (recreates `rain`)** — 9:16, phone look.
+**D. Club flash selfie still** — 9:16, phone look.
 
 ```text
-[CLAUDIA ID v1] … She wears the olive crop cami, layered chains, tartan mini skirt and a chunky silver chain bracelet.
-Front-camera selfie at arm's length, her arm reaching toward the lens at the bottom of the frame, slightly above eye
-level, laughing with her mouth open, rain on her face and in her bangs. Behind her an empty warehouse lot: wet asphalt
-with puddle reflections, grey roll-up loading-dock doors, yellow bollards, an overcast blue-grey sky. iPhone front-camera
-look: 24mm equivalent, slight HDR sky, soft overcast light, raindrops streaking, a little motion blur at the edges.
-Vertical 9:16 frame, her face in the upper third.
+[CLAUDIA ID v2] … She wears a silver quilted puffer. Front-camera selfie at arm's length, her arm reaching toward the lens
+at the bottom of the frame, slightly above eye level, laughing with her mouth open, the phone flash on her face. Behind
+her the dark club, one spotlight and blurred silver puffers. iPhone front-camera look: 24mm equivalent, flash-bright
+skin, a little motion blur at the edges. Vertical 9:16 frame, her face in the upper third.
 ```
 
-**E. Bedroom daylight close-up (recreates `room`)** — 4:5.
+**E. Studio talking still (recreates a frame of `studio.mp4`)** — 4:5.
 
 ```text
-[CLAUDIA ID v1] … She wears the olive crop cami with orange stars and the layered silver chains with a star pendant.
-Medium close-up, talking to the camera mid-sentence, eyebrows raised, a playful grin. Plain white walls, a ceiling smoke
-detector, an open doorway behind her, soft overcast window light from camera left. Phone-on-a-tripod look: 26mm
-equivalent at eye level, everything in focus, slight sensor noise. Natural skin texture, freckles visible. 4:5 frame.
+[CLAUDIA ID v2] … She wears a cropped white puffed-sleeve shirt with a small star pin, a black patent pleated mini skirt
+and long black patent gloves. Medium shot, talking to the camera mid-sentence, eyebrows raised, a playful grin.
+Seamless pale grey-white paper behind her, soft even daylight. Locked-off camera at eye level, 50mm at f/4, everything in
+focus. Natural skin texture, freckles visible. 4:5 frame.
 ```
 
-**F. Golden-hour bed close-up (recreates the sunset banner face)** — 4:5, then crop for avatars.
+**F. Cobalt full-length editorial (recreates `wall-1` / `wall-3`)** — 2:3.
 
 ```text
-[CLAUDIA ID v1] … She wears an oversized fuzzy black knit jumper with the sleeves over her hands. She lies on her front
-on a white duvet, chin resting on her folded arms, eyes to the lens, knowing closed-lip half-smile. Behind her a
-floor-to-ceiling window, the Manhattan skyline and a low orange sun. Close-up at mattress height, 35mm at f/2, focus on
-her eyes. Warm golden backlight making a copper halo in her hair, window bounce on her face, Kodak Portra 400, gentle
-grain. 4:5 frame.
+[CLAUDIA ID v2] … She wears a liquid-silver column gown, a white faux-fur stole low on the arms, a wide crystal choker and
+strappy silver heels. Full length on a deep cobalt-blue paper backdrop and matching carpet, hands at her waist, one hip
+out, eyes to the lens. Direct on-camera flash, crisp shadows on the paper. 50mm at f/5.6, eye level. Saturated film colour,
+fine grain. 2:3 frame.
 ```
 
 More types (avatar, B&W editorial, flash snapshot, glasses-and-screens) are in
@@ -146,7 +136,7 @@ More types (avatar, B&W editorial, flash snapshot, glasses-and-screens) are in
 
 ### 5. Make the avatar crop
 
-Generate type A or F at 2K, then crop a face-centred square (keep hair and hoops inside; circles crop corners):
+Generate type A or F at 2K, then crop a face-centred square (keep hair and mic inside; circles crop corners):
 
 ```sh
 # 2:3 portrait 1365x2048 → square face crop, then sizes for each network
@@ -154,7 +144,7 @@ ffmpeg -i portrait.png -vf "crop=1100:1100:132:260,scale=800:800" -q:v 3 avatar-
 ffmpeg -i avatar-800.jpg -vf scale=400:400 -q:v 3 avatar-400.jpg
 ```
 
-Check the circle: the copper panel and one hoop must still be visible inside the round mask. The logo of the platform is
+Check the circle: the peach streak and the headset mic must still be visible inside the round mask. The logo of the platform is
 her face — use the same crop everywhere so it reads as one identity.
 
 ### 6. Score and fix
@@ -165,27 +155,27 @@ Run the 7-point drift check ([../character-consistency/SKILL.md](../character-co
 |---|---|
 | Reads under 25 | "Change only: adult late-twenties facial proportions — slightly longer face, more defined cheekbones and jaw, calmer expression." Also switch 35 → 85 mm and drop any high angle |
 | Waxy skin | "Change only: restore natural skin texture with visible pores and freckles; keep makeup minimal." Regenerate with a film stock named if it persists |
-| Eye colour drift | "Change only: eye colour to warm brown, same shape and catchlights." |
+| Eye colour drift | "Change only: eye colour to grey-green, same shape and catchlights." |
 | Catchlights missing / dead eyes | add "a soft square catchlight in each eye from the key light" |
 | Teeth too many / too white | prefer closed-lip smile in portraits; edit "natural off-white teeth, normal count" |
 | Bangs side-swept | "heavy straight blunt bangs just above the brows" as the only change |
-| Extra streak on the other side | "Change only: make the hair on the right side jet-black; keep the copper panel in the front bangs." |
-| Hoops oversized | "small thin gold hoops about 2 cm across" |
+| Extra streak on the other side | "Change only: make the hair on the right side jet-black; keep the peach streak in the front bangs." |
+| Mic too big | "a thin headset mic about 2 cm across" |
 | Hands near the face warped | crop tighter, or edit "relaxed hand, five fingers, natural knuckles" |
 
 ## Templates
 
 - [templates/portrait-prompts.md](templates/portrait-prompts.md) — 12 portrait prompts with settings and CLI lines.
-- [examples/cobalt-studio-portrait.md](examples/cobalt-studio-portrait.md) — a full session: dry run, 3 rounds, fixes, avatar export.
+- [examples/silver-foil-portrait.md](examples/silver-foil-portrait.md) — a full session: dry run, 3 rounds, fixes, avatar export.
 
 ## Check before you finish
 
 - [ ] ID block + adult cue present; lens 50 mm or longer for close portraits (except the phone-selfie look).
 - [ ] Light recipe named; one light story only.
-- [ ] Drift check ≥ 6/7, no age doubt, eyes brown, bangs straight, one copper panel side.
+- [ ] Drift check ≥ 6/7, no age doubt, eyes brown, bangs straight, one peach streak side.
 - [ ] Skin has texture; teeth and hands natural.
 - [ ] Background people anonymous; no readable logos.
-- [ ] Avatar crop keeps panel and a hoop inside the circle.
+- [ ] Avatar crop keeps panel and the headset mic inside the circle.
 - [ ] The post or profile carries the AI label / "AI-generated character" bio line.
 
 ## Pitfalls

@@ -16,7 +16,7 @@ Read when a clip looks like an ad or a render. Each row: the tell, why it happen
 
 | Rendered tell | Prompt fix |
 |---|---|
-| Three-point studio light in a bedroom | name the real source: "overcast window light from the right, no other lights" |
+| Three-point light in a "phone" clip | name the real source: "one modelling light from the right, no other lights" |
 | Rim light outdoors at noon | "flat overcast daylight" |
 | Glowing skin | "natural skin texture with visible pores, a little shine on the nose" |
 | Teal-orange grade | "true-to-life colours, slightly muted, phone camera processing" |
@@ -32,7 +32,7 @@ Read when a clip looks like an ad or a render. Each row: the tell, why it happen
 
 ## Sound (native-audio models)
 
-- Name the room: "small bedroom room tone, faint fridge hum", "rain on concrete and a distant truck reversing".
+- Name the room: "quiet studio room tone, a faint fan hum", "muffled bass through a club wall and a door swinging".
 - Speech: short, casual, one sentence; quotes; tone in parentheses on Kling (`Claudia (amused, warm, English): "…"`).
 - "No music" — always, unless the music is diegetic (club speakers).
 

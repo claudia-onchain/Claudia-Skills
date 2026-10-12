@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- Quote card. Render with ../../thumbnails-and-covers/scripts/render-cover.sh quote-card.html out.png 1080 1350
+     Sizes: 1080x1350 (4:5 Instagram, Threads, LinkedIn), 1080x1080 (1:1 anywhere), 1080x1920 (story / TikTok photo),
+     1600x900 (16:9 for X and LinkedIn link-style). Change only :root values and the text slots.
+     Fonts: DM Sans, DM Mono, Barlow Condensed, Great Vibes (SIL Open Font License) from Google Fonts.
+     Check contrast first: node ../scripts/contrast.mjs "<ink>" "<bg>" -->
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=DM+Mono:wght@500&family=DM+Sans:wght@500;700&display=block" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0b0d;             /* near-black; cobalt #1f3a8a and silver #c9ccd3 (with near-black ink) also pass */
+    --ink: #ece9e2;            /* 16.2:1 on near-black */
+    --accent: #ff6fa5;         /* one word or the rule line only */
+    --muted: #80858c;          /* labels; 5.3:1 on near-black */
+    --quote-size: 76px;        /* 64–88 px for 8–25 words at 1080 wide; 96–120 px for under 8 words */
+    --pad: 96px;               /* 88–120 px; story/TikTok: top 260, bottom 440 */
+    --pad-bottom: 120px;
+    --img: none;               /* optional texture: url("foil-texture.jpg"); keep it dark or blur it */
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); }
+  .c { position: relative; width: 100vw; height: 100vh; overflow: hidden; background: var(--bg) var(--img) center / cover no-repeat;
+       color: var(--ink); padding: var(--pad) var(--pad) var(--pad-bottom); display: flex; flex-direction: column; justify-content: center; }
+  .label { font: 500 24px/1 "DM Mono", monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin: 0 0 40px; }
+  .q { font: 700 var(--quote-size)/1.12 "DM Sans", system-ui, sans-serif; letter-spacing: -.015em; margin: 0; max-width: 21ch; }
+  .q em { font-style: normal; color: var(--accent); }
+  .rule { width: 120px; height: 3px; background: var(--accent); margin: 48px 0 28px; }
+  .by { font: 500 28px/1.3 "DM Mono", monospace; color: var(--muted); margin: 0; }
+  .ai { position: absolute; right: var(--pad); bottom: 40px; font: 500 20px/1 "DM Mono", monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="c">
+    <p class="label">desk at dusk · note 12</p>
+    <p class="q">the flash did the lighting. <em>I just</em> showed up.</p>
+    <div class="rule"></div>
+    <p class="by">@claudia · AI character</p>
+    <div class="ai">useclaudia.xyz</div>
+  </div>
+</body>
+</html>

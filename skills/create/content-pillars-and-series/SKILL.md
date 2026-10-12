@@ -1,6 +1,6 @@
 ---
 name: content-pillars-and-series
-description: Plans what an AI influencer posts and why — Claudia's seven content pillars (bedroom talks, club and music nights, style in the lounge, rain and city, desk/platform/agents, travel dumps, cat cameos), named recurring series with episode templates, the lifestyle-to-platform content ratio, cadence per platform (TikTok, Reels, Shorts, X, Telegram), and a filled 4-week calendar. Also shows how to derive pillars and series for a new character from its bible. Use when planning a month of content, naming a series, deciding the next post, balancing product talk against lifestyle, or onboarding a new character's content plan.
+description: Plans what an AI influencer posts and why — Claudia's seven content pillars (studio talks, club nights, style in the studio, silver foil and flash, desk/platform/agents, lookbook, collage drops), named recurring series with episode templates, the lifestyle-to-platform content ratio, cadence per platform (TikTok, Reels, Shorts, X, Telegram), and a filled 4-week calendar. Also shows how to derive pillars and series for a new character from its bible. Use when planning a month of content, naming a series, deciding the next post, balancing product talk against lifestyle, or onboarding a new character's content plan.
 license: MIT
 metadata:
   title: "Content pillars and series"
@@ -16,7 +16,7 @@ metadata:
 
 # Content pillars and series
 
-A feed people follow is a set of promises: "you'll get rainy-city clips, club nights and a peek at how the agents work."
+A feed people follow is a set of promises: "you'll get silver-city clips, club nights and a peek at how the agents work."
 Pillars are those promises; series are the repeatable formats that keep them. This skill gives Claudia's pillars and
 series, the ratio that keeps platform talk from turning into ads, a cadence per network, and a filled 4-week calendar an
 agent can copy straight into a batch run.
@@ -46,13 +46,13 @@ Each pillar maps to a world in the bible, so the visuals are already defined.
 
 | # | Pillar | What it promises | World / look | Formats | Target share |
 |---|---|---|---|---|---|
-| P1 | **Bedroom talks** | storytime, opinions, behind-the-scenes, "talk to me" energy | her room by day; signature or cosy black | talking-to-camera 9:16, 10–25 s | 20 % |
-| P2 | **Club & music nights** | energy, taste, the weekend | DJ booth, blue-violet haze; signature + sunglasses | dancing clips 6–10 s, set picks | 15 % |
-| P3 | **Style in the lounge** | outfits, thrift finds, sunglasses moments | vintage lounge, brass lamp | 6–8 s reveal loops, carousels | 10 % |
-| P4 | **Rain & city** | mood, weather, NYC (in the story) | warehouse lot in rain, rooftop dusk, streets | running selfies, ambient walks | 15 % |
-| P5 | **Desk, platform & agents** | how she "runs this place": skills, agent tips, what shipped | desk at night, butterfly laptop, monitors, cat | screen-and-face shorts, threads, banners | 20 % |
-| P6 | **Travel dumps** | escape, golden hour, light | Santorini, airplane window, balcony | carousels / collage, 3–5 s clip stacks | 10 % |
-| P7 | **Cat cameos** | comfort, running jokes ("the cat is the CTO") | bed, desk | 5–8 s loops, reaction inserts | 10 % |
+| P1 | **Studio talks** | storytime, opinions, behind-the-scenes, "talk to me" energy | her room by day; signature or silver night | talking-to-camera 9:16, 10–25 s | 20 % |
+| P2 | **Club nights** | energy, taste, the weekend | DJ booth, blue-violet haze; signature + sunglasses | dancing clips 6–10 s, set picks | 15 % |
+| P3 | **Style in the studio** | outfits, thrift finds, sunglasses moments | white studio, brass lamp | 6–8 s reveal loops, carousels | 10 % |
+| P4 | **Silver foil & flash** | mood, flash, the one-take moment | silver-foil set, the club under one spotlight | flash selfies, one-take loops | 15 % |
+| P5 | **Desk, platform & agents** | how she "runs this place": skills, agent tips, what shipped | the studio desk, chrome-star laptop, monitors, the blue render |  screen-and-face shorts, threads, banners | 20 % |
+| P6 | **Lookbook** | looks, fabric, colour | cobalt studio, white studio |  carousels / collage, 3–5 s clip stacks | 10 % |
+| P7 | **Collage drops** | wallpapers, collages, running jokes ("the disco ball is the CTO") | silver foil, polaroids, chrome stars | 9:16 wallpapers, 3:1 banners, 5–8 s collage loops | 10 % |
 
 ### 2. Apply the ratio rule
 
@@ -74,10 +74,10 @@ A named series gives the audience a reason to come back and gives the agent a te
 | **"agent diaries"** | P5 | 20–30 s: her face + a screen insert of what an agent did today | 2×/week | a number: "my agents posted 14 times today" |
 | **"skill of the week"** | P5 | 30–45 s how-to, 3 steps on screen, link in bio/thread | 1×/week | the outcome: "make a banner in 4 prompts" |
 | **"after midnight"** | P2 | 6–10 s club loop + set pick in caption | 1×/week (Fri/Sat) | no words, motion first frame |
-| **"sunglasses on / off"** | P3 | 8 s lounge reveal loop | 1×/week | the reveal at 0.5 s |
-| **"forecast dared me"** | P4 | 10–15 s rain or weather selfie run | when it fits, ≤ 1×/week | the weather fact as on-screen text |
-| **"window seat"** | P6 | 5–8 tile carousel or 3×3 s clip stack | 2×/month | the place, no caption hook needed |
-| **"the CTO"** | P7 | 5–8 s cat loop + one-line caption | 1×/week | the cat doing a "job" |
+| **"visor on / off"** | P3 | 8 s visor reveal loop | 1×/week | the reveal at 0.5 s |
+| **"one flash"** | P4 | 10–15 s flash selfie, one take | when it fits, ≤ 1×/week | the one-line fact as on-screen text |
+| **"lookbook"** | P6 | 5–8 tile carousel or 3×3 s clip stack | 2×/month | the place, no caption hook needed |
+| **"wallpaper drop"** | P7 | a 9:16 collage wallpaper + one-line caption | 1×/week | the disco ball doing a "job" |
 
 Episode beats, hook banks and shot lists for each are in [references/series-catalogue.md](references/series-catalogue.md).
 New series: fill [templates/series-card.md](templates/series-card.md), run it 4 episodes, then keep or kill (step 6).
@@ -105,7 +105,7 @@ real month (2026-10-12 → 2026-11-08) with pillar, series, platform, look, sett
 status. Process:
 
 1. Lock fixed beats first: launches, collabs, holidays (Halloween 2026-10-31 sits in week 3 — a costume episode of
-   "sunglasses on / off").
+   "visor on / off").
 2. Place series episodes at their cadence.
 3. Fill gaps with the pillar furthest under its target share.
 4. Check the ratio per week: count rows with `type=ask` — ≤ 10 % of the week.
@@ -173,7 +173,7 @@ Episode line (paste into the calendar's `hook` column):
 
 - **Platform creep.** P5 swells to 50 % because it's "important". The audience came for the person. Hold the ratio.
 - **Same clip, same caption everywhere.** Blocked as near-duplicate on one account, and lazy across accounts.
-- **Series without a name.** "Another rain video" can't build anticipation; "forecast dared me" can.
+- **Series without a name.** "Another flash video" can't build anticipation; "one flash" can.
 - **Trend-chasing outside the pillars.** If a trend doesn't fit a pillar, skip it or reshape it into one
   ([../../grow/trend-research/SKILL.md](../../grow/trend-research/SKILL.md)).
 - **Holiday content that breaks character.** Halloween is a costume in her style, not a different person.

@@ -65,7 +65,7 @@ rush +25 %, custom scene set from $250. Perpetual usage: declined (the brand wou
 
 ```text
 CLAUDIA · Media kit
-Cosy-city AI creator: sunset bedrooms, rainy streets, travel and the agents she runs with.
+Studio AI creator: silver-foil set, club nights, travel and the agents she runs with.
 TikTok @claudia_onchain · X @claudia_onchain · Instagram @claudia.onchain · useclaudia.xyz
 Contact: partnerships@example.com (Example Studio Ltd)
 
@@ -76,7 +76,7 @@ About Claudia — [disclosure block above]
 TikTok     41,200 followers · median 12.4k views · ER 5.8% (by views) · 4–5 videos/week
 X          18,900 followers · median 3.1k impressions · ER 2.1% (X definition) · 2 posts/day + replies
 Instagram   9,400 followers · median 9.8k views · ER 4.6% (by reach) · 3 Reels/week
-Top post: TikTok "rain run, no umbrella", 412k views (33× median), not in medians.
+Top post: TikTok "club night, no umbrella", 412k views (33× median), not in medians.
 
 Who watches: US 38% · UK 17% · DE 7% · 75% aged 18–34.
 
@@ -95,17 +95,17 @@ AI-generated character. Nothing in this kit is a guarantee of views or sales.
 
 ```csv
 brand,category,why_fit,evidence_url,contact_route,contact_name,status
-Northpine,audio,"Travel headphones; rainy-street pillar; ran AI-assisted creative in Sep","https://example.com/northpine-campaign",partnerships inbox,"Creator Partnerships Lead",drafted
+Northpine,audio,"Travel headphones; club-night pillar; ran AI-assisted creative in Sep","https://example.com/northpine-campaign",partnerships inbox,"Creator Partnerships Lead",drafted
 Kettle & Key,coffee,"Late-night coffee scenes already in her room videos; sponsors micro TikTokers","https://example.com/kk-creators",creator programme form,"Social Lead",drafted
 Driftlane,travel eSIM,"Travel pillar; audience US/UK travellers 25-34","https://example.com/driftlane",agency (credited in creator posts),"Account Director",drafted
 ```
 
 ## Step 9: the first pitch (approved by the operator, then sent by them)
 
-Subject: Northpine Fold × Claudia: a rainy-night commute in 30 seconds
+Subject: Northpine Fold × Claudia: an after-club commute in 30 seconds
 
 Hi Priya, your "Hear the city, not the noise" spots with night-walk creators fit Claudia's best-performing format:
-rainy-street selfie runs (median Reel 9.8k views, 4.6 % ER by reach; top video 412k).
+club flash selfies (median Reel 9.8k views, 4.6 % ER by reach; top video 412k).
 
 Up front: Claudia is an AI character, every post is labelled AI and #ad when paid, and a person approves each sponsored
 post.

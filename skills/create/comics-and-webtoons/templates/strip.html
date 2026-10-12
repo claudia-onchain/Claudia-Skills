@@ -1,0 +1,67 @@
+<!doctype html>
+<!-- strip.html — letter a 4-panel strip (2x2 grid) on a 1080x1350 (4:5) canvas for Instagram, X, Threads or Bluesky.
+     Render:  sh scripts/render-page.sh templates/strip.html out/strip.png 1080 1350
+     Panels: put four text-free panel images next to this file (p1.png … p4.png, any size; they are cropped to fill).
+     Balloons: each .b is positioned in % of its panel (left/top), width in %. Tail: add class t-bl, t-br, t-tl or t-tr
+     (tail at bottom-left, bottom-right, top-left, top-right) and point it at the speaker's mouth by moving the balloon.
+     Kinds: .b (speech), .b.cap (caption box), .b.mono (an agent or a screen talking), .sfx (sound effect).
+     Fonts: Comic Neue (dialogue), Bangers (SFX), DM Mono (captions) — all SIL Open Font License, from Google Fonts. -->
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@700&family=DM+Mono:wght@500&display=block" rel="stylesheet">
+<style>
+  :root {
+    --page: #0a0b0d;       /* gutter and border colour */
+    --ink: #0a0b0d;        /* balloon text */
+    --paper: #fbfaf7;      /* balloon fill */
+    --accent: #ff6fa5;     /* one accent: title bar, mono balloons */
+    --gutter: 18px;
+    --text: 30px;          /* dialogue size on a 1080 px wide page; never below 26px */
+  }
+  html, body { margin: 0; width: 1080px; height: 1350px; background: var(--page); overflow: hidden; }
+  .head { height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px;
+          font: 500 24px/1 "DM Mono", monospace; letter-spacing: .08em; color: #ece9e2; text-transform: uppercase; }
+  .head b { color: var(--accent); font-weight: 500; }
+  .grid { position: absolute; top: 64px; left: var(--gutter); right: var(--gutter); bottom: var(--gutter);
+          display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: var(--gutter); }
+  .p { position: relative; overflow: hidden; border: 4px solid #ece9e2; border-radius: 4px; background: #1c1d21 center / cover no-repeat; }
+  .b { position: absolute; box-sizing: border-box; background: var(--paper); color: var(--ink); border: 3px solid var(--ink); border-radius: 28px;
+       padding: 14px 18px; font: 700 var(--text)/1.12 "Comic Neue", "Comic Sans MS", sans-serif; text-align: center; }
+  .b::after { content: ""; position: absolute; width: 26px; height: 26px; background: var(--paper);
+              border: 3px solid var(--ink); border-top: 0; border-left: 0; display: none; }
+  .t-bl::after { display: block; bottom: -16px; left: 22%; transform: rotate(45deg) skew(12deg, 12deg); }
+  .t-br::after { display: block; bottom: -16px; right: 22%; transform: rotate(45deg) skew(-12deg, -12deg); }
+  .t-tl::after { display: block; top: -16px; left: 22%; transform: rotate(225deg) skew(-12deg, -12deg); }
+  .t-tr::after { display: block; top: -16px; right: 22%; transform: rotate(225deg) skew(12deg, 12deg); }
+  .b.cap { border-radius: 2px; text-align: left; font: 500 22px/1.25 "DM Mono", monospace; background: #ece9e2; }
+  .b.mono { border-radius: 4px; font: 500 24px/1.2 "DM Mono", monospace; background: #17181c; color: var(--accent); border-color: var(--accent); }
+  .b.mono::after { background: #17181c; border-color: var(--accent); }
+  .sfx { position: absolute; font: 400 64px/1 "Bangers", sans-serif; color: var(--accent); letter-spacing: .02em;
+         -webkit-text-stroke: 3px var(--ink); transform: rotate(-8deg); }
+  .ai { position: absolute; right: 26px; bottom: 26px; font: 500 16px/1 "DM Mono", monospace; letter-spacing: .1em;
+        color: #ece9e2; background: rgba(10,11,13,.75); padding: 6px 8px; }
+</style>
+</head>
+<body>
+  <div class="head"><span><b>desk at dusk</b> · strip 07</span><span>@claudia_onchain</span></div>
+  <div class="grid">
+    <div class="p" style="background-image:url(p1.png)">
+      <div class="b cap" style="left:4%;top:4%;width:52%">7:58 pm. one post left to schedule.</div>
+      <div class="b t-br" style="left:30%;top:58%;width:52%">easy. I'll just pick a time.</div>
+    </div>
+    <div class="p" style="background-image:url(p2.png)">
+      <div class="b mono t-bl" style="left:6%;top:5%;width:70%">AGENT: 41 slots analysed. best time: 3:12 am.</div>
+    </div>
+    <div class="p" style="background-image:url(p3.png)">
+      <div class="b t-bl" style="left:8%;top:6%;width:60%">3 am?? who is awake at 3 am</div>
+      <div class="sfx" style="left:58%;top:62%">BLINK</div>
+    </div>
+    <div class="p" style="background-image:url(p4.png)">
+      <div class="b mono t-br" style="left:30%;top:5%;width:64%">AGENT: you, apparently.</div>
+      <div class="ai">AI-GENERATED</div>
+    </div>
+  </div>
+</body>
+</html>

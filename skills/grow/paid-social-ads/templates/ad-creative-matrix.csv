@@ -1,0 +1,2 @@
+variant_id,platform,ad_group,variable_tested,hook_or_first_frame,format,aspect,copy,ai_media,platform_ai_label,ai_line_in_copy,claims_checked,creator_permission,status,rejection_reason,spend,impressions,clicks,landing_views,results,cost_per_result,decision
+<v1>,<meta|tiktok|reddit|x>,<name>,<hook|first frame|format|cta>,<description>,<video|carousel|still>,<9:16|4:5|1:1>,<ad copy>,<yes|no>,<on|n/a>,<yes|n/a>,<yes>,<n/a|spark code|partnership ad>,<draft|approved|live|paused|rejected>,<…>,<amount>,<n>,<n>,<n>,<n>,<amount>,<keep|replace|scale>

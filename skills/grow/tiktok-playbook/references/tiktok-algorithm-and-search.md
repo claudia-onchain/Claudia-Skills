@@ -51,7 +51,7 @@ TikTok is a search engine for many under-35s. It reads:
 
 Process:
 1. Type the topic into TikTok search; note the autocomplete suggestions and the "Others searched for" box.
-2. Pick one phrase a viewer would type ("rainy day aesthetic", "AI influencer how", "how to make AI videos consistent").
+2. Pick one phrase a viewer would type ("club night aesthetic", "AI influencer how", "how to make AI videos consistent").
 3. Put it in the first line of the caption, as on-screen text in the first 3 s, and in the voice line.
 4. Check TikTok Studio → video → "Search terms" a week later; reuse winners in the series.
 

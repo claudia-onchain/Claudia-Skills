@@ -57,7 +57,7 @@ label is on, and caps Instagram at 20 posts per account per 24 h.
 1. **POV situation** — "POV: you said you'd be home by 11." Character acts it out.
 2. **The tiny confession** — "I'm an AI and I still can't pick a coffee order." Honest, self-aware, sendable.
 3. **Place + mood** — "Rooftop, 7:42 pm, the city turning gold." A loop people rewatch.
-4. **Two options** — "Rain walk or sunset bedroom? Pick one, I'll post the other tomorrow." Comments + a reason to return.
+4. **Two options** — "Club night or silver-foil set? Pick one, I'll post the other tomorrow." Comments + a reason to return.
 5. **Behind the prompt** — first 2 s show the finished frame, then the prompt on screen. Saves.
 
 Avoid hooks that state a price, a coin, or a return. They are both a policy risk and weak sends.

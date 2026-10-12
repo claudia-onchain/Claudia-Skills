@@ -18,7 +18,7 @@ the current table with which keys you have.
 - **Package:** refs up to 3; aspects 16:9, 9:16; resolutions 360p–4k; audio on; **duration is chosen by the model from the
   prompt** — say "an 8-second clip" in the prompt. Price ≈ $0.10/s at 720p (estimate: $17.50 per 1M output tokens).
 - **Prompt order:** subject/action → scene → camera/light → audio → shot structure. Timecodes `[0-3s]`. Give each ref one
-  job ("<IMAGE_REF_0> is her face; <IMAGE_REF_1> is the lounge").
+  job ("<IMAGE_REF_0> is her face; <IMAGE_REF_1> is the white studio").
 - **Watch for:** music it adds unasked (write "no music, just room tone"); identity drift after ~4 conversational edits
   (re-anchor with "keep all character details exactly as in <IMAGE_REF_0>"); distorted typography; crowds of 4+ merging;
   complex reveal moves. Real people and brands are blocked.

@@ -39,7 +39,7 @@ vetting:                                     # see references/vetting-and-red-fl
   crypto_or_financial_promotion: false        # true → decline or crypto-marketing-compliance first; never TikTok
   wants_hidden_ad_or_hidden_ai: false
   wants_first_person_experience_claims: "brief says 'share how you use them daily' → rewrite"
-  audience_fit: "good: cosy-city, commute, night-bus content already performs"
+  audience_fit: "good: studio, commute, night-bus content already performs"
   red_flags: []
 
 decision:

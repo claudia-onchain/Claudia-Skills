@@ -14,8 +14,8 @@ with GPT Image 2.5 and checked letter by letter; replace them in the edit if any
 
 | Banner | Font (licence) | Settings | Extras |
 |---|---|---|---|
-| Sunset bed | Playfair Display 400 (SIL OFL) | all caps, tracking +120, off-white `#ece9e2`, 7–9 % of banner height | thin rose `#ff6fa5` arc over the word, a four-point sparkle at the start |
-| Collage | Caveat 600 (SIL OFL) | title case or caps, slight upward slant, off-white | rose underline brush stroke, small sparkle |
+| Silver foil | Great Vibes (SIL OFL) | title case script, ~30 % of banner height, silver-glitter fill | three small chrome stars along the tail |
+| Collage | Great Vibes (SIL OFL) | title case script, clear glass (white stroke, soft inner shadow) | a small chrome star |
 | Network / tech | Barlow Condensed 800 (SIL OFL) | caps, tracking −1, off-white | DM Mono 500 (SIL OFL) labels, 12–14 px equivalent |
 | Body copy on banners | DM Sans (SIL OFL) | | |
 
@@ -28,8 +28,8 @@ commercial font by tracing it.
 
 - Figma / Affinity / Inkscape / Photopea: canvas the size of the banner (3000×1000), type the wordmark, export only the
   text layer as a transparent PNG at 1× and 2×.
-- Shadows: a very soft dark glow (black 30 %, blur 24) keeps off-white text readable on bright sunsets.
-- Placement: left third for the sunset banner, right-centre for the collage; vertically at 45–50 % height.
+- Shadows: a very soft dark glow (black 30 %, blur 24) keeps light text readable on bright foil and flash highlights.
+- Placement: left third for the silver-foil banner, right-centre for the collage; vertically at 45–50 % height.
 
 Overlay:
 
@@ -55,5 +55,5 @@ owners. Practical rules that keep a banner within typical brand guidelines:
 
 ## Alt text
 
-Every banner gets alt text that names it as AI-generated, e.g. "AI-generated banner: Claudia lying on a bed at sunset
-with the New York skyline behind her, 'CLAUDIA' written in a serif font on the left."
+Every banner gets alt text that names it as AI-generated, e.g. "AI-generated banner: three portraits of Claudia in a
+white puffed-sleeve top on silver foil, 'Claudia' written in silver script on the left."

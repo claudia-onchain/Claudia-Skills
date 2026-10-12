@@ -1,6 +1,6 @@
 ---
 name: prompt-library-management
-description: Organises an AI character's prompts as a versioned, searchable library — folder layout, one Markdown file per prompt with YAML front matter (id, version, status, model, params, refs, seed, scores, cost, output hashes, retirement date), naming and tagging by pillar/scene/model, identity-block versioning (CLAUDIA ID v1 → v2), A/B logs, and deprecating prompts when models retire (Veo 3.1 previews 2026-10-22, GPT Image 1.5 2026-12-01, ElevenLabs premade voices 2026-12-31, OpenAI TTS 2027-01-06). Ships an offline indexer script and a seed library of 12 complete Claudia prompts (bedroom vlog, DJ booth, lounge sunglasses, rain selfie, three 3:1 banners, blue studio portrait, desk with cat, Santorini, airplane window, balcony). Use when saving a prompt that worked, finding one to reuse, migrating to a new model, or setting up a library for a new character.
+description: Organises an AI character's prompts as a versioned, searchable library — folder layout, one Markdown file per prompt with YAML front matter (id, version, status, model, params, refs, seed, scores, cost, output hashes, retirement date), naming and tagging by pillar/scene/model, identity-block versioning (CLAUDIA ID v2 → v2), A/B logs, and deprecating prompts when models retire (Veo 3.1 previews 2026-10-22, GPT Image 1.5 2026-12-01, ElevenLabs premade voices 2026-12-31, OpenAI TTS 2027-01-06). Ships an offline indexer script and a seed library of 12 complete Claudia prompts (studio talk, the club, visor reveal, club flash selfie, blue render, sky gown, silver night, holo on cobalt, silver-foil banner, platform banner, looks collage, official portrait). Use when saving a prompt that worked, finding one to reuse, migrating to a new model, or setting up a library for a new character.
 license: MIT
 metadata:
   title: "Prompt library management"
@@ -16,14 +16,14 @@ metadata:
 
 # Prompt library management
 
-The prompt that made a perfect rain selfie in October is worth more than any model. A library keeps it: one file per
+The prompt that made a perfect club selfie in October is worth more than any model. A library keeps it: one file per
 prompt, the exact identity block version, the model and settings, the refs, the score it earned, what it cost and the
 hash of what it produced. When a model retires or her look gets a v2, you know exactly which prompts to migrate.
 
 ## When to use this
 
 - A generation scored 7/7 — save it before you forget the settings.
-- You need "the lounge sunglasses prompt" again, or a starting point for a new scene.
+- You need "the studio visor prompt" again, or a starting point for a new scene.
 - A model is retiring or changed behaviour and you must find every prompt that uses it.
 - The character's look changes (identity v1 → v2).
 - Setting up prompts for a new character or a new agent.
@@ -45,14 +45,14 @@ prompts/
   _blocks/
     claudia-id-v1.md             # identity block, wardrobe strings, negative block (copied from the bible)
   claudia/
-    p1-bedroom/   claudia.p1.room-vlog.md
-    p2-club/      claudia.p2.dj-booth.md
-    p3-lounge/    claudia.p3.lounge-sunglasses.md
-    p4-city/      claudia.p4.rain-selfie.md
-    p5-desk/      claudia.p5.desk-cat.md
-    p6-travel/    claudia.p6.santorini.md · claudia.p6.airplane-window.md · claudia.p6.balcony-night.md
-    banners/      claudia.banner.sunset-bed.md · claudia.banner.network.md · claudia.banner.collage.md
-    studio/       claudia.studio.blue-portrait.md
+    p1-studio/    claudia.p1.studio-talk.md
+    p2-club/      claudia.p2.club.md
+    p3-style/     claudia.p3.studio-visor.md
+    p4-city/      claudia.p4.club-selfie.md
+    p5-desk/      claudia.p5.blue-render.md
+    p6-travel/    claudia.p6.holo-cobalt.md · claudia.p6.sky-gown.md · claudia.p6.silver-night.md
+    banners/      claudia.banner.silver-foil.md · claudia.banner.platform.md · claudia.banner.collage.md
+    studio/       claudia.studio.official-portrait.md
   _ab/
     ab-log.csv                   # every A/B: what changed, scores, winner
   _retired/                      # prompts whose model is gone (kept for history)
@@ -65,33 +65,33 @@ The 12 files in [examples/library/](examples/library/) are a complete starting s
 
 ```markdown
 ---
-id: claudia.p4.rain-selfie
+id: claudia.p4.club-selfie
 version: 1.1.0
 status: approved
 character: claudia
-identity: CLAUDIA ID v1
+identity: CLAUDIA ID v2
 pillar: P4
-series: forecast-dared-me
-scene: warehouse-rain
+series: one-flash
+scene: the-club
 look: signature
 kind: video
 model: fal/kling-3-pro
 fallback_models: [fal/kling-2.6-pro, google/omni-flash]
 params: {aspect: "9:16", durationSec: 10, audio: true}
 first_frame_model: google/nano-banana-2.1
-refs: [01-front-neutral, 05-laugh, 09-phone-arm]
+refs: [01-front-neutral, 05-laugh, 09-phone-selfie]
 seed: none
 cost_usd: 1.73
 scores: {drift: 7, runs: 5, pass_rate: 0.8}
 outputs:
   - {path: library/2026-10/mj_8B-1.mp4, sha256: 9a41c2e0}
-tags: [ugc, selfie, rain, running, motion]
+tags: [ugc, selfie, club, flash, motion]
 created: 2026-10-13
 updated: 2026-10-13
 retires: none
 ---
 ## First frame
-[CLAUDIA ID v1] … (full text, never "see above")
+[CLAUDIA ID v2] … (full text, never "see above")
 ## Prompt
 …
 ## Notes
@@ -105,8 +105,8 @@ is runnable on its own. Field details: [references/schema.md](references/schema.
 ### 3. Name and tag consistently
 
 - **id:** `<character>.<pillar or family>.<scene-slug>` — lowercase, dots between parts, hyphens inside a part.
-  `claudia.p2.dj-booth`, `claudia.banner.network`, `mara.p1.night-train`.
-- **Variants** of the same scene for a different model get a suffix: `claudia.p3.lounge-sunglasses.mj` (Midjourney),
+  `claudia.p2.club`, `claudia.banner.platform`, `mara.p1.night-train`.
+- **Variants** of the same scene for a different model get a suffix: `claudia.p3.studio-visor.mj` (Midjourney),
   `.flux`, `.gpt`.
 - **version:** semver. Patch = wording tweak that doesn't change the look (`1.0.1`); minor = new refs, lens, light or
   model params (`1.1.0`); major = new identity block version or different model family (`2.0.0`).
@@ -120,9 +120,9 @@ is runnable on its own. Field details: [references/schema.md](references/schema.
 Copy the body into the CLI or the batch manifest; never retype it.
 
 ```sh
-claudia generate image "$(awk '/^## First frame/{f=1;next} /^## /{f=0} f' prompts/claudia/p4-city/claudia.p4.rain-selfie.md)" \
+claudia generate image "$(awk '/^## First frame/{f=1;next} /^## /{f=0} f' prompts/claudia/p4-city/claudia.p4.club-selfie.md)" \
   --model google/nano-banana-2.1 --aspect 9:16 --resolution 2K \
-  --ref refs/claudia/01-front-neutral.jpg,refs/claudia/09-phone-arm.jpg --max-usd 0.10 --dry-run
+  --ref refs/claudia/01-front-neutral.jpg,refs/claudia/09-phone-selfie.jpg --max-usd 0.10 --dry-run
 ```
 
 For a week of posts, reference prompts from [../batch-content-production/SKILL.md](../batch-content-production/SKILL.md)
@@ -133,7 +133,7 @@ manifests by `id` in each item's notes, so results can be scored back to the fil
 After each run, update the file: increment `scores.runs`, recompute `pass_rate` (share of runs scoring ≥ 6/7 on the drift
 check in [../character-consistency/SKILL.md](../character-consistency/SKILL.md)), set `scores.drift` to the latest
 best, append to `outputs` with the sha256 from the media sidecar (`output.sha256`). Commit with a message like
-`claudia.p4.rain-selfie 1.1.0: 7/7 x2, kling-3-pro`.
+`claudia.p4.club-selfie 1.1.0: 7/7 x2, kling-3-pro`.
 
 ### 6. A/B one variable at a time
 
@@ -141,7 +141,7 @@ Log every comparison in `_ab/ab-log.csv` ([templates/ab-log.csv](templates/ab-lo
 
 ```text
 date,prompt_id,base_version,variable,a,b,runs_each,a_pass_rate,b_pass_rate,winner,notes
-2026-10-14,claudia.p3.lounge-sunglasses,1.0.0,lens,35mm,50mm,4,0.50,0.75,b,50mm keeps the face adult; 35mm widened the jaw
+2026-10-14,claudia.p3.studio-visor,1.0.0,lens,35mm,50mm,4,0.50,0.75,b,50mm keeps the face adult; 35mm widened the jaw
 ```
 
 Use a fixed `--seed` where the model honours it (FLUX, Midjourney) so only the variable changes. The winner becomes the

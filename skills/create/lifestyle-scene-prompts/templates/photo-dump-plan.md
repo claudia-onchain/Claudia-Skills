@@ -9,8 +9,8 @@ Model: Seedream batch / Nano Banana singles   Budget cap: $____   Approver: ____
 | 2 | detail (hands, prop, drink) | | no | props/… | n/a |
 | 3 | wide place shot | | small | 01 | /7 |
 | 4 | candid laugh / off-frame look | | yes | 01, 05 | /7 |
-| 5 | no-face texture (slippers, window, food) | | no | — | n/a |
-| 6 | closer: the cat / soft ending | | optional | props/cat | /7 |
+| 5 | no-face texture (boots, polaroids, the foil) | | no | — | n/a |
+| 6 | closer: the disco ball / soft ending | | optional | props/disco-ball | /7 |
 
 Rules
 - Slide 1 decides the swipe: strongest face, cleanest frame, nothing cropped by the 3:4 grid (keep key detail in the

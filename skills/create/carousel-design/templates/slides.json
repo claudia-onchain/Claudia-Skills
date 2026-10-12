@@ -1,0 +1,44 @@
+{
+  "size": "ig-4x5",
+  "series": "<series name> · <episode or week>",
+  "handle": "@<handle>",
+  "aiLabel": "AI-generated",
+  "theme": { "bg": "#0a0b0d", "ink": "#ece9e2", "accent": "#ff6fa5", "muted": "#80858c" },
+  "slides": [
+    {
+      "type": "hook",
+      "title": "<hook in 4–9 words, one *accent* word>",
+      "image": "<art/slide-01.jpg>",
+      "imagePos": "50% 30%",
+      "alt": "AI-generated image: <who, wearing what, doing what, where>. Text: '<hook text>'."
+    },
+    {
+      "type": "point",
+      "n": 1,
+      "title": "<point 1 in ≤ 8 words>",
+      "body": "<one or two sentences that prove it, ≤ 30 words>",
+      "alt": "Text slide 2: '<title>'. <body>"
+    },
+    {
+      "type": "point",
+      "n": 2,
+      "title": "<point 2>",
+      "body": "<proof, number or example>",
+      "alt": "Text slide 3: '<title>'. <body>"
+    },
+    {
+      "type": "point",
+      "n": 3,
+      "title": "<point 3>",
+      "body": "<proof, number or example>",
+      "image": "<art/slide-04.jpg (optional mid-deck image to re-hook)>",
+      "alt": "AI-generated image: <scene>. Text: '<title>'. <body>"
+    },
+    {
+      "type": "cta",
+      "title": "<the takeaway in one line>",
+      "body": "<soft question you will answer in the comments, or 'save this for <moment>'>",
+      "alt": "Text slide 5: '<title>'. <body>"
+    }
+  ]
+}

@@ -219,7 +219,7 @@ A quick draft from the terminal (the agent writes, a person sends):
 
 ```sh
 claudia agent -p "Draft a 120-word pitch to Northpine's partnerships team for one Reel + one X thread featuring their
-travel headphones in a rainy-street scene. Proof: median Reel views 9.8k, ER by reach 4.6%. Include the AI disclosure
+travel headphones in an after-club scene. Proof: median Reel views 9.8k, ER by reach 4.6%. Include the AI disclosure
 sentence verbatim from media-kit.md. No price promises, no claims Claudia used the product." --json
 ```
 

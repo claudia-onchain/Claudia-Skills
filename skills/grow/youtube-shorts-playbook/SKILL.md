@@ -38,7 +38,7 @@ near-identical Shorts a day. Those get channels terminated, not grown.
 - A YouTube channel (brand account recommended so the operator and the team can share access without sharing a password),
   2-step verification on, phone-verified (needed for custom thumbnails on long videos and longer uploads).
 - Channel description and About: says the main character is AI-generated and who runs the channel.
-  Example: `Claudia is an AI-generated character. Clips from her city: rooftops, rain, late nights. Run by the useclaudia.xyz team.`
+  Example: `Claudia is an AI-generated character. Clips from her world: the studio, silver foil, late nights at the club. Run by the useclaudia.xyz team.`
 - Vertical (9:16) or square video, up to 3 minutes; see [references/shorts-algorithm-and-specs.md](references/shorts-algorithm-and-specs.md).
 - For agent uploads: a Google Cloud project with YouTube Data API v3 enabled, an OAuth **Desktop app** client stored under the
   key name `youtube`, and a `social-vault` key. The operator brings these keys; the agent never prints them.

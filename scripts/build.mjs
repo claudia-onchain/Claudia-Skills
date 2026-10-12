@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-// Builds the library: index.json, dist/skills/<slug>.zip, dist/claudia-skills-all.zip and the skill tables in README.md.
+// Builds the library: index.json, dist/skills/<slug>.zip, dist/claudia-skills-all.zip, the skill cards and tables in
+// README.md, and the GitHub pages and animated cards from scripts/render-assets.mjs (assets/, skills/**/README.md).
 // Node >= 20, no dependencies. Output is deterministic (same files → same bytes → same sha256).
 //
 //   node scripts/build.mjs                 validate, then build (exit 1 if any skill has errors)
@@ -16,6 +17,7 @@ import { fileURLToPath } from "node:url";
 import { CATEGORIES, findSkillDirs, listFiles, readSkill, relatedSlugs, splitList } from "./lib/skills.mjs";
 import { createZip } from "./lib/zip.mjs";
 import { printReport, validateAll } from "./validate.mjs";
+import { cardGrid, renderAssets } from "./render-assets.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 export const REPO_ROOT = resolve(HERE, "..");
@@ -80,7 +82,7 @@ export function build(root = REPO_ROOT, { allowInvalid = false } = {}) {
     version: INDEX_VERSION,
     updated: updated || null,
     count: skills.length,
-    repo: "https://github.com/claudia-onchain/claudia-skills",
+    repo: "https://github.com/claudia-onchain/Claudia-Skills",
     all: { zip: `/skills/${ALL_ZIP}`, bytes: all.length, sha256: sha256(all) },
     categories: CATEGORIES.map((c) => ({ ...c, count: skills.filter((s) => s.category === c.id).length })),
     skills,
@@ -94,9 +96,10 @@ export function build(root = REPO_ROOT, { allowInvalid = false } = {}) {
     const b = cur.indexOf(README_END);
     if (a !== -1 && b > a) readme = `${cur.slice(0, a)}${README_START}\n${readmeTables(index)}\n${cur.slice(b)}`;
   }
+  const assets = renderAssets(root, index);
   const built = new Set(skills.map((x) => x.slug));
   const skipped = [...failing].filter((x) => !built.has(x));
-  return { ok: true, report, index, zips, readme, failing: new Set([...failing].filter((x) => built.has(x))), skipped };
+  return { ok: true, report, index, zips, readme, assets: assets.files, failing: new Set([...failing].filter((x) => built.has(x))), skipped };
 }
 
 const cell = (s) => String(s ?? "").replace(/\|/g, "\\|").replace(/\n/g, " ");
@@ -111,8 +114,11 @@ export function readmeTables(index) {
       out.push("_Coming soon._");
       continue;
     }
+    out.push(`[![${c.title}](assets/categories/${c.id}.svg)](skills/${c.id}/)`, "", cardGrid(rows), "");
+    out.push(`<details><summary>All ${rows.length} ${c.title.toLowerCase()} skills as a table</summary>`, "");
     out.push("| Skill | What it does | Level | Time |", "| --- | --- | --- | --- |");
     for (const s of rows) out.push(`| [${cell(s.title)}](${s.path}/SKILL.md) | ${cell(s.summary)} | ${cell(s.level)} | ${cell(s.time)} |`);
+    out.push("", "</details>");
   }
   return out.join("\n");
 }
@@ -133,6 +139,13 @@ export function write(root, result) {
   }
   for (const f of readdirSync(skillsDist)) if (!want.has(f)) rmSync(join(skillsDist, f), { force: true });
   if (result.readme !== null) writeFileSync(join(root, "README.md"), result.readme);
+  // Cards, banners and the generated README.md pages (scripts/render-assets.mjs); stale cards are removed.
+  for (const [rel, text] of result.assets ?? []) {
+    mkdirSync(dirname(join(root, rel)), { recursive: true });
+    writeFileSync(join(root, rel), text);
+  }
+  const cardsDir = join(root, "assets", "cards");
+  if (existsSync(cardsDir)) for (const f of readdirSync(cardsDir)) if (!result.assets?.has(`assets/cards/${f}`)) rmSync(join(cardsDir, f), { force: true });
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

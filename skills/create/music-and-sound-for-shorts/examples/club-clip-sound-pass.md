@@ -1,7 +1,7 @@
 # Worked example: full sound pass on the 8-second club clip
 
-Clip: Claudia dancing in front of a DJ booth, sunglasses on, blue-violet haze, she raises one arm at ~5.8 s (like the
-owner's `club.mp4`). The clip was generated silent. Destinations: TikTok (brand account), Reels (business), Shorts.
+Clip: Claudia at the club in the silver puffer, one spotlight behind her, haze, she raises one arm at ~5.8 s (the
+prompt library's `claudia.p2.club`). The clip was generated silent. Destinations: TikTok (brand account), Reels (business), Shorts.
 
 ## 1. Licence path
 
@@ -56,4 +56,4 @@ the bed's head (`atrim=0.1:8.1,asetpts=PTS-STARTPTS`).
 2026-10-08,club-0415,audio/crowd.mp3,sfx,generated,elevenlabs/sfx-v2,Creator plan,https://elevenlabs.io/terms-of-use,brand+personal,all,tiktok;reels;shorts,"muffled club crowd ...",~/.claudia/media/library/2026-10/<job>-1.mp3.json,,
 ```
 
-Caption at upload: `sunglasses indoors, as the DJ intended` + each platform's AI label.
+Caption at upload: `silver puffer indoors, as the DJ intended` + each platform's AI label.

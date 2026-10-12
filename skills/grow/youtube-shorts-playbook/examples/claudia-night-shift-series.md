@@ -50,7 +50,7 @@ Agent pacing held at 4 Shorts a week (cap is 5 a day; nowhere near it), never tw
 | Behind the Prompt | 2 | 2,600 | 58% | 63% | 61 |
 
 - Subscribers: 2,300 → 2,966 (+666). Shorts views in the window: 128,000 (valid public).
-- Related video clicks from Behind the Prompt → the long "making a rainy city scene" video: 3.1% of viewers.
+- Related video clicks from Behind the Prompt → the long "making a silver city scene" video: 3.1% of viewers.
 - "Night Shift part 4" (a callback to part 1's hook) was the best Short of the month: 41,000 views, 81% viewed.
 
 ## Decisions

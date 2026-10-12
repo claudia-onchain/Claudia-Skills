@@ -1,6 +1,6 @@
 # Storyboard — copy per episode. Prices from `claudia generate ... --dry-run` estimates.
 episode:
-  series: ""            # e.g. "rain-check"
+  series: ""            # e.g. "mic-check"
   number: ""            # e.g. "01"
   premise: ""           # one sentence
   payoff: ""            # one line
@@ -12,12 +12,12 @@ episode:
   caption: ""           # see captions-and-hooks
 
 continuity:
-  character: "[CLAUDIA ID v1]"
+  character: "[CLAUDIA ID v2]"
   look: ""              # wardrobe look name from the bible + string
   hair_state: ""        # dry | damp | wet; bangs neat; clip in
   accessories: ""       # sunglasses state, jewellery
   light: ""             # time of day + source + colour
-  props: ""             # cat, laptop, mug…
+  props: ""             # disco ball, laptop, mug, visor…
   direction: ""         # e.g. "she moves left to right of frame"
   capture: ""           # selfie | camera (don't mix inside a scene)
 

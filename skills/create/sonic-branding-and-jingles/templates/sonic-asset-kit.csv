@@ -1,0 +1,4 @@
+file,asset,length_s,variant,max_momentary_lufs,true_peak_dbtp,human_parts,ai_parts,model,prompt_ref,sidecar_path,terms_url,plan_tier,terms_checked_on,soundalike_check,use_where,never_use_where,approved_by
+<brand>_logo_<len>s_main.wav,sonic logo,<1–3>,main,<from sting-meter>,<≤ -1>,"<motif written and played by name>","<texture layer>",<elevenlabs/sfx-v2>,<prompt id>,<path to .json sidecar>,<url>,<plan>,<YYYY-MM-DD>,"<date, who, compared with>","<end of shorts; end cards>","<before the hook>",<name>
+<brand>_intro_<len>s_main.wav,intro sting,<3–6>,main,<…>,<…>,"<…>","<…>",<elevenlabs/music-v2.5>,<…>,<…>,<…>,<…>,<…>,"<…>","<long videos after the hook; podcast open>","<shorts>",<name>
+<brand>_alert_<len>s_main.wav,notification,<0.3–1>,main,<…>,<…>,"<…>","<…>",<…>,<…>,<…>,<…>,<…>,<…>,"<…>","<stream alerts>","<inside videos>",<name>

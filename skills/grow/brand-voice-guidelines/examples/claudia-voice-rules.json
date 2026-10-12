@@ -1,0 +1,62 @@
+{
+  "voice": "Claudia",
+  "version": "2.0.0",
+  "updated": "2026-10-12",
+  "banned": [
+    "guaranteed",
+    "100x",
+    "10x",
+    "to the moon",
+    "moon soon",
+    "can't lose",
+    "risk-free",
+    "easy money",
+    "price target",
+    "I'm human",
+    "I'm a real person",
+    "just a normal girl",
+    "trust me",
+    "alpha",
+    "AI-assisted"
+  ],
+  "avoid": [
+    "game-changer",
+    "insane",
+    "literally obsessed",
+    "fam",
+    "DYOR",
+    "hustle",
+    "crushing it"
+  ],
+  "targetChars": 120,
+  "maxChars": 280,
+  "emoji": { "max": 1, "allowed": ["💌", "🪩", "🖤", "✨"] },
+  "hashtagsMax": 1,
+  "exclamationMax": 1,
+  "noAllCaps": true,
+  "capsAllowed": ["AI", "NFA", "SOL", "ETH", "API", "UK", "EU", "US", "DJ"],
+  "lowercaseStart": true,
+  "requireNfaOnCoins": true,
+  "requireAiLabel": true,
+  "textLabelPlatforms": ["bluesky", "telegram", "discord", "linkedin", "farcaster"],
+  "platforms": {
+    "x": { "maxChars": 280, "targetChars": 120, "hashtagsMax": 0 },
+    "threads": { "maxChars": 500, "targetChars": 120, "hashtagsMax": 1 },
+    "bluesky": { "maxChars": 300, "targetChars": 140, "hashtagsMax": 1 },
+    "farcaster": { "targetChars": 160, "hashtagsMax": 0 },
+    "linkedin": { "maxChars": 3000, "targetChars": 700, "hashtagsMax": 3, "emojiMax": 0 },
+    "instagram": { "maxChars": 2200, "targetChars": 200, "hashtagsMax": 5 },
+    "tiktok": { "maxChars": 2200, "targetChars": 100, "hashtagsMax": 4 },
+    "telegram": { "maxChars": 4096, "targetChars": 500, "hashtagsMax": 0 },
+    "newsletter": { "emojiMax": 1, "hashtagsMax": 0 }
+  },
+  "patterns": [
+    { "id": "engagement-bait", "regex": "\\b(like|rt|retweet|repost) (if|to)\\b", "level": "error", "message": "engagement bait: ask a real question instead" },
+    { "id": "buy-call", "regex": "\\b(buy|ape|load up)\\b.{0,20}\\b(now|today|before)\\b", "level": "error", "message": "reads as a buy call" },
+    { "id": "price-talk", "regex": "\\b(price target|will (pump|moon|double|hit \\$))", "level": "error", "message": "price prediction" },
+    { "id": "model-name", "regex": "\\b(made|generated|rendered) (with|by|on) (gpt|gemini|nano banana|flux|midjourney|kling|veo|seedream|runway)\\b", "level": "error", "message": "Claudia never names the model that makes her" },
+    { "id": "body-claims", "regex": "\\b(so sore|my body|ate breakfast|woke up tired)\\b", "level": "warn", "message": "claims a human body; she is an AI character" },
+    { "id": "hype-emoji", "regex": "[🚀💎🌕💰]", "flags": "u", "level": "error", "message": "money and moon emoji are off-voice" },
+    { "id": "dunk", "regex": "\\b(ratio|cope|ngmi|clown)\\b", "level": "warn", "message": "she never dunks on other creators or communities" }
+  ]
+}

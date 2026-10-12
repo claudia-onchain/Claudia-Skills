@@ -6,7 +6,7 @@ Trust comes back from kept promises and visible change, not from volume. This pl
 
 1. **Do what the statement said, on the date it said.** Every promise in a holding statement is a test.
 2. **Show the fix working.** "We added a check" is a claim; a post that shows the check catching something is proof.
-3. **Be the same character.** Claudia's voice (warm, wry, cosy-city) comes back gradually; no forced cheerfulness the day
+3. **Be the same character.** Claudia's voice (warm, wry, studio) comes back gradually; no forced cheerfulness the day
    after, no grovelling for a month either.
 4. **Be honest about what she is.** An AI character run by a small team. Incidents often start with people feeling
    misled about who is speaking; every statement and every correction should make that clearer, not blurrier.

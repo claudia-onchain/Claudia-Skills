@@ -7,25 +7,25 @@ on-camera character. They start from `templates/character-bible-template.yaml`.
 
 | Anchor | Claudia | Mara | Changed? |
 |---|---|---|---|
-| Hair shape + colour | black jaw bob, heavy bangs, copper panels | silver-white cropped curls, shaved undercut on one side, no bangs | yes |
-| Signature accessory | small orange hair clip | a single long brass ear cuff climbing the left ear | yes |
-| Second accessory | thin gold hoops | round wire-frame glasses with pale amber lenses | yes |
-| Face | freckles, brown eyes, half-smile | deep brown skin, grey-green eyes, a small mole above the lip, calm neutral expression | yes |
-| Wardrobe palette | olive, tartan red, black | cobalt work jacket, cream turtleneck, charcoal cargo trousers | yes |
-| Settings | NYC bedroom, lounge, club, rain lot | sleeper-train compartment, synth studio with patch cables, station platforms at night | yes |
+| Hair shape + colour | black jaw bob, heavy bangs, one peach streak | silver-white cropped curls, shaved undercut on one side, no bangs | yes |
+| Signature accessory | small peach star hair clip | a single long brass ear cuff climbing the left ear | yes |
+| Second accessory | thin headset mic | round wire-frame glasses with pale amber lenses | yes |
+| Face | freckles, grey-green eyes, cool gaze | deep brown skin, dark amber-brown eyes, a small mole above the lip, calm neutral expression | yes |
+| Wardrobe palette | white vinyl, liquid silver, patent, orange visors | rust-red work jacket, cream turtleneck, charcoal cargo trousers | yes |
+| Settings | silver foil, white studio, cobalt studio, club | sleeper-train compartment, synth studio with patch cables, station platforms at night | yes |
 
-6 of 6 changed — passes (the rule is ≥ 4). Accent colour: **cobalt `#3d6bff`** (not rose).
+6 of 6 changed — passes (the rule is ≥ 4). Accent colour: **teal `#1fb5a8`** (not rose).
 
 ## 2. Identity block (adult, invented, no "looks like")
 
 ```text
 [MARA ID v1] Mara Vex, a 34-year-old woman (adult) with deep brown skin, short silver-white cropped curls and a shaved
-undercut on the right side, no bangs; grey-green eyes behind round thin wire-frame glasses with pale amber lenses; a long
+undercut on the right side, no bangs; dark amber-brown eyes behind round thin wire-frame glasses with pale amber lenses; a long
 brass ear cuff climbing her left ear; a small mole above the upper lip; calm, amused neutral expression; natural skin
 texture.
 ```
 
-Negative: `teenager, childlike face, long hair, bangs, black bob, copper streaks, hair clip, plastic skin, text, watermark`
+Negative: `teenager, childlike face, long hair, bangs, black bob, orange streak, star hair clip, headset microphone, plastic skin, text, watermark`
 
 Notice the negative explicitly blocks Claudia's anchors — models that saw Claudia refs in the same session can leak them.
 
@@ -40,9 +40,9 @@ Notice the negative explicitly blocks Claudia's anchors — models that saw Clau
 
 ```sh
 # estimate first, small cap, then a 4-image exploration at 1K
-claudia generate image "[MARA ID v1] … studio headshot on a cobalt seamless backdrop, 85mm, soft key light, eye level" \
+claudia generate image "[MARA ID v1] … studio headshot on a teal seamless backdrop, 85mm, soft key light, eye level" \
   --aspect 2:3 --n 4 --max-usd 0.30 --dry-run
-claudia generate image "[MARA ID v1] … studio headshot on a cobalt seamless backdrop, 85mm, soft key light, eye level" \
+claudia generate image "[MARA ID v1] … studio headshot on a teal seamless backdrop, 85mm, soft key light, eye level" \
   --aspect 2:3 --n 4 --max-usd 0.30
 ```
 
@@ -54,8 +54,8 @@ The operator picked one face (#3), then generated 11 more angles **with that ima
 media.brands.save({
   id: "mara-vex",
   name: "Mara Vex",
-  refs: ["refs/mara/01-front.jpg", "refs/mara/02-34l.jpg", "refs/mara/03-profile.jpg"],
-  style: "Mara Vex is a 34-year-old adult woman, silver-white cropped curls with a right undercut, round amber wire glasses, brass ear cuff; cool cobalt and cream grade",
+  refs: ["refs/mara/01-front.jpg", "refs/mara/02-34l.jpg", "refs/mara/04-profile.jpg"],
+  style: "Mara Vex is a 34-year-old adult woman, silver-white cropped curls with a right undercut, round amber wire glasses, brass ear cuff; teal and cream grade",
   banned: ["teen", "guaranteed", "100x"],
 });
 ```

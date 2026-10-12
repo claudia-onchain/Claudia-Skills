@@ -13,7 +13,7 @@ that isn't is in [allowed-vs-manipulation.md](allowed-vs-manipulation.md).
 | 3 | Question hook vs. statement hook | avg % watched | Trial Reels | 6/5/9 |
 | 4 | Motion in first 0.5 s vs. static start | 3-second hold | Trial Reels | 6/6/7 |
 | 5 | Spoken first line vs. text-only first line | completion | ABAB | 6/5/6 |
-| 6 | Starting mid-action (rain run already going) vs. setup | 3-second hold | Trial Reels | 7/6/7 |
+| 6 | Starting mid-action (club night already going) vs. setup | 3-second hold | Trial Reels | 7/6/7 |
 
 ## Length and pacing
 
@@ -86,9 +86,8 @@ that isn't is in [allowed-vs-manipulation.md](allowed-vs-manipulation.md).
 
 | # | Variable | Primary metric | Design | ICE guess |
 |---|---|---|---|---|
-| 39 | Warm sunset grade vs. cool rain grade | avg % watched | Trial Reels | 4/4/7 |
+| 39 | Cool flash grade vs. cool club grade | avg % watched | Trial Reels | 4/4/7 |
 | 40 | Sunglasses on vs. off in the first frame | 3-second hold | Trial Reels | 4/5/8 |
 
-Character rules for 39–40: the look stays per the character bible (black jaw-length bob with copper-red streaks, orange
-clip, gold hoops). Test framing and grade, never a different face. See
+Character rules for 39–40: the look stays per the character bible (black jaw-length bob with a peach-orange streak in the bangs, star clip, headset mic). Test framing and grade, never a different face. See
 [character-consistency](../../../create/character-consistency/SKILL.md).

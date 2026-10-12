@@ -1,0 +1,2 @@
+week,date,tier,perk,format,ai_generated,draft_owner,draft_due,reviewer,review_due,post_route,posted,members_reaction,notes
+1,<YYYY-MM-DD>,<tier>,<perk title>,<post|video|image pack|live|poll>,<yes|partly|no>,<agent|person>,<YYYY-MM-DD>,<person>,<YYYY-MM-DD>,<platform UI|claudia post telegram|@useclaudia/social>,<yes|no>,<comments / votes>,<…>

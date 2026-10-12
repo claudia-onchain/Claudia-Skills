@@ -1,0 +1,2 @@
+address,chain,tags_when_added,label_source,why_followed,winrate_7d_when_added,trades_7d_when_added,watch_command,alert_channel,added_utc,review_by_utc,status,notes
+<address>,<sol|hood>,<kol;smart>,third-party provider via Claudia insights,<one plain reason>,<0-1>,<buys7d+sells7d>,claudia watch wallet <address> --min-usd <n> --notify <telegram|discord|webhook>,<private chat name>,<YYYY-MM-DD>,<YYYY-MM-DD>,<watching|paused|dropped>,<drop if tags turn bot / wash / rat>

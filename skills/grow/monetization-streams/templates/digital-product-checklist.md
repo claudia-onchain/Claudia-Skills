@@ -4,7 +4,7 @@ For a first owned product (wallpaper pack, presets, prompt pack for your own ori
 every line before the announcement post is approved.
 
 ## Product
-- [ ] Name: `[Rainy City wallpaper pack]`
+- [ ] Name: `[Silver City wallpaper pack]`
 - [ ] Exactly what's included, with counts, sizes and formats: `[12 phone wallpapers 1290×2796 JPG, 4 desktop 3840×2160 JPG]`
 - [ ] Made from your own content and assets; no real people's likeness, no copyrighted characters, no third-party logos
 - [ ] For prompt packs: prompts for your own original character only; no "in the style of <living artist>" prompts

@@ -56,8 +56,8 @@ Signed by the operator's company on 14 Oct. Deposit $1,163 received 16 Oct.
 
 ## Day 10–20 — production and approvals
 
-Concept (approved first round): *Night bus home in the rain. Claudia, black bob with copper streaks and gold hoops,
-olive star-embroidered knit, pulls the Arc headphones on as the bus pulls away; the city noise drops out (sound
+Concept (approved first round): *Night bus home at the club. Claudia, black bob with peach streak and headset mic,
+white puffed-sleeve vinyl top, pulls the Arc headphones on as the bus pulls away; the city noise drops out (sound
 design does the work); text overlay: "31 h battery · folds flat". Last shot: real product packshot.*
 
 - The headphones in every frame are composited from Northpine's own product renders, so the product looks exactly
@@ -82,8 +82,8 @@ Northpine approved draft 2 on 28 Oct.
 ```ts
 const post = social.draft({
   text: "Ad · Paid partnership with @northpine. Claudia is an AI character; this scene is AI-generated. …",
-  media: [{ path: "./deliverables/northpine-arc-v2.mp4", alt: "AI-generated video: Claudia on a rainy night bus putting on Northpine Arc headphones" }],
-  targets: [{ account: tiktok.id }, { account: x.id, text: "Ad · Paid partnership with @northpine. Night bus, rain, Arc on. Claudia is an AI character; scene AI-generated, headphones real." }],
+  media: [{ path: "./deliverables/northpine-arc-v2.mp4", alt: "AI-generated video: Claudia on a night bus after the club putting on Northpine Arc headphones" }],
+  targets: [{ account: tiktok.id }, { account: x.id, text: "Ad · Paid partnership with @northpine. Night bus, after the club, Arc on. Claudia is an AI character; scene AI-generated, headphones real." }],
   labels: { ai: true, ad: true },
   scheduleAt: Date.parse("2026-11-04T17:00:00Z"),
 });

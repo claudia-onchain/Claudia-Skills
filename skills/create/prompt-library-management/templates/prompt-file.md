@@ -3,7 +3,7 @@ id: claudia.p0.scene-slug
 version: 0.1.0
 status: draft
 character: claudia
-identity: CLAUDIA ID v1
+identity: CLAUDIA ID v2
 pillar: P0
 series: none
 scene: scene-slug
@@ -24,11 +24,11 @@ updated: 2026-10-08
 retires: none
 ---
 ## First frame
-(video prompts only — delete for images) [CLAUDIA ID v1] <paste the full identity block> <wardrobe string> <scene, light,
+(video prompts only — delete for images) [CLAUDIA ID v2] <paste the full identity block> <wardrobe string> <scene, light,
 camera, framing for the first frame>
 
 ## Prompt
-[CLAUDIA ID v1] <paste the full identity block from _blocks/claudia-id-v1.md>
+[CLAUDIA ID v2] <paste the full identity block from _blocks/claudia-id-v1.md>
 <one wardrobe string from the bible>.
 <Format and aspect, e.g. "Vertical 9:16 front-camera phone frame">: <setting with 3–5 concrete props>, <light: source,
 direction, colour temperature>, <subject: pose, expression, gaze>, <camera: focal length, aperture, angle, distance>,

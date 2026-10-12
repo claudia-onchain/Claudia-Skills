@@ -97,7 +97,7 @@ Offsets are minutes from the campaign start; `{coin}` and `{goal}` are filled in
 ```js
 ama: { label: "AMA day", posts: [
   { at: -120, text: "AMA in two hours about {coin}: questions welcome. {goal}", media: null },
-  { at: 0, text: "AMA about {coin} is starting now. Ask anything; no price talk, just how it works.", media: { kind: "image", prompt: "Claudia at a laptop with a butterfly sticker, warm lamp light, a small 'AMA' sign", aspect: "1:1" } },
+  { at: 0, text: "AMA about {coin} is starting now. Ask anything; no price talk, just how it works.", media: { kind: "image", prompt: "Claudia at a laptop with a chrome star sticker, warm lamp light, a small 'AMA' sign", aspect: "1:1" } },
   { at: 90, text: "Thanks for the questions about {coin}. A short summary of what came up is in the thread.", media: null },
 ] },
 ```

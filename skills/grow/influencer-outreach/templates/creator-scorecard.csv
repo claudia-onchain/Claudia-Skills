@@ -1,0 +1,2 @@
+handle,platform,followers,median_views_last10,views_pct_of_followers,views_check,growth_check,comments_check,audience_data,audience_match,past_ads_disclosed,red_flag_content,fails,warns,decision,checked_by,checked_on,notes
+<@handle>,<tiktok|instagram|youtube|x>,<n>,<n>,<pct>,<pass|warn|fail>,<pass|warn|fail>,<pass|warn|fail>,<shared|refused>,<pass|warn|fail>,<pass|warn|fail>,<none|describe>,<n>,<n>,<paid|gifted only|drop>,<name>,<YYYY-MM-DD>,<what you saw>

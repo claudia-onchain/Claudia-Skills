@@ -1,0 +1,9 @@
+criterion,weight,you,a,b,c,d,evidence
+reach_per_post_median_views,0.15,<1-5>,<1-5>,<1-5>,<1-5>,<1-5>,<median views each>
+engagement_quality,0.25,<1-5>,<1-5>,<1-5>,<1-5>,<1-5>,<comments per 1k views; substantive %; reply rate>
+consistency,0.15,<1-5>,<1-5>,<1-5>,<1-5>,<1-5>,<posts per week; longest gap in days; series kept y/n>
+format_range,0.10,<1-5>,<1-5>,<1-5>,<1-5>,<1-5>,<format mix %>
+clear_positioning,0.15,<1-5>,<1-5>,<1-5>,<1-5>,<1-5>,<one-line why-follow as read from the profile>
+share_of_voice,0.10,<1-5>,<1-5>,<1-5>,<1-5>,<1-5>,<mention SoV %>
+trust_signals,0.10,<1-5>,<1-5>,<1-5>,<1-5>,<1-5>,<labels and #ad present; bait or promises seen>
+weighted_total,1.00,=SUMPRODUCT($B2:$B8;C2:C8),=SUMPRODUCT($B2:$B8;D2:D8),=SUMPRODUCT($B2:$B8;E2:E8),=SUMPRODUCT($B2:$B8;F2:F8),=SUMPRODUCT($B2:$B8;G2:G8),weights sum to 1.00; use , instead of ; as the argument separator if your spreadsheet locale needs it

@@ -10,25 +10,78 @@ export const CATEGORIES = [
 export const CATEGORY_IDS = CATEGORIES.map((c) => c.id);
 export const LEVELS = ["beginner", "intermediate", "advanced"];
 
-/** The 54 binding slugs (SKILLS-SPEC.md). Cross-links between skills rely on these names. */
+/** The 104 binding slugs (54 from SKILLS-SPEC.md, 50 added in 2.0). Cross-links between skills rely on these names. */
 export const ROSTER = {
   create: [
     "claudia-character-bible", "character-consistency", "image-prompting-fundamentals", "photoreal-portrait-prompts",
     "lifestyle-scene-prompts", "banner-and-collage-design", "video-prompting", "selfie-and-ugc-video-prompts", "voice-and-lip-sync",
     "short-form-editing", "storyboarding-shorts", "music-and-sound-for-shorts", "thumbnails-and-covers", "captions-and-hooks",
     "content-pillars-and-series", "batch-content-production", "ai-disclosure-and-provenance", "prompt-library-management",
+    // 2.0: added 2026-10-12
+    "carousel-design",
+    "meme-formats",
+    "content-repurposing",
+    "newsletter-writing",
+    "youtube-long-form-scripts",
+    "avatar-explainer-videos",
+    "dubbing-and-translation",
+    "sonic-branding-and-jingles",
+    "motion-graphics-and-kinetic-type",
+    "product-and-merch-mockups",
+    "sticker-and-emoji-packs",
+    "comics-and-webtoons",
+    "photo-dumps-and-grid-aesthetics",
+    "image-editing-and-upscaling",
+    "fashion-lookbooks",
+    "pfp-and-avatar-sets",
+    "coin-launch-art-kit",
+    "quote-cards-and-text-posts",
   ],
   grow: [
     "x-playbook", "tiktok-playbook", "instagram-reels-playbook", "youtube-shorts-playbook", "telegram-and-discord-community",
     "posting-schedule", "engagement-and-replies", "growth-experiments", "collabs-and-cross-promotion", "brand-deals-and-sponsorships",
     "trend-research", "personal-brand-strategy", "launch-campaigns", "crypto-marketing-compliance", "crisis-and-reputation",
     "monetization-streams", "media-kit-and-pitching", "kpi-reporting",
+    // 2.0: added 2026-10-12
+    "linkedin-playbook",
+    "threads-playbook",
+    "bluesky-and-mastodon-playbook",
+    "farcaster-playbook",
+    "reddit-playbook",
+    "pinterest-playbook",
+    "livestreaming-playbook",
+    "newsletter-growth",
+    "email-and-dm-sequences",
+    "social-listening",
+    "competitor-analysis",
+    "influencer-outreach",
+    "affiliate-and-ambassador-programs",
+    "giveaways-and-contests",
+    "paid-social-ads",
+    "ai-search-visibility",
+    "social-seo-and-hashtags",
+    "audience-research-and-personas",
+    "brand-voice-guidelines",
+    "memberships-and-subscriptions",
   ],
   build: [
     "claudia-platform-overview", "create-an-agent", "agent-persona-and-system-prompt", "autonomous-posting-loop",
     "thread-etiquette-and-trust", "mcp-setup", "sdk-quickstart", "cli-power-user", "media-pipelines", "social-publishing",
     "claudia-local-studio", "coin-research", "rug-check", "launch-a-coin", "safe-trading", "wallet-and-key-security",
     "automation-and-webhooks", "agent-ops-runbook",
+    // 2.0: added 2026-10-12
+    "agent-memory-and-knowledge",
+    "multi-agent-teams",
+    "telegram-bot-agent",
+    "discord-bot-agent",
+    "creator-fees-and-harvest",
+    "kol-and-smart-money-tracking",
+    "alerts-and-watchers",
+    "agent-evals-and-red-teaming",
+    "prompt-injection-defense",
+    "portfolio-and-pnl-tracking",
+    "ai-framework-integrations",
+    "local-models-with-ollama",
   ],
 };
 export const ROSTER_SLUGS = new Set(Object.values(ROSTER).flat());
@@ -76,6 +129,8 @@ export function listFiles(dir) {
   const walk = (d) => {
     for (const name of readdirSync(d).sort()) {
       if (IGNORED.has(name) || name.startsWith(".")) continue;
+      // README.md next to SKILL.md is the generated GitHub page (scripts/render-assets.mjs), not part of the skill.
+      if (d === dir && name === "README.md") continue;
       const p = join(d, name);
       const st = lstatSync(p);
       if (st.isSymbolicLink()) {

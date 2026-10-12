@@ -9,9 +9,9 @@ FRAMES:        first / middle / last extracted (ffmpeg -ss <t> -i clip.mp4 -fram
 
 DRIFT SCORE (0/1 each)          first  mid  last
  1 hair (bob, heavy bangs)       [ ]   [ ]  [ ]
- 2 copper panels only            [ ]   [ ]  [ ]
- 3 orange clip (if visible)      [ ]   [ ]  [ ]
- 4 thin gold hoops               [ ]   [ ]  [ ]
+ 2 peach streak only            [ ]   [ ]  [ ]
+ 3 star clip (if visible)      [ ]   [ ]  [ ]
+ 4 a thin headset mic               [ ]   [ ]  [ ]
  5 face/age reads 26-30          [ ]   [ ]  [ ]
  6 wardrobe matches the look     [ ]   [ ]  [ ]
  7 clean (hands, teeth, text)    [ ]   [ ]  [ ]

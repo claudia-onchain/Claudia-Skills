@@ -9,21 +9,21 @@ and nothing is "naturally" consistent.
 every camera on one side. In prompts: "she runs from left to right of frame" in every shot of the sequence. Breaking it
 makes viewers think she turned around.
 
-**Eyeline.** If she glances "off to the right" in s2 at the cat, the cat insert in s3 is framed as if seen from her
+**Eyeline.** If she glances "off to the right" in s2 at the disco ball, the disco ball insert in s3 is framed as if seen from her
 left-facing-right position. Write the direction into both prompts.
 
 **State tracking.** Keep a state table per scene and copy it into every prompt:
 
 | State | Values to track |
 |---|---|
-| Wardrobe | look name + any change (jumper sleeves up/down) |
-| Hair | dry / damp / wet; bangs neat / pushed aside; clip in / out |
-| Accessories | sunglasses on face / pushed up / in hand / off |
+| Wardrobe | look name + any change (fur on/off the shoulders) |
+| Hair | neat / tousled; bangs neat / pushed aside; clip in / out |
+| Accessories | visor down / pushed up / in hand / off; headset mic on / off |
 | Light | time of day, main source, colour |
-| Props | phone hand, mug full/empty, laptop open/closed, cat position |
-| Weather | none / light rain / heavier rain |
+| Props | phone hand, mug full/empty, laptop open/closed, disco ball spinning / still |
+| Light state | studio daylight / flash / club spotlight |
 
-**Selfie vs camera.** A scene shot "on her phone" and a scene shot "by a camera" have mirrored hair (the copper panel
+**Selfie vs camera.** A scene shot "on her phone" and a scene shot "by a camera" have mirrored hair (the peach streak
 switches sides). Don't intercut them inside a scene.
 
 ## Pacing
@@ -40,15 +40,15 @@ switches sides). Don't intercut them inside a scene.
 | Face changes slightly between generations | cut on motion (a turn, a step, an arm), never on a still face |
 | Lighting shifts | match cut to a darker/brighter beat, or a whip pan |
 | Stitch of a continuous take | 0.2–0.3 s crossfade during movement; or a hand passing the lens |
-| Location change | match cut on a prop (sunglasses, mug), sound bridge (next scene's audio starts 0.5 s early) |
+| Location change | match cut on a prop (visor, mug), sound bridge (next scene's audio starts 0.5 s early) |
 
-**Sound bridges** (J-cuts and L-cuts) are the cheapest seam-hider: let the rain start under the end of the bedroom shot,
+**Sound bridges** (J-cuts and L-cuts) are the cheapest seam-hider: let the club bass start under the end of the studio shot,
 or let her laugh carry over the cut.
 
 ## Shot size progression
 
 Start wide or medium to place her, go tighter for emotion, go back out for the payoff or keep tight for a punchline.
-Typical: MS (hook, moving) → MCU (build) → insert (prop/cat) → CU (line) → MCU (loop back).
+Typical: MS (hook, moving) → MCU (build) → insert (prop/disco ball) → CU (line) → MCU (loop back).
 
 ## Duration math
 

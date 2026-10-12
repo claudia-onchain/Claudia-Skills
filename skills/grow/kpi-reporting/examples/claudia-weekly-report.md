@@ -41,7 +41,7 @@ youtube         1      14.8k      3.1%         14.6%         0.2%        3.85   
 telegram        1        880      6.8%          2.5%         2.2%           —   7.3%           —
 
 Flags (1):
-  [outlier-high] tiktok tt-0930-rain: 96.4k views = 7.8x median; report separately, don't fold into averages
+  [outlier-high] tiktok tt-0930-club: 96.4k views = 7.8x median; report separately, don't fold into averages
 ```
 
 The agent noticed the TikTok median (12.3k) still includes the 96.4k outlier because there were only 4 organic posts;
@@ -54,7 +54,7 @@ uses ER by reach.
 ### Headline
 
 **UTM sign-ups: 82** (4-week median 23, target 30–40). Launch week for the skills library: the X thread and the TikTok
-how-to did the work; the viral rain video brought views but few clicks.
+how-to did the work; the viral club video brought views but few clicks.
 
 ### Scoreboard (organic, paid excluded)
 
@@ -67,7 +67,7 @@ how-to did the work; the viral rain video brought views but few clicks.
 | Telegram | 1 | 880 views (37 % channel view rate) | 6.8 % | — | 7.3 % | flat |
 
 Followers at week end: TikTok 42,450 (+1,640), X 18,830 (+80), Instagram 9,390 (+180).
-Outlier (not in medians): TikTok "rain run, no umbrella", 96.4k views, 1,120 follows, 0 link clicks.
+Outlier (not in medians): TikTok "club night, no umbrella", 96.4k views, 1,120 follows, 0 link clicks.
 Paid: Northpine TikTok and X post, both #ad with branded content / paid-partnership labels on; 10.2k views and 4.1k
 impressions; 265 clicks to Northpine's page (their UTM); reported to Northpine separately.
 
@@ -80,7 +80,7 @@ impressions; 265 clicks to Northpine's page (their UTM); reported to Northpine s
 
 ### What didn't
 
-1. The viral rain loop: great for followers (1,120) but no CTA and 13 seconds long; zero clicks. Next time, pin a
+1. The viral club loop: great for followers (1,120) but no CTA and 13 seconds long; zero clicks. Next time, pin a
    comment pointing to the series and the bio.
 2. The Instagram room talk (Trial Reel): 8.7k views after graduating, 0.8 % sends per reach; the hook was a slow start.
 
@@ -95,7 +95,7 @@ impressions; 265 clicks to Northpine's page (their UTM); reported to Northpine s
 
 | Flag | Post | Fix | Owner | Done |
 |---|---|---|---|---|
-| outlier-high | tt-0930-rain | Reported separately; study the first 2 s for next rain loop | agent | yes |
+| outlier-high | tt-0930-club | Reported separately; study the first 2 s for next club loop | agent | yes |
 | blocked: return promise | X draft | Rewritten as education post; no coin mention | agent + operator | yes |
 | missed schedule | X 2026-10-02 | Re-approved; host now runs `tick()` from Claudia Local, not the laptop | operator | yes |
 
@@ -112,7 +112,7 @@ impressions; 265 clicks to Northpine's page (their UTM); reported to Northpine s
 
 ### Next week
 
-1. Add a pinned comment with the series name to every rain-loop TikTok → follows to sign-ups (CTR).
+1. Add a pinned comment with the series name to every club-loop TikTok → follows to sign-ups (CTR).
 2. Two more 60-second how-tos (TikTok + Shorts), one per new skill → saves per 1k and sign-ups.
 3. Test a faster first second on Instagram room talks through Trial Reels (hook A/B in
    [growth-experiments](../../growth-experiments/SKILL.md)) → sends per reach.

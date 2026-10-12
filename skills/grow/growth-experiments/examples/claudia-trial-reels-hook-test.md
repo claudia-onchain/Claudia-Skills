@@ -14,7 +14,7 @@ a proper test.
 
 | Field | Value |
 |---|---|
-| Variable | first 2 seconds: A = she walks into frame under a streetlight, B = already mid-run in the rain, laughing |
+| Variable | first 2 seconds: A = she walks into frame under a streetlight, B = already mid-run at the club, laughing |
 | Held constant | the same 13-second edit after 0:02, same sound, caption, 3 hashtags, AI info label on, no #ad, posted within 5 minutes |
 | Primary metric | 3-second hold % |
 | Secondary | average % watched; sends per non-follower reach; follows per 1,000 views |
@@ -33,7 +33,7 @@ The agent generated both openings from the same prompt and seed family (see
 hand at 17:00 and 17:05 on Monday, with identical captions:
 
 ```text
-Ran three blocks in the rain for this. Worth it. ☔
+Ran three blocks at the club for this. Worth it. ☔
 #aiart #citynight #rainyday
 ```
 
@@ -42,7 +42,7 @@ The AI info label was set on both (the clip is photorealistic AI). The agent log
 
 ## 4. Results at 72 hours
 
-Pair 1 (rain clip):
+Pair 1 (club clip):
 
 ```sh
 node scripts/sigcalc.mjs rate --a 1574/4120 --b 2146/4480     # 3-second hold

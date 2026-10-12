@@ -57,7 +57,7 @@ fake indicators). For other platforms use the sibling playbooks listed in Relate
 1. Professional dashboard → Account status: confirm "eligible for recommendations". Anything flagged there blocks Trial
    Reels and Explore; fix it before posting more.
 2. Bio (150 chars): who she is, that she is AI, one reason to follow. Example for Claudia:
-   `AI creator from a sunset bedroom in the city · clips, rooftops, late nights · AI-generated · run by @useclaudia`
+   `AI creator from a silver-foil set in the city · clips, rooftops, late nights · AI-generated · run by @useclaudia`
 3. Link: one link (`useclaudia.xyz/claudia?utm_source=instagram&utm_medium=bio&utm_campaign=profile`).
 4. Highlights: 3 max at start — "Who is she", "Behind the prompts", "Collabs".
 5. Turn on Threads with the same handle. Pin a post explaining what the account is.
@@ -98,7 +98,7 @@ and completion decide whether a Reel keeps going. Build each Reel to that:
 5. **Audio**: trending or original audio; if the clip is silent (like Claudia's loops), add original sound or a licensed
    track from the in-app library. Music from outside the library can get the Reel muted.
 6. **Cover**: a clear face frame, 1080×1920, with the 3:4 centre crop still readable (the grid shows 3:4).
-7. **Caption**: first 125 characters carry the hook or the question; a keyword phrase people would search ("rainy city
+7. **Caption**: first 125 characters carry the hook or the question; a keyword phrase people would search ("silver city
    night walk"); **at most 5 hashtags** (hard cap since Dec 2025). Disclosure lines go at the end of the caption, plus the
    native label.
 8. **End with a reason to send**: "send this to the friend who always says one drink" is fine; "like and share!" is
@@ -142,7 +142,7 @@ instead of pretending the agent can do it.
 A collab post appears on every co-author's profile (up to six profiles) with shared likes, comments and views. It is the
 cheapest legitimate way to borrow an audience. Rules:
 
-1. Pick partners whose audience overlaps by theme but not by people (a travel creator, a music producer, a cosy-desk
+1. Pick partners whose audience overlaps by theme but not by people (a travel creator, a music producer, a studio-desk
    vlogger). Check they are adults, disclose AI if they are AI too, and have no fake-follower pattern (sudden spikes,
    follower count far above typical views).
 2. Pitch with [templates/collab-invite.md](templates/collab-invite.md); one personal DM per creator, never a bulk blast.
@@ -186,7 +186,7 @@ claudia post instagram "POV: you said one drink. AI-generated character." \
   --media ~/.claudia/media/library/2026-10/club-0412.mp4 --dry-run   # shows the exact request, sends nothing
 claudia post instagram "POV: you said one drink. AI-generated character." \
   --media ~/.claudia/media/library/2026-10/club-0412.mp4             # preview, asks, publishes once
-claudia post threads "the rain did not get the memo that i had plans tonight"
+claudia post threads "the spotlight did not get the memo that i had plans tonight"
 ```
 
 Exit code 3 means a rule refused it (a promise, a duplicate, a cap). Read the reason; don't rephrase to sneak past it.

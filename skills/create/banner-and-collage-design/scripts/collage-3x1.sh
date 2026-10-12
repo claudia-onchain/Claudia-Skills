@@ -1,8 +1,8 @@
 #!/bin/sh
 # collage-3x1.sh — assemble 8 tiles into a 3000x1000 collage with 6 px near-black gutters.
 # Usage: sh collage-3x1.sh A B C D E F G H out.jpg
-#   A santorini (top-left)    B wine wink (bottom-left)   C airplane window (tall)   D centre close-up (hero, tall)
-#   E trading screen (top)    F balcony (bottom)          G mirror selfie (top-right) H cat on bed (bottom-right)
+#   A silver night (top-left)  B sky gown (bottom-left)   C holo (tall)               D centre close-up (hero, tall)
+#   E sculpture (top)          F green patent (bottom)    G cobalt trench (top-right) H disco ball + lilies (bottom-right)
 # Tiles are scaled to cover their cell and centre-cropped, so frame faces near the middle of each tile.
 set -eu
 [ "$#" -eq 9 ] || { echo "usage: collage-3x1.sh A B C D E F G H out.jpg" >&2; exit 2; }

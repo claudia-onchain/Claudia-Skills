@@ -11,8 +11,8 @@ Run per clip, before it goes to editing.
 
 ## Still her
 - [ ] "28-year-old woman (adult)" in both prompts; reads 26–30 in every frame
-- [ ] Bob + heavy bangs, copper panels only, orange clip, thin gold hoops
-- [ ] Mirror/selfie flip accepted; two copper panels rejected
+- [ ] Bob + heavy bangs, peach streak only, star clip, a thin headset mic
+- [ ] Mirror/selfie flip accepted; two peach streak rejected
 - [ ] Selfie hand: five fingers, bracelet intact, phone edge not melting
 
 ## Sound

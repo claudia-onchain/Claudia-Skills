@@ -37,8 +37,8 @@ first." Discord mods post it in `#announcements` and add the scam domain to Auto
 
 ## Wednesday — a deepfake joins in
 
-A 9-second vertical video spreads on X and TikTok: a face-swapped "Claudia" in a lamp-lit lounge, voice-cloned,
-saying "I'm launching my own coin tonight, link in bio". It copies her real lounge clip's setting, which makes it
+A 9-second vertical video spreads on X and TikTok: a face-swapped "Claudia" in a white studio, voice-cloned,
+saying "I'm launching my own coin tonight, link in bio". It copies her real visor clip's setting, which makes it
 convincing.
 
 Steps:
@@ -53,7 +53,7 @@ I'm not launching anything. Anything I launch is announced on my official accoun
 Real posts carry an AI label. Please don't share it; report it.
 ```
 
-4. Provenance helps: the original lounge clip was exported with Content Credentials; the team links the original
+4. Provenance helps: the original visor clip was exported with Content Credentials; the team links the original
    post in the copyright notice as proof of first publication.
 
 ## Friday — closing note and follow-ups

@@ -57,18 +57,18 @@ Rule for every vertical cover: the title sits **above y = 1500** and below y = 3
 Good cover stills share four traits: her face fills 35–50 % of the frame height on 16:9 (25–35 % on 9:16), eyes look into
 the lens, the expression *is* the hook (laugh, raised brow, sunglasses half-down), and one side is quiet enough for text.
 
-Prompt shape: `[CLAUDIA ID v1] + wardrobe + "cover composition: her face on the right third, eyes to lens, <expression>,
+Prompt shape: `[CLAUDIA ID v2] + wardrobe + "cover composition: her face on the right third, eyes to lens, <expression>,
 empty <surface> on the left third for a title, <light>, 50mm, f/2" + aspect`. Paste the full identity block from
-[../claudia-character-bible/SKILL.md](../claudia-character-bible/SKILL.md) where you see `[CLAUDIA ID v1] …`.
+[../claudia-character-bible/SKILL.md](../claudia-character-bible/SKILL.md) where you see `[CLAUDIA ID v2] …`.
 
 ```sh
 # 16:9 YouTube thumbnail still, Nano Banana 2.1 (≈ $0.05 at 2K, checked 2026-10)
-claudia generate image "[CLAUDIA ID v1] … wearing an oversized fuzzy black knit jumper. Cover composition: tight \
-close-up, her face on the right third, eyes to lens, a knowing half-smile with one eyebrow raised, chin resting on her \
-folded arms on a white duvet. The left 45 percent is a softly blurred floor-to-ceiling window with the Manhattan skyline \
-at sunset and plenty of empty sky for a title. Warm golden backlight, gentle lens flare, 50mm lens, f/2, natural skin \
+claudia generate image "[CLAUDIA ID v2] … wearing a white glossy vinyl puffed-sleeve top. Cover composition: tight \
+close-up, her face on the right third, eyes to lens, cool direct gaze with one eyebrow raised, one hand at her \
+collar. The left 45 percent is softly blurred crinkled silver foil with plenty of calm dark space for a title. Hard \
+on-camera flash, sparkle on the foil, 50mm lens, f/2, natural skin \
 texture, editorial film still. No text, no letters, no logos." \
-  --model google/nano-banana-2.1 --ref refs/claudia/01-front-neutral.jpg,refs/claudia/08-seated.jpg \
+  --model google/nano-banana-2.1 --ref refs/claudia/01-front-neutral.jpg,refs/claudia/08-hand-collar.jpg \
   --aspect 16:9 --resolution 2K --max-usd 0.10
 ```
 
@@ -83,7 +83,7 @@ cover is the most-seen image of a post, so publish only 7/7.
 
 - **Title:** Barlow Condensed 800, UPPERCASE, line-height 0.9, tracking -0.01em, off-white `#ece9e2`. 1–4 words,
   2 lines max. One word may be rose `#ff6fa5`. Size: 110–150 px on 1280×720; 150–190 px on 1080×1920.
-- **Label:** DM Mono 500, 18–22 px, UPPERCASE, tracking 0.14em, rose — the series number and name: `01 · rain diaries`.
+- **Label:** DM Mono 500, 18–22 px, UPPERCASE, tracking 0.14em, rose — the series number and name: `01 · club diaries`.
 - **Rule:** one 2 px rose hairline under the title (optional). No boxes, no stickers, no outline strokes, no emoji.
 - **Contrast:** a near-black `#0a0b0d` gradient behind the text side (≥ 4.5:1 for the ink on it).
 - **AI label:** a small DM Mono `AI-GENERATED` in a corner on covers that leave the platform (site, press, X stills).
@@ -91,11 +91,11 @@ cover is the most-seen image of a post, so publish only 7/7.
 Render with the template (tested 2026-10-08 at 1280×720 and 1080×1920):
 
 ```sh
-cp templates/cover.html work/rain-cover.html && cp stills/rain-cover.jpg work/cover-still.jpg
-# edit the :root values (image position, sizes) and the label/title text in work/rain-cover.html, then:
-sh scripts/render-cover.sh work/rain-cover.html out/rain-0412-thumb.png 1280 720
-sh scripts/render-cover.sh work/rain-cover.html out/rain-0412-cover.png 1080 1920   # set --text-bottom: 420px; --fade: 0deg first
-ffmpeg -i out/rain-0412-thumb.png -q:v 2 out/rain-0412-thumb.jpg                     # YouTube: JPG, well under 2 MB
+cp templates/cover.html work/club-cover.html && cp stills/club-cover.jpg work/cover-still.jpg
+# edit the :root values (image position, sizes) and the label/title text in work/club-cover.html, then:
+sh scripts/render-cover.sh work/club-cover.html out/club-0412-thumb.png 1280 720
+sh scripts/render-cover.sh work/club-cover.html out/club-0412-cover.png 1080 1920   # set --text-bottom: 420px; --fade: 0deg first
+ffmpeg -i out/club-0412-thumb.png -q:v 2 out/club-0412-thumb.jpg                     # YouTube: JPG, well under 2 MB
 ```
 
 If the ffmpeg build has freetype, `drawtext` with `fontfile=BarlowCondensed-ExtraBold.ttf` also works; most slim builds don't have it.
@@ -119,11 +119,11 @@ A series cover is a template plus one variable. Fix these per series and change 
 
 | Series | Label | Still | Title colour word |
 |---|---|---|---|
-| Rain diaries | `01 · rain diaries` | arm's-length selfie, laughing, wet lot | weather word in rose |
-| Desk nights | `02 · desk nights` | laptop glow, butterfly sticker, cat | the shipped thing in rose |
-| After hours | `03 · after hours` | club haze, sunglasses | the track/time in rose |
-| Lamp light | `04 · lamp light` | lounge, sunglasses half-down | the reveal word in rose |
-| Out of office | `05 · out of office` | travel window/balcony | the place in rose |
+| Club Diaries | `01 · club diaries` | arm's-length flash selfie, laughing, the club | the dare word in rose |
+| Desk nights | `02 · desk nights` | laptop glow, chrome star sticker, the disco ball | the shipped thing in rose |
+| After hours | `03 · after hours` | club haze, the spotlight | the track/time in rose |
+| Visor on / off | `04 · visor on / off` | white studio, visor half up | the reveal word in rose |
+| Lookbook | `05 · lookbook` | full-length look, cobalt or white studio | the look in rose |
 
 Same corner, same size, same gradient side every time — the profile grid should look like a magazine shelf.
 See [../content-pillars-and-series/SKILL.md](../content-pillars-and-series/SKILL.md).
@@ -139,15 +139,15 @@ See [../content-pillars-and-series/SKILL.md](../content-pillars-and-series/SKILL
 
 ### 7. Write alt text
 
-`Claudia, an AI-generated character with a black bob and copper streaks, laughing into her phone in the rain at a
-warehouse lot. Title: "Rain check? Never".` — describe her, the scene and the title; say AI-generated.
+`Claudia, an AI-generated character with a black bob and peach streak, laughing into her phone at the club under
+one spotlight. Title: "Mic check? Never".` — describe her, the scene and the title; say AI-generated.
 
 ## Templates
 
 - [templates/cover.html](templates/cover.html) — the brand cover (title, label, rule, AI tag), size-agnostic.
 - [templates/cover-brief.md](templates/cover-brief.md) — fill-in brief: format, still prompt, title options, checks.
 - [scripts/render-cover.sh](scripts/render-cover.sh) — HTML → PNG with headless Chrome.
-- [examples/rain-diaries-cover.md](examples/rain-diaries-cover.md) — one episode's thumbnail and Reels cover, start to finish.
+- [examples/club-diaries-cover.md](examples/club-diaries-cover.md) — one episode's thumbnail and Reels cover, start to finish.
 
 ## Check before you finish
 

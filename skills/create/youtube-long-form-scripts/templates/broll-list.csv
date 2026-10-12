@@ -1,0 +1,3 @@
+id,chapter,timecode,duration_s,what_it_shows,source,prompt_or_file,model,aspect,audio,estimate_usd,approved_by,status,ai_label_needed,notes
+B01,hook,0:00,5,"<the result on screen>",<owned | screen recording | licensed stock | ai-generated>,"<file path or full prompt; no real people, no logos, no readable text>",<e.g. fal/kling-2.6-pro>,16:9,<off>,<from --dry-run>,<name>,<planned | generated | used | dropped>,<yes if realistic AI>,"<licence id for stock>"
+B02,<chapter>,<m:ss>,<s>,"<…>",<source>,"<…>",<model or blank>,16:9,<off | on>,<usd>,<name>,<status>,<yes | no>,"<…>"

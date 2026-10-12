@@ -12,17 +12,17 @@ front matter in that shape — no multi-line strings, no anchors.
 | `version` | yes | semver `MAJOR.MINOR.PATCH` | see versioning below |
 | `status` | yes | `draft` · `approved` · `deprecated` · `retired` | lifecycle |
 | `character` | yes | slug | `claudia`, `mara-vex`, … |
-| `identity` | yes | e.g. `CLAUDIA ID v1`, or `none` (no character in frame) | the body must contain `[<identity>]` |
+| `identity` | yes | e.g. `CLAUDIA ID v2`, or `none` (no character in frame) | the body must contain `[<identity>]` |
 | `pillar` | no | `P1`–`P7` or your own, `none` | from content-pillars-and-series |
 | `series` | no | series slug or `none` | |
-| `scene` | yes* | world slug from the bible | `her-room-day`, `club-dj-booth`, `vintage-lounge`, `warehouse-rain`, `sunset-bedroom-nyc`, `desk-night`, `travel-*`, `studio-*`, `balcony-night` |
-| `look` | yes* | wardrobe look | `signature`, `cosy-black`, `studio`, `night-out`, `travel`, `home`, `mixed` |
+| `scene` | yes* | world slug from the bible | `white-studio`, `cobalt-studio`, `silver-foil`, `the-club`, `blue-render`, `collage`, `studio-desk` |
+| `look` | yes* | wardrobe look | `signature`, `silver-night`, `studio`, `night-out`, `travel`, `home`, `mixed` |
 | `kind` | yes | `image` · `video` · `speech` · `music` · `sfx` · `avatar` | as in `@useclaudia/media` |
 | `model` | yes | package model id, or `midjourney/v7` etc. for manual tools | the model the scores belong to |
 | `fallback_models` | no | list | tried-and-OK alternatives (each needs its own scored variant before it's trusted) |
 | `first_frame_model` | video | model id | the still model for image-to-video |
 | `params` | yes | inline map | `aspect`, `resolution`, `durationSec`, `audio`, `quality`, `crop`, … (no secrets) |
-| `refs` | no | list of pack names | `01-front-neutral`, `05-laugh`, `cat-01` — names, not absolute paths |
+| `refs` | no | list of pack names | `01-front-neutral`, `05-laugh`, `disco-01` — names, not absolute paths |
 | `seed` | no | integer or `none` | only meaningful on models that honour seeds |
 | `cost_usd` | yes | number or `none` | estimate per run (still + video for video prompts) |
 | `scores` | yes | `{drift, runs, pass_rate}` | best 7-point drift score, number of scored runs, share of runs ≥ 6/7 |
@@ -61,9 +61,9 @@ Commit message: `<id> <version>: <what changed> (<score summary>)`.
 
 ## Naming
 
-- ids: lowercase, `.` between parts, `-` inside parts: `claudia.p3.lounge-sunglasses`, `claudia.banner.network.gpt`.
+- ids: lowercase, `.` between parts, `-` inside parts: `claudia.p3.studio-visor`, `claudia.banner.platform.gpt`.
 - File name = `<id>.md`. Folder = character / pillar family.
-- Ref pack files: `NN-short-name.jpg` (`01-front-neutral.jpg`); companions `cat-01.jpg`. Never renamed once used.
+- Ref pack files: `NN-short-name.jpg` (`01-front-neutral.jpg`); companions `disco-01.jpg`. Never renamed once used.
 - Media outputs keep the package's job-based names; the prompt file links them by path + sha256.
 
 ## Never in a prompt file

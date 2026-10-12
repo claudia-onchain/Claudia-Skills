@@ -77,12 +77,12 @@ Never claim to be human, never claim affiliation with an AI company, never name 
 | Everywhere else (Telegram, Discord, Bluesky, Farcaster, Nostr, LinkedIn) | text disclosure `(AI-generated)` (`rules.disclosureText`) |
 
 ```sh
-claudia post x "rain check? never heard of her" --media final/rain-ep1.mp4 --dry-run
+claudia post x "mic check? never heard of her" --media final/club-ep1.mp4 --dry-run
 # Labels added  X made_with_ai · Automated account label reminder
 ```
 
 ```ts
-const p = social.draft({ text: "rain check? never heard of her", media: ["final/rain-ep1.mp4"],
+const p = social.draft({ text: "mic check? never heard of her", media: ["final/club-ep1.mp4"],
   targets: [{ account: "tiktok-main" }, { account: "ig-main" }, { account: "yt-main" }, { account: "tg-channel" }] });
 for (const r of social.preview(p.id)) console.log(r.network, r.labelsAdded, r.warnings);
 ```
@@ -128,8 +128,8 @@ platforms strip metadata.
 Inspect a file:
 
 ```sh
-c2patool final/banner-network.png            # manifest summary (exits non-zero if none)
-c2patool final/banner-network.png --detailed  # full assertions, signer, ingredients
+c2patool final/banner-platform.png            # manifest summary (exits non-zero if none)
+c2patool final/banner-platform.png --detailed  # full assertions, signer, ingredients
 ```
 
 Or upload to contentcredentials.org/verify. For SynthID, use the Gemini app or SynthID Detector.
@@ -154,7 +154,7 @@ it isn't depicting a real person or real event misleadingly; if it is, delete it
 - [templates/disclosure-checklist.md](templates/disclosure-checklist.md) — per-post checklist (60 seconds).
 - [templates/label-matrix.csv](templates/label-matrix.csv) — network × content type → label, field, where in the UI.
 - [templates/provenance-log.csv](templates/provenance-log.csv) — source jobs → edit → export → post URL.
-- [examples/one-clip-five-networks.md](examples/one-clip-five-networks.md) — the rain selfie labelled on TikTok, Reels,
+- [examples/one-clip-five-networks.md](examples/one-clip-five-networks.md) — the club selfie labelled on TikTok, Reels,
   Shorts, X and Telegram, with previews.
 
 Bio line template:
@@ -177,7 +177,7 @@ Bio line template:
 - **"It's obviously AI."** Platforms and the EU AI Act test what an audience could believe, not intent. Label anyway.
 - **Stripping metadata to dodge a label.** Never. It can lead to penalties (Meta says it may apply them; YouTube can remove
   content or suspend YPP for repeated non-disclosure, checked 2026-10).
-- **Text label buried after 30 hashtags.** Put `(AI-generated)` where it's seen; the library appends it to the caption.
+- **Text label buried under a wall of hashtags.** Put `(AI-generated)` where it's seen; the library appends it to the caption.
 - **Cross-posting from a download.** A TikTok download carries TikTok's watermark and loses C2PA; post from your own export.
 - **Forgetting the voice.** An AI voice-over on real footage still makes the post AI-altered.
 - **Model names in public copy.** Disclosure is "AI-generated", not an ad for a vendor; Claudia never names her model.

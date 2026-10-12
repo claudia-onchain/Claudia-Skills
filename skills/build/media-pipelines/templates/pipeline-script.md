@@ -33,7 +33,7 @@ async function run(label, req) {
 try {
   const still = await run("Keyframe", {
     kind: "image", model: "google/nano-banana-2.1", aspect: "9:16", brand: "claudia",
-    prompt: "Vertical film still: Claudia in her lamp-lit bedroom at dusk, sitting cross-legged on the bed with a laptop that has a butterfly sticker, city lights through the window, warm practical light, 35mm, shallow depth of field. Adult. No text, no logos.",
+    prompt: "Vertical film still: Claudia at the studio desk at night, sitting cross-legged on her chair with a laptop that has a chrome star sticker, the disco ball on its stand beside her, rose lamp light, 35mm, shallow depth of field. Adult. No text, no logos.",
   });
   if (!DRY && still && !(await ask("Keyframe looks right (face, wardrobe, hands)? Animate it?"))) process.exit(0);
 

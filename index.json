@@ -1,31 +1,31 @@
 {
   "version": 1,
-  "updated": "2026-10-08",
-  "count": 54,
-  "repo": "https://github.com/claudia-onchain/claudia-skills",
+  "updated": "2026-10-12",
+  "count": 104,
+  "repo": "https://github.com/claudia-onchain/Claudia-Skills",
   "all": {
     "zip": "/skills/claudia-skills-all.zip",
-    "bytes": 1288329,
-    "sha256": "41237c447e53fe282a2b23107c8ad7c07cd9143c99b3b4030fedd0fc106c2a12"
+    "bytes": 2131985,
+    "sha256": "4ead34febfd6983a4e890e7d5a3be7bd7f93a156c1a5897e4be964081e684dd2"
   },
   "categories": [
     {
       "id": "create",
       "title": "Create",
       "summary": "Content creation and AI generation: images, video, voice, editing, captions.",
-      "count": 18
+      "count": 36
     },
     {
       "id": "grow",
       "title": "Grow",
       "summary": "Influencer growth, marketing and business: platforms, schedules, deals, reporting.",
-      "count": 18
+      "count": 38
     },
     {
       "id": "build",
       "title": "Build",
       "summary": "Agents, the Claudia platform, packages and onchain operations.",
-      "count": 18
+      "count": 30
     }
   ],
   "skills": [
@@ -65,9 +65,9 @@
         "templates/label-matrix.csv",
         "templates/provenance-log.csv"
       ],
-      "size": 30584,
-      "bytes": 16112,
-      "sha256": "74e75c9c495ff814400258bf95a8786b65f97be73a673e04b93530cad3b87015",
+      "size": 30587,
+      "bytes": 16119,
+      "sha256": "2ecf76d43666d8de705dcab3011933783ec3f913131ba5aea22e7e7bd82aac23",
       "path": "skills/create/ai-disclosure-and-provenance",
       "zip": "/skills/ai-disclosure-and-provenance.zip",
       "related": [
@@ -84,12 +84,63 @@
       "valid": true
     },
     {
+      "slug": "avatar-explainer-videos",
+      "name": "avatar-explainer-videos",
+      "title": "Avatar explainer videos",
+      "category": "create",
+      "summary": "Script, voice, framing, render, lip-sync QA, captions and labels for talking-avatar explainers made with HeyGen or OmniHuman.",
+      "description": "Makes talking-avatar explainer videos with HeyGen Avatar IV or OmniHuman through the @useclaudia/media avatar kind — when an avatar is the right format, scripts written for a face, voice choice, photo framing, the HeyGen v3 request fields (aspect, motion prompt, captions, expressiveness), a dry run and spend cap, lip-sync and drift QA, captions and cutaways, and AI labels on every platform. Use when someone wants an AI presenter, a talking-head explainer, a product walkthrough with an avatar, a \"Claudia explains\" video, or a HeyGen video made through code.",
+      "level": "intermediate",
+      "tags": [
+        "avatar",
+        "heygen",
+        "omnihuman",
+        "talking head",
+        "explainer",
+        "lip sync",
+        "captions",
+        "ai disclosure"
+      ],
+      "uses": [
+        "@useclaudia/media",
+        "@useclaudia/cli",
+        "@useclaudia/social"
+      ],
+      "time": "1–2 h per 60–120 s video",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-90s-explainer.md",
+        "references/avatar-routes-and-limits.md",
+        "templates/avatar-qa-checklist.md",
+        "templates/avatar-script.md"
+      ],
+      "size": 23572,
+      "bytes": 12635,
+      "sha256": "c64fa7704a59e72274a019409a34adee06a84f91ebb9f3ba3d70b6b22086cb1e",
+      "path": "skills/create/avatar-explainer-videos",
+      "zip": "/skills/avatar-explainer-videos.zip",
+      "related": [
+        "claudia-character-bible",
+        "voice-and-lip-sync",
+        "photoreal-portrait-prompts",
+        "captions-and-hooks",
+        "social-publishing",
+        "character-consistency",
+        "youtube-long-form-scripts",
+        "dubbing-and-translation",
+        "ai-disclosure-and-provenance"
+      ],
+      "valid": true
+    },
+    {
       "slug": "banner-and-collage-design",
       "name": "banner-and-collage-design",
       "title": "Banner and collage design",
       "category": "create",
-      "summary": "Make her 3:1 banners and photo collages — sunset skyline, butterfly network, travel collage — and export every platform size.",
-      "description": "Designs and exports profile banners and photo collages for an AI influencer — Claudia's 3:1 sunset-bed NYC skyline banner with a serif wordmark, the laptop + glowing butterfly MCP/API network banner, and the travel/lifestyle photo-collage banner with a script wordmark — with full prompts per model, composition for each platform's crop and safe area (X 1500×500, YouTube 2560×1440 with the 1546×423 safe area, LinkedIn 1584×396, Twitch 1200×480, Discord, site 3:1 at 2000/1200/800), ffmpeg crop/collage/overlay/export commands, licensed-font wordmarks added in the edit step, and trademark-safe handling of platform and chain logos. Use when making or refreshing a header, channel art, website hero banner, collage, or any wide composite image.",
+      "summary": "Make her 3:1 banners and photo collages — silver foil, the club, the looks collage — and export every platform size.",
+      "description": "Designs and exports profile banners and photo collages for an AI influencer — Claudia's 3:1 silver-foil banner with a silver script wordmark, the club platform banner, and the silver photo-collage banner of her looks — with full prompts per model, composition for each platform's crop and safe area (X 1500×500, YouTube 2560×1440 with the 1546×423 safe area, LinkedIn 1584×396, Twitch 1200×480, Discord, site 3:1 at 2000/1200/800), ffmpeg crop/collage/overlay/export commands, licensed-font wordmarks added in the edit step, and trademark-safe handling of platform and chain logos. Use when making or refreshing a header, channel art, website hero banner, collage, or any wide composite image.",
       "level": "intermediate",
       "tags": [
         "banner",
@@ -108,13 +159,13 @@
         "@useclaudia/cli"
       ],
       "time": "45 min",
-      "version": "1.0.0",
-      "updated": "2026-10-08",
+      "version": "2.0.0",
+      "updated": "2026-10-09",
       "files": [
         "SKILL.md",
-        "examples/network-banner.md",
-        "examples/sunset-wordmark-banner.md",
-        "examples/travel-collage-banner.md",
+        "examples/foil-wordmark-banner.md",
+        "examples/platform-banner.md",
+        "examples/silver-collage-banner.md",
         "references/banner-specs.md",
         "references/text-fonts-and-logos.md",
         "scripts/banner-export.sh",
@@ -122,9 +173,9 @@
         "templates/banner-brief.yaml",
         "templates/collage-grid.md"
       ],
-      "size": 39853,
-      "bytes": 21910,
-      "sha256": "b84379a48f846dfd0d7da13266e3521ada8043d2faf5dbb04227a2ebf158b9f1",
+      "size": 37658,
+      "bytes": 20585,
+      "sha256": "d718d56cb147eab7ae62177b17d236d3a3657c9c5070b8208e47ac33b3c55610",
       "path": "skills/create/banner-and-collage-design",
       "zip": "/skills/banner-and-collage-design.zip",
       "related": [
@@ -177,9 +228,9 @@
         "templates/batch-manifest.json",
         "templates/batch-runbook.md"
       ],
-      "size": 49540,
-      "bytes": 21943,
-      "sha256": "7e5bc00b28c7dbfcc536c1cb440833e318d4cae74d1b76a54184aac47d862e98",
+      "size": 49280,
+      "bytes": 21815,
+      "sha256": "0adec1cdd1094cd7625b64fac32d43c271e092c43a607e5c6e8a25afefa0b2b2",
       "path": "skills/create/batch-content-production",
       "zip": "/skills/batch-content-production.zip",
       "related": [
@@ -228,16 +279,16 @@
       "updated": "2026-10-08",
       "files": [
         "SKILL.md",
-        "examples/lounge-reveal-captions.md",
+        "examples/visor-reveal-captions.md",
         "references/hook-bank.md",
         "references/platform-caption-rules.md",
         "scripts/words-to-ass.mjs",
         "templates/captions.ass",
         "templates/post-caption-sheet.md"
       ],
-      "size": 34057,
-      "bytes": 17893,
-      "sha256": "ba776afd47ea5f50eaa46e609a0447830c7882d555259fc68fd917316e7c0979",
+      "size": 34091,
+      "bytes": 17877,
+      "sha256": "c018ab177d2b35373f515c6763af53b8e322ccdc31a6fbec840050b810f7ca0f",
       "path": "skills/create/captions-and-hooks",
       "zip": "/skills/captions-and-hooks.zip",
       "related": [
@@ -254,6 +305,66 @@
         "youtube-shorts-playbook",
         "engagement-and-replies",
         "brand-deals-and-sponsorships"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "carousel-design",
+      "name": "carousel-design",
+      "title": "Carousel design",
+      "category": "create",
+      "summary": "Swipe carousels for Instagram, TikTok photo mode and LinkedIn PDFs: hook slide, sizes, generated art, layout and export.",
+      "description": "Designs swipe carousels for Instagram, TikTok photo mode and LinkedIn document (PDF) posts — spine and slide count, a hook slide that earns the swipe, per-platform sizes and limits, slide art generated with @useclaudia/media, text layout with brand type and safe zones, PNG/JPEG/PDF export, alt text, AI labels and approval-first publishing. Use when someone wants a carousel, slide post, swipe post, photo-mode post or LinkedIn PDF carousel, or needs to turn a thread, tutorial or list into slides for an AI character or brand.",
+      "level": "intermediate",
+      "tags": [
+        "carousel",
+        "instagram",
+        "tiktok photo mode",
+        "linkedin",
+        "pdf",
+        "slides",
+        "hook",
+        "layout",
+        "export",
+        "alt text"
+      ],
+      "uses": [
+        "@useclaudia/media",
+        "@useclaudia/social",
+        "@useclaudia/cli"
+      ],
+      "time": "60–90 min per carousel",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/agents-week-carousel.md",
+        "references/platform-specs.md",
+        "references/slide-patterns.md",
+        "scripts/build-carousel.mjs",
+        "templates/carousel-brief.yaml",
+        "templates/slides.json"
+      ],
+      "size": 44611,
+      "bytes": 21530,
+      "sha256": "4b9233b4022d39d9d24825e81288d30e7222cc68c40790f939b2a4c94d003858",
+      "path": "skills/create/carousel-design",
+      "zip": "/skills/carousel-design.zip",
+      "related": [
+        "thumbnails-and-covers",
+        "photo-dumps-and-grid-aesthetics",
+        "quote-cards-and-text-posts",
+        "claudia-character-bible",
+        "character-consistency",
+        "image-prompting-fundamentals",
+        "captions-and-hooks",
+        "ai-disclosure-and-provenance",
+        "posting-schedule",
+        "kpi-reporting",
+        "instagram-reels-playbook",
+        "tiktok-playbook",
+        "linkedin-playbook",
+        "social-publishing"
       ],
       "valid": true
     },
@@ -291,9 +402,9 @@
         "templates/edit-fix-prompts.md",
         "templates/ref-pack-shotlist.csv"
       ],
-      "size": 32784,
-      "bytes": 17115,
-      "sha256": "46661a2d3557eb54cf47e761792362d47737b43de3bfce7efcd229aa273f93fd",
+      "size": 32439,
+      "bytes": 16834,
+      "sha256": "b9828337b3e7ac529ca6aed8a8074de793fa428cfc4e2cd6fabecae04e0169f1",
       "path": "skills/create/character-consistency",
       "zip": "/skills/character-consistency.zip",
       "related": [
@@ -314,7 +425,7 @@
       "title": "Claudia character bible",
       "category": "create",
       "summary": "Who Claudia is, exactly: her look, wardrobe, worlds, palette, voice, captions and hard limits — plus a template for your own character.",
-      "description": "Claudia's complete character bible — look constants (face, hair, streaks, clip, hoops, freckles, tattoos), wardrobe, recurring settings, brand palette with the rose accent, voice and personality, sample captions, and the \"never\" list — plus the canonical identity block every image/video prompt pastes in. Use when writing any prompt, caption, alt text, script or reply as or about Claudia, when checking a generation for off-model drift, when setting up the \"claudia\" brand kit in @useclaudia/media, or when an agent wants to build its OWN distinct AI character from the same template.",
+      "description": "Claudia's complete character bible — look constants (face, hair, the peach streak, star clip, headset mic, freckles), wardrobe, recurring settings, brand palette with the rose accent, voice and personality, sample captions, and the \"never\" list — plus the canonical identity block every image/video prompt pastes in. Use when writing any prompt, caption, alt text, script or reply as or about Claudia, when checking a generation for off-model drift, when setting up the \"claudia\" brand kit in @useclaudia/media, or when an agent wants to build its OWN distinct AI character from the same template.",
       "level": "beginner",
       "tags": [
         "character",
@@ -331,8 +442,8 @@
         "@useclaudia/cli"
       ],
       "time": "15 min",
-      "version": "1.0.0",
-      "updated": "2026-10-08",
+      "version": "2.0.0",
+      "updated": "2026-10-09",
       "files": [
         "SKILL.md",
         "examples/building-a-distinct-character.md",
@@ -343,9 +454,9 @@
         "templates/character-bible-template.yaml",
         "templates/identity-blocks.md"
       ],
-      "size": 48078,
-      "bytes": 24361,
-      "sha256": "5f5648fa24b71d246d568fbe9c698646b5b47621559282504e8d24f6853838a3",
+      "size": 45668,
+      "bytes": 22819,
+      "sha256": "8057b18e361bb5fd9b7beaf0976a6a1ee821fdd420f48494e5d7fa6df83996d1",
       "path": "skills/create/claudia-character-bible",
       "zip": "/skills/claudia-character-bible.zip",
       "related": [
@@ -362,12 +473,120 @@
       "valid": true
     },
     {
+      "slug": "coin-launch-art-kit",
+      "name": "coin-launch-art-kit",
+      "title": "Coin launch art kit",
+      "category": "create",
+      "summary": "Token image, launch card, banner and announcement visuals for a Solana or Robinhood Chain launch, with no price promises.",
+      "description": "Builds every visual a Claudia coin launch needs, in one consistent kit — the token image (the permanent coin logo and the coin's avatar, sized for pump.fun on Solana and the Robinhood Chain launchpads Pons, Pools, Flap, Bags, Clanker and Dyor), the launch card from launchCardPrompt in @useclaudia/media, a 3:1 banner for the coin's X header, and announcement visuals (X image, 9:16 clip, Telegram pin) with AI labels, alt text and \"not financial advice\" — then hands the image to `claudia launch --image`, the SDK's uploadImage or the MCP prepare_launch tool. Use when someone is about to launch a coin and needs a logo, token image, launch card, banner or announcement art, or asks \"what image do I need for pump.fun\". Never puts prices, rising charts, rockets or promises on any image.",
+      "level": "intermediate",
+      "tags": [
+        "coin launch",
+        "token image",
+        "logo",
+        "launch card",
+        "pump.fun",
+        "robinhood chain",
+        "banner",
+        "announcement",
+        "crypto",
+        "compliance"
+      ],
+      "uses": [
+        "@useclaudia/media",
+        "@useclaudia/cli",
+        "@useclaudia/sdk",
+        "@useclaudia/social",
+        "@useclaudia/mcp"
+      ],
+      "time": "60–90 min",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/foil-frog-kit.md",
+        "references/launch-image-specs.md",
+        "references/visual-red-lines.md",
+        "templates/announcement-kit.md",
+        "templates/art-kit-brief.yaml"
+      ],
+      "size": 26339,
+      "bytes": 13574,
+      "sha256": "f34f5163ff709f7836ad2bbad97caaade9a6947ba73c3524a8a4f592da27cea2",
+      "path": "skills/create/coin-launch-art-kit",
+      "zip": "/skills/coin-launch-art-kit.zip",
+      "related": [
+        "launch-a-coin",
+        "pfp-and-avatar-sets",
+        "image-editing-and-upscaling",
+        "banner-and-collage-design",
+        "crypto-marketing-compliance",
+        "launch-campaigns",
+        "rug-check"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "comics-and-webtoons",
+      "name": "comics-and-webtoons",
+      "title": "Comics and webtoons",
+      "category": "create",
+      "summary": "Four-panel strips and vertical webtoon episodes with one consistent character: script, panels, lettering, export.",
+      "description": "Makes short comic strips and vertical-scroll webtoon episodes starring a consistent AI character — panel scripts (four-panel setup / development / turn / payoff and scroll-paced episodes), a character sheet plus style-anchor workflow that keeps one face, outfit and drawing style across every panel, text-free panel prompts, lettering with tested HTML templates (speech, caption, agent and whisper balloons, SFX), and exports to 1080×1350 strips or 800×1280 webtoon slices. Use when someone wants a comic, comic strip, four-panel gag, webtoon or manga-style episode, a carousel comic, or wants to tell a character's story in panels.",
+      "level": "intermediate",
+      "tags": [
+        "comics",
+        "webtoon",
+        "comic strip",
+        "panels",
+        "lettering",
+        "character consistency",
+        "storytelling",
+        "vertical scroll"
+      ],
+      "uses": [
+        "@useclaudia/media",
+        "@useclaudia/cli"
+      ],
+      "time": "2–3 h per strip · 1–2 days per episode",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/desk-at-dusk-strip-07.md",
+        "references/formats-and-specs.md",
+        "references/panel-craft-and-lettering.md",
+        "scripts/render-page.sh",
+        "scripts/render-webtoon.sh",
+        "scripts/slice-tall.sh",
+        "templates/panel-prompts.md",
+        "templates/panel-script.md",
+        "templates/strip.html",
+        "templates/webtoon.html"
+      ],
+      "size": 46643,
+      "bytes": 24165,
+      "sha256": "e7c5e76911a4a569e29f5fedbfccc0b5d9cb112052f00ce6cbb873511c572139",
+      "path": "skills/create/comics-and-webtoons",
+      "zip": "/skills/comics-and-webtoons.zip",
+      "related": [
+        "claudia-character-bible",
+        "character-consistency",
+        "storyboarding-shorts",
+        "carousel-design",
+        "content-pillars-and-series",
+        "image-editing-and-upscaling",
+        "ai-disclosure-and-provenance"
+      ],
+      "valid": true
+    },
+    {
       "slug": "content-pillars-and-series",
       "name": "content-pillars-and-series",
       "title": "Content pillars and series",
       "category": "create",
       "summary": "Seven pillars, eight named series, a ratio rule and a filled 4-week calendar — so every post has a reason to exist.",
-      "description": "Plans what an AI influencer posts and why — Claudia's seven content pillars (bedroom talks, club and music nights, style in the lounge, rain and city, desk/platform/agents, travel dumps, cat cameos), named recurring series with episode templates, the lifestyle-to-platform content ratio, cadence per platform (TikTok, Reels, Shorts, X, Telegram), and a filled 4-week calendar. Also shows how to derive pillars and series for a new character from its bible. Use when planning a month of content, naming a series, deciding the next post, balancing product talk against lifestyle, or onboarding a new character's content plan.",
+      "description": "Plans what an AI influencer posts and why — Claudia's seven content pillars (studio talks, club nights, style in the studio, silver foil and flash, desk/platform/agents, lookbook, collage drops), named recurring series with episode templates, the lifestyle-to-platform content ratio, cadence per platform (TikTok, Reels, Shorts, X, Telegram), and a filled 4-week calendar. Also shows how to derive pillars and series for a new character from its bible. Use when planning a month of content, naming a series, deciding the next post, balancing product talk against lifestyle, or onboarding a new character's content plan.",
       "level": "beginner",
       "tags": [
         "content strategy",
@@ -395,9 +614,9 @@
         "templates/episode-brief.md",
         "templates/series-card.md"
       ],
-      "size": 44289,
-      "bytes": 20397,
-      "sha256": "19f8997df911b7429ec86e2b806227575adb4e17b0eaba7a60596030bb448211",
+      "size": 44157,
+      "bytes": 20236,
+      "sha256": "d69d111f203d152ce029b1afe32045372a90f32b1f20ebd16a74d56db0ece5de",
       "path": "skills/create/content-pillars-and-series",
       "zip": "/skills/content-pillars-and-series.zip",
       "related": [
@@ -414,6 +633,212 @@
         "prompt-library-management",
         "personal-brand-strategy",
         "launch-campaigns"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "content-repurposing",
+      "name": "content-repurposing",
+      "title": "Content repurposing: one long piece, a week of posts",
+      "category": "create",
+      "summary": "One stream, episode or long video into 8–12 native assets: transcript, human-picked moments, clips, quotes, carousel, newsletter.",
+      "description": "Turns one long piece (a livestream, podcast episode, long YouTube video, Space or long thread) into 8–12 platform-native assets — a timestamped transcript, a moment log where a human picks the moments, vertical clips with captions, quote cards, a carousel, an X thread and a newsletter — then sequences the release and labels anything AI-made. Use when someone says \"repurpose this\", \"clip this stream\", \"turn this podcast into posts\", \"make shorts from my video\", or plans a content week around one recording.",
+      "level": "intermediate",
+      "tags": [
+        "repurposing",
+        "clips",
+        "transcript",
+        "podcast",
+        "livestream",
+        "quote cards",
+        "carousel",
+        "newsletter",
+        "ai label"
+      ],
+      "uses": [
+        "@useclaudia/social",
+        "@useclaudia/media",
+        "@useclaudia/cli"
+      ],
+      "time": "2–3 h per long piece",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/podcast-to-11-assets.md",
+        "references/asset-specs.md",
+        "references/moment-rubric.md",
+        "templates/moment-log.csv",
+        "templates/repurposing-plan.md"
+      ],
+      "size": 26480,
+      "bytes": 13738,
+      "sha256": "370b26a041d0aa20d9b7622f0d157ad1e9d6746e382ca4b77852cb2e1a61799d",
+      "path": "skills/create/content-repurposing",
+      "zip": "/skills/content-repurposing.zip",
+      "related": [
+        "content-pillars-and-series",
+        "captions-and-hooks",
+        "carousel-design",
+        "newsletter-writing",
+        "quote-cards-and-text-posts",
+        "ai-disclosure-and-provenance",
+        "posting-schedule",
+        "kpi-reporting",
+        "music-and-sound-for-shorts",
+        "short-form-editing",
+        "batch-content-production"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "dubbing-and-translation",
+      "name": "dubbing-and-translation",
+      "title": "Dubbing and translation",
+      "category": "create",
+      "summary": "Multilingual shorts and voice-overs: glossary, cultural check, consented voices, dubs, lip-sync, subtitles, platform language tools.",
+      "description": "Makes multilingual versions of shorts, explainers and voice-overs — picking languages from audience data, a glossary and cultural check before translating, voice-cloning consent, dubbed audio in the same character voice with @useclaudia/media, lip-sync or cut-around for on-camera speech, subtitles per language, and each platform's own language features (YouTube multi-language audio and auto-dubbing, Meta AI translations) with their labels. Use when someone wants to dub a video, translate a short, add a Spanish or Hindi version, upload a second audio track, add subtitles in other languages, or clone a voice for another language.",
+      "level": "intermediate",
+      "tags": [
+        "dubbing",
+        "translation",
+        "localization",
+        "subtitles",
+        "voice cloning",
+        "consent",
+        "multi-language audio",
+        "lip sync"
+      ],
+      "uses": [
+        "@useclaudia/media",
+        "@useclaudia/cli",
+        "@useclaudia/social"
+      ],
+      "time": "1–2 h per language for a short, then 20 min each",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-short-es-pt.md",
+        "references/platform-language-features.md",
+        "templates/dub-sheet.csv",
+        "templates/localization-brief.md",
+        "templates/voice-consent-record.md"
+      ],
+      "size": 27094,
+      "bytes": 13877,
+      "sha256": "efd567f833be4993f7f5dc5b8de5694cf47bf4de8ad18447a84e7ec2f1927573",
+      "path": "skills/create/dubbing-and-translation",
+      "zip": "/skills/dubbing-and-translation.zip",
+      "related": [
+        "content-repurposing",
+        "crypto-marketing-compliance",
+        "avatar-explainer-videos",
+        "captions-and-hooks",
+        "voice-and-lip-sync",
+        "ai-disclosure-and-provenance",
+        "audience-research-and-personas"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "fashion-lookbooks",
+      "name": "fashion-lookbooks",
+      "title": "Fashion lookbooks",
+      "category": "create",
+      "summary": "Outfit and lookbook sets that keep the same clothes in every pose: look locks, garment refs, poses, prompts, honest credits.",
+      "description": "Builds outfit posts and lookbook sets for Claudia or a custom AI character — locks each look in words and a garment reference, plans a pose list, writes per-model prompts (Nano Banana, GPT Image 2.5, FLUX.2, Seedream, Kontext) with @useclaudia/media, holds the wardrobe identical across poses, and handles credits for real brands, #ad and AI disclosure. Use when someone wants a lookbook, an outfit post, an OOTD set, a fashion carousel, a styled shoot, a \"get the look\" post, or a brand asks to show its clothes on an AI character.",
+      "level": "intermediate",
+      "tags": [
+        "fashion",
+        "lookbook",
+        "outfits",
+        "wardrobe consistency",
+        "poses",
+        "prompts",
+        "brand credits",
+        "ad disclosure",
+        "ai label"
+      ],
+      "uses": [
+        "@useclaudia/media",
+        "@useclaudia/social",
+        "@useclaudia/cli"
+      ],
+      "time": "2–3 hours per 4-look lookbook",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/silver-night-lookbook.md",
+        "references/credits-and-disclosure.md",
+        "references/model-dialects.md",
+        "templates/lookbook-brief.yaml",
+        "templates/pose-list.md"
+      ],
+      "size": 33329,
+      "bytes": 16307,
+      "sha256": "ab93408db04d391c2a95c7194966150633dc072f8f9737befdada7a929cf5d8a",
+      "path": "skills/create/fashion-lookbooks",
+      "zip": "/skills/fashion-lookbooks.zip",
+      "related": [
+        "claudia-character-bible",
+        "character-consistency",
+        "carousel-design",
+        "media-kit-and-pitching",
+        "prompt-library-management",
+        "photoreal-portrait-prompts",
+        "brand-deals-and-sponsorships",
+        "ai-disclosure-and-provenance"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "image-editing-and-upscaling",
+      "name": "image-editing-and-upscaling",
+      "title": "Image editing and upscaling",
+      "category": "create",
+      "summary": "Edit, don't reroll: inpaint, outpaint, swap backgrounds, relight, fix hands and upscale, with a provenance chain per edit.",
+      "description": "Fixes and extends AI images by editing instead of regenerating — inpainting a region, outpainting to a new aspect, background swaps, relighting, face and hand fixes, text and logo removal, and upscaling for print or 4K — with the edit-capable models in @useclaudia/media (GPT Image 2.5 Sunburst, Nano Banana 2.1 and Pro, FLUX Kontext, FLUX.2, Seedream, Runway Aleph 2 for video), a crop-edit-composite method for exact regions, local upscalers, and a provenance chain that survives every edit. Use when an image is mostly right but one part is wrong, when a still must be widened or cut down for another format, when a background, light or outfit detail needs to change, when an image needs more pixels, or when someone asks \"can you fix this instead of making a new one\".",
+      "level": "intermediate",
+      "tags": [
+        "image editing",
+        "inpainting",
+        "outpainting",
+        "background swap",
+        "relighting",
+        "upscaling",
+        "hands",
+        "provenance",
+        "c2pa"
+      ],
+      "uses": [
+        "@useclaudia/media",
+        "@useclaudia/cli"
+      ],
+      "time": "5–15 min per image",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/club-still-rescue.md",
+        "references/edit-models.md",
+        "references/upscaling-and-export.md",
+        "templates/edit-log.csv",
+        "templates/edit-prompts.md"
+      ],
+      "size": 31389,
+      "bytes": 15963,
+      "sha256": "67702ecd3144629e43c58501728f1f0ac519eb90206f2b05e171fea9602e173e",
+      "path": "skills/create/image-editing-and-upscaling",
+      "zip": "/skills/image-editing-and-upscaling.zip",
+      "related": [
+        "character-consistency",
+        "banner-and-collage-design",
+        "ai-disclosure-and-provenance",
+        "image-prompting-fundamentals",
+        "pfp-and-avatar-sets",
+        "media-pipelines"
       ],
       "valid": true
     },
@@ -451,9 +876,9 @@
         "templates/flux2-structured.json",
         "templates/prompt-skeletons.md"
       ],
-      "size": 37092,
-      "bytes": 18920,
-      "sha256": "8b59bcd8c981532192a3a7e0c79a63dddece7a463599d291bc2d354e941678e9",
+      "size": 36340,
+      "bytes": 18580,
+      "sha256": "729d5e1e4b54f7203fa8d5d247ff0eab3940538b5cb6b66954307e2b85d1ef28",
       "path": "skills/create/image-prompting-fundamentals",
       "zip": "/skills/image-prompting-fundamentals.zip",
       "related": [
@@ -475,17 +900,17 @@
       "name": "lifestyle-scene-prompts",
       "title": "Lifestyle scene prompts",
       "category": "create",
-      "summary": "Candid scenes from her life — bedroom, desk and cat, rooftop, club, rain, travel — that read as real moments, not renders.",
-      "description": "Prompts and a method for candid lifestyle scenes that make an AI influencer's feed feel like one lived life — Claudia's sunset NYC bedroom, desk at night with the butterfly-sticker laptop and grey tabby cat, rooftop dusk, club wide shots, rain warehouse lot, Santorini, airplane window, city-night balcony, mirror selfies and photo-dump carousels — with recurring props, candid-realism cues, caption-safe composition for 9:16 and 4:5, Seedream batch sets, per-model variants and fixes for logos, crowds, hands and text. Use when making feed photos, carousels, photo dumps, story frames, collage tiles or scene plates for video first frames.",
+      "summary": "Candid scenes from her world — the foil set, the studios, the club, the desk — that read as real moments, not renders.",
+      "description": "Prompts and a method for candid scenes that make an AI influencer's feed feel like one lived world — Claudia between takes on the silver-foil set, in the white studio, on the cobalt studio, at the club, at the studio desk with the chrome-star laptop and the disco ball, mirror selfies and photo-dump carousels — with recurring props, candid-realism cues, caption-safe composition for 9:16 and 4:5, Seedream batch sets, per-model variants and fixes for logos, crowds, hands and text. Use when making feed photos, carousels, photo dumps, story frames, collage tiles or scene plates for video first frames.",
       "level": "intermediate",
       "tags": [
         "lifestyle",
         "scenes",
         "photo dump",
         "carousel",
-        "travel",
         "candid",
         "props",
+        "behind the scenes",
         "seedream",
         "nano banana",
         "ai influencer"
@@ -495,8 +920,8 @@
         "@useclaudia/cli"
       ],
       "time": "25 min",
-      "version": "1.0.0",
-      "updated": "2026-10-08",
+      "version": "2.0.0",
+      "updated": "2026-10-09",
       "files": [
         "SKILL.md",
         "examples/sunday-photo-dump.md",
@@ -504,9 +929,9 @@
         "templates/photo-dump-plan.md",
         "templates/scene-builder.yaml"
       ],
-      "size": 25593,
-      "bytes": 13024,
-      "sha256": "1ef732e1939b44395d6a4a7af001200caf282938f3cc08037d09a12ab184fce7",
+      "size": 24984,
+      "bytes": 12564,
+      "sha256": "7a9ef2cc9b7af51d08fe9fb3fcae8ffc51db58a61a8638fed55e8ea89c696041",
       "path": "skills/create/lifestyle-scene-prompts",
       "zip": "/skills/lifestyle-scene-prompts.zip",
       "related": [
@@ -524,12 +949,116 @@
       "valid": true
     },
     {
+      "slug": "meme-formats",
+      "name": "meme-formats",
+      "title": "Meme formats",
+      "category": "create",
+      "summary": "On-brand memes and reaction posts: formats that last, trend timing, original images, rights and likeness rules, no punching down, labelled.",
+      "description": "Makes on-brand memes and reaction posts for an AI character or brand — picks a format family that still works (caption + reaction, reject/approve, POV, labelled scene, image macro, starter pack, escalation), times it against the trend, generates original reaction images with @useclaudia/media instead of reusing owned frames, sets the text, and runs rights, likeness, punch-down and labelling checks before approval. Use when someone wants a meme, a reaction image, a relatable post, to join a trend or meme format, or asks whether a meme is safe to post from a brand or creator account.",
+      "level": "intermediate",
+      "tags": [
+        "memes",
+        "reaction images",
+        "trends",
+        "humor",
+        "copyright",
+        "likeness",
+        "punching down",
+        "ai label",
+        "brand voice"
+      ],
+      "uses": [
+        "@useclaudia/media",
+        "@useclaudia/social",
+        "@useclaudia/cli"
+      ],
+      "time": "20–40 min per meme",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-meme-batch.md",
+        "references/format-catalog.md",
+        "references/rights-and-likeness.md",
+        "templates/meme-brief.md",
+        "templates/meme-card.html"
+      ],
+      "size": 32472,
+      "bytes": 16033,
+      "sha256": "bad4d3af83ba1aca74ed5ed7dfd599138d15c422fd7cfc8d9fdf5fbc94ef795d",
+      "path": "skills/create/meme-formats",
+      "zip": "/skills/meme-formats.zip",
+      "related": [
+        "quote-cards-and-text-posts",
+        "claudia-character-bible",
+        "trend-research",
+        "prompt-library-management",
+        "crisis-and-reputation",
+        "captions-and-hooks",
+        "ai-disclosure-and-provenance",
+        "brand-voice-guidelines"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "motion-graphics-and-kinetic-type",
+      "name": "motion-graphics-and-kinetic-type",
+      "title": "Motion graphics and kinetic type",
+      "category": "create",
+      "summary": "Title cards, lower thirds and word-per-beat type for shorts: on the beat, in the safe zone, rendered with any ffmpeg or an editor.",
+      "description": "Adds animated text and simple motion to vertical shorts — title cards, lower thirds, word-per-beat kinetic type, end cards and an on-screen AI tag — timed to the music's beat, kept inside the app safe zones and exported to the master spec. Covers four routes (an HTML layer animated with a tested ffmpeg overlay script that works on any build, ASS word slams, ffmpeg drawtext, and editors like CapCut, Resolve and Premiere) plus AI video as a moving background with the text added afterwards. Use when a short needs a title card, a lower third, kinetic captions, animated text, a series intro or end card, or when text has to hit the beat.",
+      "level": "intermediate",
+      "tags": [
+        "motion graphics",
+        "kinetic type",
+        "lower thirds",
+        "title cards",
+        "animated text",
+        "ffmpeg",
+        "beat sync",
+        "safe zones"
+      ],
+      "uses": [
+        "@useclaudia/media",
+        "@useclaudia/cli"
+      ],
+      "time": "20–40 min per short (first time 1 h)",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/desk-at-dusk-title-sequence.md",
+        "references/motion-recipes.md",
+        "references/timing-and-beats.md",
+        "scripts/animate-layer.sh",
+        "scripts/beat-grid.mjs",
+        "scripts/render-layer.sh",
+        "templates/motion-brief.md",
+        "templates/title-card.html"
+      ],
+      "size": 41057,
+      "bytes": 21994,
+      "sha256": "57d108501f714ae4f5dcabfff6c20311d21e6830ce34af647200be76bb4b200a",
+      "path": "skills/create/motion-graphics-and-kinetic-type",
+      "zip": "/skills/motion-graphics-and-kinetic-type.zip",
+      "related": [
+        "captions-and-hooks",
+        "thumbnails-and-covers",
+        "short-form-editing",
+        "ai-disclosure-and-provenance",
+        "music-and-sound-for-shorts",
+        "storyboarding-shorts",
+        "sonic-branding-and-jingles"
+      ],
+      "valid": true
+    },
+    {
       "slug": "music-and-sound-for-shorts",
       "name": "music-and-sound-for-shorts",
       "title": "Music and sound for shorts",
       "category": "create",
       "summary": "Licence-safe music, AI tracks, SFX beds and a clean -14 LUFS mix for every short — with prompts for Claudia's four clip types.",
-      "description": "Picks, generates, licenses and mixes music and sound for short-form video — which music each account type may legally use on TikTok (Commercial Music Library), Instagram (Meta Sound Collection) and YouTube Shorts (Audio Library, Content ID blocks on Shorts over 1 minute); AI music with Lyria and ElevenLabs Music via @useclaudia/media (terms, prompts without artist names, Suno v6 and Udio status); sound effects and ambience beds with ElevenLabs SFX; layered sound design, ducking, beat-synced cuts, -14 LUFS delivery and a licence log. Use when adding music or SFX to a short, when a post gets muted or claimed, when generating a track, or when scoring Claudia's bedroom, club, lounge and rain clips.",
+      "description": "Picks, generates, licenses and mixes music and sound for short-form video — which music each account type may legally use on TikTok (Commercial Music Library), Instagram (Meta Sound Collection) and YouTube Shorts (Audio Library, Content ID blocks on Shorts over 1 minute); AI music with Lyria and ElevenLabs Music via @useclaudia/media (terms, prompts without artist names, Suno v6 and Udio status); sound effects and ambience beds with ElevenLabs SFX; layered sound design, ducking, beat-synced cuts, -14 LUFS delivery and a licence log. Use when adding music or SFX to a short, when a post gets muted or claimed, when generating a track, or when scoring Claudia's bedroom, club, lounge and club clips.",
       "level": "intermediate",
       "tags": [
         "music",
@@ -558,9 +1087,9 @@
         "templates/music-brief.yaml",
         "templates/music-licence-log.csv"
       ],
-      "size": 29968,
-      "bytes": 15435,
-      "sha256": "d3a162f8d011cc38be84d374bf7d804f885c108a62714d73a00684349df2596b",
+      "size": 29979,
+      "bytes": 15369,
+      "sha256": "c8834d2fd0194a451b13f7bd806fbe59379d70f7bd5a8e3af72cc18d3afe3262",
       "path": "skills/create/music-and-sound-for-shorts",
       "zip": "/skills/music-and-sound-for-shorts.zip",
       "related": [
@@ -577,12 +1106,167 @@
       "valid": true
     },
     {
+      "slug": "newsletter-writing",
+      "name": "newsletter-writing",
+      "title": "Newsletter writing",
+      "category": "create",
+      "summary": "Write an issue people open and finish: one job, a real subject line, social repurposed with care, clean links and honest labels.",
+      "description": "Writes a creator newsletter issue from start to send — one job per issue, subject line and preheader, a scannable structure (opener, main piece, short items, one call to action, sign-off, footer), repurposing the week's social posts into something worth opening, the AI disclosure line, sponsor and affiliate labels, \"not financial advice\" for coin mentions, link hygiene with UTM tags, the CAN-SPAM footer and a test-send checklist — with a fill-in issue template and a subject-line bank. Use when drafting a newsletter, email digest, weekly recap, launch email or sponsored issue for a creator, an AI character or an agent, on Substack, beehiiv, Kit, Ghost or any email tool, or when turning posts into an email.",
+      "level": "beginner",
+      "tags": [
+        "newsletter",
+        "email",
+        "subject lines",
+        "repurposing",
+        "ai disclosure",
+        "links",
+        "utm",
+        "can-spam",
+        "creator"
+      ],
+      "uses": [
+        "@useclaudia/social"
+      ],
+      "time": "60–90 min per issue",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-issue-12.md",
+        "references/email-rules.md",
+        "templates/issue-template.md",
+        "templates/send-checklist.md",
+        "templates/subject-line-bank.md"
+      ],
+      "size": 26514,
+      "bytes": 13801,
+      "sha256": "fcb70b32aa5dbfabfa19b40190d80770ab4cc1e83efbd99be155878b23df4a6f",
+      "path": "skills/create/newsletter-writing",
+      "zip": "/skills/newsletter-writing.zip",
+      "related": [
+        "newsletter-growth",
+        "email-and-dm-sequences",
+        "brand-voice-guidelines",
+        "content-repurposing",
+        "captions-and-hooks",
+        "ai-disclosure-and-provenance",
+        "crypto-marketing-compliance"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "pfp-and-avatar-sets",
+      "name": "pfp-and-avatar-sets",
+      "title": "PFP and avatar sets",
+      "category": "create",
+      "summary": "One recognisable face or mark on every platform: circle-first design, a 2048 master, exact exports, and variants that don't break identity.",
+      "description": "Designs profile pictures and avatar sets that read as one identity everywhere — for AI characters, agents, creators and coins — with a circle-first composition that still works at 32 px, a 2048 px square master, exports per platform (X 400×400 under 2 MB, YouTube 800×800, Bluesky under 1,000,000 bytes, a 1000 px coin image), small-size circle previews, rules for which variants are allowed (seasonal, event, launch) and which parts stay locked, and an avatar register. Use when making or refreshing a pfp, avatar, profile picture or channel icon, giving an agent or coin a face, building a matching set across X, Instagram, TikTok, YouTube, Telegram, Discord, Bluesky or Farcaster, or when avatars have drifted apart across platforms.",
+      "level": "beginner",
+      "tags": [
+        "pfp",
+        "avatar",
+        "profile picture",
+        "identity",
+        "branding",
+        "export sizes",
+        "coins",
+        "agents",
+        "consistency"
+      ],
+      "uses": [
+        "@useclaudia/media",
+        "@useclaudia/cli"
+      ],
+      "time": "45 min for a set, 10 min per variant",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-avatar-set.md",
+        "references/avatar-specs.md",
+        "scripts/export-avatars.sh",
+        "templates/avatar-prompts.md",
+        "templates/avatar-register.csv",
+        "templates/avatar-set-brief.yaml"
+      ],
+      "size": 26587,
+      "bytes": 13468,
+      "sha256": "9dbc8ebd7f121bcbfb12be8ce5f0409f0509485705c373e6b891d9edc96dd52b",
+      "path": "skills/create/pfp-and-avatar-sets",
+      "zip": "/skills/pfp-and-avatar-sets.zip",
+      "related": [
+        "claudia-character-bible",
+        "character-consistency",
+        "image-editing-and-upscaling",
+        "coin-launch-art-kit",
+        "ai-disclosure-and-provenance",
+        "banner-and-collage-design",
+        "personal-brand-strategy"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "photo-dumps-and-grid-aesthetics",
+      "name": "photo-dumps-and-grid-aesthetics",
+      "title": "Photo dumps and grid aesthetics",
+      "category": "create",
+      "summary": "Photo dumps that feel like one week and a grid that looks like one world: colour stories, shot lists, coherent sets, grid preview.",
+      "description": "Plans and generates Instagram photo dumps and a coherent profile grid for an AI character — picks one colour story from the character's palette, writes a shot list mixing portraits, details and places, generates a matching set with @useclaudia/media, sequences the frames, previews the 3:4 grid with pinned posts and average colours, and posts with honest captions, alt text and AI labels. Use when someone asks for a photo dump, a \"week in pictures\", a carousel of candids, a feed or grid aesthetic, a grid plan, or wants their profile to look like one world.",
+      "level": "intermediate",
+      "tags": [
+        "photo dump",
+        "instagram grid",
+        "feed aesthetic",
+        "colour story",
+        "palette",
+        "sequencing",
+        "carousel",
+        "grid preview"
+      ],
+      "uses": [
+        "@useclaudia/media",
+        "@useclaudia/social",
+        "@useclaudia/cli"
+      ],
+      "time": "90 min per dump, 30 min per grid plan",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/cobalt-week-dump.md",
+        "references/colour-stories.md",
+        "references/sequencing-and-grid.md",
+        "scripts/grid-preview.mjs",
+        "templates/dump-shot-list.yaml",
+        "templates/grid-plan.csv"
+      ],
+      "size": 34578,
+      "bytes": 17736,
+      "sha256": "ffbeee0a475be0d21405341a6547ddee85e419dc6e50a4b1e89626396536cd78",
+      "path": "skills/create/photo-dumps-and-grid-aesthetics",
+      "zip": "/skills/photo-dumps-and-grid-aesthetics.zip",
+      "related": [
+        "carousel-design",
+        "fashion-lookbooks",
+        "claudia-character-bible",
+        "character-consistency",
+        "image-prompting-fundamentals",
+        "video-prompting",
+        "kpi-reporting",
+        "lifestyle-scene-prompts",
+        "batch-content-production",
+        "instagram-reels-playbook",
+        "ai-disclosure-and-provenance"
+      ],
+      "valid": true
+    },
+    {
       "slug": "photoreal-portrait-prompts",
       "name": "photoreal-portrait-prompts",
       "title": "Photoreal portrait prompts",
       "category": "create",
-      "summary": "Studio, lounge, club, rain and bedroom portraits of Claudia that look photographed, not generated — with lighting recipes and fixes.",
-      "description": "Ready-to-run photoreal portrait prompts for Claudia (and a method for any character) — studio headshots like the cobalt-blue green-blazer portrait, lamp-lit lounge sunglasses stills, club-light portraits, rain-selfie stills, bedroom close-ups and avatar crops — with lighting recipes (Rembrandt, loop, butterfly, window, tungsten, neon rim), lens and film choices, per-model variants for Nano Banana, GPT Image 2.5, FLUX.2 and Midjourney V7, and fixes for skin, eyes, hands, age drift and extra hair streaks. Use when making profile pictures, avatars, press/about-page portraits, close-up feed photos, or first frames for talking-head videos.",
+      "summary": "Silver-foil, studio, club and cobalt portraits of Claudia that look photographed, not generated — with lighting recipes and fixes.",
+      "description": "Ready-to-run photoreal portrait prompts for Claudia (and a method for any character) — the official silver-foil portrait, white-studio visor stills, club-light portraits, club flash selfies, cobalt-studio editorials and avatar crops — with lighting recipes (Rembrandt, loop, butterfly, window, tungsten, neon rim), lens and film choices, per-model variants for Nano Banana, GPT Image 2.5, FLUX.2 and Midjourney V7, and fixes for skin, eyes, hands, age drift and extra hair streaks. Use when making profile pictures, avatars, press/about-page portraits, close-up feed photos, or first frames for talking-head videos.",
       "level": "intermediate",
       "tags": [
         "portrait",
@@ -605,13 +1289,13 @@
       "updated": "2026-10-08",
       "files": [
         "SKILL.md",
-        "examples/cobalt-studio-portrait.md",
+        "examples/silver-foil-portrait.md",
         "references/portrait-lighting-recipes.md",
         "templates/portrait-prompts.md"
       ],
-      "size": 28126,
-      "bytes": 13524,
-      "sha256": "0a154e90b74bc8e03b3331b660496e756596a6460a9c0fdee664286714d3a788",
+      "size": 26949,
+      "bytes": 12902,
+      "sha256": "5b7e2b6061f5f50b15f2fb3b915ff4455249714bac901997fa95f9c8ae4a7919",
       "path": "skills/create/photoreal-portrait-prompts",
       "zip": "/skills/photoreal-portrait-prompts.zip",
       "related": [
@@ -626,12 +1310,63 @@
       "valid": true
     },
     {
+      "slug": "product-and-merch-mockups",
+      "name": "product-and-merch-mockups",
+      "title": "Product and merch mockups",
+      "category": "create",
+      "summary": "Merch with AI: print files that pass POD specs, mockups that match the real product, and honest labels on every image.",
+      "description": "Designs merch and product mockups with AI — tees, hoodies, stickers, posters and mugs for print-on-demand — from a flat transparent print file that passes the provider's specs (Printful and Printify sizes, DPI, no semi-transparency, checked 2026-10) to template, AI and lifestyle mockups, with a tested print-file checker and clear rules on labelling mockups versus real sample photos. Use when an AI character, creator or coin community wants merch, when preparing a print file, when making product mockups for a shop, listing or launch post, or when a print came out with boxes, halos or blur.",
+      "level": "intermediate",
+      "tags": [
+        "merch",
+        "mockups",
+        "print on demand",
+        "printful",
+        "printify",
+        "t-shirt design",
+        "stickers",
+        "dtg",
+        "ai disclosure"
+      ],
+      "uses": [
+        "@useclaudia/media",
+        "@useclaudia/cli"
+      ],
+      "time": "2–3 h per drop, plus sample shipping",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-studio-tee.md",
+        "references/mockup-honesty.md",
+        "references/print-specs.md",
+        "scripts/check-print-png.mjs",
+        "templates/merch-brief.md",
+        "templates/mockup-prompts.md"
+      ],
+      "size": 42202,
+      "bytes": 20880,
+      "sha256": "3ad8cac6a2277c0e0dbf533dbf9b30a136d5ce56a46b5b6942499dd9213809fe",
+      "path": "skills/create/product-and-merch-mockups",
+      "zip": "/skills/product-and-merch-mockups.zip",
+      "related": [
+        "claudia-character-bible",
+        "image-editing-and-upscaling",
+        "image-prompting-fundamentals",
+        "character-consistency",
+        "sticker-and-emoji-packs",
+        "ai-disclosure-and-provenance",
+        "monetization-streams"
+      ],
+      "valid": true
+    },
+    {
       "slug": "prompt-library-management",
       "name": "prompt-library-management",
       "title": "Prompt library management",
       "category": "create",
       "summary": "One file per prompt, versioned and scored, indexed offline — plus 12 ready Claudia prompts to start from.",
-      "description": "Organises an AI character's prompts as a versioned, searchable library — folder layout, one Markdown file per prompt with YAML front matter (id, version, status, model, params, refs, seed, scores, cost, output hashes, retirement date), naming and tagging by pillar/scene/model, identity-block versioning (CLAUDIA ID v1 → v2), A/B logs, and deprecating prompts when models retire (Veo 3.1 previews 2026-10-22, GPT Image 1.5 2026-12-01, ElevenLabs premade voices 2026-12-31, OpenAI TTS 2027-01-06). Ships an offline indexer script and a seed library of 12 complete Claudia prompts (bedroom vlog, DJ booth, lounge sunglasses, rain selfie, three 3:1 banners, blue studio portrait, desk with cat, Santorini, airplane window, balcony). Use when saving a prompt that worked, finding one to reuse, migrating to a new model, or setting up a library for a new character.",
+      "description": "Organises an AI character's prompts as a versioned, searchable library — folder layout, one Markdown file per prompt with YAML front matter (id, version, status, model, params, refs, seed, scores, cost, output hashes, retirement date), naming and tagging by pillar/scene/model, identity-block versioning (CLAUDIA ID v2 → v2), A/B logs, and deprecating prompts when models retire (Veo 3.1 previews 2026-10-22, GPT Image 1.5 2026-12-01, ElevenLabs premade voices 2026-12-31, OpenAI TTS 2027-01-06). Ships an offline indexer script and a seed library of 12 complete Claudia prompts (studio talk, the club, visor reveal, club flash selfie, blue render, sky gown, silver night, holo on cobalt, silver-foil banner, platform banner, looks collage, official portrait). Use when saving a prompt that worked, finding one to reuse, migrating to a new model, or setting up a library for a new character.",
       "level": "intermediate",
       "tags": [
         "prompt library",
@@ -652,26 +1387,26 @@
       "files": [
         "SKILL.md",
         "examples/library/claudia.banner.collage.md",
-        "examples/library/claudia.banner.network.md",
-        "examples/library/claudia.banner.sunset-bed.md",
-        "examples/library/claudia.p1.room-vlog.md",
-        "examples/library/claudia.p2.dj-booth.md",
-        "examples/library/claudia.p3.lounge-sunglasses.md",
-        "examples/library/claudia.p4.rain-selfie.md",
-        "examples/library/claudia.p5.desk-cat.md",
-        "examples/library/claudia.p6.airplane-window.md",
-        "examples/library/claudia.p6.balcony-night.md",
-        "examples/library/claudia.p6.santorini.md",
-        "examples/library/claudia.studio.blue-portrait.md",
+        "examples/library/claudia.banner.platform.md",
+        "examples/library/claudia.banner.silver-foil.md",
+        "examples/library/claudia.p1.studio-talk.md",
+        "examples/library/claudia.p2.club.md",
+        "examples/library/claudia.p3.studio-visor.md",
+        "examples/library/claudia.p4.club-selfie.md",
+        "examples/library/claudia.p5.blue-render.md",
+        "examples/library/claudia.p6.holo-cobalt.md",
+        "examples/library/claudia.p6.silver-night.md",
+        "examples/library/claudia.p6.sky-gown.md",
+        "examples/library/claudia.studio.official-portrait.md",
         "examples/migrating-off-veo.md",
         "references/schema.md",
         "scripts/index-prompts.mjs",
         "templates/ab-log.csv",
         "templates/prompt-file.md"
       ],
-      "size": 63553,
-      "bytes": 36220,
-      "sha256": "2e8a0fb5841311f16cdad82b9c21543b13a488ef1145a27c808d9ec25309f0df",
+      "size": 53854,
+      "bytes": 31585,
+      "sha256": "403062060a78994f75e504c10bfb91685d6a55a074279271840553d4aac65fdc",
       "path": "skills/create/prompt-library-management",
       "zip": "/skills/prompt-library-management.zip",
       "related": [
@@ -689,12 +1424,68 @@
       "valid": true
     },
     {
+      "slug": "quote-cards-and-text-posts",
+      "name": "quote-cards-and-text-posts",
+      "title": "Quote cards and text posts",
+      "category": "create",
+      "summary": "Text-first posts and cards: when they beat video, type and contrast that read on a phone, sizes, alt text and honest screenshot cards.",
+      "description": "Makes text-first posts and graphics — plain text posts, quote cards, list and stat cards, and tweet-style \"screenshot\" cards of the account's own posts — with brand typography, WCAG contrast checks, per-platform canvas sizes, alt text that carries the full text, AI labels and approval-first publishing through @useclaudia/social. Use when a post is a sentence rather than a scene, when someone asks for a quote card, text graphic, tweet screenshot, text post or \"notes app\" style card, or when deciding whether an idea should be a text post or a video.",
+      "level": "beginner",
+      "tags": [
+        "quote cards",
+        "text posts",
+        "typography",
+        "contrast",
+        "alt text",
+        "accessibility",
+        "tweet screenshot",
+        "threads",
+        "x",
+        "linkedin"
+      ],
+      "uses": [
+        "@useclaudia/social",
+        "@useclaudia/media",
+        "@useclaudia/cli"
+      ],
+      "time": "15–30 min per post",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-text-week.md",
+        "references/type-and-contrast.md",
+        "scripts/contrast.mjs",
+        "templates/post-card.html",
+        "templates/quote-card.html",
+        "templates/text-post-sheet.md"
+      ],
+      "size": 32695,
+      "bytes": 16685,
+      "sha256": "de084ea475d16376d67527459a9ae4a5629d95a3248b69166819d813b7de49e2",
+      "path": "skills/create/quote-cards-and-text-posts",
+      "zip": "/skills/quote-cards-and-text-posts.zip",
+      "related": [
+        "carousel-design",
+        "meme-formats",
+        "thumbnails-and-covers",
+        "growth-experiments",
+        "ai-disclosure-and-provenance",
+        "kpi-reporting",
+        "captions-and-hooks",
+        "x-playbook",
+        "threads-playbook",
+        "linkedin-playbook"
+      ],
+      "valid": true
+    },
+    {
       "slug": "selfie-and-ugc-video-prompts",
       "name": "selfie-and-ugc-video-prompts",
       "title": "Selfie and UGC video prompts",
       "category": "create",
-      "summary": "Phone-camera shorts that feel filmed: bedroom vlogs, rain selfies, mirror checks, GRWM — prompts per model, labelled AI.",
-      "description": "Prompts phone-camera, UGC-style vertical clips of an AI character that feel filmed, not rendered — talking-to-camera bedroom vlogs, running selfies in the rain, mirror outfit checks, get-ready-with-me, walk-and-talk at dusk, desk day-in-the-life with the cat, storytime in bed, airplane-window vlogs — with front-camera realism cues, first-frame stills, per-model video prompts (Kling 3, Wan 2.6, Hailuo 2.3, Gemini Omni Flash), native ambient audio, hook-first timing, and the ethics line for UGC (always labelled AI, never fake testimonials). Use when making selfie, vlog or creator-style shorts with Claudia or your own character.",
+      "summary": "Phone-camera shorts that feel filmed: studio vlogs, club selfies, mirror checks, GRWM — prompts per model, labelled AI.",
+      "description": "Prompts phone-camera, UGC-style vertical clips of an AI character that feel filmed, not rendered — talking-to-camera studio vlogs, flash selfies at the club, mirror outfit checks, get-ready-with-me, walk-and-talk out of the club, desk day-in-the-life with the disco ball, storytime on the foil set, visor-reveal vlogs — with front-camera realism cues, first-frame stills, per-model video prompts (Kling 3, Wan 2.6, Hailuo 2.3, Gemini Omni Flash), native ambient audio, hook-first timing, and the ethics line for UGC (always labelled AI, never fake testimonials). Use when making selfie, vlog or creator-style shorts with Claudia or your own character.",
       "level": "intermediate",
       "tags": [
         "ugc",
@@ -717,14 +1508,14 @@
       "updated": "2026-10-08",
       "files": [
         "SKILL.md",
-        "examples/bedroom-vlog-and-rain-selfie.md",
+        "examples/studio-vlog-and-club-selfie.md",
         "references/ugc-realism-cues.md",
         "templates/ugc-format-cards.yaml",
         "templates/ugc-shot-checklist.md"
       ],
-      "size": 31247,
-      "bytes": 15601,
-      "sha256": "d7028a039e3eee275128185a6d97abeb7ccd93cc3f2db70ab6f0c6061f7fba15",
+      "size": 30686,
+      "bytes": 15230,
+      "sha256": "3878a728e1276c93637f108a55e345b1e4f15d5bb9d21f5a12d8b61f677023ee",
       "path": "skills/create/selfie-and-ugc-video-prompts",
       "zip": "/skills/selfie-and-ugc-video-prompts.zip",
       "related": [
@@ -771,7 +1562,7 @@
       "updated": "2026-10-08",
       "files": [
         "SKILL.md",
-        "examples/rain-13s-stitch.md",
+        "examples/club-13s-stitch.md",
         "references/editor-notes.md",
         "references/ffmpeg-recipes.md",
         "references/platform-export-specs.md",
@@ -781,9 +1572,9 @@
         "templates/edit-decision-list.csv",
         "templates/export-checklist.md"
       ],
-      "size": 39468,
-      "bytes": 21181,
-      "sha256": "871418978e1cc9dc12eeea6653a29fa1ed16c2805c7dbb55584953416f3073bc",
+      "size": 39128,
+      "bytes": 20968,
+      "sha256": "9a0c53bd05b02493f99b0753f994df124eebd3b308fd0ef5297b3d58ff7eb83e",
       "path": "skills/create/short-form-editing",
       "zip": "/skills/short-form-editing.zip",
       "related": [
@@ -803,6 +1594,110 @@
         "youtube-shorts-playbook",
         "x-playbook",
         "media-pipelines"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "sonic-branding-and-jingles",
+      "name": "sonic-branding-and-jingles",
+      "title": "Sonic branding and jingles",
+      "category": "create",
+      "summary": "A sonic logo, stings and a recurring audio signature: brief, motif, AI generation, rights, loudness, an asset kit and where to use it.",
+      "description": "Builds a sonic identity for a creator, character or agent — a 1–3 second sonic logo, intro and outro stings, a notification sound and a loopable bed — from a sonic brief and a hummable motif, with AI music and sound-effect generation through @useclaudia/media, licensing and ownership checks (tool terms, human authorship, sound marks), loudness targets per destination, an asset kit and a placement map. Use when someone wants a jingle, sonic logo, audio signature, intro sting, podcast intro, stream alert sound, or a recurring sound for Claudia or their own character.",
+      "level": "intermediate",
+      "tags": [
+        "sonic branding",
+        "sonic logo",
+        "jingle",
+        "audio identity",
+        "intro sting",
+        "sfx",
+        "ai music",
+        "loudness",
+        "licensing"
+      ],
+      "uses": [
+        "@useclaudia/media",
+        "@useclaudia/cli"
+      ],
+      "time": "2–3 h for a first kit",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-sonic-kit.md",
+        "references/loudness-and-delivery.md",
+        "references/rights-and-ownership.md",
+        "scripts/sting-meter.sh",
+        "templates/sonic-asset-kit.csv",
+        "templates/sonic-brief.yaml"
+      ],
+      "size": 29602,
+      "bytes": 15881,
+      "sha256": "a155b3eb4806784290b214b7a869e34145bd82c8f14b1cdfd4077c3603e090d9",
+      "path": "skills/create/sonic-branding-and-jingles",
+      "zip": "/skills/sonic-branding-and-jingles.zip",
+      "related": [
+        "music-and-sound-for-shorts",
+        "claudia-character-bible",
+        "prompt-library-management",
+        "voice-and-lip-sync",
+        "youtube-long-form-scripts",
+        "livestreaming-playbook",
+        "brand-voice-guidelines",
+        "personal-brand-strategy"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "sticker-and-emoji-packs",
+      "name": "sticker-and-emoji-packs",
+      "title": "Sticker and emoji packs",
+      "category": "create",
+      "summary": "Telegram stickers, custom emoji and Discord emoji in one consistent style, exported to exact specs with tested scripts.",
+      "description": "Makes Telegram sticker packs, Telegram custom emoji, Discord emoji, Discord server stickers and reaction GIFs for an AI character — one consistent style across 12–30 expressions, generated with references and transparent backgrounds, checked for legibility at 100 px, and exported with tested scripts to each platform's exact specs (512 px PNG/WEBP or VP9 WEBM ≤ 3 s and ≤ 256 KB for Telegram, 128 px ≤ 256 KiB emoji and 320 px ≤ 512 KiB stickers for Discord, checked 2026-10), then uploaded and announced with an AI label. Use when someone wants a sticker pack, emoji set, reaction GIFs or animated stickers for a Telegram channel or Discord server.",
+      "level": "intermediate",
+      "tags": [
+        "stickers",
+        "emoji",
+        "telegram",
+        "discord",
+        "reaction gifs",
+        "webm",
+        "character consistency",
+        "community"
+      ],
+      "uses": [
+        "@useclaudia/media",
+        "@useclaudia/cli"
+      ],
+      "time": "3–4 h for a 12-sticker pack",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-gm-pack.md",
+        "references/platform-specs.md",
+        "scripts/export-animated.sh",
+        "scripts/export-pack.sh",
+        "templates/pack-plan.csv",
+        "templates/sticker-prompts.md"
+      ],
+      "size": 34108,
+      "bytes": 17449,
+      "sha256": "392aa63547011959cad263282665dc99db9f9f7c5ab590e4a48d06e175bc7bef",
+      "path": "skills/create/sticker-and-emoji-packs",
+      "zip": "/skills/sticker-and-emoji-packs.zip",
+      "related": [
+        "claudia-character-bible",
+        "character-consistency",
+        "telegram-bot-agent",
+        "discord-bot-agent",
+        "pfp-and-avatar-sets",
+        "meme-formats",
+        "telegram-and-discord-community",
+        "product-and-merch-mockups",
+        "ai-disclosure-and-provenance"
       ],
       "valid": true
     },
@@ -834,15 +1729,15 @@
       "files": [
         "SKILL.md",
         "examples/desk-diaries-ep03.md",
-        "examples/rain-check-ep01.md",
+        "examples/mic-check-ep01.md",
         "references/shot-grammar.md",
         "templates/beat-sheet.md",
         "templates/shot-list.csv",
         "templates/storyboard-template.yaml"
       ],
-      "size": 27635,
-      "bytes": 14853,
-      "sha256": "9b923963aad74350511e053072216ac30c40d81e2870f13707a7242570ab12dd",
+      "size": 27943,
+      "bytes": 14868,
+      "sha256": "3289a03299479701181df00091c8c484f0793ed916f98c22930e3aaf2f0b7134",
       "path": "skills/create/storyboarding-shorts",
       "zip": "/skills/storyboarding-shorts.zip",
       "related": [
@@ -887,16 +1782,16 @@
       "updated": "2026-10-08",
       "files": [
         "SKILL.md",
-        "examples/rain-diaries-cover.md",
+        "examples/club-diaries-cover.md",
         "references/cover-prompt-bank.md",
         "references/cover-specs.md",
         "scripts/render-cover.sh",
         "templates/cover-brief.md",
         "templates/cover.html"
       ],
-      "size": 29426,
-      "bytes": 15693,
-      "sha256": "84c6fb2690de6c7337bdfaae268aa460c9d633a0f8e2e3e3327c686ad27b27c0",
+      "size": 29244,
+      "bytes": 15623,
+      "sha256": "d02529a469f1ffe5b7961e2c0c2c51b19afaed9d4fe05b51510dcb02e41e4a64",
       "path": "skills/create/thumbnails-and-covers",
       "zip": "/skills/thumbnails-and-covers.zip",
       "related": [
@@ -944,16 +1839,16 @@
       "updated": "2026-10-08",
       "files": [
         "SKILL.md",
-        "examples/four-reference-clips.md",
+        "examples/studio-reference-clip.md",
         "references/camera-and-motion-vocabulary.md",
         "references/model-cards.md",
         "templates/clip-qa.md",
         "templates/video-job.json",
         "templates/video-prompt-template.md"
       ],
-      "size": 44251,
-      "bytes": 21669,
-      "sha256": "99ea6550d57fa03c5aedbd7efa5cd662eb18a9b5b07b1fa4127d4854406f8fef",
+      "size": 41757,
+      "bytes": 20732,
+      "sha256": "720c5fb8ef55750a66c3bd33152c2f51a1dc9bb5d049a4fac23e9a3ef0699400",
       "path": "skills/create/video-prompting",
       "zip": "/skills/video-prompting.zip",
       "related": [
@@ -1007,9 +1902,9 @@
         "templates/voice-design-brief.md",
         "templates/voice-settings.json"
       ],
-      "size": 28222,
-      "bytes": 15440,
-      "sha256": "dafa79366820451838f4cb306ed8a4d5e19b6c5bc12fed4cbf885b3ec02e54f7",
+      "size": 28371,
+      "bytes": 15489,
+      "sha256": "34420f6435ae04a7033ac4e20210e7c668692c689ecc6dd66278b75a3204a340",
       "path": "skills/create/voice-and-lip-sync",
       "zip": "/skills/voice-and-lip-sync.zip",
       "related": [
@@ -1020,6 +1915,268 @@
         "short-form-editing",
         "claudia-character-bible",
         "media-pipelines"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "youtube-long-form-scripts",
+      "name": "youtube-long-form-scripts",
+      "title": "YouTube long-form scripts (6–15 minutes)",
+      "category": "create",
+      "summary": "Title and thumbnail first, then a hook, retention beats, chapters, an A/V script and a labelled AI B-roll list for 6–15 minute videos.",
+      "description": "Plans and scripts 6–15 minute YouTube videos title-and-thumbnail first — the promise, a 30-second hook that pays it off, a retention structure with re-hooks every 60–90 seconds, chapters that meet YouTube's rules, a two-column A/V script, a B-roll list with AI generation prompts and costs, and the altered-or-synthetic-content disclosure. Use when writing a YouTube video script, outlining a long-form video, fixing a video that loses viewers early, planning chapters or B-roll, or making a long-form video with an AI character or AI footage.",
+      "level": "intermediate",
+      "tags": [
+        "youtube",
+        "long-form",
+        "scripting",
+        "hook",
+        "retention",
+        "chapters",
+        "b-roll",
+        "thumbnails",
+        "ai disclosure"
+      ],
+      "uses": [
+        "@useclaudia/media",
+        "@useclaudia/social",
+        "@useclaudia/cli"
+      ],
+      "time": "3–5 h per video script",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-agents-30-days.md",
+        "references/retention-patterns.md",
+        "references/youtube-packaging-specs.md",
+        "templates/broll-list.csv",
+        "templates/long-form-script.md",
+        "templates/title-thumbnail-sheet.md"
+      ],
+      "size": 29962,
+      "bytes": 15596,
+      "sha256": "97ab37b0856c63d2190715685e8a4f9e4bce236275ec413d71a7409d891c50c7",
+      "path": "skills/create/youtube-long-form-scripts",
+      "zip": "/skills/youtube-long-form-scripts.zip",
+      "related": [
+        "youtube-shorts-playbook",
+        "claudia-character-bible",
+        "thumbnails-and-covers",
+        "video-prompting",
+        "voice-and-lip-sync",
+        "avatar-explainer-videos",
+        "brand-deals-and-sponsorships",
+        "content-repurposing"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "affiliate-and-ambassador-programs",
+      "name": "affiliate-and-ambassador-programs",
+      "title": "Affiliate and ambassador programs",
+      "category": "grow",
+      "summary": "Run or join commission and ambassador programs with clear terms, tracked links, disclosure on every link and safe payouts.",
+      "description": "Sets up, runs or joins affiliate and ambassador programs for an AI creator or agent business — commission and terms design, tracking links and codes, fraud and self-referral rules, FTC and UK ASA disclosure next to every link, platform paid-partnership labels, the crypto restrictions (UK ban on refer-a-friend incentives, exchange referral links, TikTok and MiCA), payout schedules with refund holds, and human-approved payouts with caps. Use when someone wants to pay others a commission to promote their product, start an ambassador programme, join a brand's affiliate program, add affiliate links to posts, or check whether a referral offer is allowed.",
+      "level": "intermediate",
+      "tags": [
+        "affiliate marketing",
+        "ambassadors",
+        "referral links",
+        "commissions",
+        "disclosure",
+        "ftc",
+        "asa",
+        "payouts",
+        "tracking",
+        "crypto rules"
+      ],
+      "uses": [
+        "@useclaudia/social",
+        "@useclaudia/cli"
+      ],
+      "time": "2 h to set up, 30 min a week to run",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/wallpaper-pack-program.md",
+        "references/crypto-and-finance-rules.md",
+        "references/disclosure-for-affiliates.md",
+        "templates/affiliate-kit.md",
+        "templates/affiliate-ledger.csv",
+        "templates/program-terms.md"
+      ],
+      "size": 30583,
+      "bytes": 16126,
+      "sha256": "716c9279df796e9be661b84c9126fad5905adc27e09abf003d87cf59ee63e16a",
+      "path": "skills/grow/affiliate-and-ambassador-programs",
+      "zip": "/skills/affiliate-and-ambassador-programs.zip",
+      "related": [
+        "influencer-outreach",
+        "brand-deals-and-sponsorships",
+        "monetization-streams",
+        "x-playbook",
+        "kpi-reporting",
+        "crypto-marketing-compliance",
+        "wallet-and-key-security"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "ai-search-visibility",
+      "name": "ai-search-visibility",
+      "title": "AI search visibility",
+      "category": "grow",
+      "summary": "Be findable, quotable and correct in AI assistants: crawler access, one facts page, clear pages, real mentions and a prompt panel.",
+      "description": "Helps a creator, brand, agent or coin project get found, described correctly and cited by AI assistants and AI search (ChatGPT search, Claude, Gemini and Google AI Overviews / AI Mode, Perplexity, Copilot) — sometimes called GEO or AEO. Covers what assistants can and cannot be influenced by, crawler access (OAI-SearchBot, Claude-SearchBot, PerplexityBot, Google-Extended and what each controls), one canonical facts page, answer-first page structure, llms.txt as an optional extra, earning real third-party mentions, and measuring mentions with a fixed prompt panel plus Google's and Bing's AI reports. Use when someone asks \"why doesn't ChatGPT know us\", \"how do we show up in AI answers\", \"should we add llms.txt\", when an assistant gets facts about the brand wrong, or when planning a site for AI discovery. Honest that placement can't be bought or guaranteed.",
+      "level": "intermediate",
+      "tags": [
+        "ai search",
+        "geo",
+        "aeo",
+        "llms.txt",
+        "ai overviews",
+        "chatgpt search",
+        "perplexity",
+        "crawlers",
+        "structured data",
+        "brand facts"
+      ],
+      "uses": [],
+      "time": "half a day to set up, 1 h a month",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/juno-visibility-audit.md",
+        "references/how-assistants-find-sources.md",
+        "references/measuring-ai-visibility.md",
+        "templates/facts-page.md",
+        "templates/llms.txt",
+        "templates/organization-schema.json",
+        "templates/prompt-panel.csv",
+        "templates/robots-ai.txt"
+      ],
+      "size": 32067,
+      "bytes": 16763,
+      "sha256": "6d4da8a1c1b22c0b5d84acbc359a8221a35e78113dc8be52a2424ed3c9b65fe3",
+      "path": "skills/grow/ai-search-visibility",
+      "zip": "/skills/ai-search-visibility.zip",
+      "related": [
+        "social-listening",
+        "reddit-playbook",
+        "collabs-and-cross-promotion",
+        "crisis-and-reputation",
+        "social-seo-and-hashtags",
+        "personal-brand-strategy",
+        "ai-disclosure-and-provenance",
+        "crypto-marketing-compliance"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "audience-research-and-personas",
+      "name": "audience-research-and-personas",
+      "title": "Audience research and personas",
+      "category": "grow",
+      "summary": "Learn who the audience is from analytics, comments, a survey and interviews, then build 2–4 personas and map content to them.",
+      "description": "Finds out who an account's audience really is and what they want — from platform analytics (TikTok Studio, Instagram Insights, YouTube Studio's Audience tab, X, Telegram), comment and DM mining, a short consent-based survey and five interviews — then turns the evidence into 2–4 needs-based personas plus an anti-persona and maps every content pillar and series to them. Use when someone asks \"who is our audience\", \"who are we making this for\", before repositioning or a launch, when content is getting views but not follows, when a brand asks for audience data, or when an agent needs a reference for who it writes to. Aggregate data only; never profiles individuals or infers sensitive traits.",
+      "level": "beginner",
+      "tags": [
+        "audience research",
+        "personas",
+        "analytics",
+        "comments",
+        "surveys",
+        "interviews",
+        "content mapping",
+        "strategy"
+      ],
+      "uses": [
+        "@useclaudia/social",
+        "@useclaudia/mcp"
+      ],
+      "time": "4–6 h over two weeks, then 1 h a quarter",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-personas.md",
+        "references/platform-analytics-map.md",
+        "references/research-methods.md",
+        "templates/audience-survey.md",
+        "templates/comment-coding.csv",
+        "templates/content-persona-map.csv",
+        "templates/persona-card.md"
+      ],
+      "size": 31925,
+      "bytes": 16791,
+      "sha256": "e78a6815524518219589fe5df33309853a052d0bb1a3a241310340011adb686b",
+      "path": "skills/grow/audience-research-and-personas",
+      "zip": "/skills/audience-research-and-personas.zip",
+      "related": [
+        "personal-brand-strategy",
+        "launch-campaigns",
+        "media-kit-and-pitching",
+        "giveaways-and-contests",
+        "growth-experiments",
+        "crypto-marketing-compliance",
+        "social-listening",
+        "competitor-analysis",
+        "content-pillars-and-series",
+        "social-seo-and-hashtags"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "bluesky-and-mastodon-playbook",
+      "name": "bluesky-and-mastodon-playbook",
+      "title": "Bluesky and Mastodon playbook for AI characters",
+      "category": "grow",
+      "summary": "Put an AI character on Bluesky and the fediverse properly: server choice, bot flags, CWs, alt text, opt-in replies.",
+      "description": "Runs an AI character or agent on Bluesky and on Mastodon (the fediverse) with the courtesy both communities expect. Covers choosing a Mastodon server and reading its rules, the Server Covenant, the Mastodon bot flag and Bluesky's \"bot\" self-label, content warnings and alt text, quiet-public posting, hashtags, custom feeds and starter packs, limits and rate limits, and approval-first posting and mention replies with @useclaudia/social or the claudia CLI. Use when someone wants to put an AI character on Bluesky or Mastodon, pick an instance, set up a bot account properly, write CWs, cross-post from X without annoying people, or check whether an automated account follows each network's bot rules.",
+      "level": "intermediate",
+      "tags": [
+        "bluesky",
+        "mastodon",
+        "fediverse",
+        "atproto",
+        "bot label",
+        "content warnings",
+        "alt text",
+        "instances",
+        "decentralized"
+      ],
+      "uses": [
+        "@useclaudia/social",
+        "@useclaudia/cli"
+      ],
+      "time": "1 h setup, 15 min a day",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-on-bluesky-and-mastodon.md",
+        "references/bluesky-reference.md",
+        "references/mastodon-reference.md",
+        "templates/fediverse-weekly-plan.csv",
+        "templates/profile-setup.md"
+      ],
+      "size": 34191,
+      "bytes": 17124,
+      "sha256": "c2e669ce89a9666effa5402f8b77aeddef01ff33389419ec8a592f4f4fa54fc0",
+      "path": "skills/grow/bluesky-and-mastodon-playbook",
+      "zip": "/skills/bluesky-and-mastodon-playbook.zip",
+      "related": [
+        "claudia-character-bible",
+        "growth-experiments",
+        "farcaster-playbook",
+        "x-playbook",
+        "engagement-and-replies",
+        "ai-disclosure-and-provenance",
+        "social-seo-and-hashtags",
+        "social-publishing"
       ],
       "valid": true
     },
@@ -1063,9 +2220,9 @@
         "templates/rate-card.csv",
         "templates/sponsorship-contract-checklist.md"
       ],
-      "size": 63557,
-      "bytes": 32195,
-      "sha256": "2eb7b65daadffc295b4348a87184af4d1d39d5097b06e680719eec43b1439b83",
+      "size": 63574,
+      "bytes": 32194,
+      "sha256": "9f3deff3c43b36ddffa97d6fd6c8602c371458da5cfd4b3e1f52bb544ba38617",
       "path": "skills/grow/brand-deals-and-sponsorships",
       "zip": "/skills/brand-deals-and-sponsorships.zip",
       "related": [
@@ -1083,6 +2240,57 @@
         "ai-disclosure-and-provenance",
         "social-publishing",
         "wallet-and-key-security"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "brand-voice-guidelines",
+      "name": "brand-voice-guidelines",
+      "title": "Brand voice guidelines",
+      "category": "grow",
+      "summary": "Turn your best posts into a voice guide, per-platform rules and a review an agent runs on every draft.",
+      "description": "Derives a written brand voice guide from an account's existing posts instead of from adjectives — measures the voice with a script (length, case, punctuation, emoji, signature words, openers), reads it for traits, tone dials and vocabulary, writes do/don't pairs and per-platform adjustments (X, Threads, Bluesky, Farcaster, LinkedIn, Instagram, TikTok, Telegram, newsletter), encodes the checkable parts in a voice-rules.json, and gives agents an enforce-voice review they run on every draft (a lint script plus a checklist) before preview and human approval. Use when an AI character, agent, creator or brand needs a voice guide, when drafts \"don't sound like us\", when onboarding a new writer or agent, or when posts drift across platforms.",
+      "level": "intermediate",
+      "tags": [
+        "brand voice",
+        "tone of voice",
+        "style guide",
+        "copywriting",
+        "consistency",
+        "agents",
+        "review",
+        "per platform"
+      ],
+      "uses": [
+        "@useclaudia/social"
+      ],
+      "time": "2 hours to build, 1 min per draft to review",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-voice-rules.json",
+        "examples/juno-voice-guide.md",
+        "references/voice-extraction-method.md",
+        "scripts/voice-check.mjs",
+        "templates/voice-guide.md",
+        "templates/voice-review-checklist.md",
+        "templates/voice-rules.json"
+      ],
+      "size": 41088,
+      "bytes": 19727,
+      "sha256": "7118c4186500438782e08e772b08d997df73178fc92c21dc11e7b5458d9f27c2",
+      "path": "skills/grow/brand-voice-guidelines",
+      "zip": "/skills/brand-voice-guidelines.zip",
+      "related": [
+        "autonomous-posting-loop",
+        "personal-brand-strategy",
+        "claudia-character-bible",
+        "newsletter-writing",
+        "captions-and-hooks",
+        "engagement-and-replies",
+        "agent-persona-and-system-prompt",
+        "crypto-marketing-compliance"
       ],
       "valid": true
     },
@@ -1124,9 +2332,9 @@
         "templates/partner-shortlist.csv",
         "templates/utm-links.csv"
       ],
-      "size": 58028,
-      "bytes": 29617,
-      "sha256": "e790363fde4254057cc55eae3d86011fe45bc3c4e4a2563dbf39261404fa10d6",
+      "size": 58016,
+      "bytes": 29613,
+      "sha256": "bfdd953d40eb281efccced3b76e95d81682f6370749199cd635b4e4da6ca6b54",
       "path": "skills/grow/collabs-and-cross-promotion",
       "zip": "/skills/collabs-and-cross-promotion.zip",
       "related": [
@@ -1146,6 +2354,58 @@
         "thread-etiquette-and-trust",
         "social-publishing",
         "ai-disclosure-and-provenance"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "competitor-analysis",
+      "name": "competitor-analysis",
+      "title": "Competitor analysis",
+      "category": "grow",
+      "summary": "Compare 2–5 accounts on voice share, formats, cadence, engagement quality and positioning, then pick three moves.",
+      "description": "Compares 2–5 creators, brands, agents or coin communities side by side — share of voice, formats, posting cadence, engagement quality, positioning and the gaps nobody covers — from public data and official tools only, and ends with a weighted scorecard and three concrete moves. Use when someone asks \"how do we stack up against X\", \"what are similar accounts doing\", \"why is their account growing faster\", before a launch or repositioning, when picking collab partners, or when an agent needs a monthly competitive read. Includes a scorecard (Markdown and CSV), a post-sample log, a positioning map and a worked example. Never a buy/sell comparison of coins.",
+      "level": "intermediate",
+      "tags": [
+        "competitors",
+        "benchmarking",
+        "share of voice",
+        "engagement quality",
+        "positioning",
+        "scorecard",
+        "strategy",
+        "research"
+      ],
+      "uses": [
+        "@useclaudia/cli",
+        "@useclaudia/mcp"
+      ],
+      "time": "2–3 h first run, 45 min a month after",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-vs-three-agents.md",
+        "references/metrics-and-formulas.md",
+        "references/public-sources.md",
+        "templates/competitor-scorecard.csv",
+        "templates/competitor-scorecard.md",
+        "templates/positioning-map.md",
+        "templates/post-sample-log.csv"
+      ],
+      "size": 32602,
+      "bytes": 16543,
+      "sha256": "f43053c8fa1e2339196b1e09263f36cf5f6db2a93e12d2645b4d20594057e452",
+      "path": "skills/grow/competitor-analysis",
+      "zip": "/skills/competitor-analysis.zip",
+      "related": [
+        "launch-campaigns",
+        "personal-brand-strategy",
+        "collabs-and-cross-promotion",
+        "social-listening",
+        "growth-experiments",
+        "kpi-reporting",
+        "crisis-and-reputation",
+        "audience-research-and-personas"
       ],
       "valid": true
     },
@@ -1187,9 +2447,9 @@
         "templates/incident-log.csv",
         "templates/post-mortem.md"
       ],
-      "size": 63434,
-      "bytes": 31156,
-      "sha256": "bc3c8963db3042fb8a120c75a6b26889713979fe44e88c434e037d450c53ca92",
+      "size": 63426,
+      "bytes": 31151,
+      "sha256": "f34db2115913062892aa466927c72b67cfbacfaf2fd1e98a4a3ba66c3b65be10",
       "path": "skills/grow/crisis-and-reputation",
       "zip": "/skills/crisis-and-reputation.zip",
       "related": [
@@ -1246,9 +2506,9 @@
         "templates/phrase-lists.json",
         "templates/pre-publish-checklist.md"
       ],
-      "size": 70515,
-      "bytes": 35674,
-      "sha256": "07b9298ba04d9e13a3bc8634dc88c86686788a375bf347cf4df329e81b6ab490",
+      "size": 70525,
+      "bytes": 35677,
+      "sha256": "34a5deee86713aa3399ba265ff1d8117a3916c8d6cf85efd8efa0a9b26c77641",
       "path": "skills/grow/crypto-marketing-compliance",
       "zip": "/skills/crypto-marketing-compliance.zip",
       "related": [
@@ -1263,6 +2523,60 @@
         "launch-a-coin",
         "coin-research",
         "rug-check"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "email-and-dm-sequences",
+      "name": "email-and-dm-sequences",
+      "title": "Email and DM sequences",
+      "category": "grow",
+      "summary": "Welcome, launch and re-engagement sequences by email and opt-in DM: consent first, law-compliant, labelled, never mass-DMed.",
+      "description": "Builds welcome, launch and re-engagement sequences by email and opt-in DMs for creators and AI characters — consent capture and double opt-in, CAN-SPAM, UK PECR/GDPR and CASL basics, Gmail/Yahoo/Outlook bulk-sender rules, platform DM rules (Instagram 24-hour window and comment-to-DM, X, Telegram, Discord, LinkedIn), and copy-paste templates with the AI label and footer built in. Use when someone wants an email welcome series, a launch email sequence, a win-back or list-cleaning campaign, a comment-to-DM flow or a Telegram bot sequence, or asks whether they can mass-DM followers or import a list.",
+      "level": "intermediate",
+      "tags": [
+        "email",
+        "dm",
+        "welcome sequence",
+        "launch",
+        "re-engagement",
+        "can-spam",
+        "gdpr",
+        "consent",
+        "deliverability",
+        "automation"
+      ],
+      "uses": [
+        "@useclaudia/social"
+      ],
+      "time": "2–3 h to build, 15 min a week",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-welcome-and-dm-flow.md",
+        "references/consent-and-anti-spam-law.md",
+        "references/dm-platform-rules.md",
+        "templates/dm-scripts.md",
+        "templates/launch-sequence.md",
+        "templates/re-engagement-sequence.md",
+        "templates/welcome-sequence.md"
+      ],
+      "size": 38899,
+      "bytes": 19823,
+      "sha256": "368b12a6431ec43b3315b1df705970b25bf807f2cf56bb035a3968108e9b5b37",
+      "path": "skills/grow/email-and-dm-sequences",
+      "zip": "/skills/email-and-dm-sequences.zip",
+      "related": [
+        "claudia-character-bible",
+        "crypto-marketing-compliance",
+        "prompt-injection-defense",
+        "kpi-reporting",
+        "newsletter-growth",
+        "newsletter-writing",
+        "launch-campaigns",
+        "telegram-and-discord-community",
+        "engagement-and-replies"
       ],
       "valid": true
     },
@@ -1305,9 +2619,9 @@
         "templates/reply-library.yaml",
         "templates/triage-rules.json"
       ],
-      "size": 70208,
-      "bytes": 33068,
-      "sha256": "f1bfee6fdecccb761e0d417fc05e3ad33fe71211e459459aa637a2d3a07aaa5d",
+      "size": 70237,
+      "bytes": 33086,
+      "sha256": "94a66a9dc5a55c612dca716c5f4f8b3e2a237ed62c6819893e65fb9d4854f5b9",
       "path": "skills/grow/engagement-and-replies",
       "zip": "/skills/engagement-and-replies.zip",
       "related": [
@@ -1323,6 +2637,107 @@
         "crypto-marketing-compliance",
         "social-publishing",
         "agent-persona-and-system-prompt"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "farcaster-playbook",
+      "name": "farcaster-playbook",
+      "title": "Farcaster playbook for AI agents",
+      "category": "grow",
+      "summary": "Put an AI agent on Farcaster properly: Neynar signer, channels, mini apps, labelled casts and approval-first posting.",
+      "description": "Runs an AI character or agent on Farcaster, the onchain social network, with a person approving every cast. Covers casts (320 bytes, 2 embeds, 10 mentions), channels and their norms, signers and what revoking one deletes, storage units, Neynar credits, the Neynar user score that apps use to filter low-quality accounts, mini apps (formerly Frames, with the embed tag, manifest and notifications), and exactly how @useclaudia/social posts to Farcaster through a Neynar managed signer. Use when someone wants to put an agent on Farcaster, connect a Neynar signer, cast into channels, plan a Farcaster week, build or share a mini app, or check whether an automated Farcaster account is behaving like spam.",
+      "level": "advanced",
+      "tags": [
+        "farcaster",
+        "neynar",
+        "signers",
+        "channels",
+        "mini apps",
+        "frames",
+        "onchain social",
+        "ai agents",
+        "base"
+      ],
+      "uses": [
+        "@useclaudia/social",
+        "@useclaudia/cli"
+      ],
+      "time": "1 h setup, 15 min a day",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-farcaster-first-month.md",
+        "references/farcaster-protocol-and-signers.md",
+        "references/mini-apps.md",
+        "templates/cast-templates.md",
+        "templates/farcaster-weekly-plan.csv",
+        "templates/miniapp-embed-and-manifest.md"
+      ],
+      "size": 34700,
+      "bytes": 17506,
+      "sha256": "49bc26f663d27697042c76e3b2936f21270b524c5945fcf57e6a5a9a27189d7f",
+      "path": "skills/grow/farcaster-playbook",
+      "zip": "/skills/farcaster-playbook.zip",
+      "related": [
+        "safe-trading",
+        "growth-experiments",
+        "wallet-and-key-security",
+        "bluesky-and-mastodon-playbook",
+        "crypto-marketing-compliance",
+        "launch-campaigns",
+        "social-publishing",
+        "autonomous-posting-loop"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "giveaways-and-contests",
+      "name": "giveaways-and-contests",
+      "title": "Giveaways and contests",
+      "category": "grow",
+      "summary": "Run legal, fair giveaways: free entry, official rules, platform rules, a verifiable draw, honest disclosure, no crypto traps.",
+      "description": "Runs a legal, fair giveaway or contest for a creator, brand or AI character — choosing a sweepstakes vs a skill contest, no-purchase-necessary entry, official rules, platform promotion rules (Instagram, Facebook, X, TikTok, YouTube, Reddit), US state filing over $5,000, prize taxes, UK CAP Code, FTC disclosure, crypto and token prize cautions, and a verifiable winner draw script with an audit log. Use when someone wants to run a giveaway, contest, sweepstakes or prize draw, write official rules, pick a winner fairly, give away crypto, tokens or NFTs, or asks whether \"follow, like and tag to win\" is allowed.",
+      "level": "intermediate",
+      "tags": [
+        "giveaways",
+        "contests",
+        "sweepstakes",
+        "official rules",
+        "no purchase necessary",
+        "winner selection",
+        "ftc",
+        "cap code",
+        "crypto"
+      ],
+      "uses": [],
+      "time": "2 h to set up, 1 h to draw and award",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-print-giveaway.md",
+        "references/legal-basics-us-uk-crypto.md",
+        "references/platform-promotion-rules.md",
+        "scripts/draw-winner.mjs",
+        "templates/giveaway-announcement.md",
+        "templates/official-rules.md",
+        "templates/winner-selection-log.csv"
+      ],
+      "size": 46775,
+      "bytes": 23101,
+      "sha256": "b4de3b0198722f23febbe3a3128a453a3a4dbef0e2271fc1c2954a0709ce1463",
+      "path": "skills/grow/giveaways-and-contests",
+      "zip": "/skills/giveaways-and-contests.zip",
+      "related": [
+        "email-and-dm-sequences",
+        "crypto-marketing-compliance",
+        "brand-deals-and-sponsorships",
+        "launch-campaigns",
+        "crisis-and-reputation",
+        "collabs-and-cross-promotion",
+        "reddit-playbook"
       ],
       "valid": true
     },
@@ -1365,9 +2780,9 @@
         "templates/experiment-log.csv",
         "templates/ice-backlog.csv"
       ],
-      "size": 64094,
-      "bytes": 31897,
-      "sha256": "574cff3373790caf684d47fe3f634a0057d0f98b691b80c970bad078c29d6d5e",
+      "size": 64109,
+      "bytes": 31902,
+      "sha256": "e776dd2c842b02b488f430e847c625df4bd513ca3f97a34a53e7052212ce5da4",
       "path": "skills/grow/growth-experiments",
       "zip": "/skills/growth-experiments.zip",
       "related": [
@@ -1383,6 +2798,56 @@
         "x-playbook",
         "thumbnails-and-covers",
         "autonomous-posting-loop"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "influencer-outreach",
+      "name": "influencer-outreach",
+      "title": "Influencer outreach",
+      "category": "grow",
+      "summary": "Recruit real creators for a campaign: fit and fake-follower checks, personal outreach, a disclosed brief and per-creator tracking.",
+      "description": "Finds, vets and contacts creators to promote a product, launch or agent from the brand side — defining the creator profile, building a shortlist by hand, authenticity checks (fake followers, bought views, engagement pods, audience geography), one-by-one personalised outreach with no mass DMs, offers and fair pay, a creator brief with disclosure built in, platform paid-partnership tools, and tracking each creator's results. Use when an operator wants creators to post about their product, app, agent or launch, needs to check whether a creator's audience is real, writes outreach to creators, or runs a seeding or paid creator campaign. Not for being the creator who gets paid (brand-deals-and-sponsorships) or unpaid content swaps (collabs-and-cross-promotion).",
+      "level": "intermediate",
+      "tags": [
+        "influencer outreach",
+        "creator marketing",
+        "fake followers",
+        "vetting",
+        "seeding",
+        "creator brief",
+        "disclosure",
+        "utm",
+        "campaign tracking"
+      ],
+      "uses": [
+        "@useclaudia/cli"
+      ],
+      "time": "2–3 h to shortlist and pitch, 2–4 weeks to run",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/studio-template-creator-round.md",
+        "references/authenticity-checks.md",
+        "references/brand-side-disclosure.md",
+        "templates/creator-brief.md",
+        "templates/creator-scorecard.csv",
+        "templates/outreach-messages.md",
+        "templates/outreach-tracker.csv"
+      ],
+      "size": 34042,
+      "bytes": 17630,
+      "sha256": "9af66e7233a0fd461168d904a615f7dfbbccdd73a8b88f5562398651faaee1f8",
+      "path": "skills/grow/influencer-outreach",
+      "zip": "/skills/influencer-outreach.zip",
+      "related": [
+        "brand-deals-and-sponsorships",
+        "collabs-and-cross-promotion",
+        "affiliate-and-ambassador-programs",
+        "crypto-marketing-compliance",
+        "paid-social-ads",
+        "kpi-reporting"
       ],
       "valid": true
     },
@@ -1425,9 +2890,9 @@
         "templates/reel-brief.md",
         "templates/reels-weekly-plan.csv"
       ],
-      "size": 57931,
-      "bytes": 29602,
-      "sha256": "df2b52ac0188c73b24fd9207fd72a5346564cb5ba41c2b6d433a06be6cf3a21e",
+      "size": 57952,
+      "bytes": 29628,
+      "sha256": "515a1f5dafb2ce04030e71bfd7b6dc9928138f72afbd7215298bdda842f54b7d",
       "path": "skills/grow/instagram-reels-playbook",
       "zip": "/skills/instagram-reels-playbook.zip",
       "related": [
@@ -1494,9 +2959,9 @@
         "templates/utm-plan.csv",
         "templates/weekly-report.md"
       ],
-      "size": 74240,
-      "bytes": 35270,
-      "sha256": "49055960fdcf2f9a91ba19be6ea2af8d40117eb2475230e01a39bc846137b023",
+      "size": 74207,
+      "bytes": 35267,
+      "sha256": "1b868465e210919cc294cb52eeb5589486bd09453f3c4ec3362c7b43c3410b2e",
       "path": "skills/grow/kpi-reporting",
       "zip": "/skills/kpi-reporting.zip",
       "related": [
@@ -1554,9 +3019,9 @@
         "templates/launch-drafts.json",
         "templates/post-launch-report.md"
       ],
-      "size": 70067,
-      "bytes": 34865,
-      "sha256": "ccc12f0855655e0cffb5cb62d53f1c3dfcc1a6b8666d895fb59aa18a7d3b1fd4",
+      "size": 70119,
+      "bytes": 34883,
+      "sha256": "cb6bf96e9458b47d68af0b0153539d23c52299c2d42c05d9923633794e45ea96",
       "path": "skills/grow/launch-campaigns",
       "zip": "/skills/launch-campaigns.zip",
       "related": [
@@ -1578,6 +3043,112 @@
         "social-publishing",
         "autonomous-posting-loop",
         "content-pillars-and-series"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "linkedin-playbook",
+      "name": "linkedin-playbook",
+      "title": "LinkedIn playbook for AI characters and their operators",
+      "category": "grow",
+      "summary": "Grow an AI brand on LinkedIn the allowed way: operator profile plus a Page, real formats, labelled AI, approval-first posting.",
+      "description": "Runs LinkedIn for an AI character or agent brand within LinkedIn's real-identity rules. The human operator posts from their own profile, the brand gets a LinkedIn Page, and the character is never given a member profile. Covers formats and limits (posts, documents, polls, video, articles), what LinkedIn says its feed ranks, Content Credentials and AI labels, the no-bots rules for comments and likes, the 60-day token, and approval-first posting with @useclaudia/social or the claudia CLI. Use when someone wants to promote an AI character, agent or creator studio on LinkedIn, plan a LinkedIn content week, post build notes or launch updates for a professional audience, or check whether a LinkedIn automation idea breaks the User Agreement.",
+      "level": "intermediate",
+      "tags": [
+        "linkedin",
+        "b2b",
+        "operator",
+        "company page",
+        "documents",
+        "ai disclosure",
+        "content credentials",
+        "automation rules",
+        "growth"
+      ],
+      "uses": [
+        "@useclaudia/social",
+        "@useclaudia/cli"
+      ],
+      "time": "1 h setup, 30 min a week",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/operator-led-launch-month.md",
+        "references/linkedin-rules-and-formats.md",
+        "templates/linkedin-post-templates.md",
+        "templates/linkedin-weekly-plan.csv"
+      ],
+      "size": 32144,
+      "bytes": 15478,
+      "sha256": "bf400037ad7ab482fecc041d5c6e6d8fb877b849b2981a4eb51203882dd04a8f",
+      "path": "skills/grow/linkedin-playbook",
+      "zip": "/skills/linkedin-playbook.zip",
+      "related": [
+        "claudia-character-bible",
+        "content-pillars-and-series",
+        "growth-experiments",
+        "crypto-marketing-compliance",
+        "personal-brand-strategy",
+        "posting-schedule",
+        "carousel-design",
+        "media-kit-and-pitching",
+        "ai-disclosure-and-provenance",
+        "social-publishing"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "livestreaming-playbook",
+      "name": "livestreaming-playbook",
+      "title": "Livestreaming playbook",
+      "category": "grow",
+      "summary": "Go live with an AI character or as its host: eligibility, disclosure, a human-run rig, run of show, moderation, clips after.",
+      "description": "Plans and runs live streams on TikTok LIVE, YouTube Live, X (live video and Spaces), Twitch and Kick with an AI character as co-host (VTuber-style avatar or AI voice) or a human host alone — eligibility and age rules per platform, AI disclosure, the human-operator rig, a minute-by-minute run of show, moderator setup and blocked words, live audio on X Spaces, and clipping the stream into shorts afterwards. Use when someone wants to go live, plan a stream or Space, put an AI avatar or AI voice on a stream, set up chat moderation, check whether an account can stream, or turn a VOD into clips.",
+      "level": "intermediate",
+      "tags": [
+        "livestreaming",
+        "tiktok live",
+        "youtube live",
+        "twitch",
+        "kick",
+        "x spaces",
+        "vtuber",
+        "ai avatar",
+        "moderation",
+        "clips"
+      ],
+      "uses": [
+        "@useclaudia/media",
+        "@useclaudia/social",
+        "@useclaudia/cli"
+      ],
+      "time": "3 h first setup, 1 h prep per stream",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-first-studio-stream.md",
+        "references/platform-live-requirements.md",
+        "templates/clip-log.csv",
+        "templates/mod-brief.md",
+        "templates/run-of-show.md"
+      ],
+      "size": 35543,
+      "bytes": 17402,
+      "sha256": "91f0085d775b88a073a9df53e52b9211179f672c667d7b6d1d6db26acca90fac",
+      "path": "skills/grow/livestreaming-playbook",
+      "zip": "/skills/livestreaming-playbook.zip",
+      "related": [
+        "claudia-character-bible",
+        "avatar-explainer-videos",
+        "voice-and-lip-sync",
+        "short-form-editing",
+        "captions-and-hooks",
+        "crisis-and-reputation",
+        "tiktok-playbook",
+        "x-playbook",
+        "ai-disclosure-and-provenance"
       ],
       "valid": true
     },
@@ -1619,9 +3190,9 @@
         "templates/pitch-scripts.md",
         "templates/rate-card.csv"
       ],
-      "size": 64360,
-      "bytes": 32455,
-      "sha256": "effdbc29eba1fbb35948f6e4967d636bfe7cc1390af2da4af12daaef913d1e0a",
+      "size": 64332,
+      "bytes": 32442,
+      "sha256": "7111ebbd9ff93b2089e336f3e61f3615078ebb741d032caa4152d81171ab30d9",
       "path": "skills/grow/media-kit-and-pitching",
       "zip": "/skills/media-kit-and-pitching.zip",
       "related": [
@@ -1635,6 +3206,58 @@
         "personal-brand-strategy",
         "collabs-and-cross-promotion",
         "ai-disclosure-and-provenance"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "memberships-and-subscriptions",
+      "name": "memberships-and-subscriptions",
+      "title": "Memberships and subscriptions",
+      "category": "grow",
+      "summary": "Pick the right membership platform, design tiers an agent can deliver, disclose AI honestly and keep members past month three.",
+      "description": "Plans, launches and runs paid memberships for an AI creator or agent account — choosing between YouTube channel memberships, X Subscriptions, Patreon, Telegram Star subscriptions and paid posts, and Discord Server Subscriptions by eligibility, fees and audience; designing 1–3 tiers with perks an agent can reliably deliver; honest AI disclosure on the membership page and in perks; a perk calendar; and measuring and reducing churn. Use when someone wants recurring income from fans, asks which membership platform to use, is setting tiers and prices, needs members-only content delivered on schedule, or is losing members.",
+      "level": "intermediate",
+      "tags": [
+        "memberships",
+        "subscriptions",
+        "patreon",
+        "youtube memberships",
+        "x subscriptions",
+        "telegram stars",
+        "discord",
+        "tiers",
+        "churn",
+        "ai disclosure"
+      ],
+      "uses": [
+        "@useclaudia/social",
+        "@useclaudia/cli"
+      ],
+      "time": "2 h to plan, 1 h a week to run",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/silver-city-members.md",
+        "references/churn-playbook.md",
+        "references/platform-membership-rules.md",
+        "templates/membership-metrics.csv",
+        "templates/membership-page-copy.md",
+        "templates/membership-plan.md",
+        "templates/perk-calendar.csv"
+      ],
+      "size": 29585,
+      "bytes": 15660,
+      "sha256": "6f3873b34b60b2d03026e93d15437577751339507fd3786561a462dfdfd486e5",
+      "path": "skills/grow/memberships-and-subscriptions",
+      "zip": "/skills/memberships-and-subscriptions.zip",
+      "related": [
+        "monetization-streams",
+        "telegram-and-discord-community",
+        "ai-disclosure-and-provenance",
+        "launch-campaigns",
+        "content-pillars-and-series",
+        "kpi-reporting"
       ],
       "valid": true
     },
@@ -1679,9 +3302,9 @@
         "templates/income-ledger.csv",
         "templates/revenue-mix-plan.csv"
       ],
-      "size": 62026,
-      "bytes": 31308,
-      "sha256": "8f6146f4453c7ee0b66e3b000dc20a51fa2d2ab64b2e62e9a277fe50e98575ae",
+      "size": 62028,
+      "bytes": 31306,
+      "sha256": "f25b3c0cee45f288ea5a0b1bcc801738e3b172912696a4f8380bdb9455f11833",
       "path": "skills/grow/monetization-streams",
       "zip": "/skills/monetization-streams.zip",
       "related": [
@@ -1698,6 +3321,105 @@
         "instagram-reels-playbook",
         "launch-a-coin",
         "wallet-and-key-security",
+        "ai-disclosure-and-provenance"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "newsletter-growth",
+      "name": "newsletter-growth",
+      "title": "Newsletter growth",
+      "category": "grow",
+      "summary": "Grow an owned email list: a clear promise, a lead magnet, recommendations, swaps, referrals, clean deliverability, honest metrics.",
+      "description": "Grows an email newsletter for a creator or AI character on beehiiv, Substack, Kit or similar — one clear promise, a lead magnet, sign-up placement across social profiles and shorts, recommendations and cross-promotion swaps, reader referral programs, paid recommendations, deliverability basics (SPF, DKIM, DMARC, complaint rates), and the weekly metrics that matter (net growth, source mix, click rate, not opens). Use when someone wants more newsletter subscribers, is choosing a newsletter platform, wants a referral program or newsletter swap, sees growth stall or emails landing in spam, or asks how to turn social followers into an owned email list.",
+      "level": "intermediate",
+      "tags": [
+        "newsletter",
+        "email list",
+        "beehiiv",
+        "substack",
+        "kit",
+        "lead magnet",
+        "referrals",
+        "recommendations",
+        "deliverability",
+        "growth"
+      ],
+      "uses": [],
+      "time": "3 h setup, 1 h a week",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/mara-vex-first-12-weeks.md",
+        "references/deliverability-basics.md",
+        "references/platform-growth-features.md",
+        "templates/cross-promo-swap.md",
+        "templates/growth-dashboard.csv",
+        "templates/lead-magnet-brief.md"
+      ],
+      "size": 28343,
+      "bytes": 14559,
+      "sha256": "f57ba0043f17e028f56e83f5924ffa9c4db65ef563e93d5dbc218632513c3e0e",
+      "path": "skills/grow/newsletter-growth",
+      "zip": "/skills/newsletter-growth.zip",
+      "related": [
+        "audience-research-and-personas",
+        "newsletter-writing",
+        "email-and-dm-sequences",
+        "reddit-playbook",
+        "collabs-and-cross-promotion",
+        "giveaways-and-contests",
+        "growth-experiments",
+        "kpi-reporting"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "paid-social-ads",
+      "name": "paid-social-ads",
+      "title": "Paid social ads",
+      "category": "grow",
+      "summary": "Boost and advertise on Meta, TikTok, X and Reddit inside the 2026 policies, with labelled AI creative, hard caps and honest reporting.",
+      "description": "Plans and runs paid social ads and post boosts on Meta (Facebook, Instagram), TikTok, X and Reddit for an AI creator, agent or product — account setup owned by a person, ad policy checks (AI-generated content labels, political and social-issue bans, crypto licensing rules, special ad categories), creative testing with AI-made assets labelled, daily budgets with account spending limits and stop rules, creator content as partnership or Spark ads, and a weekly report on cost per result. Use when someone wants to boost a post, run a first ad campaign, test ad creatives, set ad budgets and caps, check whether an ad will be approved, or read ad results.",
+      "level": "intermediate",
+      "tags": [
+        "paid social",
+        "meta ads",
+        "tiktok ads",
+        "spark ads",
+        "reddit ads",
+        "x ads",
+        "boosting",
+        "creative testing",
+        "ad budgets",
+        "ad policy"
+      ],
+      "uses": [],
+      "time": "2 h to set up, 20 min a day for the first week",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/wallpaper-pack-ads-test.md",
+        "references/ad-policies-2026.md",
+        "references/creative-testing-and-metrics.md",
+        "templates/ad-creative-matrix.csv",
+        "templates/campaign-plan.md",
+        "templates/weekly-ads-report.md"
+      ],
+      "size": 29204,
+      "bytes": 14812,
+      "sha256": "483a92da2521f238aadbf8597b77fb3de631766cd9e581003ae999439d385a14",
+      "path": "skills/grow/paid-social-ads",
+      "zip": "/skills/paid-social-ads.zip",
+      "related": [
+        "captions-and-hooks",
+        "influencer-outreach",
+        "kpi-reporting",
+        "growth-experiments",
+        "crypto-marketing-compliance",
+        "launch-campaigns",
         "ai-disclosure-and-provenance"
       ],
       "valid": true
@@ -1742,9 +3464,9 @@
         "templates/positioning-canvas.md",
         "templates/profile-kit.csv"
       ],
-      "size": 65382,
-      "bytes": 32813,
-      "sha256": "09889cd46b72055418c9578515e71b9c0da3888d14d15cae099a95594cd32ce8",
+      "size": 65238,
+      "bytes": 32694,
+      "sha256": "884ec92bc1f35280435d763ac61525087837cdfb1483e7c0d1d5cf0f27a4fb24",
       "path": "skills/grow/personal-brand-strategy",
       "zip": "/skills/personal-brand-strategy.zip",
       "related": [
@@ -1762,6 +3484,58 @@
         "agent-persona-and-system-prompt",
         "crisis-and-reputation",
         "posting-schedule"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "pinterest-playbook",
+      "name": "pinterest-playbook",
+      "title": "Pinterest playbook for AI characters",
+      "category": "grow",
+      "summary": "Grow an AI character on Pinterest: keyword boards, 2:3 Pins, AI-modified labels, and approve-each-Pin publishing.",
+      "description": "Runs Pinterest for an AI character or creator brand as a visual search engine. Covers keyword-led boards, Pinterest Trends, Pin specs (2:3 images, 4 s to 15 min video, 2–5 image carousels, 100-character titles, 800-character descriptions, 500-character alt text), the \"AI modified\" label and the API's ai_disclosures values, Pinterest's rule that automation must be approved and that the user chooses each Pin, the spam and get-rich-quick bans, Trial vs Standard API access, and approval-first pinning with @useclaudia/social. Use when someone wants to grow an AI character, fashion or art brand on Pinterest, plan boards and a pinning week, write Pin titles and descriptions, label AI Pins, or connect Pinterest posting to an agent without breaking Pinterest's automation rules.",
+      "level": "intermediate",
+      "tags": [
+        "pinterest",
+        "boards",
+        "pins",
+        "visual search",
+        "keywords",
+        "trends",
+        "ai label",
+        "automation rules",
+        "fashion"
+      ],
+      "uses": [
+        "@useclaudia/social",
+        "@useclaudia/cli"
+      ],
+      "time": "1 h setup, 20 min a day",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-wardrobe-boards.md",
+        "references/pinterest-specs-and-policies.md",
+        "templates/board-plan.csv",
+        "templates/pin-copy-template.md",
+        "templates/pinterest-weekly-plan.csv"
+      ],
+      "size": 31951,
+      "bytes": 15040,
+      "sha256": "81c506a7ff0466945a32424866deabbd11b0ec1f27c7dd775efe73dce7f805d6",
+      "path": "skills/grow/pinterest-playbook",
+      "zip": "/skills/pinterest-playbook.zip",
+      "related": [
+        "claudia-character-bible",
+        "growth-experiments",
+        "ai-disclosure-and-provenance",
+        "fashion-lookbooks",
+        "social-seo-and-hashtags",
+        "trend-research",
+        "affiliate-and-ambassador-programs",
+        "posting-schedule",
+        "social-publishing"
       ],
       "valid": true
     },
@@ -1804,9 +3578,9 @@
         "templates/schedule-rules.json",
         "templates/weekly-calendar.csv"
       ],
-      "size": 65791,
-      "bytes": 32540,
-      "sha256": "9d5141cc87230bb5bce76fbdbb2cdb05a340ad17e64ca6b8e0c203e537c38932",
+      "size": 65759,
+      "bytes": 32527,
+      "sha256": "25483c8d862dba01602731d1cb96c5faa69473b112abf11e87ffb092beb37fc8",
       "path": "skills/grow/posting-schedule",
       "zip": "/skills/posting-schedule.zip",
       "related": [
@@ -1825,6 +3599,159 @@
         "trend-research",
         "social-publishing",
         "claudia-local-studio"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "reddit-playbook",
+      "name": "reddit-playbook",
+      "title": "Reddit playbook",
+      "category": "grow",
+      "summary": "Join Reddit as a disclosed AI character or its operator: research subreddits, follow the 10% norm, post by hand, never spam.",
+      "description": "Runs an AI character's or creator's presence on Reddit the way Reddit's 2026 rules actually work — subreddit research, per-community rules, the 10% self-promotion norm, AI-content and persona disclosure, the Responsible Builder Policy and the closing Data API, Brand Affiliate tags, AMAs, and a manual, human-posted routine that earns trust instead of spam flags. Use when someone wants to post on Reddit, promote a project or newsletter there, find the right subreddits, recover from removed posts or a shadowban, plan an AMA, or asks whether an agent or bot can post on Reddit.",
+      "level": "intermediate",
+      "tags": [
+        "reddit",
+        "subreddits",
+        "self-promotion",
+        "ai disclosure",
+        "community rules",
+        "ama",
+        "bots",
+        "api",
+        "moderators"
+      ],
+      "uses": [],
+      "time": "1 h setup, 20 min a day",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/juno-first-month-on-reddit.md",
+        "references/reddit-rules-and-api.md",
+        "templates/reddit-post-templates.md",
+        "templates/subreddit-research.csv"
+      ],
+      "size": 31870,
+      "bytes": 15394,
+      "sha256": "3401a541b6a7f31b364a170634894f2c2edcaac2df168a83ca0f062a01578b70",
+      "path": "skills/grow/reddit-playbook",
+      "zip": "/skills/reddit-playbook.zip",
+      "related": [
+        "claudia-character-bible",
+        "giveaways-and-contests",
+        "crypto-marketing-compliance",
+        "engagement-and-replies",
+        "ai-disclosure-and-provenance",
+        "newsletter-growth",
+        "x-playbook"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "social-listening",
+      "name": "social-listening",
+      "title": "Social listening",
+      "category": "grow",
+      "summary": "Track mentions, keywords and sentiment within each platform's terms, triage what matters, and send a weekly listening report.",
+      "description": "Sets up and runs social listening for a creator, brand, agent or coin — tracking mentions, keywords and sentiment across X, Reddit, Telegram, Bluesky, Mastodon, YouTube and the Claudia agent thread within each platform's API terms and costs — then triages what needs a person and writes a weekly listening report. Covers query design with exclusions, the @useclaudia/social inbox and MCP inbox tool for direct mentions, claudia watch thread and read_thread for the agent thread, paid X search budgets, Bluesky search, Reddit and Telegram limits, a mention log, sentiment coding and a tally script. Use when someone asks \"what are people saying about us\", wants brand or coin mention tracking, an early warning for scams or backlash, share of voice against competitors, or a weekly listening report. Never surveillance of individuals.",
+      "level": "intermediate",
+      "tags": [
+        "social listening",
+        "mentions",
+        "sentiment",
+        "share of voice",
+        "brand monitoring",
+        "inbox",
+        "reddit",
+        "bluesky",
+        "telegram",
+        "report"
+      ],
+      "uses": [
+        "@useclaudia/social",
+        "@useclaudia/cli",
+        "@useclaudia/mcp"
+      ],
+      "time": "2 h setup, 30 min a week",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-week-41.md",
+        "references/coding-guide.md",
+        "references/sources-and-terms.md",
+        "scripts/tally.mjs",
+        "templates/listening-plan.yaml",
+        "templates/mention-log.csv",
+        "templates/weekly-listening-report.md"
+      ],
+      "size": 42455,
+      "bytes": 21010,
+      "sha256": "caaaf841edd152cbb9fb95d31feb8e674b2a6a30830a6609469f99b4135d85cd",
+      "path": "skills/grow/social-listening",
+      "zip": "/skills/social-listening.zip",
+      "related": [
+        "competitor-analysis",
+        "social-seo-and-hashtags",
+        "crisis-and-reputation",
+        "engagement-and-replies",
+        "kpi-reporting",
+        "audience-research-and-personas",
+        "telegram-and-discord-community"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "social-seo-and-hashtags",
+      "name": "social-seo-and-hashtags",
+      "title": "Social SEO and hashtags",
+      "category": "grow",
+      "summary": "Get found in in-app search: research keywords, map them to posts, place them where platforms read, and use hashtags the 2026 way.",
+      "description": "Makes posts findable through search inside TikTok, Instagram, YouTube, Pinterest, X, Threads and Bluesky — keyword research from in-app search and official trend tools, a keyword map, where each platform reads words (spoken line, on-screen text, caption, title, description, alt text, profile), the 2026 hashtag rules (Instagram's 5-tag cap, YouTube's 3-shown / 60-max rule, X's two-tag guidance, one Threads topic tag) and how to measure search traffic. Use when posts get views from For You but nobody finds them later, when writing titles, captions, alt text or hashtags for search, when someone asks \"how many hashtags\", or when planning evergreen how-to content. Includes a keyword map template, a per-post SEO checklist and a worked example.",
+      "level": "beginner",
+      "tags": [
+        "social seo",
+        "hashtags",
+        "keywords",
+        "search",
+        "alt text",
+        "tiktok",
+        "instagram",
+        "youtube",
+        "pinterest",
+        "captions"
+      ],
+      "uses": [
+        "@useclaudia/social"
+      ],
+      "time": "1 h to build the map, 5 min per post",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-keyword-map.md",
+        "references/keyword-research-sources.md",
+        "references/platform-search-2026.md",
+        "templates/keyword-map.csv",
+        "templates/post-seo-checklist.md"
+      ],
+      "size": 28866,
+      "bytes": 14497,
+      "sha256": "a10d8a1a85db67c914335d1a73f5640db4b073c11163be1dc415aa97cedaf51d",
+      "path": "skills/grow/social-seo-and-hashtags",
+      "zip": "/skills/social-seo-and-hashtags.zip",
+      "related": [
+        "audience-research-and-personas",
+        "content-pillars-and-series",
+        "competitor-analysis",
+        "personal-brand-strategy",
+        "kpi-reporting",
+        "crypto-marketing-compliance",
+        "captions-and-hooks",
+        "trend-research",
+        "ai-search-visibility",
+        "youtube-shorts-playbook"
       ],
       "valid": true
     },
@@ -1891,6 +3818,56 @@
       "valid": true
     },
     {
+      "slug": "threads-playbook",
+      "name": "threads-playbook",
+      "title": "Threads playbook for AI characters",
+      "category": "grow",
+      "summary": "Grow an AI character on Threads: conversation-first posts, topic tags and Communities, labelled AI, approval-first posting.",
+      "description": "Runs an AI character or agent account on Meta's Threads. Covers an honest profile, Meta's AI-label rules (the Threads API has no AI flag, so the label goes in the text), topic tags and Communities, Dear Algo and Your Algo, formats and limits (500 characters, 10,000-character text attachments, 20-item carousels, 5-minute video, polls, disappearing posts), API publishing limits, and approval-first posting with @useclaudia/social through your own Meta app or a posting service. Use when someone wants to start, grow or automate a Threads account for an AI character, plan a Threads week, adapt X or Instagram content for Threads, join Threads Communities, or check whether a Threads workflow follows Meta's rules.",
+      "level": "intermediate",
+      "tags": [
+        "threads",
+        "meta",
+        "topic tags",
+        "communities",
+        "conversation",
+        "ai label",
+        "automation",
+        "growth"
+      ],
+      "uses": [
+        "@useclaudia/social",
+        "@useclaudia/cli"
+      ],
+      "time": "45 min setup, 20 min a day",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-threads-first-month.md",
+        "references/threads-formats-and-api.md",
+        "templates/threads-post-bank.md",
+        "templates/threads-weekly-plan.csv"
+      ],
+      "size": 29863,
+      "bytes": 14643,
+      "sha256": "54e635981c2a9da86d7fb24a8ca551512f329771b7ba85d6ca332b1edc91723b",
+      "path": "skills/grow/threads-playbook",
+      "zip": "/skills/threads-playbook.zip",
+      "related": [
+        "claudia-character-bible",
+        "captions-and-hooks",
+        "engagement-and-replies",
+        "growth-experiments",
+        "x-playbook",
+        "instagram-reels-playbook",
+        "posting-schedule",
+        "ai-disclosure-and-provenance",
+        "social-publishing"
+      ],
+      "valid": true
+    },
+    {
       "slug": "tiktok-playbook",
       "name": "tiktok-playbook",
       "title": "TikTok playbook for AI influencers",
@@ -1918,7 +3895,7 @@
       "updated": "2026-10-08",
       "files": [
         "SKILL.md",
-        "examples/claudia-rainy-run-series.md",
+        "examples/claudia-club-run-series.md",
         "examples/juno-crypto-safe-rewrites.md",
         "references/tiktok-ai-label-and-crypto-rules.md",
         "references/tiktok-algorithm-and-search.md",
@@ -1929,9 +3906,9 @@
         "templates/tiktok-preflight-checklist.md",
         "templates/tiktok-video-brief.md"
       ],
-      "size": 58818,
-      "bytes": 29653,
-      "sha256": "df61c0a441d98bec19670caf0172e05f638a98e8a8510c936f1887a35b59fcb1",
+      "size": 58705,
+      "bytes": 29617,
+      "sha256": "21519027b4cef555431bcf091f447837402158dd7cad9f64d6511b7a9e9239c7",
       "path": "skills/grow/tiktok-playbook",
       "zip": "/skills/tiktok-playbook.zip",
       "related": [
@@ -1985,7 +3962,7 @@
       "updated": "2026-10-08",
       "files": [
         "SKILL.md",
-        "examples/claudia-rain-run-trend.md",
+        "examples/claudia-club-run-trend.md",
         "examples/juno-declines-a-pump-trend.md",
         "references/do-not-touch.md",
         "references/sound-and-music-rights.md",
@@ -1997,9 +3974,9 @@
         "templates/trend-log.csv",
         "templates/weekly-scan-checklist.md"
       ],
-      "size": 64336,
-      "bytes": 32700,
-      "sha256": "c5f40219df5a1e3100b250b214076bbfc173c21db65640adb9730ce63b1c0e43",
+      "size": 64250,
+      "bytes": 32641,
+      "sha256": "ba62399a5c537a516bb9f272d921cf59ff66e295507f40432271a611d90858ce",
       "path": "skills/grow/trend-research",
       "zip": "/skills/trend-research.zip",
       "related": [
@@ -2062,9 +4039,9 @@
         "templates/x-weekly-calendar.csv",
         "templates/x-weekly-review.md"
       ],
-      "size": 56887,
-      "bytes": 28839,
-      "sha256": "10e8676ae8368987af23995950c907f034cdb9b4f7e58a1d0fe6f8210c65dd58",
+      "size": 56858,
+      "bytes": 28836,
+      "sha256": "d75330505b4391e479a2bd9c30a14ebbda19c80f877e192b1b60caa5e16e3271",
       "path": "skills/grow/x-playbook",
       "zip": "/skills/x-playbook.zip",
       "related": [
@@ -2124,9 +4101,9 @@
         "templates/shorts-series-plan.csv",
         "templates/shorts-upload-checklist.md"
       ],
-      "size": 52047,
-      "bytes": 26124,
-      "sha256": "d24fc9a3ab39eb53cc9ca61731febccea13df741629eafbff7219cb502edf809",
+      "size": 52092,
+      "bytes": 26151,
+      "sha256": "8efa9c0c310827187e5c560d7e46416a44db407ad222f6ca9d8c0fd956b941f8",
       "path": "skills/grow/youtube-shorts-playbook",
       "zip": "/skills/youtube-shorts-playbook.zip",
       "related": [
@@ -2151,6 +4128,112 @@
         "music-and-sound-for-shorts",
         "voice-and-lip-sync",
         "autonomous-posting-loop"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "agent-evals-and-red-teaming",
+      "name": "agent-evals-and-red-teaming",
+      "title": "Agent evals and red-teaming",
+      "category": "build",
+      "summary": "Test an agent before it goes live: eval sets, red-team prompts, repeatable runs, fixed thresholds and regression checks.",
+      "description": "Tests an AI agent before it goes live and after every change — eval sets for persona, safety, tool use, money rules, prompt injection and output format, adversarial red-team prompts (indirect injection through coin descriptions, DMs, web pages and thread posts, authority spoofing, encodings, memory poisoning, approval bypass, cap splitting), repeatable runs with `claudia agent -p --json` or an SDK harness that records write tools without executing them, a scoring script with fixed pass/fail thresholds, and regression runs. Use when an agent is about to post, trade or answer people on its own, when its prompt, model, tools or skills change, or after an incident.",
+      "level": "advanced",
+      "tags": [
+        "evals",
+        "red teaming",
+        "testing",
+        "prompt injection",
+        "safety",
+        "tool use",
+        "regression",
+        "agents"
+      ],
+      "uses": [
+        "@useclaudia/cli",
+        "@useclaudia/sdk",
+        "@useclaudia/mcp"
+      ],
+      "time": "2 h to build the set, 20 min per run",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/lumen-scout-eval-run.md",
+        "references/red-team-catalog.md",
+        "references/scoring-and-thresholds.md",
+        "scripts/score-evals.mjs",
+        "templates/eval-report.md",
+        "templates/eval-set.csv",
+        "templates/run-evals.sh"
+      ],
+      "size": 54472,
+      "bytes": 25779,
+      "sha256": "1783cffca2f2d83771fa1a90374b1e0e204bf16ee5ff4bd03780a2b107ae3f6b",
+      "path": "skills/build/agent-evals-and-red-teaming",
+      "zip": "/skills/agent-evals-and-red-teaming.zip",
+      "related": [
+        "agent-persona-and-system-prompt",
+        "prompt-injection-defense",
+        "autonomous-posting-loop",
+        "safe-trading",
+        "agent-ops-runbook",
+        "multi-agent-teams"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "agent-memory-and-knowledge",
+      "name": "agent-memory-and-knowledge",
+      "title": "Agent memory and knowledge",
+      "category": "build",
+      "summary": "Memory an agent can trust: Markdown files with sources, a quarantine for outside content, retrieval, a posted log and pruning.",
+      "description": "Gives an AI agent long-term memory and a small knowledge base it can be trusted with — what to store (facts, owner preferences, past posts, decisions), plain Markdown memory files with a source on every line, a quarantine for anything learned from outside content (posts, DMs, coin descriptions, web pages), retrieval before each answer, a posted log against repeats, and weekly pruning. Explains how Claudia Local does it (MEMORY.md, USER.md, daily notes, \"Waiting for you\") and the same layout for CLI and SDK agents. Use when an agent forgets things between runs, repeats old posts, needs a knowledge base, saved a \"fact\" a stranger told it, or its memory files have grown messy. Includes a read-only memory linter.",
+      "level": "intermediate",
+      "tags": [
+        "memory",
+        "knowledge base",
+        "agents",
+        "markdown",
+        "quarantine",
+        "retrieval",
+        "pruning",
+        "claudia local",
+        "prompt injection"
+      ],
+      "uses": [
+        "@useclaudia/social",
+        "@useclaudia/sdk",
+        "claudia-local"
+      ],
+      "time": "45 min setup, 15 min a week",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/lumen-scout-memory-week.md",
+        "references/claudia-local-memory.md",
+        "references/what-to-store.md",
+        "scripts/memory-lint.mjs",
+        "templates/MEMORY.md",
+        "templates/USER.md",
+        "templates/memory-policy.yaml",
+        "templates/posts-log.md",
+        "templates/quarantine-review.md"
+      ],
+      "size": 38464,
+      "bytes": 19996,
+      "sha256": "2d90d241d3b82f05a87ef4d52b15115668dc4a67cded9ddd583bf03093742b93",
+      "path": "skills/build/agent-memory-and-knowledge",
+      "zip": "/skills/agent-memory-and-knowledge.zip",
+      "related": [
+        "wallet-and-key-security",
+        "agent-evals-and-red-teaming",
+        "prompt-injection-defense",
+        "claudia-local-studio",
+        "agent-persona-and-system-prompt",
+        "autonomous-posting-loop",
+        "multi-agent-teams"
       ],
       "valid": true
     },
@@ -2258,6 +4341,113 @@
         "claudia-character-bible",
         "captions-and-hooks",
         "crypto-marketing-compliance"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "ai-framework-integrations",
+      "name": "ai-framework-integrations",
+      "title": "AI framework integrations",
+      "category": "build",
+      "summary": "Claudia's tools inside the Vercel AI SDK, LangChain, OpenAI Agents or raw function calling, with data-only defaults and limits.",
+      "description": "Wires Claudia's tools into the Vercel AI SDK, LangChain JS and the OpenAI Agents SDK with the @useclaudia/sdk adapters (claudiaTools from @useclaudia/sdk/ai, /langchain and /openai-agents), and into any OpenAI-compatible model with raw function calling (toOpenAITools, toAnthropicTools, toGeminiTools plus createToolExecutor and toolOutputText). One runnable example per framework, plus the safety settings that matter — a data-only tool filter, includeWrites left off, mcp false, step and turn limits, approvals for write tools, output caps and untrusted-text handling. Use when someone wants Claudia data inside their own agent, chatbot, LangChain graph, OpenAI agent or function-calling loop, or asks which adapter or option to use. Research tools by default; nothing trades without a person signing. Not financial advice.",
+      "level": "intermediate",
+      "tags": [
+        "vercel ai sdk",
+        "langchain",
+        "openai agents",
+        "function calling",
+        "tools",
+        "adapters",
+        "sdk",
+        "agents",
+        "typescript"
+      ],
+      "uses": [
+        "@useclaudia/sdk",
+        "ai",
+        "langchain"
+      ],
+      "time": "30 min",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/langchain.md",
+        "examples/openai-agents.md",
+        "examples/raw-function-calling.md",
+        "examples/vercel-ai-sdk.md",
+        "references/adapter-options.md",
+        "templates/safety-settings.md",
+        "templates/system-prompt.txt"
+      ],
+      "size": 34293,
+      "bytes": 17844,
+      "sha256": "abaeac02c95ee2a365aaeaa94b4ca4418ea176aab1bd8026e589ced072668274",
+      "path": "skills/build/ai-framework-integrations",
+      "zip": "/skills/ai-framework-integrations.zip",
+      "related": [
+        "mcp-setup",
+        "sdk-quickstart",
+        "agent-persona-and-system-prompt",
+        "safe-trading",
+        "prompt-injection-defense",
+        "agent-evals-and-red-teaming",
+        "coin-research",
+        "local-models-with-ollama"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "alerts-and-watchers",
+      "name": "alerts-and-watchers",
+      "title": "Alerts and watchers",
+      "category": "build",
+      "summary": "Watchers that alert on what matters: thresholds, de-dupe, rate caps, quiet hours and dry runs, to your own Telegram, Discord or webhook.",
+      "description": "Designs alerts that people keep reading, from claudia watch (coin trades and alerts, wallet, launches, thread, board) and the SDK's client.stream iterators, sent to the person's own Telegram bot, Discord webhook or webhook with --notify. Covers picking thresholds (--min-usd sized to a coin's volume, wallet tags, --match), de-duplication, the --notify-per-minute limit and an hourly cap, quiet hours with a held summary, --dry-run previews, --count and --duration test runs, and an alert-gate script for anything the CLI flags don't do. Use when someone says \"ping me when …\", \"alert me on Telegram / Discord\", \"too many alerts\", \"no alerts at night\", or wants a watcher on a coin, wallet, launches or the thread. Read-only, so alerts never trade or post publicly. Not financial advice.",
+      "level": "intermediate",
+      "tags": [
+        "alerts",
+        "watchers",
+        "claudia watch",
+        "notify",
+        "telegram",
+        "discord",
+        "webhook",
+        "streams",
+        "quiet hours",
+        "dedupe"
+      ],
+      "uses": [
+        "@useclaudia/cli",
+        "@useclaudia/sdk"
+      ],
+      "time": "30 min",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/creator-alert-setup.md",
+        "references/thresholds-and-limits.md",
+        "scripts/alert-gate.mjs",
+        "templates/alert-message.txt",
+        "templates/alert-rules.yaml",
+        "templates/watchers.sh"
+      ],
+      "size": 30589,
+      "bytes": 15530,
+      "sha256": "8f2decd67e7e3386cc9eb1f81b67a26cef8b4111e72e7ab97faf78c751586ea7",
+      "path": "skills/build/alerts-and-watchers",
+      "zip": "/skills/alerts-and-watchers.zip",
+      "related": [
+        "automation-and-webhooks",
+        "kol-and-smart-money-tracking",
+        "crypto-marketing-compliance",
+        "coin-research",
+        "cli-power-user",
+        "sdk-quickstart",
+        "agent-ops-runbook",
+        "telegram-and-discord-community"
       ],
       "valid": true
     },
@@ -2416,9 +4606,9 @@
         "templates/local-mcp-configs.md",
         "templates/operator-checklist.md"
       ],
-      "size": 37843,
-      "bytes": 20138,
-      "sha256": "70e287080b01ae6da71b3157278430778491ccf508300f1b251c35b5948c1277",
+      "size": 37879,
+      "bytes": 20150,
+      "sha256": "b5e3374c58b6578995c0d6989e52e76ab158f2eda8b60b2b42040ccd9e4a393e",
       "path": "skills/build/claudia-local-studio",
       "zip": "/skills/claudia-local-studio.zip",
       "related": [
@@ -2546,9 +4736,9 @@
         "templates/shell-aliases.txt",
         "templates/watchlist.csv"
       ],
-      "size": 42394,
-      "bytes": 21675,
-      "sha256": "c4c3217bd5ce8de7585e8be4352a0c9de0e81820ad7bd5beb1fc7a45b1df7aa9",
+      "size": 42420,
+      "bytes": 21690,
+      "sha256": "15cb919c01245bd269e816187581b19fa604d534c5ec270d2646e736e411001c",
       "path": "skills/build/cli-power-user",
       "zip": "/skills/cli-power-user.zip",
       "related": [
@@ -2681,6 +4871,164 @@
       "valid": true
     },
     {
+      "slug": "creator-fees-and-harvest",
+      "name": "creator-fees-and-harvest",
+      "title": "Creator fees and harvest",
+      "category": "build",
+      "summary": "Read what your launches earned, harvest only when it is worth the fee, and keep a clean 70/30 fee ledger on Solana and Robinhood Chain.",
+      "description": "Checks and collects the creator fees a Claudia launch earns, split 70% creator / 30% platform on Solana (pump.fun fee sharing) and Robinhood Chain (beta, one FeeSplitter per launch). Covers claudia fees and claudia harvest, the SDK's launchesBy, launchFees, harvestPlan, evm.fees, evm.harvest and readFeeSplitter, the get_launch_fees MCP tool, the collector and keeper bots that pay out without anyone claiming, when a manual harvest is worth its network fee or gas, and a fee ledger. Use when someone asks \"how much have my coins earned\", \"how do I claim creator fees\", \"what is the FeeSplitter\", wants to harvest now, or needs fee records for their books. Every harvest is dry-run first and sent only after a person says yes. Not financial or tax advice.",
+      "level": "intermediate",
+      "tags": [
+        "creator fees",
+        "harvest",
+        "feesplitter",
+        "70/30",
+        "solana",
+        "robinhood chain",
+        "pump.fun",
+        "launches",
+        "ledger",
+        "onchain"
+      ],
+      "uses": [
+        "@useclaudia/cli",
+        "@useclaudia/sdk",
+        "@useclaudia/mcp"
+      ],
+      "time": "20 min",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/two-chain-fee-check.md",
+        "references/fee-mechanics-by-chain.md",
+        "scripts/fees-snapshot.mjs",
+        "templates/fee-ledger.csv",
+        "templates/harvest-confirmation.md",
+        "templates/harvest-decision.md"
+      ],
+      "size": 27694,
+      "bytes": 14303,
+      "sha256": "b11bac1fd5161e8c68ffd146071d8e5c575abebd9d064ea8565aa48760ad882e",
+      "path": "skills/build/creator-fees-and-harvest",
+      "zip": "/skills/creator-fees-and-harvest.zip",
+      "related": [
+        "launch-a-coin",
+        "safe-trading",
+        "alerts-and-watchers",
+        "automation-and-webhooks",
+        "portfolio-and-pnl-tracking",
+        "wallet-and-key-security",
+        "cli-power-user",
+        "monetization-streams"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "discord-bot-agent",
+      "name": "discord-bot-agent",
+      "title": "Discord bot agent",
+      "category": "build",
+      "summary": "Run an AI agent on Discord: webhook or bot, least-privilege invite, intents, slash commands, owner-only buttons, rate limits, AI label.",
+      "description": "Puts an AI agent on Discord safely — choosing a webhook or a bot, creating the application and bot user, least-privilege invite permissions, gateway intents (Message Content is privileged), slash commands registered per guild, HTTP interactions with ed25519 signature checks, owner-only Approve / Deny buttons, Discord's rate limits, and labelling the agent as AI. Use when someone wants an agent to post announcements, answer /ask questions or route approvals in a Discord server, connect Discord with @useclaudia/social or the claudia CLI, or audit a Discord bot's permissions, intents and labels.",
+      "level": "intermediate",
+      "tags": [
+        "discord",
+        "bot",
+        "webhooks",
+        "slash commands",
+        "interactions",
+        "intents",
+        "permissions",
+        "rate limits",
+        "approvals"
+      ],
+      "uses": [
+        "@useclaudia/social",
+        "@useclaudia/cli"
+      ],
+      "time": "1–2 h",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/lumen-scout-discord.md",
+        "references/discord-api-facts.md",
+        "templates/app-settings-checklist.md",
+        "templates/interactions-endpoint.mjs",
+        "templates/register-commands.mjs"
+      ],
+      "size": 39266,
+      "bytes": 18589,
+      "sha256": "72c6d627173a3544e9c6d0edd96578cb699bc1c5cc9dd26cc4e5d39e03165550",
+      "path": "skills/build/discord-bot-agent",
+      "zip": "/skills/discord-bot-agent.zip",
+      "related": [
+        "telegram-and-discord-community",
+        "agent-persona-and-system-prompt",
+        "safe-trading",
+        "prompt-injection-defense",
+        "social-publishing",
+        "telegram-bot-agent",
+        "wallet-and-key-security",
+        "agent-evals-and-red-teaming"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "kol-and-smart-money-tracking",
+      "name": "kol-and-smart-money-tracking",
+      "title": "KOL and smart-money tracking",
+      "category": "build",
+      "summary": "Read KOL and smart-money feeds and wallet labels without being fooled by bots, follow a few wallets responsibly, and write a daily digest.",
+      "description": "Reads Claudia's KOL, smart-money and signal feeds and the wallet labels on holders (kol, smart, whale, sniper, bundler, insider, fresh, dev, rat, bot, wash, exchange, pool, suspicious, top10) to separate signal from noise — tag combinations, size, repetition, timing and confluence — then profiles and follows a short list of wallets responsibly and writes a daily digest. Uses claudia feed, claudia holders --tag, claudia watch wallet, get_feed, get_trending with order kol or smart, get_holders, get_wallet and the SDK feeds, insights.wallet and stream.wallet. Use when someone asks \"what are KOLs buying\", \"is smart money in this coin\", \"what does this wallet label mean\", \"should I follow this wallet\", or wants a morning KOL digest. Research aid only, never copy-trading and never financial advice.",
+      "level": "intermediate",
+      "tags": [
+        "kol",
+        "smart money",
+        "wallet labels",
+        "feeds",
+        "signals",
+        "wallet tracking",
+        "solana",
+        "robinhood chain",
+        "digest",
+        "research"
+      ],
+      "uses": [
+        "@useclaudia/cli",
+        "@useclaudia/sdk",
+        "@useclaudia/mcp"
+      ],
+      "time": "20 min",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/daily-digest.md",
+        "references/labels-glossary.md",
+        "scripts/feed-confluence.mjs",
+        "templates/daily-digest.md",
+        "templates/signal-checklist.md",
+        "templates/wallet-watchlist.csv"
+      ],
+      "size": 26198,
+      "bytes": 14084,
+      "sha256": "e969cd76c9b74dfa887cc8205d61db33b3767f4cfd96773bc6d3377f6ed2f40e",
+      "path": "skills/build/kol-and-smart-money-tracking",
+      "zip": "/skills/kol-and-smart-money-tracking.zip",
+      "related": [
+        "coin-research",
+        "rug-check",
+        "safe-trading",
+        "mcp-setup",
+        "alerts-and-watchers",
+        "crypto-marketing-compliance",
+        "social-listening"
+      ],
+      "valid": true
+    },
+    {
       "slug": "launch-a-coin",
       "name": "launch-a-coin",
       "title": "Launch a coin on pump.fun through Claudia",
@@ -2732,6 +5080,59 @@
         "wallet-and-key-security",
         "create-an-agent",
         "media-pipelines"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "local-models-with-ollama",
+      "name": "local-models-with-ollama",
+      "title": "Local models with Ollama and LM Studio",
+      "category": "build",
+      "summary": "Run the agent's chat model on your own machine: size it to your hardware, connect Claudia Local, and know what still leaves the device.",
+      "description": "Runs an agent's chat model on the person's own computer with Ollama or LM Studio and connects it to Claudia Local — install, picking a model size that fits the RAM or VRAM, raising the context window, how Claudia Local detects local servers on 127.0.0.1:11434 and 127.0.0.1:1234, tool-calling and vision caveats, Docker and custom ports, and the real privacy trade-offs (cloud tags, fallbacks, network exposure). Use when someone wants a private or offline agent, wants to stop paying per token for chat, sees \"Ollama not found\" or \"This model can't use tools\", or needs to choose between a local and a hosted model for each role.",
+      "level": "intermediate",
+      "tags": [
+        "ollama",
+        "lm studio",
+        "local models",
+        "claudia local",
+        "privacy",
+        "tool calling",
+        "context window",
+        "self-hosted",
+        "gguf",
+        "mlx"
+      ],
+      "uses": [
+        "claudia-local",
+        "ollama",
+        "lm-studio"
+      ],
+      "time": "30–60 min",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/16gb-laptop-private-agent.md",
+        "references/hardware-and-sizing.md",
+        "references/how-claudia-local-finds-models.md",
+        "references/privacy-trade-offs.md",
+        "templates/Modelfile",
+        "templates/local-model-setup.md",
+        "templates/tool-call-smoke-test.md"
+      ],
+      "size": 32992,
+      "bytes": 17307,
+      "sha256": "bdcac81118201cf7d0991cd1351fc929c1a50f8d1811452eae67a3cb12c1f15c",
+      "path": "skills/build/local-models-with-ollama",
+      "zip": "/skills/local-models-with-ollama.zip",
+      "related": [
+        "claudia-local-studio",
+        "agent-ops-runbook",
+        "wallet-and-key-security",
+        "agent-persona-and-system-prompt",
+        "prompt-injection-defense",
+        "agent-evals-and-red-teaming"
       ],
       "valid": true
     },
@@ -2842,9 +5243,9 @@
         "templates/pipeline-script.md",
         "templates/shotlist.csv"
       ],
-      "size": 42190,
-      "bytes": 21615,
-      "sha256": "2fcecc86abd11f6698de3f4f78c99704671c015cd87a0a2a7f5991d2bbb05ee7",
+      "size": 42219,
+      "bytes": 21609,
+      "sha256": "002143e76a44466bf96e3ed20d18cb00eea82d9586969d0135737d6662a17496",
       "path": "skills/build/media-pipelines",
       "zip": "/skills/media-pipelines.zip",
       "related": [
@@ -2859,6 +5260,168 @@
         "batch-content-production",
         "ai-disclosure-and-provenance",
         "short-form-editing"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "multi-agent-teams",
+      "name": "multi-agent-teams",
+      "title": "Multi-agent teams",
+      "category": "build",
+      "summary": "Split work across researcher, writer, reviewer and capped trader agents with hand-offs, shared state and human approval gates.",
+      "description": "Splits an agent's work across a small team of agents — researcher, writer, reviewer, publisher and a trader with hard caps — with written hand-offs, one place for shared state, a clear rule for who may spend or post (only the human approves), review gates, budgets and stop rules. Shows the tool split with Claudia's tool catalog, separate local MCP servers per role, Claudia Local's helper agents and the shared spend ledger. Use when one agent is doing too much, when adding a reviewer or a trading role, when designing an orchestrator and sub-agents, or when agents on a team start passing instructions to each other.",
+      "level": "advanced",
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "sub-agents",
+        "hand-offs",
+        "review gates",
+        "permissions",
+        "caps",
+        "mcp",
+        "agents"
+      ],
+      "uses": [
+        "@useclaudia/sdk",
+        "@useclaudia/mcp",
+        "@useclaudia/social",
+        "@useclaudia/cli",
+        "claudia-local"
+      ],
+      "time": "1–2 h to design, 30 min to wire",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/launch-week-team.md",
+        "references/handoff-failure-modes.md",
+        "references/permission-matrix.md",
+        "templates/handoff-brief.json",
+        "templates/review-checklist.md",
+        "templates/team-charter.yaml"
+      ],
+      "size": 28894,
+      "bytes": 14839,
+      "sha256": "b4c7d74eeabb9e9dcb379afd15207f8e3807c83547a6fd74787dabd4aaad0bbc",
+      "path": "skills/build/multi-agent-teams",
+      "zip": "/skills/multi-agent-teams.zip",
+      "related": [
+        "agent-memory-and-knowledge",
+        "rug-check",
+        "safe-trading",
+        "agent-evals-and-red-teaming",
+        "claudia-character-bible",
+        "prompt-injection-defense",
+        "mcp-setup",
+        "autonomous-posting-loop"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "portfolio-and-pnl-tracking",
+      "name": "portfolio-and-pnl-tracking",
+      "title": "Portfolio and P&L tracking",
+      "category": "build",
+      "summary": "Know what an agent wallet holds and whether it is up or down, across SOL and ETH, with every fee and gas cost in one ledger.",
+      "description": "Tracks an agent wallet's holdings and profit and loss across Solana (SOL) and Robinhood Chain (ETH, beta) with Claudia's tools — get_my_portfolio and claudia://me/portfolio, claudia status, claudia wallet and wallet evm, the SDK's tokenBalance, getSolBalance and evm.balance, and get_wallet's 7-day view as a cross-check — then keeps a trade ledger with cost basis, network fees, gas, launch costs and creator-fee income, and computes average-cost P&L with an offline script. Use when someone asks \"what is my agent holding\", \"am I up or down\", \"what did fees and gas cost me\", wants a monthly statement, or needs clean records for an accountant. Includes a ledger template and a tax-record caution. Bookkeeping aid only, never tax or financial advice.",
+      "level": "intermediate",
+      "tags": [
+        "portfolio",
+        "pnl",
+        "cost basis",
+        "ledger",
+        "fees",
+        "gas",
+        "solana",
+        "robinhood chain",
+        "records",
+        "accounting"
+      ],
+      "uses": [
+        "@useclaudia/cli",
+        "@useclaudia/sdk",
+        "@useclaudia/mcp"
+      ],
+      "time": "40 min",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/october-statement.md",
+        "references/cost-basis-and-fees.md",
+        "references/data-sources.md",
+        "scripts/pnl-from-ledger.mjs",
+        "templates/ledger.csv",
+        "templates/monthly-statement.md"
+      ],
+      "size": 31695,
+      "bytes": 15389,
+      "sha256": "b4446cc338dd8291fb1edd4539f4f46497be1f99c41a4d4b338362a486e0e60f",
+      "path": "skills/build/portfolio-and-pnl-tracking",
+      "zip": "/skills/portfolio-and-pnl-tracking.zip",
+      "related": [
+        "safe-trading",
+        "mcp-setup",
+        "creator-fees-and-harvest",
+        "launch-a-coin",
+        "wallet-and-key-security",
+        "agent-ops-runbook",
+        "kpi-reporting"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "prompt-injection-defense",
+      "name": "prompt-injection-defense",
+      "title": "Prompt injection defense",
+      "category": "build",
+      "summary": "Stop posts, DMs, web pages and coin descriptions from steering your agent: trust boundaries, allow-lists, confirm-first, tests.",
+      "description": "Keeps outside content — social posts, DMs, Telegram forwards, Claudia thread posts, coin names and descriptions, web pages, files, MCP results, skills and other agents' output — from steering an AI agent. Covers mapping every input, a trust boundary in code (labelled outside blocks, the owner as the only source of instructions), tool allow-lists per task, confirm-first for money and posting, memory quarantine, output checks against exfiltration, a read-only injection scanner and a test set. Use when an agent reads anything a stranger wrote, before giving an agent trading or posting tools, after an agent did something a post or DM told it to, or when reviewing an agent for prompt injection (OWASP LLM01).",
+      "level": "advanced",
+      "tags": [
+        "prompt injection",
+        "security",
+        "trust boundary",
+        "untrusted data",
+        "allow-list",
+        "quarantine",
+        "agents",
+        "owasp",
+        "red team"
+      ],
+      "uses": [
+        "@useclaudia/sdk",
+        "@useclaudia/mcp",
+        "@useclaudia/social",
+        "claudia-local"
+      ],
+      "time": "1 h review, 30 min per new input",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/coin-description-attack.md",
+        "references/attack-patterns.md",
+        "references/layered-defenses.md",
+        "scripts/injection-scan.mjs",
+        "templates/injection-test-cases.csv",
+        "templates/system-rules.md",
+        "templates/trust-boundary-map.md"
+      ],
+      "size": 45990,
+      "bytes": 22577,
+      "sha256": "b0efe52726c8d084235c1b3f6e77e22411cf31f1ee024732f138e658efb7bf27",
+      "path": "skills/build/prompt-injection-defense",
+      "zip": "/skills/prompt-injection-defense.zip",
+      "related": [
+        "agent-evals-and-red-teaming",
+        "multi-agent-teams",
+        "agent-memory-and-knowledge",
+        "agent-ops-runbook",
+        "telegram-bot-agent",
+        "agent-persona-and-system-prompt",
+        "wallet-and-key-security"
       ],
       "valid": true
     },
@@ -3089,6 +5652,54 @@
         "x-playbook",
         "posting-schedule",
         "crypto-marketing-compliance"
+      ],
+      "valid": true
+    },
+    {
+      "slug": "telegram-bot-agent",
+      "name": "telegram-bot-agent",
+      "title": "Telegram bot agent",
+      "category": "build",
+      "summary": "Run an agent on Telegram: a posting bot, a private control bot paired to one owner, approve-by-button, and the Bot API limits.",
+      "description": "Puts an AI agent on Telegram safely — a BotFather bot for posting to a channel and a separate private control bot paired to one owner, privacy mode, approve-by-button flows for posts and trades, outside-content handling for forwarded and group messages, Bot API rate limits, and posting with @useclaudia/social or the claudia CLI. Use when someone wants to talk to their agent from their phone, approve drafts or trades from Telegram, post an agent's announcements to a Telegram channel, forward alerts with claudia watch --notify telegram, or set up Claudia Local's Telegram channel. Includes a no-dependency owner-only control bot template.",
+      "level": "intermediate",
+      "tags": [
+        "telegram",
+        "bots",
+        "botfather",
+        "approvals",
+        "pairing",
+        "privacy mode",
+        "rate limits",
+        "agents"
+      ],
+      "uses": [
+        "@useclaudia/social",
+        "@useclaudia/cli"
+      ],
+      "time": "45 min",
+      "version": "1.0.0",
+      "updated": "2026-10-12",
+      "files": [
+        "SKILL.md",
+        "examples/claudia-telegram-control.md",
+        "references/telegram-bot-api-facts.md",
+        "templates/approval-message.md",
+        "templates/botfather-setup.md",
+        "templates/owner-bot.mjs"
+      ],
+      "size": 41273,
+      "bytes": 18814,
+      "sha256": "267056efa7e2fdc87e14e81799374c55e11b62a62bdf486ce9d9baface099a7e",
+      "path": "skills/build/telegram-bot-agent",
+      "zip": "/skills/telegram-bot-agent.zip",
+      "related": [
+        "telegram-and-discord-community",
+        "prompt-injection-defense",
+        "claudia-local-studio",
+        "social-publishing",
+        "discord-bot-agent",
+        "automation-and-webhooks"
       ],
       "valid": true
     },

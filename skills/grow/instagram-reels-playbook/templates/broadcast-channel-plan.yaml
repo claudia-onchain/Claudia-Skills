@@ -23,7 +23,7 @@ weeks:
   - week: 1
     messages:
       - { day: Tue, type: text, content: "Welcome note: what this channel is, what to expect (2-3 notes a week)" }
-      - { day: Thu, type: poll, content: "Next clip: rain walk or sunset bedroom?" }
+      - { day: Thu, type: poll, content: "Next clip: club nights or silver-foil set?" }
       - { day: Sat, type: photo, content: "Unposted frame from the rooftop shoot, AI-generated label in caption" }
   - week: 2
     messages:

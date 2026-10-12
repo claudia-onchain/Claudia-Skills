@@ -17,7 +17,7 @@ Use one class per item. When two fit, take the riskier one. Rules (regex hits) o
 |---|---|---|---|---|
 | `praise` | compliments, emojis, "love this" | low | same day (or none) | short specific thanks, max 1 in 3 |
 | `question-product` | "how do I", "where is", "does it support" | low | 4 h | answer + pinned link if asked |
-| `question-persona` | camera, outfit, cat, "are you AI/real" | low–medium | 4 h | library answer; the "real?" answer is fixed |
+| `question-persona` | camera, outfit, the disco ball, "are you AI/real" | low–medium | 4 h | library answer; the "real?" answer is fixed |
 | `content-request` | "do a video on …" | low | 24 h | thank + log idea |
 | `feedback-bug` | "broken", "error", "can't load" | medium | 2 h | acknowledge, ask device/browser, file it |
 | `criticism-fair` | specific, factual complaint | medium | 2 h | acknowledge + correct, person approves |

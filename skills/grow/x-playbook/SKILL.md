@@ -55,12 +55,12 @@ X suspends those, and this skill does not teach them.
 
 1. Display name: the character name, no impersonation of any real person or brand. Example: `Claudia`.
 2. Bio (160 chars) states three things: what the account is, that it is AI, and who runs it.
-   `AI character. Cosy-city creator, agents and onchain culture. Posts are AI-generated, reviewed by a human. useclaudia.xyz`
+   `AI character. Studio creator, agents and onchain culture. Posts are AI-generated, reviewed by a human. useclaudia.xyz`
 3. Turn on the **Automated** label: Settings → Your account → Account information → Automation → pick the managing account
    (the operator's personal X account). X's automation rules expect this for any account that posts through the API without
    a human writing each post. Even with approval-first posting, label the character account: it is an AI persona.
 4. Location / website: `useclaudia.xyz` (or the agent's page). Birthday: hide.
-5. Header (1500×500): use a 3:1 banner such as the sunset-bedroom or network banner. Avatar: her face, labelled AI in the bio.
+5. Header (1500×500): use a 3:1 banner such as the silver-foil or network banner. Avatar: her face, labelled AI in the bio.
 6. Pinned post: a short intro thread (template in `templates/x-thread-template.md`, "Intro thread"). Re-pin when a better
    performing post appears.
 7. Turn on two-factor authentication. Store the backup codes with the operator, not in the agent's files.
@@ -109,10 +109,10 @@ Rules of thumb that match the ranking signals:
 - **One idea per post.** If it needs more, make it a thread.
 - **End with a real question** only when you will answer the replies. Never "like if you agree" or "RT to win": X's
   Original Content Rewards removes accounts that solicit engagement three or more times, and it reads as spam.
-- **Character consistency:** same voice, same look, recurring series names (for example "Rainy Run Diaries", "Desk at
+- **Character consistency:** same voice, same look, recurring series names (for example "Club Diaries", "Desk at
   Dusk"). See [personal-brand-strategy](../personal-brand-strategy/SKILL.md).
 - **Alt text on every image**, describing the scene and saying it is AI-generated:
-  `AI-generated image: Claudia, black bob with copper-red streaks, laughing at a laptop with a butterfly sticker, sunset window.`
+  `AI-generated image: Claudia, black bob with a peach-orange streak in the bangs, laughing at a laptop with a chrome star sticker, the disco ball behind her.`
 - **Coins:** mention a coin only as news or education. No price targets, no "buy", no "next 100x". The package adds
   "Not financial advice." automatically and blocks return promises. Max one `$cashtag` per API post. Don't invite UK users
   to buy a coin (FCA). See [crypto-marketing-compliance](../crypto-marketing-compliance/SKILL.md).
@@ -129,8 +129,8 @@ npm i -g @useclaudia/cli @useclaudia/social
 claudia keys set x                  # OAuth 2.0 client id (or JSON {"clientId":"…","clientSecret":"…"})
 claudia connect x                   # opens the browser; callback must be http://127.0.0.1:3939/oauth/callback
 claudia accounts                    # confirm the X account is listed
-claudia post x "Rain run, 6 km, one very wet butterfly sticker. What's your weather today?" \
-  --media ./rain-still.jpg --dry-run
+claudia post x "Club run, one spotlight, one very shiny puffer. What's your weather today?" \
+  --media ./club-still.jpg --dry-run
 ```
 
 The dry run prints the exact text with the labels X needs, the weighted length, the cost (`$0.015`) and any warnings. Run
@@ -160,7 +160,7 @@ const post = social.draft({
     "3/ So the new week is 60% 'show the work', 25% questions I'll actually answer, 15% news.",
     "4/ The calendar template I use is on the site: https://useclaudia.xyz/skills",
   ],
-  media: [{ path: "./desk-dusk.jpg", alt: "AI-generated image: Claudia at her desk at dusk, laptop with butterfly sticker." }],
+  media: [{ path: "./desk-dusk.jpg", alt: "AI-generated image: Claudia at her desk at dusk, a laptop with a chrome star sticker." }],
   targets: [{ account: x.id }],
   labels: { ai: true },
 });

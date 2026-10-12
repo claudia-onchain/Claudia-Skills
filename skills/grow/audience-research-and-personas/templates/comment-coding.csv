@@ -1,0 +1,2 @@
+id,date,platform,source_type,paraphrase,phrase_to_keep,need,stage,question,sentiment,coded_by,checked_by
+<n>,<YYYY-MM-DD>,<tiktok|instagram|youtube|x|threads|bluesky|telegram|discord|claudia-thread>,<comment|dm|reply|mention>,<short paraphrase, no handle>,"<exact words, max 12, no handle>",<learn|entertain|belong|tool|story|earn|other>,<curious|trying|doing|expert>,<the question paraphrased or blank>,<positive|neutral|negative|mixed>,<agent|name>,<name or blank>

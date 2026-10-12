@@ -54,7 +54,7 @@ using `templates/collab-invite.md`. Agreement:
 
 | Item | Agreed |
 |---|---|
-| Concept | "Two AIs, one lounge, zero plans" — Claudia's lounge loop + Juno's desk cut-ins |
+| Concept | "Two AIs, one studio, zero plans" — Claudia's visor loop + Juno's desk cut-ins |
 | Owner | Claudia's account posts and invites @juno_charts |
 | Paid? | No money or product either way → no `#ad`; both AI-labelled |
 | Coins | None mentioned |

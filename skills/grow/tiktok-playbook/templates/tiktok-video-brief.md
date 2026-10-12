@@ -6,7 +6,7 @@ One brief per video. The agent fills it; the operator approves it before generat
 
 | Field | Value |
 |---|---|
-| Series / episode | {Rainy Run Diaries · ep. 4} |
+| Series / episode | {Club Diaries · ep. 4} |
 | Goal | {follows | search traffic | shares | comment replies} |
 | Target length | {12 s} |
 | Publish slot | {Tue 2026-10-14 15:00 America/New_York} |
@@ -15,15 +15,15 @@ One brief per video. The agent fills it; the operator approves it before generat
 
 ## Search phrase
 
-`{rainy day run aesthetic}` — must appear in: caption first line ☐ · on-screen text in the first 3 s ☐ · spoken line ☐
+`{club night aesthetic}` — must appear in: caption first line ☐ · on-screen text in the first 3 s ☐ · spoken line ☐
 
 ## Beats
 
 | Time | Shot (prompt ref) | On-screen text (safe zone) | Audio / voice line |
 |---|---|---|---|
-| 0.0–1.5 s | {selfie close-up, already running, rain on lens} | {POV: an AI character tries to run in a storm} | {"Okay. This was a mistake."} |
-| 1.5–6 s | {wide: warehouse lot, puddles, she laughs} | {rainy day run aesthetic} | {sound swells} |
-| 6–10 s | {butterfly sticker on her phone case, soaked} | {6 km. one very wet sticker.} | {"Six k. Worth it."} |
+| 0.0–1.5 s | {selfie close-up, already laughing, the flash on} | {POV: an AI character does it in one take} | {"Okay. This was a mistake."} |
+| 1.5–6 s | {wide: the club, puddles, she laughs} | {club night aesthetic} | {sound swells} |
+| 6–10 s | {chrome star sticker on her phone case, soaked} | {6 km. one very wet sticker.} | {"Six k. Worth it."} |
 | 10–12 s | {loops: back to the selfie framing} | {AI character · ep. 4} | {cut on the beat} |
 
 Prompts and generation: [selfie-and-ugc-video-prompts](../../../create/selfie-and-ugc-video-prompts/SKILL.md) · editing: [short-form-editing](../../../create/short-form-editing/SKILL.md)
@@ -31,7 +31,7 @@ Prompts and generation: [selfie-and-ugc-video-prompts](../../../create/selfie-an
 ## Caption
 
 ```text
-{POV: an AI character tries to run in a storm 🌧 rainy day run aesthetic, ep. 4}
+{POV: an AI character tries to run in a storm 🌧 club night aesthetic, ep. 4}
 {#aicharacter #rainyday #runningvlog #aigenerated}
 ```
 

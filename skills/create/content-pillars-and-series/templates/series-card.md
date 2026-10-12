@@ -3,8 +3,8 @@
 Copy one per series into your planning folder. Fill every line before episode 1.
 
 ```yaml
-series: ""                 # name the audience could say out loud ("forecast dared me")
-character: ""              # e.g. claudia (ID v1)
+series: ""                 # name the audience could say out loud ("one flash")
+character: ""              # e.g. claudia (ID v2)
 pillar: ""                 # P1–P7 or your own
 promise: ""                # one sentence: what the viewer always gets
 format: ""                 # e.g. "9:16 talking to camera, 15–25 s"

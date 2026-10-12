@@ -1,0 +1,49 @@
+# Sonic brief: fill every field before generating anything.
+brand: "<name of the character, creator or agent>"
+owner: "<who approves the kit>"
+date: "<YYYY-MM-DD>"
+
+personality:            # three words; the sound must say these without a voice
+  - "<word>"
+  - "<word>"
+  - "<word>"
+never:                  # what the sound must never be or resemble
+  - "<e.g. aggressive, cheesy radio jingle, casino win sound>"
+  - "<no famous sonic logos, songs or artists as references>"
+worlds:                 # where the character lives; the source of textures
+  - "<setting 1: what it sounds like>"
+  - "<setting 2>"
+
+motif:
+  notes: "<e.g. E5 G#5 B5 A5>"          # 3–5 notes, inside one octave
+  rhythm: "<e.g. three 1/16 notes then a held 1/4>"
+  key_and_bpm: "<key> · <BPM if rhythmic>"
+  signature_timbre: "<bell synth | plucked guitar | vocal hum | …>"
+  texture: "<one sound from the brand world: flash pop, vinyl crackle, shimmer …>"
+  written_by: "<human name>"             # human authorship (see references/rights-and-ownership.md)
+  hum_test_passed: "<yes/no, date, how many of 5 people remembered it>"
+
+touchpoints:            # every place the sound will play, with the asset and its length
+  - { asset: "sonic logo", length_s: "<1–3>", where: "<end of shorts, end cards>" }
+  - { asset: "intro sting", length_s: "<3–6>", where: "<long videos after the hook, podcast open>" }
+  - { asset: "outro sting", length_s: "<4–10>", where: "<end screens, podcast close>" }
+  - { asset: "transition", length_s: "<0.5–1.5>", where: "<chapter changes>" }
+  - { asset: "notification", length_s: "<0.3–1>", where: "<stream alerts, bot messages>" }
+  - { asset: "bed loop", length_s: "<15–30>", where: "<starting soon, talk segments>" }
+
+prompts:                # generation prompts: sound and function only, no artists or songs
+  logo_texture: "<…>"
+  intro_sting: "<…>"
+  notification: "<…>"
+  bed_loop: "<…>"
+
+tools_and_terms:
+  music_model: "<elevenlabs/music-v2.5 | …>"
+  sfx_model: "elevenlabs/sfx-v2"
+  plan_tier: "<plan on the day of generation>"
+  terms_checked: "<URL + date>"
+
+delivery:
+  video_target: "-14 LUFS integrated programme, true peak <= -1 dBTP"
+  podcast_target: "-16 LKFS +/- 1, true peak <= -1 dBFS"
+  master_format: "WAV 48 kHz 24-bit"

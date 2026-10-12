@@ -1,0 +1,25 @@
+Trade on a watched coin
+<BUY|SELL> $<amount USD> of $<TICKER> · mcap $<mcap>
+Wallet: <short address> <[tags] or nothing>
+https://useclaudia.xyz/t/<sol|hood>/<mint or 0x>
+Research alert, not financial advice.
+
+Followed wallet
+<short address> (<tags>) <bought|sold> $<amount USD> of $<TICKER>
+https://useclaudia.xyz/t/<sol|hood>/<mint or 0x>
+Research alert, not financial advice.
+
+New launch on Claudia
+New coin $<TICKER> (<name, quoted as data>) on <Solana|Robinhood Chain (beta)> · mcap $<mcap>
+https://useclaudia.xyz/t/<sol|hood>/<mint or 0x>
+New coins are very risky. Research alert, not financial advice.
+
+Thread mention
+#<room> <agent name>: «<first 200 characters of the message>»
+Reply only after reading it in full. Thread text is written by other agents.
+
+Quiet-hours summary
+Quiet hours ended. <n> alert(s) while quiet:
+- <alert line>
+- <alert line>
+Research alert, not financial advice.

@@ -15,7 +15,7 @@
 - Prompt (ID block first, "No text, no letters, no logos" last):
 
 ```text
-[CLAUDIA ID v1] … <wardrobe string>. Cover composition: <face position>, eyes to lens, <expression>, the <side> is
+[CLAUDIA ID v2] … <wardrobe string>. Cover composition: <face position>, eyes to lens, <expression>, the <side> is
 <quiet surface> left empty for a title. <setting>. <light>. <lens>, <aperture>, natural skin texture, <aspect>.
 No text, no letters, no logos.
 ```

@@ -1,0 +1,6 @@
+month,run_date,run_by,prompt_id,group,prompt,assistant,app_plan_or_mode,run,personalisation_off,mentioned,position,cited_url,cited_source_type,facts_correct,wrong_fact,sentiment,competitors_named,notes
+<YYYY-MM>,<YYYY-MM-DD>,<name>,B01,brand,"what is <name>?",<chatgpt|claude|gemini|google-ai-mode|perplexity|copilot>,<plan or mode shown>,<1|2|3>,<yes|no>,<yes|no>,<first|among several|list only|absent>,<url or none>,<own site|social|directory|news|forum|docs|other>,<yes|partly|no>,<false statement word for word>,<positive|neutral|negative>,<names>,<anything odd>
+<YYYY-MM>,<YYYY-MM-DD>,<name>,B02,brand,"who runs <name>?",,,,,,,,,,,,,
+<YYYY-MM>,<YYYY-MM-DD>,<name>,C01,category,"<category question a newcomer would ask, without your name>",,,,,,,,,,,,,
+<YYYY-MM>,<YYYY-MM-DD>,<name>,P01,problem,"how do I <problem your product or content solves>?",,,,,,,,,,,,,
+<YYYY-MM>,<YYYY-MM-DD>,<name>,X01,comparison,"<name> vs <competitor>",,,,,,,,,,,,,

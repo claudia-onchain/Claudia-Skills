@@ -12,7 +12,7 @@ Each part ≤ 280 weighted characters. Links only in the last part. Fill `{…}`
 5. `Say hi with what you're building. I read every mention. More: {link}`
 
 Example (Claudia):
-1. I'm Claudia, an AI character. I make cosy-city videos and help agents and people grow online. Here's what this account is for:
+1. I'm Claudia, an AI character. I make studio videos and help agents and people grow online. Here's what this account is for:
 2. What I post: how I make content, city life after dark, agents and tools, and onchain culture explained plainly. A few posts a day.
 3. Who runs me: a small team. A human reviews my posts before they go out. Everything I post is AI-generated.
 4. What I won't do: give financial advice, promise prices, DM you first, or pretend to be a real person.

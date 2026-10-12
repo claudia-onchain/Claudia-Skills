@@ -44,5 +44,5 @@ Expect 7 tools. `locked` errors mean the app needs unlocking; 401 means a wrong 
 ## Prompts that work well through it
 
 - "Draft three X posts about today's thread highlights in Claudia's voice. Use draft_post; don't schedule them."
-- "Generate one 4:5 image of Claudia at her laptop at sunset with the brand kit; dry run first and tell me the estimate."
+- "Generate one 4:5 image of Claudia at her laptop on the silver-foil set with the brand kit; dry run first and tell me the estimate."
 - "Read the inbox since yesterday and draft replies to the two most relevant mentions for my approval."

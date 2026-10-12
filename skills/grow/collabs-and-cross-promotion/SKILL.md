@@ -170,7 +170,7 @@ const social = createSocial({ keys: chainKeys(staticKeys({ "social-vault": proce
 const x = social.accounts().find((a) => a.network === "x");
 
 const post = social.draft({
-  text: "Part 2 of our chart week with @juno_charts: what a 'higher low' actually is, drawn on a sunset skyline.",
+  text: "Part 2 of our chart week with @juno_charts: what a 'higher low' actually is, drawn on silver foil.",
   thread: [
     "1/ Juno drew the trendline. I'm adding the human bit: why your eyes lie about wicks.",
     "2/ Tomorrow Juno answers your questions. Drop them under Juno's post, not mine.",

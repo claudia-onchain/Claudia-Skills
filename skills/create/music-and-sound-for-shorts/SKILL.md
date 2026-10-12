@@ -1,6 +1,6 @@
 ---
 name: music-and-sound-for-shorts
-description: Picks, generates, licenses and mixes music and sound for short-form video — which music each account type may legally use on TikTok (Commercial Music Library), Instagram (Meta Sound Collection) and YouTube Shorts (Audio Library, Content ID blocks on Shorts over 1 minute); AI music with Lyria and ElevenLabs Music via @useclaudia/media (terms, prompts without artist names, Suno v6 and Udio status); sound effects and ambience beds with ElevenLabs SFX; layered sound design, ducking, beat-synced cuts, -14 LUFS delivery and a licence log. Use when adding music or SFX to a short, when a post gets muted or claimed, when generating a track, or when scoring Claudia's bedroom, club, lounge and rain clips.
+description: Picks, generates, licenses and mixes music and sound for short-form video — which music each account type may legally use on TikTok (Commercial Music Library), Instagram (Meta Sound Collection) and YouTube Shorts (Audio Library, Content ID blocks on Shorts over 1 minute); AI music with Lyria and ElevenLabs Music via @useclaudia/media (terms, prompts without artist names, Suno v6 and Udio status); sound effects and ambience beds with ElevenLabs SFX; layered sound design, ducking, beat-synced cuts, -14 LUFS delivery and a licence log. Use when adding music or SFX to a short, when a post gets muted or claimed, when generating a track, or when scoring Claudia's bedroom, club, lounge and club clips.
 license: MIT
 metadata:
   title: "Music and sound for shorts"
@@ -25,7 +25,7 @@ believable ambience and SFX layer, and a mix that lands at -14 LUFS — then log
 - A short needs music, ambience or SFX (almost all of them do).
 - You are deciding between an in-app platform sound, a licensed library track and an AI-generated track.
 - A post was muted, blocked or got a Content ID claim.
-- You are scoring one of Claudia's recurring clip types (bedroom vlog, club, lounge, rain).
+- You are scoring one of Claudia's recurring clip types (studio vlog, club, visor reveal, silver foil).
 
 ## What you need
 
@@ -78,10 +78,10 @@ The four core beds for Claudia's clip types (more in the prompt bank):
 
 | Clip | Prompt |
 |---|---|
-| Bedroom vlog (talking to camera) | `warm lo-fi hip-hop bed, 82 BPM, dusty Rhodes chords, soft vinyl crackle, brushed drums, round sub bass, gentle and unobtrusive, steady loop with no build, leaves room for a voice, instrumental, no vocals` |
+| Studio vlog (talking to camera) | `warm lo-fi hip-hop bed, 82 BPM, dusty Rhodes chords, soft vinyl crackle, brushed drums, round sub bass, gentle and unobtrusive, steady loop with no build, leaves room for a voice, instrumental, no vocals` |
 | Club / DJ booth | `deep house club groove, 124 BPM, four-on-the-floor kick, offbeat open hats, rolling bassline, short filtered chord stabs without vocals, big-room reverb as heard from the dancefloor, 8-bar build into a drop at 6 seconds, instrumental` |
-| Vintage lounge (sunglasses reveal) | `late-70s disco-soul lounge groove, 108 BPM, wah guitar, warm bass, string pad swell, light tambourine, intimate and playful, a small lift on bar 3 for a reveal moment, instrumental, no vocals` |
-| Rain selfie (running) | `bright indie-pop run, 140 BPM, jangly clean electric guitars, driving floor-tom beat, airy synth pad, euphoric and a little chaotic, starts immediately at full energy, instrumental, no vocals` |
+| Visor reveal (white studio) | `late-70s disco-soul lounge groove, 108 BPM, wah guitar, warm bass, string pad swell, light tambourine, intimate and playful, a small lift on bar 3 for a reveal moment, instrumental, no vocals` |
+| Club selfie (running) | `bright indie-pop run, 140 BPM, jangly clean electric guitars, driving floor-tom beat, airy synth pad, euphoric and a little chaotic, starts immediately at full energy, instrumental, no vocals` |
 
 Never: "in the style of <artist>", song titles, label names, or famous lyric lines (blocked by ElevenLabs terms and a
 claim risk everywhere).
@@ -118,10 +118,10 @@ Generate 2–3 variations, pick by ear on a phone speaker, not studio monitors.
 Silent gaps between AI clips are the biggest "this is fake" tell. Lay a continuous bed, then spot effects:
 
 ```sh
-claudia generate sfx "steady light rain on wet asphalt in an open lot, close perspective, gentle drips from a metal awning, no thunder" --duration 15
+claudia generate sfx "muffled club floor, bass through the floor, close crowd shuffle, no clear voices" --duration 15
 claudia generate sfx "muffled club crowd and bass heard from beside the DJ booth, cheering swells, no music melody" --duration 10
 claudia generate sfx "quiet vintage living room tone, faint vinyl crackle, a brass lamp switch click" --duration 8
-claudia generate sfx "soft bedroom room tone, distant city traffic through a closed window, a cat purring nearby" --duration 12
+claudia generate sfx "quiet photo studio room tone, a faint fan hum, paper backdrop rustle" --duration 12
 ```
 
 $0.12 per minute of sound (estimate, checked 2026-10). For seamless beds use the API with `meta: { loop: true }`, and
@@ -133,7 +133,7 @@ the clip itself — prompt the exact sounds and add "no music" so they don't inv
 ### 6. Cut to the beat
 
 Beat length = 60 / BPM. At 124 BPM a beat is 0.484 s, a bar 1.935 s: cut every 2 beats (0.97 s) in the hook, every bar
-in the body. At 82 BPM (bedroom) a beat is 0.732 s. Land the sunglasses lift, the drop or the spin **on** a downbeat.
+in the body. At 82 BPM (studio) a beat is 0.732 s. Land the visor lift, the drop or the spin **on** a downbeat.
 
 ### 7. Mix in layers, duck, normalise
 

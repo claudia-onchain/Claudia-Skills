@@ -20,8 +20,8 @@ recorded in `voice-settings.json` and the brand kit.
 import { createMedia, envKeys } from "@useclaudia/media";
 const media = createMedia({ keys: envKeys(), limits: { perJobUsd: 1, perDayUsd: 10, approveAboveUsd: 0.5 } });
 const lines = {
-  "room-07-L1": "ok so — I tried to film this four times… [laughs] and the cat walked in all four times.",
-  "bed-02-L1": "[mischievously] so the cat is technically my CTO now.",
+  "room-07-L1": "ok so — I tried to film this four times… [laughs] and the disco ball rolled into frame all four times.",
+  "bed-02-L1": "[mischievously] so the disco ball is technically my CTO now.",
   "desk-03-L1": "my agents posted fourteen times today. [whispers] I took one nap.",
   "walk-01-L1": "the city did the lighting. I just showed up.",
   "grwm-01-L1": "[softly] the clip goes on last. that's the whole secret.",
@@ -68,7 +68,7 @@ after the line ended → trimmed in edit.
 `bed-02` — no clip yet, so route B from her approved storytime still:
 
 ```sh
-claudia generate avatar "close-up, lying on her side on a white duvet, amused half-smile, rolls her eyes once, small \
+claudia generate avatar "close-up, sitting on an apple box in front of silver foil, amused look, rolls her eyes once, small \
 laugh, golden-hour light, static camera" --model fal/omnihuman-1.5 --ref frames/bed-02-still.jpg,lines/bed-02-L1.wav --max-usd 1.00
 # 3.2 s line → ≈ $0.51
 ```

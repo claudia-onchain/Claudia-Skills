@@ -28,7 +28,7 @@ Constraints: no other text, no logos, no extra people, adult woman in her late t
 ## Edit with preserve list (GPT Image 2.5 Sunburst, FLUX Kontext, Nano Banana edit)
 
 ```text
-Edit image 1. Preserve exactly: [face, freckles, eye colour, expression, hair shape, bangs, copper panel, clip, earrings,
+Edit image 1. Preserve exactly: [face, freckles, eye colour, expression, hair shape, bangs, peach streak, clip, earrings,
 outfit, pose, background, lighting — delete what you are changing].
 Change only: [ONE CHANGE, described as the end state].
 Do not change anything else.

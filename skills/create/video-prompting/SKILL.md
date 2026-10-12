@@ -18,7 +18,7 @@ metadata:
 
 Good character video is 80 % preparation: an approved first frame, one clear action per beat, one camera move, and an
 explicit audio instruction. This skill gives you the model map, the prompt formula, per-model syntax and the repair kit,
-using Claudia's four reference clips (lounge sunglasses reveal, DJ-booth dance, bedroom vlog, rain selfie) as worked cases.
+using Claudia's reference clip (the studio talk) and three companion clips (visor reveal, the club, a club flash selfie) as worked cases.
 
 ## When to use this
 
@@ -82,7 +82,7 @@ Text-to-video of a recurring face drifts every time. The workflow:
 ### 3. Write the prompt in six slots
 
 ```text
-1 IDENTITY   Same woman as the first frame: <short ID block> + "her face, bob, copper bang streaks and orange clip stay identical"
+1 IDENTITY   Same woman as the first frame: <short ID block> + "her face, bob, peach bang streak and star clip stay identical"
 2 ACTION     2–3 timed beats, one verb each (sways → slides sunglasses down → holds eye contact)
 3 SCENE      the setting string from the bible, 1 sentence
 4 CAMERA     ONE move + framing + height ("static medium shot at chest height, very slow push-in")
@@ -94,8 +94,8 @@ Keep it 60–120 words for Kling/Wan/Seedance (instructions near the end of long
 40–70 for Hailuo, and use the timecoded form for Omni/Veo. Short identity block for video:
 
 ```text
-Claudia, 28-year-old woman (adult), glossy black jaw-length bob, heavy straight bangs with copper-orange streak panels,
-small orange hair clip, thin gold hoops, light freckles, warm brown eyes
+Claudia, 28-year-old woman (adult), glossy black jaw-length bob, heavy straight bangs with one peach-orange streak panel,
+small peach star hair clip, a thin headset mic, light freckles, grey-green eyes
 ```
 
 ### 4. Use each model's timing syntax
@@ -114,7 +114,7 @@ small orange hair clip, thin gold hoops, light freckles, warm brown eyes
 
 - **Site loops and edits with music:** generate silent. On fal/BytePlus pass `meta.audio: false` — Kling 3 Pro drops from
   $0.168 to $0.112 per second (checked 2026-10). Add music in edit ([../music-and-sound-for-shorts/SKILL.md](../music-and-sound-for-shorts/SKILL.md)).
-- **UGC realism:** keep native ambient audio (room tone, rain, crowd) and lines of dialogue; it is what makes a clip feel
+- **UGC realism:** keep native ambient audio (room tone, club bass, crowd) and lines of dialogue; it is what makes a clip feel
   filmed on a phone. Write it explicitly.
 - **Her voice must match across clips:** generate speech separately with her designed voice and lip-sync it
   ([../voice-and-lip-sync/SKILL.md](../voice-and-lip-sync/SKILL.md)) — native model voices differ per generation.
@@ -122,10 +122,10 @@ small orange hair clip, thin gold hoops, light freckles, warm brown eyes
 ### 6. Estimate → dry run → approve → wait
 
 ```sh
-claudia generate video "<prompt>" --model fal/kling-3-pro --ref frames/lounge-first.jpg \
+claudia generate video "<prompt>" --model fal/kling-3-pro --ref frames/visor-first.jpg \
   --aspect 9:16 --duration 8 --negative "teenager, childlike face, extra fingers, morphing face, flicker, text, logo" --dry-run
 # the dry run prints the exact body — check that negative_prompt, duration and the image are in it
-claudia generate video "<prompt>" --model fal/kling-3-pro --ref frames/lounge-first.jpg \
+claudia generate video "<prompt>" --model fal/kling-3-pro --ref frames/visor-first.jpg \
   --aspect 9:16 --duration 8 --max-usd 1.50
 ```
 
@@ -139,8 +139,8 @@ import { createMedia, envKeys } from "@useclaudia/media";
 const media = createMedia({ keys: envKeys(), limits: { perJobUsd: 3, perDayUsd: 15, approveAboveUsd: 0.5 } });
 const req = {
   kind: "video" as const, model: "fal/kling-3-pro", aspect: "9:16" as const, durationSec: 8,
-  prompt: lounge, negativePrompt: "teenager, childlike face, extra fingers, morphing face, flicker, text, logo",
-  refs: ["frames/lounge-first.jpg"], meta: { audio: false }, brand: "claudia",
+  prompt: visorReveal, negativePrompt: "teenager, childlike face, extra fingers, morphing face, flicker, text, logo",
+  refs: ["frames/visor-first.jpg"], meta: { audio: false }, brand: "claudia",
 };
 console.log(media.estimate(req));            // ≈ $0.90, basis "$0.112 per second without audio"
 const job = await media.generate(req);       // status "needs_approval" (above $0.50)
@@ -187,7 +187,7 @@ streaks, hands passing in front of the face, and anything text-like in the backg
 |---|---|---|
 | Face drifts mid-clip | big head turns, long duration, weak first frame | shorter clip (≤ 8 s), keep her facing camera ±30°, add the last frame as `--ref first,last`, or split into two stitched beats |
 | Looks younger as she moves | bob + bangs + wide-angle, laughing | "28-year-old woman (adult)" in slot 1, a first frame that clearly reads late twenties, avoid fisheye/ultra-wide; reject and reroll |
-| Streak flicker / streaks spread | hair motion, coloured light | "her copper bang streaks stay fixed in place" in slot 1; less hair motion ("hair moves slightly"); in coloured light add "copper streaks remain orange under blue light" |
+| Streak flicker / streaks spread | hair motion, coloured light | "her peach bang streak stay fixed in place" in slot 1; less hair motion ("hair moves slightly"); in coloured light add "peach streak remain orange under blue light" |
 | Melting hands or phone | hands crossing the face, fast gestures | one gesture per beat, "one hand, five relaxed fingers", keep hands below chin or out of frame; Aleph 2 to repaint a bad second |
 | Crowd faces merge (club) | many background people | "crowd softly out of focus, shallow depth of field"; fewer, darker silhouettes; never prompt identifiable people |
 | Garbled signs/screens | models can't hold text | "no readable text, no logos"; add text in edit |
@@ -200,7 +200,7 @@ streaks, hands passing in front of the face, and anything text-like in the backg
 - [templates/video-prompt-template.md](templates/video-prompt-template.md) — the six-slot form with per-model wrappers.
 - [templates/video-job.json](templates/video-job.json) — a `GenerateRequest` you can copy into code or MCP `generate_media`.
 - [templates/clip-qa.md](templates/clip-qa.md) — the per-clip QA sheet.
-- [examples/four-reference-clips.md](examples/four-reference-clips.md) — Claudia's lounge, club, bedroom and rain clips,
+- [examples/studio-reference-clip.md](examples/studio-reference-clip.md) — Claudia's studio reference clip plus visor, club and flash-selfie clips,
   each with 3–4 model variants, settings and costs.
 
 ## Check before you finish

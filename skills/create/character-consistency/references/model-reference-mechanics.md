@@ -13,7 +13,7 @@ unless you pass extra fields through `meta.providerOptions`.
   inputs" — don't use it for identity.
 - How to write it: narrative sentences, not tag lists. Label refs by job: "Image 1 is Claudia's face reference. Image 2
   is her full-body outfit reference. Keep her identical to image 1."
-- Negatives: no parameter. Use positive "semantic negatives": "her hair is jet-black except the copper panels" instead
+- Negatives: no parameter. Use positive "semantic negatives": "her hair is jet-black except the peach streak" instead
   of "no red hair".
 - Resolutions 1K/2K/4K (2.1 defaults to 1K); 21:9 and extreme ratios exist at the model level, but the package's `aspect`
   list is 1:1, 16:9, 9:16, 4:5, 3:2, 2:3 — crop for 3:1 banners.

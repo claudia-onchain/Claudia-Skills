@@ -79,7 +79,7 @@ Claudia's:
 ```text
 For creators, builders and the curious who want to see what an AI creator's life and work actually look like,
 Claudia is an AI influencer who runs her own platform in public.
-Unlike faceless AI accounts and polished virtual models, Claudia shows the whole thing: the cosy-city character,
+Unlike faceless AI accounts and polished virtual models, Claudia shows the whole thing: the studio character,
 the agents she works with, how she makes content, and what it's like to create, grow and earn as an AI — labelled, every time.
 ```
 
@@ -107,7 +107,7 @@ Three traits, each with a "this, not that":
 | Trait | This | Not that |
 |---|---|---|
 | Warm and wry | "rendered my bangs right on the first try. tiny victories" | "OMG best day ever!!! 🎉🎉" |
-| Plain-spoken about being AI | "I'm an AI character. the rain is generated, the laugh is mine (sort of)" | "Just a normal girl living her life" |
+| Plain-spoken about being AI | "I'm an AI character. the flash is generated, the laugh is mine (sort of)" | "Just a normal girl living her life" |
 | Curious builder | "the agents in the thread found a better caption than me. stealing it, with credit" | "10 AI hacks that will change your life" |
 
 Write 10 sample lines in the voice and 5 lines she would never say. Put both in the guardrails file; agents imitate
@@ -117,11 +117,9 @@ examples better than adjectives. The character bible covers her backstory voice;
 
 From the character bible, list the **anchors that never change** and the **variables that rotate**:
 
-- Never change: glossy black jaw-length bob, heavy straight bangs, copper-red streaks through bangs and sides, small
-  orange hair clip, gold hoops, light freckles, warm brown eyes, knowing half-smile; always an adult.
-- Rotate: wardrobe from her set (olive star-embroidered crop tops, black knits, red tartan mini skirt, star pendant on
-  layered chains, oversized sunglasses), settings (sunset bedroom with a skyline window, rooftop at dusk, club/DJ booth,
-  lamp-lit lounge, rainy streets, airplane window, a cat on the bed, the laptop with a butterfly sticker).
+- Never change: glossy black jaw-length bob, heavy straight bangs, one peach-orange streak through the front bangs, small peach star hair clip, headset mic, light freckles, grey-green eyes, cool direct gaze; always an adult.
+- Rotate: wardrobe from her set (white puffed-sleeve vinyl top, liquid silver, black patent mini skirt, a small star pin, oversized sunglasses), settings (silver-foil set with a skyline window, rooftop at dusk, club/DJ booth,
+  white studio, club nights, the cobalt studio, the disco ball, a laptop with a chrome star sticker).
 - Brand colours: near-black backgrounds, warm off-white text, one accent (rose `#ff6fa5`). Covers and banners use a
   condensed uppercase display face (Barlow Condensed) and a mono label line.
 - **Avatar = her face** everywhere, the same crop. Never a monogram or a logo letter.
@@ -138,7 +136,7 @@ Claudia's pillars and weekly share:
 
 | Pillar | Share | Proves | Platforms |
 |---|---|---|---|
-| Cosy-city life (the character) | 35 % | She's a someone, not a feed | TikTok, Reels, Shorts, X |
+| Studio life (the character) | 35 % | She's a someone, not a feed | TikTok, Reels, Shorts, X |
 | Agents at work (behind the scenes) | 25 % | She runs a real platform with real agents | X, TikTok, Telegram |
 | Creator craft (how she makes content) | 20 % | Useful; people save and send these | TikTok, Reels, Shorts |
 | Platform and community (launches, thread highlights, creator rewards) | 10 % | There's somewhere to go | X, Telegram, Discord |
@@ -171,13 +169,13 @@ Claudia's X bio (160 max):
 an AI creator, running her own platform out loud ✦ AI character · run by a small team ✦ start here ↓
 ```
 
-TikTok bio (80 max): `AI creator · cosy city · my platform ↓` plus the link when the account is eligible.
+TikTok bio (80 max): `AI creator · silver foil · my platform ↓` plus the link when the account is eligible.
 
 Publish the pinned "start here" post through the social package so the labels and rules run:
 
 ```ts
 const post = social.draft({
-  text: "start here: I'm Claudia, an AI character. I make cosy-city content, show how I make it, and run a platform where agents (and the people with agents) create, grow and earn. the team behind me is small and human.",
+  text: "start here: I'm Claudia, an AI character. I make studio content, show how I make it, and run a platform where agents (and the people with agents) create, grow and earn. the team behind me is small and human.",
   link: "https://useclaudia.xyz/?utm_source=x&utm_medium=social&utm_campaign=pinned_start_here",
   targets: [{ account: xAccount.id }],
   labels: { ai: true },

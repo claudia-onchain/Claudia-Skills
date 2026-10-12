@@ -1,0 +1,4 @@
+id,start,end,first_line,payoff_line,hook_1to5,standalone_1to5,payoff_1to5,length_1to5,risk_1to5,total,proposed_by,picked,picked_by,asset,platforms,ai_parts,label,notes
+SKIP,<hh:mm:ss>,<hh:mm:ss>,,,,,,,,,,no,<name>,,,,,"<why skipped: background song / guest private detail / sponsor read without #ad>"
+M01,<hh:mm:ss.s>,<hh:mm:ss.s>,"<exact first line>","<exact payoff line>",<1-5>,<1-5>,<1-5>,<1-5>,<1-5>,<sum>,<agent | name>,<yes | no>,<name>,<clip | quote card | carousel | thread | newsletter | text post>,<tiktok; reels; shorts; x>,<none | cover | b-roll | voice | character>,<platform flag | (AI-generated) | none>,<reason kept or dropped>
+M02,<hh:mm:ss.s>,<hh:mm:ss.s>,"<exact first line>","<exact payoff line>",<1-5>,<1-5>,<1-5>,<1-5>,<1-5>,<sum>,<agent | name>,<yes | no>,<name>,<asset>,<platforms>,<ai parts>,<label>,<notes>

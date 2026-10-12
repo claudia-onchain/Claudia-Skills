@@ -43,7 +43,7 @@ no fake engagement bait.
 
 ### 1. Write the hook as a triple
 
-| Layer | Job | Example (lounge sunglasses clip) |
+| Layer | Job | Example (studio visor clip) |
 |---|---|---|
 | Visual (0–1 s) | start mid-action, face visible | she's already reaching for the sunglasses |
 | On-screen text (0.2–1.8 s) | the tease in ≤ 6 words | `SUNGLASSES ON = DO NOT PERCEIVE ME` |
@@ -53,12 +53,12 @@ Hook formulas that suit her voice (pick one per post; examples for every pillar 
 
 1. **Deadpan rule:** "sunglasses on = do not perceive me"
 2. **Specific number:** "my agents posted 14 times. I took one nap"
-3. **Dare / forecast:** "forecast said stay in" → she's running in the rain
+3. **Dare / forecast:** "forecast said stay in" → she's dancing at the club
 4. **Storytime cliff:** "so my agent did something at 3am"
 5. **Wait-for-it:** "wait for the drop" (only if the drop really pays off by 5 s)
-6. **Confession:** "I've filmed this four times. the cat ruined all four"
+6. **Confession:** "I've filmed this four times. I laughed in all four"
 7. **POV:** "POV: you asked your agent for one post"
-8. **Question to camera:** "rain or sunset tomorrow? you pick"
+8. **Question to camera:** "silver or cobalt tomorrow? you pick"
 9. **Contradiction:** "the outfit is thrifted. the confidence is generated"
 10. **Rate it:** "rate the transition. be honest (don't)"
 
@@ -72,7 +72,7 @@ never promise something the clip doesn't deliver.
 | **Word-by-word highlight** | she talks to camera, storytime | DM Sans Bold or Barlow Condensed 800, 64–76 px, 1–3 words on screen, active word rose `#ff6fa5`, rest off-white `#ece9e2`, 4 px near-black outline |
 | **Line captions** | voice-over, music-only clips with a thought | DM Sans Bold 60–64 px, ≤ 32 characters per line, 1–2 lines, change every 1–2.5 s |
 | **Hook title** | first 2 s only | Barlow Condensed 800, 110–140 px, uppercase, one rose word |
-| **Boxed** | busy backgrounds (club haze, rain) | DM Sans 60 px on a ~80 % near-black box (ASS BorderStyle 3) |
+| **Boxed** | busy backgrounds (club haze, silver foil) | DM Sans 60 px on a ~80 % near-black box (ASS BorderStyle 3) |
 
 Industry convention (third-party guides, checked 2026-10) puts caption text at about 60–75 px on 1080×1920; condensed
 uppercase can go a little larger.
@@ -91,8 +91,8 @@ right ~120 px (like/comment/share rail) or the top ~250 px (Reels header). Pract
 Word timings → ASS in one command (tested 2026-10-08; output follows the ASS v4+ format; burning needs libass):
 
 ```sh
-node scripts/words-to-ass.mjs work/lounge-words.json work/lounge.ass --upper --max-words 3
-sh ../short-form-editing/scripts/burn-captions.sh work/lounge-graded.mp4 work/lounge.ass work/lounge-captioned.mp4 fonts/
+node scripts/words-to-ass.mjs work/visor-words.json work/visor.ass --upper --max-words 3
+sh ../short-form-editing/scripts/burn-captions.sh work/visor-graded.mp4 work/visor.ass work/visor-captioned.mp4 fonts/
 ```
 
 `words.json` is `[{ "word": "sunglasses", "start": 0.20, "end": 0.70 }, …]`. Hand-written captions: copy
@@ -112,11 +112,11 @@ soft-question CTA → hashtags → labels. Limits and specifics (checked 2026-10
 |---|---|---|
 | X | 280 chars standard (Premium 25,000; feed shows ~280); links count 23 | one line + label; 0–1 hashtag; at most one `$cashtag` per API post |
 | TikTok | 4,000 in-app; **2,200 via API/scheduler** | 1–2 lines, 3–5 specific hashtags, AIGC toggle on |
-| Instagram | 2,200; 30 hashtags max (3–5 recommended) | 1–3 lines, 3–5 hashtags, AI info label on |
+| Instagram | 2,200; 5 hashtags max (since Dec 2025, checked 2026-10) | 1–3 lines, 3–5 hashtags, AI info label on |
 | YouTube Shorts | title 100, description 5,000 | title = the hook (≤ 60 chars to avoid truncation); 1–3 hashtags in the description |
 | Threads 500 · Bluesky 300 · Telegram 4,096 | | one or two lines; Bluesky/Mastodon get the text label `(AI-generated)` |
 
-Example set (lounge clip):
+Example set (visor clip):
 
 ```text
 X:        sunglasses on = do not perceive me. sunglasses off = ok fine, hi
@@ -137,7 +137,7 @@ creators' names, never `#fyp`-style spam blocks. YouTube shows up to 3 hashtags 
 
 ### 7. CTAs are soft questions
 
-Yes: "rain or sunset tomorrow?", "rate the transition 1–10", "what should my agents make next?". No: "follow for part 2"
+Yes: "silver or cobalt tomorrow?", "rate the transition 1–10", "what should my agents make next?". No: "follow for part 2"
 when there is no part 2, "comment 🔥 if…", "like if you agree", giveaways for follows, "tag 3 friends" — engagement bait
 is down-ranked and against her voice. Never automate likes, follows or reply-farms.
 
@@ -158,7 +158,7 @@ is down-ranked and against her voice. Never automate likes, follows or reply-far
 - [templates/captions.ass](templates/captions.ass) — brand ASS styles (Hook, Line, Box, Label, AITag) with positions.
 - [templates/post-caption-sheet.md](templates/post-caption-sheet.md) — fill-in sheet: hook triple + per-platform copy + checks.
 - [scripts/words-to-ass.mjs](scripts/words-to-ass.mjs) — word timings → word-by-word highlighted ASS.
-- [examples/lounge-reveal-captions.md](examples/lounge-reveal-captions.md) — the sunglasses clip, hook to posted copy.
+- [examples/visor-reveal-captions.md](examples/visor-reveal-captions.md) — the sunglasses clip, hook to posted copy.
 
 ## Check before you finish
 

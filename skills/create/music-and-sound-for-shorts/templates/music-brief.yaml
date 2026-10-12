@@ -21,7 +21,7 @@ max_usd: 0.10
 
 # Pre-filled beds for Claudia's four recurring clips
 presets:
-  bedroom:
+  studio:
     bpm: 82
     prompt: "warm lo-fi hip-hop bed, 82 BPM, dusty Rhodes chords, soft vinyl crackle, brushed drums, round sub bass, gentle and unobtrusive, steady loop with no build, leaves room for a voice, instrumental, no vocals"
     model: google/lyria-3-clip
@@ -29,11 +29,11 @@ presets:
     bpm: 124
     prompt: "deep house club groove, 124 BPM, four-on-the-floor kick, offbeat open hats, rolling bassline, short filtered chord stabs, big-room reverb as heard from the dancefloor, 8-bar build into a drop at 6 seconds, instrumental"
     model: elevenlabs/music-v2.5
-  lounge:
+  visor:
     bpm: 108
     prompt: "late-70s disco-soul lounge groove, 108 BPM, wah guitar, warm bass, string pad swell, light tambourine, intimate and playful, a small lift on bar 3 for a reveal moment, instrumental, no vocals"
     model: elevenlabs/music-v2.5
-  rain:
+  foil:
     bpm: 140
     prompt: "bright indie-pop run, 140 BPM, jangly clean electric guitars, driving floor-tom beat, airy synth pad, euphoric and a little chaotic, starts immediately at full energy, instrumental, no vocals"
     model: google/lyria-3-clip

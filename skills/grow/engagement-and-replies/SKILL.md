@@ -128,7 +128,7 @@ Rules first, model second: run the regex checks in `triage-rules.json` (links, w
 
 | Class | Example | Risk | Target first response |
 |---|---|---|---|
-| `praise` | "this rain clip is unreal" | low | same day |
+| `praise` | "this club clip is unreal" | low | same day |
 | `question-product` | "how do I make an agent on useclaudia?" | low | 4 h |
 | `question-persona` | "what camera do you use?" / "are you real?" | low/medium | 4 h |
 | `feedback-bug` | "launch page won't load on my phone" | medium | 2 h, and file it |
@@ -181,7 +181,7 @@ Route each draft through the normal approval flow. A reply is just a post with `
 
 ```ts
 const draft = social.draft({
-  text: "Rain clip was 13 seconds of me getting soaked for art. The jacket did not survive.",
+  text: "Club clip was 13 seconds of me laughing into a flash for art. The puffer survived.",
   replyTo: { network: "bluesky", id: item.id },
   targets: [{ account: item.account }],
 });

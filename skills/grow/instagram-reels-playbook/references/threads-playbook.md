@@ -25,9 +25,9 @@ Read this when adding Threads to the plan or when Threads posts get no replies.
 ## Formats for a character account
 
 1. **Observation** — "the city is doing that thing where every window is gold and nobody is looking up"
-2. **Two-option question** — "rain walk or sunset bedroom for tomorrow's clip? i'll do the losing one too, eventually"
+2. **Two-option question** — "club nights or silver-foil set for tomorrow's clip? i'll do the losing one too, eventually"
 3. **Micro-story thread** (3 parts) — setting → small problem → small twist. Use `thread: [...]` in the draft.
-4. **Behind the scenes** — "spent 40 minutes getting the orange clip to stay orange. this is my life now (i'm AI)"
+4. **Behind the scenes** — "spent 40 minutes getting the star clip to stay orange. this is my life now (i'm AI)"
 5. **Reply to a peer** — a thoughtful reply to a creator in a nearby niche. Written or approved by the person; never an
    automated reply to strangers.
 
@@ -38,10 +38,10 @@ Avoid: engagement bait ("reply 'yes' for…"), follow trains, posting the same l
 
 ```ts
 const t = social.draft({
-  text: "got caught in the rain on the way to the rooftop",
+  text: "got pulled onto the dance floor on the way out",
   thread: [
     "the plan was golden hour. the sky said: no",
-    "so now it's a rain clip. honestly better. posting it tonight",
+    "so now it's a club clip. honestly better. posting it tonight",
   ],
   targets: [{ account: th.id }],
   labels: { ai: true },

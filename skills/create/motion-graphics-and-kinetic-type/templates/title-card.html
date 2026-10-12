@@ -1,0 +1,60 @@
+<!doctype html>
+<!-- title-card.html — one full-frame transparent layer (1080x1920) holding a title card, a lower third or both.
+     Render to a PNG with alpha:  sh scripts/render-layer.sh templates/title-card.html out/layer.png 1080 1920
+     Then animate it onto the video with scripts/lower-third.sh (slide + fade), or drop it on a track in any editor.
+     Fonts: Barlow Condensed, DM Sans, DM Mono (SIL Open Font License) from Google Fonts. For offline renders put the
+     .ttf files next to this file and swap the <link> for @font-face rules.
+     Edit only the :root values and the text inside the three blocks. Render one block alone by adding ?only=title,
+     ?only=l3 or ?only=aitag to the path (sh scripts/render-layer.sh "templates/title-card.html?only=l3" l3.png), so each
+     layer can animate on its own timing. -->
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=DM+Mono:wght@500&family=DM+Sans:wght@500;700&display=block" rel="stylesheet">
+<style>
+  :root {
+    --ink: #ece9e2;          /* warm off-white text */
+    --bg: rgba(10, 11, 13, .86); /* near-black box, 86% */
+    --accent: #ff6fa5;       /* the one accent (rose). Another character: its own accent */
+    --title-y: 470px;        /* title card centre line; keep between 300 and 1400 */
+    --title-size: 132px;
+    --l3-y: 1240px;          /* lower third top edge; keep the whole block above y = 1500 */
+    --l3-x: 90px;            /* left margin; nothing right of x = 960 (the like/comment rail) */
+    --aitag-y: 250px;
+  }
+  html, body { margin: 0; width: 1080px; height: 1920px; background: transparent; overflow: hidden; }
+  .title { position: absolute; left: 0; right: 0; top: var(--title-y); transform: translateY(-50%); text-align: center; }
+  .title .label { font: 500 30px/1 "DM Mono", monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+  .title h1 { margin: 18px 0 0; font: 800 var(--title-size)/.92 "Barlow Condensed", "Arial Narrow", sans-serif;
+              text-transform: uppercase; color: var(--ink); text-shadow: 0 4px 0 rgba(10,11,13,.9), 0 0 24px rgba(10,11,13,.6); }
+  .title h1 em { font-style: normal; color: var(--accent); }
+  .l3 { position: absolute; left: var(--l3-x); top: var(--l3-y); max-width: 870px; background: var(--bg);
+        padding: 22px 30px 24px; border-left: 8px solid var(--accent); border-radius: 6px; }
+  .l3 .name { font: 700 52px/1.05 "DM Sans", sans-serif; color: var(--ink); }
+  .l3 .role { margin-top: 8px; font: 500 28px/1.2 "DM Mono", monospace; letter-spacing: .06em; color: var(--accent); }
+  .aitag { position: absolute; right: 140px; top: var(--aitag-y); font: 500 24px/1 "DM Mono", monospace;
+           letter-spacing: .1em; color: rgba(236,233,226,.8); text-shadow: 0 1px 3px rgba(10,11,13,.8); }
+</style>
+</head>
+<body>
+  <!-- Title card: series label + 1–5 words, one accent word at most -->
+  <div class="title">
+    <div class="label">ep. 12 · desk at dusk</div>
+    <h1>one question<br><em>rebuilt</em> my week</h1>
+  </div>
+
+  <!-- Lower third: who or what is on screen. Name ≤ 24 characters, role ≤ 36 -->
+  <div class="l3">
+    <div class="name">Claudia</div>
+    <div class="role">AI character · useclaudia.xyz</div>
+  </div>
+
+  <!-- Small on-screen AI tag (keep it if the visuals are AI-generated) -->
+  <div class="aitag">AI-GENERATED</div>
+  <script>
+    const only = new URLSearchParams(location.search).get("only");
+    if (only) for (const el of document.querySelectorAll("body > div")) if (!el.classList.contains(only)) el.remove();
+  </script>
+</body>
+</html>

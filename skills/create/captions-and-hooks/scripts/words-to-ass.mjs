@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // words-to-ass.mjs — turn word timings into brand-styled, word-by-word highlighted ASS captions for a 1080x1920 short.
 // Usage: node words-to-ass.mjs <words.json> <out.ass> [--max-words 3] [--max-chars 20] [--upper] [--y 1180]
-// words.json: [{ "word": "rain", "start": 0.20, "end": 0.48 }, ...]  (seconds; from your TTS/transcription timestamps)
+// words.json: [{ "word": "mic", "start": 0.20, "end": 0.48 }, ...]  (seconds; from your TTS/transcription timestamps)
 // Node >= 20, no dependencies, no network. Burn with ../short-form-editing/scripts/burn-captions.sh (needs libass).
 import { readFileSync, writeFileSync } from "node:fs";
 

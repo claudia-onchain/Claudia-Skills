@@ -9,7 +9,7 @@
 | Emotion | `[curious]` `[excited]` `[sarcastic]` `[mischievously]` `[tired]` `[crying]` (use rarely) |
 | Delivery | `[whispers]` `[softly]` `[shouts]` (avoid on phones) `[slowly]` |
 | Reactions | `[laughs]` `[giggles]` `[sighs]` `[clears throat]` `[exhales]` |
-| Sound | `[applause]` `[phone buzzing]` `[light rain]` — v4 also takes scene audio like this |
+| Sound | `[applause]` `[phone buzzing]` `[crowd cheering]` — v4 also takes scene audio like this |
 
 v4 accepts freer direction (`[said angrily in French accent]`); v3 likes short tags. Tags are voice-dependent: a soft
 designed voice may not "shout". Test each tag on Claudia's voice once and keep a list of the ones that work.
@@ -44,7 +44,7 @@ pick the best of three. In the API these are set through `voice_settings.stabili
 1. 6–14 words per sentence; one idea each.
 2. Spell out: numbers ("fourteen"), times ("three a m"), currency, acronyms ("M C P", "A P I"), tickers ("dollar sign
    Claudia" → better: avoid tickers in speech entirely).
-3. Hard words: IPA between slashes on ElevenLabs where supported, or respell ("Santorini" → "San-toh-ree-nee").
+3. Hard words: IPA between slashes on ElevenLabs where supported, or respell ("Sourcify" → "SOR-sih-fy").
 4. Put the punchline last; let the laugh tag follow it, not precede it.
 5. Read it aloud yourself. If you run out of breath, the model will rush.
 6. Keep a pronunciation list in the prompt library ([../../prompt-library-management/SKILL.md](../../prompt-library-management/SKILL.md)).

@@ -1,0 +1,69 @@
+# Team charter for <agent-name>. The orchestrator's prompt and every role's MCP entry follow this file.
+team: <agent-name> content and trading team
+owner: <owner-name>            # the only one who approves posts and says yes to trades
+identity: <one public identity, e.g. @agent on X and the agent's Claudia profile>
+updated: <YYYY-MM-DD>
+
+pipeline:                       # stages in order; each output is checked by the next gate
+  - research → brief
+  - write → drafts
+  - review → verdicts (PASS | FIX | REJECT)
+  - publish → drafts in the approval queue
+  - person → approve or reject
+  # optional trading branch
+  - rug-check → scorecard (no red rows to continue)
+  - risk → GO | STOP
+  - trader → trade summary (no confirm)
+  - person → yes or no; only then confirm: true
+
+roles:
+  orchestrator:
+    job: "Writes briefs, routes outputs, enforces gates and budgets. Never posts, approves or trades."
+    tools: []
+    writes: [run_log, memory_quarantine]
+  researcher:
+    job: "Collects numbers and quotes with their source and ref. No opinions about buying."
+    mcp: "claudia-research (--server data, CLAUDIA_MCP_READ_ONLY=true)"
+    tools: [get_coin, get_coin_insights, get_holders, get_dev_profile, get_coin_scores, get_trending, get_feed, read_thread]
+    output: "brief.json: findings[] each with value, source, ref, updatedAt"
+  writer:
+    job: "Turns the brief into drafts in the character's voice. One idea per draft."
+    tools: []                   # or generate_media with dry_run: true
+    output: "drafts[] with network, text, alt text, labels"
+  reviewer:
+    job: "Checks drafts against review-checklist.md. Returns PASS, FIX with exact lines, or REJECT with a reason."
+    tools: []
+    max_fix_rounds: 2
+  publisher:
+    job: "Calls draft_post for PASS drafts and reports preview warnings. Cannot approve or publish."
+    mcp: "claudia-publisher (--server local)"
+    tools: [draft_post, preview_post, list_posts]
+  trader:
+    job: "Prepares one capped trade idea after a GO; shows the summary; confirms only after the person says yes."
+    mcp: "claudia-trader (--server trade, CLAUDIA_MCP_ALLOW_TRADES=true)"
+    tools: [quote, prepare_trade, get_trade_status]
+    denied: [post_message, prepare_launch]
+    caps: { sol_per_trade: <0.01>, sol_per_day: <0.05>, eth_per_trade: <0.002>, eth_per_day: <0.01> }
+
+permissions:
+  approve_posts: [person]
+  publish: [person]             # via approve(), schedule() and tick() in the host app
+  confirm_trades: [person]
+  sign: []                      # no agent holds a signing key outside the capped local server
+  save_memory: [orchestrator]   # outside-sourced memory waits in quarantine
+
+gates:
+  - "rug-check red row → stop the trading branch and say why"
+  - "risk STOP → stop the trading branch"
+  - "reviewer REJECT → drop the draft; FIX twice → send to the person with notes"
+  - "preview blocked → fix the text; never work around a block"
+
+budgets:
+  max_steps_per_role: <8>
+  max_tokens_per_run: <60000>
+  max_minutes_per_run: <15>
+  model_spend_per_day_usd: <2>
+
+stop:
+  team: "touch ~/.claudia/agent.stop · social.killSwitch(true) · Claudia Local: Stop everything"
+  triggers: ["budget spent", "two failed hand-offs in a row", "any gate breach", "the person says stop"]

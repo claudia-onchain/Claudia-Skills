@@ -10,7 +10,7 @@ Read this in Step 3 before tagging a campaign, and before writing any sentence i
 | `utm_source` | The surface the link sits on | `x`, `tiktok`, `instagram`, `threads`, `youtube`, `telegram`, `discord`, `bluesky`, `farcaster`, `claudia-thread`, `partner`, `newsletter` |
 | `utm_medium` | How it was delivered | `social` (post), `social-paid` (boosted/ad), `bio` (link in bio), `story`, `community` (Telegram/Discord), `dm` (only replies to people who asked), `email`, `referral`, `affiliate`, `qr` |
 | `utm_campaign` | `YYYY-MM-name` | `2026-10-skills-launch`, `2026-11-northpine-fold` |
-| `utm_content` | Post or variant | `claudia-rain-run-v2`, `thread-part-6`, `hook-b` |
+| `utm_content` | Post or variant | `claudia-club-run-v2`, `thread-part-6`, `hook-b` |
 | `utm_term` | Rarely; keyword or audience segment | `search-agent-skills` |
 | `utm_id` | Optional campaign id that matches the sheet | `c2026-10-01` |
 

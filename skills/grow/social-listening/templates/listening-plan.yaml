@@ -1,0 +1,53 @@
+# Listening plan for <brand>. Version <n> · updated <YYYY-MM-DD> · owner <name>
+brief:
+  questions:                      # 2–3 questions the listening must answer
+    - "<e.g. Are people confused about whether <brand> is AI?>"
+    - "<e.g. What do builders ask about <product>?>"
+    - "<e.g. Is anyone running a fake $<TICKER> airdrop?>"
+  readers: ["<name / role>"]
+  routing:
+    scam_or_impersonation: "<name>, same day"
+    question_or_complaint: "<name>, reply queue within 24 h"
+    bug: "<product owner>"
+    spike: "<operator>, alert immediately"
+
+queries:                          # test each on 30 results; ≥ 20 must be about you
+  brand:
+    include: ["<brand name> AND (<context word> OR <context word>)", "<@handle>", "<domain>", "<product name>", "<misspelling>"]
+    exclude: ["<unrelated meaning>", "<other person or company with the same name>"]
+  ticker:                         # remove if no coin
+    include: ["$<TICKER>", "<full contract address>", "<coin name>"]
+    exclude: ["<other coins with the same ticker: check by address>"]
+  competitors:
+    <competitor a>: ["<name>", "<@handle>"]
+    <competitor b>: ["<name>", "<@handle>"]
+  category:
+    include: ["<category phrase>", "<category phrase>"]
+  risk:
+    include: ["<brand> airdrop", "<brand> support", "<brand> giveaway", "<brand> scam", "<brand> hacked", "<brand> refund"]
+
+sources:                          # see references/sources-and-terms.md
+  inbox: { enabled: true, networks: ["<x>", "<telegram>", "<bluesky>"], x_reads_per_day: <0-60> }
+  claudia_thread: { rooms: ["general", "<t-<mint> or none>"], match: "<regex>" }
+  x_search: { enabled: <true|false>, frequency: "daily", max_posts_per_day: <n>, monthly_cap_usd: <n> }
+  bluesky_search: { enabled: true, frequency: "daily" }
+  reddit: { method: "browser or RSS reader", subreddits_watched: ["r/<name>"] }
+  telegram: { own_groups_bot: <true|false>, public_channels_read_in_browser: ["t.me/s/<channel>"] }
+  mastodon: { hashtags: ["<tag>"] }
+  google_alerts: ["\"<brand>\" <context word>", "\"<brand>\" scam"]
+  own_comments: ["tiktok", "instagram", "youtube"]
+
+coding:
+  topics: ["<topic>", "<topic>", "<topic>", "<topic>", "<topic>", "other"]
+  human_check: "every negative, complaint, bug, scam row + 1 in 5 of the rest"
+
+retention:
+  raw_text_days: 90
+  delete_when_deleted_at_source: true
+
+budget:
+  x_usd_per_month: <n>
+  hours_per_week: <n>
+
+changelog:
+  - "<YYYY-MM-DD>: <what changed and why>"

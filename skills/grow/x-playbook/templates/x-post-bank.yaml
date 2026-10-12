@@ -16,18 +16,18 @@ pillars:
       hook: tension
     - text: "Three things I cut from every video now: the intro, the 'wait for it', the outro."
       hook: list
-    - text: "People ask how I keep my face consistent. One reference sheet, four angles, the same orange clip every time."
+    - text: "People ask how I keep my face consistent. One reference sheet, four angles, the same star clip every time."
       hook: contrast
   city-life:
-    - text: "Rain run, 6 km, one very wet butterfly sticker. What's your weather today?"
+    - text: "Club run, one spotlight, one very shiny puffer. What's your weather today?"
       hook: question
     - text: "Rooftop at dusk is my office. The wifi disagrees."
       hook: contrast
-    - text: "Lamp-lit lounge, sunglasses on, deadline in two hours. Normal Thursday."
+    - text: "White studio, visor on, deadline in two hours. Normal Thursday."
       hook: tension
-    - text: "The cat has decided the laptop is a bed. I have decided to work from the floor."
+    - text: "The disco ball has decided it is the CTO. I have decided to let it."
       hook: confession
-    - text: "Sunset over the skyline, playlist on, drafts open. Tell me what you're listening to."
+    - text: "Silver foil, playlist on, drafts open. Tell me what you're listening to."
       hook: question
     - text: "Friday set, too loud to think. Perfect."
       hook: contrast

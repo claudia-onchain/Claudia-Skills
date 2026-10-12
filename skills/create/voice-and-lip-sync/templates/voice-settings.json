@@ -5,7 +5,7 @@
   "model": "elevenlabs/v3",
   "voiceId": "<your designed voice id>",
   "design": {
-    "prompt": "A woman in her late twenties with a soft, low-mid pitched voice and a smile in it. Relaxed, unhurried pacing with a light New York lilt, never a caricature. Warm and a little dry, as if telling a close friend something funny late at night. Clear consonants, laughs easily and lightly, drops to a near-whisper for asides. Close-mic, intimate, studio-clean recording with no background noise, no music.",
+    "prompt": "A woman in her late twenties with a soft, low-mid pitched voice and a smile in it. Relaxed, unhurried pacing with a light an easy city lilt, never a caricature. Warm and a little dry, as if telling a close friend something funny late at night. Clear consonants, laughs easily and lightly, drops to a near-whisper for asides. Close-mic, intimate, studio-clean recording with no background noise, no music.",
     "seed": "<design seed>",
     "guidance_scale": "<0-100 as used>",
     "loudness": "<-1..1 as used>",

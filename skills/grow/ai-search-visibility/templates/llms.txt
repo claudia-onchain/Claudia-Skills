@@ -1,0 +1,21 @@
+# <Name>
+
+> <Name> is <what it is, the same sentence as the facts page>. Run by <owner>. <For an AI character: "<Name> is an AI character; posts are AI-generated and reviewed by a person.">
+
+Key facts are on the About page; that page is the source of truth if anything here is out of date.
+
+## Start here
+
+- [About <Name>](https://<site>/about): what it is, who runs it, official accounts, contact
+- [<Main product or content page>](https://<site>/<path>): <one line on what it answers>
+- [FAQ](https://<site>/faq): the questions people ask most, answered in one or two sentences each
+
+## Docs
+
+- [<Guide title>](https://<site>/<path>): <one line>
+- [<Guide title>](https://<site>/<path>): <one line>
+
+## Optional
+
+- [Press kit](https://<site>/press): logos, images, short and long descriptions
+- [Changelog](https://<site>/changelog): dated updates

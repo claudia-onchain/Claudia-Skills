@@ -7,7 +7,7 @@ Limits move; re-check before a campaign. [3P] = third-party source. `@useclaudia
 |---|---|---|---|---|
 | X | 280 chars on standard accounts; Premium 25,000 (feed collapses after ~280); every URL counts as 23 [3P: unilink.us, eden.so] | 0–1; one `$cashtag` max per API post | native `made_with_ai` via the package; account-level **Automated** label required for bots | API replies only to posts that @mention or quote the account (since Feb 2026); package cap 10 posts/day, 3 link posts/day |
 | TikTok | 4,000 in-app; 2,200 through the API/schedulers [3P: recurpost.com] | no hard cap; 3–5 focused tags | AIGC toggle (`is_aigc`); auto-labels C2PA uploads | crypto promotion removed even organically — news/education only; package cap 5/day |
-| Instagram | 2,200; 30 hashtags max, 3–5 recommended [3P] | 3–5 | "AI info" (`is_ai_generated`); Meta reads C2PA/IPTC | business accounts: Meta Sound Collection only; package cap 20/day |
+| Instagram | 2,200; 5 hashtags max (Instagram @creators, 18 Dec 2025; checked 2026-10) | 3–5 | "AI info" (`is_ai_generated`); Meta reads C2PA/IPTC | business accounts: Meta Sound Collection only; package cap 20/day |
 | YouTube | title 100, description 5,000, tags 500 combined [3P: howmanywords.app] | up to 3 shown above the title | "altered or synthetic content" (`containsSyntheticMedia`) for realistic AI | keep titles ≤ 60 chars for mobile; package cap 5/day |
 | Threads | 500 | 1 topic tag | via Meta | package cap 25/day |
 | Bluesky | 300 | inline, few | text `(AI-generated)` | package cap 30/day |

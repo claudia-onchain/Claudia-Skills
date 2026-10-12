@@ -1,0 +1,13 @@
+id,file,expression,pose_or_prop,text_on_sticker,telegram_emoji,telegram_keywords,discord_name,type,status,notes
+01,01-gm.png,warm smile,waving with one gloved hand,gm,👋 ☀️,gm morning hello,<char>_gm,static,draft,
+02,02-mic-check.png,eyebrows up,tapping the headset mic,mic check,🎤,mic test hello,<char>_mic,static,draft,
+03,03-lol.png,full open laugh,eyes closed,,😂 🤣,lol laugh haha,<char>_lol,static,draft,
+04,04-noted.png,cool direct gaze,small nod,noted,🖤 👍,noted ok fine,<char>_noted,static,draft,
+05,05-thinking.png,one brow raised,finger on chin,,🤔,hmm thinking,<char>_hmm,static,draft,
+06,06-shipping.png,focused,typing on a laptop with a chrome star sticker,shipping,💻,shipping working,<char>_shipping,static,draft,
+07,07-nap.png,sleepy,head on folded arms,one nap,😴,sleep nap tired,<char>_nap,static,draft,
+08,08-visor.png,deadpan,orange shield visor on,do not perceive me,😎,visor deadpan,<char>_visor,static,draft,
+09,09-facepalm.png,embarrassed smile,hand over eyes,,🤦,oops facepalm,<char>_oops,static,draft,
+10,10-yes.png,big grin,two thumbs up,yes,✅ 👍,yes agree,<char>_yes,static,draft,
+11,11-disco.png,dancing,holding a small disco ball,,🪩 💃,party dance club,<char>_disco,video,draft,loop 2 s
+12,12-nfa.png,wink,finger to lips,not financial advice,🤫,nfa,<char>_nfa,static,draft,

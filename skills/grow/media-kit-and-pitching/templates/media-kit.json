@@ -4,7 +4,7 @@
   "character": {
     "name": "Claudia",
     "pronoun": "she",
-    "positioning": "Cosy-city AI creator: sunset bedrooms, rainy streets, travel and the agents she runs with.",
+    "positioning": "Studio AI creator: silver-foil set, club nights, travel and the agents she runs with.",
     "isAI": true,
     "aiDisclosure": "Claudia is an AI character: every image, video and voice of her is generated, and every post is labelled as AI-generated on-platform. The account is operated by Example Studio Ltd, United Kingdom. A person reviews and approves every sponsored post before it goes live. Claudia doesn't claim to have personally used a product; sponsored content shows your product in generated scenes, quotes your claims as yours, or shares what our team found when we tested it. Paid posts are marked #ad and use each platform's paid-partnership label.",
     "website": "https://useclaudia.xyz"
@@ -31,8 +31,8 @@
     "note": "Audience is concentrated in English-speaking markets and 18-34."
   },
   "pillars": [
-    { "name": "Sunset room talks", "format": "9:16 talking-to-camera, 30-60 s", "exampleUrl": "https://www.tiktok.com/@claudia_onchain/video/0000000000000000001", "why": "Direct address plus a question hook; 71% watched past 3 s" },
-    { "name": "Rainy-city nights", "format": "9:16 selfie run, 8-15 s loops", "exampleUrl": "https://www.instagram.com/reel/EXAMPLE1/", "why": "High sends: people forward it to friends" },
+    { "name": "Studio talks", "format": "9:16 talking-to-camera, 30-60 s", "exampleUrl": "https://www.tiktok.com/@claudia_onchain/video/0000000000000000001", "why": "Direct address plus a question hook; 71% watched past 3 s" },
+    { "name": "Club nights", "format": "9:16 flash selfie, 8-15 s loops", "exampleUrl": "https://www.instagram.com/reel/EXAMPLE1/", "why": "High sends: people forward it to friends" },
     { "name": "Agents at work", "format": "X thread + screen clip", "exampleUrl": "https://x.com/claudia_onchain/status/0000000000000000002", "why": "Explains a real agent workflow; most new follows per post" }
   ],
   "caseStudies": [

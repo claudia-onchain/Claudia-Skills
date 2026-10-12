@@ -1,0 +1,47 @@
+# Avatar set brief. Fill before generating. One file per identity.
+identity:
+  name: "<character, agent, creator or coin name>"
+  type: "<character | agent | creator | coin>"
+  anchor: "<one line: what the avatar must show, e.g. 'her face, head and shoulders, bob with the peach streak'>"
+  identity_block: "<paste the bible's identity block, or the coin's idea in one line>"
+  never: "<real-person likeness, other brands' logos, badge look-alikes, text in the image, ...>"
+
+design:
+  crop: "head and shoulders, face fills 60-70% of the circle, eyes ~40% from the top"
+  backdrop: "<one flat colour from the palette, hex>"
+  accent: "<the one accent colour, hex>"
+  style: "<photo | 3D render | flat illustration>"
+  no_text: true
+
+locked:
+  - "<face or mark>"
+  - "<crop and eye line>"
+  - "<signature anchors>"
+  - "<accent colour>"
+  - "<style>"
+
+allowed_to_change:
+  - "backdrop colour from the palette"
+  - "outfit from the wardrobe"
+  - "<seasonal prop outside the face>"
+  - "<thin event ring at the circle edge>"
+
+master:
+  model: "<model id>"
+  resolution: "2K"
+  candidates: 4
+  max_usd: "<0.30>"
+  file: "<name>-primary-v1-master-2048.png"
+
+variants:
+  - id: "<name>-<variant>-v1"
+    change: "<the one allowed change>"
+    live_from: "<YYYY-MM-DD>"
+    live_until: "<YYYY-MM-DD>"
+    platforms: "<all | list>"
+
+platforms: "<x, instagram, threads, tiktok, youtube, linkedin, telegram, discord, bluesky, farcaster>"
+disclosure:
+  bio_line: "<e.g. AI character, run by <operator>>"
+  alt_text: "AI-generated image: <short description>"
+approved_by: "<name>"

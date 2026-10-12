@@ -1,0 +1,4 @@
+stream_date,platform,timestamp_start,timestamp_end,moment,who,why_it_works,hook_line_for_clip,target_platforms,ai_label_in_caption,cleared_music,status
+<YYYY-MM-DD>,<platform>,<00:12:40>,<00:13:25>,<what happened in one line>,<character / host / guest>,<laugh / reveal / useful answer / reaction>,<first line of the clip in 6 words or fewer>,<tiktok; shorts; reels; x>,yes,<yes / no music / needs swap>,<logged / cut / captioned / approved / posted>
+2026-10-16,youtube,00:08:05,00:08:50,host asks the character to rate a viewer's outfit idea,character + host,dry one-liner then the host loses it,"I said cobalt. I meant cobalt",tiktok; shorts; x,yes,no music,logged
+2026-10-16,youtube,00:31:10,00:32:40,step-by-step answer on how the posting calendar works,character,useful and self-contained,"my calendar, in 90 seconds",shorts; x,yes,no music,logged

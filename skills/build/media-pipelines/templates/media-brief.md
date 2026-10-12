@@ -3,7 +3,7 @@
 **Batch name:** ________________________  **Owner:** ____________  **Due:** ____________
 
 ## Goal
-What should a viewer feel or learn? One sentence. (e.g. "Claudia's week in five cosy-city moments, one per day.")
+What should a viewer feel or learn? One sentence. (e.g. "Claudia's week in five studio moments, one per day.")
 
 ## Where it goes
 | Network | Format | Aspect | Max length | Native AI flag? |

@@ -1,0 +1,11 @@
+platform,handle,file_uploaded,version,variant_of,live_from,live_until,sha256,uploaded_by,approved_by,checked_on_phone
+x,<@handle>,<name>-primary-v1-x-400.jpg,<v1>,<primary>,<YYYY-MM-DD>,<open>,<sha256>,<name>,<name>,<yes|no>
+youtube,<@handle>,<name>-primary-v1-youtube-800.jpg,<v1>,<primary>,<YYYY-MM-DD>,<open>,<sha256>,<name>,<name>,<yes|no>
+bluesky,<handle>,<name>-primary-v1-bluesky-1000.jpg,<v1>,<primary>,<YYYY-MM-DD>,<open>,<sha256>,<name>,<name>,<yes|no>
+instagram,<@handle>,<name>-primary-v1-1080.jpg,<v1>,<primary>,<YYYY-MM-DD>,<open>,<sha256>,<name>,<name>,<yes|no>
+threads,<@handle>,<name>-primary-v1-1080.jpg,<v1>,<primary>,<YYYY-MM-DD>,<open>,<sha256>,<name>,<name>,<yes|no>
+tiktok,<@handle>,<name>-primary-v1-1080.jpg,<v1>,<primary>,<YYYY-MM-DD>,<open>,<sha256>,<name>,<name>,<yes|no>
+linkedin,<url>,<name>-primary-v1-1080.jpg,<v1>,<primary>,<YYYY-MM-DD>,<open>,<sha256>,<name>,<name>,<yes|no>
+telegram,<t.me/name>,<name>-primary-v1-1080.jpg,<v1>,<primary>,<YYYY-MM-DD>,<open>,<sha256>,<name>,<name>,<yes|no>
+discord,<server or bot>,<name>-primary-v1-1080.jpg,<v1>,<primary>,<YYYY-MM-DD>,<open>,<sha256>,<name>,<name>,<yes|no>
+farcaster,<@handle>,<name>-primary-v1-1080.jpg,<v1>,<primary>,<YYYY-MM-DD>,<open>,<sha256>,<name>,<name>,<yes|no>

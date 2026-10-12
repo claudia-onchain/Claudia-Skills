@@ -5,7 +5,7 @@
 //   node scripts/validate.mjs                 all skills, tidy report, exit 1 on any error
 //   node scripts/validate.mjs <slug> [...]    only these skills
 //   --root <dir>     validate another checkout (a folder that contains skills/)
-//   --complete       also fail when any of the 54 assigned slugs is missing
+//   --complete       also fail when any of the assigned slugs is missing
 //   --strict         treat warnings as errors
 //   --json           machine-readable output
 import { existsSync, readFileSync } from "node:fs";
